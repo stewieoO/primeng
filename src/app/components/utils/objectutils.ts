@@ -59,6 +59,9 @@ export class ObjectUtils {
 
     public static resolveFieldData(data: any, field: any): any {
         if (data && field) {
+            if(field === 'this'){
+                return data;
+            }
             if (this.isFunction(field)) {
                 return field(data);
             }
@@ -158,7 +161,7 @@ export class ObjectUtils {
                     .replace(/[\xFE]/g, "p")
                     .replace(/[\xFD\xFF]/g, "y");
         }
-      
+
         return str;
       }
 }
