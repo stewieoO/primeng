@@ -1,4 +1,4 @@
-import {NgModule,Component,ElementRef,OnDestroy,Input,Output,EventEmitter,ChangeDetectionStrategy, ViewChild, ContentChildren, QueryList, TemplateRef, OnInit, OnChanges, AfterContentChecked, SimpleChanges, ViewEncapsulation, ChangeDetectorRef} from '@angular/core';
+import {NgModule,Component,ElementRef,OnDestroy,Input,Output,EventEmitter,ChangeDetectionStrategy, ViewChild, ContentChildren, QueryList, TemplateRef, OnInit, OnChanges, AfterContentChecked, SimpleChanges, ViewEncapsulation, ChangeDetectorRef, AfterViewInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { SharedModule, PrimeTemplate } from 'primeng/api';
 import { UniqueComponentId } from 'primeng/utils';
@@ -505,7 +505,7 @@ export class GalleriaItem implements OnInit {
     `,
    changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GalleriaThumbnails implements OnInit, AfterContentChecked, OnDestroy {
+export class GalleriaThumbnails implements OnInit, AfterContentChecked, AfterViewInit, OnDestroy {
 
     @Input() containerId: string;
 
@@ -574,9 +574,10 @@ export class GalleriaThumbnails implements OnInit, AfterContentChecked, OnDestro
     
     _oldactiveIndex: number = 0;
 
+    constructor(private cd: ChangeDetectorRef) { }
+
     ngOnInit() {
         this.createStyle();
-		this.calculatePosition();
 
 		if (this.responsiveOptions) {
 			this.bindDocumentListeners();
@@ -616,6 +617,10 @@ export class GalleriaThumbnails implements OnInit, AfterContentChecked, OnDestro
             this._oldactiveIndex = this._activeIndex;
             this._oldNumVisible = this.d_numVisible;
         }
+    }
+
+    ngAfterViewInit() {
+		this.calculatePosition();
     }
 
     createStyle() {
@@ -685,6 +690,7 @@ export class GalleriaThumbnails implements OnInit, AfterContentChecked, OnDestro
 
             if (this.d_numVisible !== matchedResponsiveData.numVisible) {
                 this.d_numVisible = matchedResponsiveData.numVisible;
+                this.cd.markForCheck();
             }
         }
     }

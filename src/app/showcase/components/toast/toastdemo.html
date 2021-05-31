@@ -1,8 +1,9 @@
 <div class="content-section introduction">
     <div>
-        <span class="feature-title">Toast</span>
-        <span>Toast is used to display messages in an overlay.</span>
+        <h1>Toast</h1>
+        <p>Toast is used to display messages in an overlay.</p>
     </div>
+    <app-demoActions github="toast" stackblitz="toast-demo"></app-demoActions>
 </div>
 
 <div class="content-section implementation">
@@ -33,11 +34,11 @@
 
     <div class="card">
         <h5>Severities</h5>
-        <button type="button" pButton pRipple (click)="showSuccess()" label="Success" class="p-button-success"></button>
-        <button type="button" pButton pRipple (click)="showInfo()" label="Info" class="p-button-info"></button>
-        <button type="button" pButton pRipple (click)="showWarn()" label="Warn" class="p-button-warning"></button>
-        <button type="button" pButton pRipple (click)="showError()" label="Error" class="p-button-danger"></button>
-        <button type="button" pButton pRipple (click)="showCustom()" label="Custom" class="p-button-help"></button>
+        <button type="button" pButton pRipple (click)="showSuccess()" label="Success" class="p-button-success p-mb-2"></button>
+        <button type="button" pButton pRipple (click)="showInfo()" label="Info" class="p-button-info p-mb-2"></button>
+        <button type="button" pButton pRipple (click)="showWarn()" label="Warn" class="p-button-warning p-mb-2"></button>
+        <button type="button" pButton pRipple (click)="showError()" label="Error" class="p-button-danger p-mb-2"></button>
+        <button type="button" pButton pRipple (click)="showCustom()" label="Custom" class="p-button-help p-mb-2"></button>
 
         <h5>Positions</h5>
         <button type="button" pButton pRipple (click)="showTopLeft()" label="Top Left"></button>
@@ -357,6 +358,24 @@ this.messageService.clear('myKey1');    //clears messages of the first toast onl
                 </table>
             </div>
 
+            <h5>Templates</h5>
+            <div class="doc-tablewrapper">
+                <table class="doc-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Parameters</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>message</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+
             <h5>Styling</h5>
             <p>Following is the list of structural style classes, for theming classes visit <a href="#" [routerLink]="['/theming']">theming page</a>.</p>
             <div class="doc-tablewrapper">
@@ -439,10 +458,10 @@ this.messageService.clear('myKey1');    //clears messages of the first toast onl
 
 &lt;div class="card"&gt;
     &lt;h5&gt;Severities&lt;/h5&gt;
-    &lt;button type="button" pButton pRipple (click)="showSuccess()" label="Success" class="p-button-success"&gt;&lt;/button&gt;
-    &lt;button type="button" pButton pRipple (click)="showInfo()" label="Info" class="p-button-info"&gt;&lt;/button&gt;
-    &lt;button type="button" pButton pRipple (click)="showWarn()" label="Warn" class="p-button-warning"&gt;&lt;/button&gt;
-    &lt;button type="button" pButton pRipple (click)="showError()" label="Error" class="p-button-danger"&gt;&lt;/button&gt;
+    &lt;button type="button" pButton pRipple (click)="showSuccess()" label="Success" class="p-button-success p-mb-2"&gt;&lt;/button&gt;
+    &lt;button type="button" pButton pRipple (click)="showInfo()" label="Info" class="p-button-info p-mb-2"&gt;&lt;/button&gt;
+    &lt;button type="button" pButton pRipple (click)="showWarn()" label="Warn" class="p-button-warning p-mb-2"&gt;&lt;/button&gt;
+    &lt;button type="button" pButton pRipple (click)="showError()" label="Error" class="p-button-danger p-mb-2"&gt;&lt;/button&gt;
 
     &lt;h5&gt;Positions&lt;/h5&gt;
     &lt;button type="button" pButton pRipple (click)="showTopLeft()" label="Top Left"&gt;&lt;/button&gt;

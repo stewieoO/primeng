@@ -3,47 +3,41 @@
         <h1>Invalid State</h1>
         <p>All form components have an invalid state style to display the validation errors when <i>ng-invalid ng-dirty</i> combination is applied by Angular.</p>
     </div>
-    <app-inputStyleSwitch></app-inputStyleSwitch>
+    <app-demoActions github="invalid"></app-demoActions>
 </div>
 
 <div class="content-section implementation">
     <div class="card">
         <div class="p-fluid p-grid">
             <div class="p-field p-col-12 p-md-4">
-                <label for="inputtext">InputText</label>
-                <input type="text" id="inputtext" pInputText class="ng-invalid ng-dirty"> 
+                <input type="text" id="inputtext" pInputText class="ng-invalid ng-dirty" placeholder="InputText"> 
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="autocomplete">AutoComplete</label>
-                <p-autoComplete inputId="autocomplete" [(ngModel)]="value2" [suggestions]="filteredCountries" (completeMethod)="searchCountry($event)" field="name" class="ng-invalid ng-dirty"></p-autoComplete>
+                <p-autoComplete inputId="autocomplete" [(ngModel)]="value2" [suggestions]="filteredCountries" (completeMethod)="searchCountry($event)" field="name" class="ng-invalid ng-dirty" placeholder="AutoComplete"></p-autoComplete>
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="calendar">Calendar</label>
-                <p-calendar inputId="calendar" [(ngModel)]="value3" class="ng-invalid ng-dirty" [showIcon]="true"></p-calendar>
+                <p-calendar inputId="calendar" [(ngModel)]="value3" class="ng-invalid ng-dirty" [showIcon]="true" placeholder="Calendar"></p-calendar>
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="chips">Chips</label>
-                <p-chips inputId="chips" [(ngModel)]="value4" class="ng-invalid ng-dirty"></p-chips>
+                <p-chips inputId="chips" [(ngModel)]="value4" class="ng-invalid ng-dirty" placeholder="Chips"></p-chips>
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="inputmask">InputMask</label>
-                <p-inputMask inputId="inputmask" mask="99/99/9999" [(ngModel)]="value5" class="ng-invalid ng-dirty"></p-inputMask>    
+                <p-inputMask inputId="inputmask" mask="99/99/9999" [(ngModel)]="value5" class="ng-invalid ng-dirty" placeholder="InputMask"></p-inputMask>    
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="inputnumber">InputNumber</label>
-                <p-inputNumber inputId="inputnumber" [(ngModel)]="value6" class="ng-invalid ng-dirty"></p-inputNumber>
+                <p-inputNumber inputId="inputnumber" [(ngModel)]="value6" class="ng-invalid ng-dirty" placeholder="InputNumber"></p-inputNumber>
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="dropdown">Dropdown</label>
-                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value7" optionLabel="name" class="ng-invalid ng-dirty"></p-dropdown>
+                <p-cascadeSelect [options]="cascadeSelectCountries" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" class="ng-invalid ng-dirty" placeholder="CascadeSelect"></p-cascadeSelect>
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="multiselect">MultiSelect</label>
-                <p-multiSelect inputId="multiselect" [options]="cities" [(ngModel)]="value7" optionLabel="name" [filter]="false" class="ng-invalid ng-dirty"></p-multiSelect>
+                <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value7" optionLabel="name" class="ng-invalid ng-dirty" placeholder="Dropdown"></p-dropdown>
             </div>
             <div class="p-field p-col-12 p-md-4">
-                <label for="textarea">Textarea</label>
-                <textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value9" pInputTextarea class="ng-invalid ng-dirty"></textarea>
+                <p-multiSelect inputId="multiselect" [options]="cities" [(ngModel)]="value7" optionLabel="name" [filter]="false" class="ng-invalid ng-dirty" placeholder="MultiSelect"></p-multiSelect>
+            </div>
+            <div class="p-field p-col-12 p-md-4">
+                <textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value9" pInputTextarea class="ng-invalid ng-dirty" placeholder="Textarea"></textarea>
             </div>
         </div>
     </div>
@@ -60,40 +54,34 @@
 <app-code lang="markup" ngNonBindable ngPreserveWhitespaces>
 &lt;div class="p-fluid p-grid"&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="inputtext"&gt;InputText&lt;/label&gt;
-        &lt;input type="text" id="inputtext" pInputText class="ng-invalid ng-dirty"&gt; 
+        &lt;input type="text" id="inputtext" pInputText class="ng-invalid ng-dirty" placeholder="InputText"&gt; 
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="autocomplete"&gt;AutoComplete&lt;/label&gt;
-        &lt;p-autoComplete inputId="autocomplete" [(ngModel)]="value2" [suggestions]="filteredCountries" (completeMethod)="searchCountry($event)" field="name" class="ng-invalid ng-dirty"&gt;&lt;/p-autoComplete&gt;
+        &lt;p-autoComplete inputId="autocomplete" [(ngModel)]="value2" [suggestions]="filteredCountries" (completeMethod)="searchCountry($event)" field="name" class="ng-invalid ng-dirty" placeholder="AutoComplete"&gt;&lt;/p-autoComplete&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="calendar"&gt;Calendar&lt;/label&gt;
-        &lt;p-calendar inputId="calendar" [(ngModel)]="value3" class="ng-invalid ng-dirty" [showIcon]="true"&gt;&lt;/p-calendar&gt;
+        &lt;p-calendar inputId="calendar" [(ngModel)]="value3" class="ng-invalid ng-dirty" [showIcon]="true" placeholder="Calendar"&gt;&lt;/p-calendar&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="chips"&gt;Chips&lt;/label&gt;
-        &lt;p-chips inputId="chips" [(ngModel)]="value4" class="ng-invalid ng-dirty"&gt;&lt;/p-chips&gt;
+        &lt;p-chips inputId="chips" [(ngModel)]="value4" class="ng-invalid ng-dirty" placeholder="Chips"&gt;&lt;/p-chips&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="inputmask"&gt;InputMask&lt;/label&gt;
-        &lt;p-inputMask inputId="inputmask" mask="99/99/9999" [(ngModel)]="value5" class="ng-invalid ng-dirty"&gt;&lt;/p-inputMask&gt;    
+        &lt;p-inputMask inputId="inputmask" mask="99/99/9999" [(ngModel)]="value5" class="ng-invalid ng-dirty" placeholder="InputMask"&gt;&lt;/p-inputMask&gt;    
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="inputnumber"&gt;InputNumber&lt;/label&gt;
-        &lt;p-inputNumber inputId="inputnumber" [(ngModel)]="value6" class="ng-invalid ng-dirty"&gt;&lt;/p-inputNumber&gt;
+        &lt;p-inputNumber inputId="inputnumber" [(ngModel)]="value6" class="ng-invalid ng-dirty" placeholder="InputNumber"&gt;&lt;/p-inputNumber&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="dropdown"&gt;Dropdown&lt;/label&gt;
-        &lt;p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value7" optionLabel="name" class="ng-invalid ng-dirty"&gt;&lt;/p-dropdown&gt;
+        &lt;p-cascadeSelect [options]="cascadeSelectCountries" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" class="ng-invalid ng-dirty" placeholder="CascadeSelect"&gt;&lt;/p-cascadeSelect&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="multiselect"&gt;MultiSelect&lt;/label&gt;
-        &lt;p-multiSelect inputId="multiselect" [options]="cities" [(ngModel)]="value7" optionLabel="name" [filter]="false" class="ng-invalid ng-dirty"&gt;&lt;/p-multiSelect&gt;
+        &lt;p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value7" optionLabel="name" class="ng-invalid ng-dirty" placeholder="Dropdown"&gt;&lt;/p-dropdown&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
-        &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
-        &lt;textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value9" pInputTextarea class="ng-invalid ng-dirty"&gt;&lt;/textarea&gt;
+        &lt;p-multiSelect inputId="multiselect" [options]="cities" [(ngModel)]="value7" optionLabel="name" [filter]="false" class="ng-invalid ng-dirty" placeholder="MultiSelect"&gt;&lt;/p-multiSelect&gt;
+    &lt;/div&gt;
+    &lt;div class="p-field p-col-12 p-md-4"&gt;
+        &lt;textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value9" pInputTextarea class="ng-invalid ng-dirty" placeholder="Textarea"&gt;&lt;/textarea&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </app-code>
@@ -101,6 +89,8 @@
 export class FloatLabelDemo &#123;
 
     countries: any[];
+
+    cascadeSelectCountries: any[];
 
     cities: any[];
 
@@ -138,6 +128,83 @@ export class FloatLabelDemo &#123;
         this.countryService.getCountries().then(countries =&gt; &#123;
             this.countries = countries;
         &#125;);
+
+        this.cascadeSelectCountries = [
+            &#123;
+                name: 'Australia',
+                code: 'AU',
+                states: [
+                    &#123;
+                        name: 'New South Wales',
+                        cities: [
+                            &#123;cname: 'Sydney', code: 'A-SY'&#125;,
+                            &#123;cname: 'Newcastle', code: 'A-NE'&#125;,
+                            &#123;cname: 'Wollongong', code: 'A-WO'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Queensland',
+                        cities: [
+                            &#123;cname: 'Brisbane', code: 'A-BR'&#125;,
+                            &#123;cname: 'Townsville', code: 'A-TO'&#125;
+                        ]
+                    &#125;,
+                    
+                ]
+            &#125;,
+            &#123;
+                name: 'Canada', 
+                code: 'CA',
+                states: [
+                    &#123;
+                        name: 'Quebec',
+                        cities: [
+                            &#123;cname: 'Montreal', code: 'C-MO'&#125;,
+                            &#123;cname: 'Quebec City', code: 'C-QU'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Ontario',
+                        cities: [
+                            &#123;cname: 'Ottawa', code: 'C-OT'&#125;,
+                            &#123;cname: 'Toronto', code: 'C-TO'&#125;
+                        ]
+                    &#125;,
+                    
+                ]
+            &#125;,
+            &#123;
+                name: 'United States',
+                code: 'US',
+                states: [
+                    &#123;
+                        name: 'California',
+                        cities: [
+                            &#123;cname: 'Los Angeles', code: 'US-LA'&#125;,
+                            &#123;cname: 'San Diego', code: 'US-SD'&#125;,
+                            &#123;cname: 'San Francisco', code: 'US-SF'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Florida',
+                        cities: [
+                            &#123;cname: 'Jacksonville', code: 'US-JA'&#125;,
+                            &#123;cname: 'Miami', code: 'US-MI'&#125;,
+                            &#123;cname: 'Tampa', code: 'US-TA'&#125;,
+                            &#123;cname: 'Orlando', code: 'US-OR'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Texas',
+                        cities: [
+                            &#123;cname: 'Austin', code: 'US-AU'&#125;,
+                            &#123;cname: 'Dallas', code: 'US-DA'&#125;,
+                            &#123;cname: 'Houston', code: 'US-HO'&#125;
+                        ]
+                    &#125;
+                ]
+            &#125;
+        ];
     &#125;
 
     searchCountry(event) &#123;

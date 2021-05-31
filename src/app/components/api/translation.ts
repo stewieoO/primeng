@@ -14,6 +14,10 @@ export interface Translation {
     isNot?: string;
     before?: string;
     after?: string;
+    dateIs?: string;
+    dateIsNot?: string;
+    dateBefore?: string;
+    dateAfter?: string;
     clear?: string;
     apply?: string;
     matchAll?: string;
@@ -32,4 +36,10 @@ export interface Translation {
     monthNamesShort?: string[];
     today?: string;
     weekHeader?: string;
+    weak?: string;
+    medium?: string;
+    strong?: string;
+    passwordPrompt?: string;
+    emptyMessage?: string;
+    emptyFilterMessage?: string;
 }

@@ -26,10 +26,10 @@ export class PrimeNGConfig {
             FilterMatchMode.GREATER_THAN_OR_EQUAL_TO
         ],
         date: [
-            FilterMatchMode.IS,
-            FilterMatchMode.IS_NOT,
-            FilterMatchMode.BEFORE,
-            FilterMatchMode.AFTER
+            FilterMatchMode.DATE_IS,
+            FilterMatchMode.DATE_IS_NOT,
+            FilterMatchMode.DATE_BEFORE,
+            FilterMatchMode.DATE_AFTER
         ]
     };
 
@@ -49,6 +49,10 @@ export class PrimeNGConfig {
         isNot: 'Is not',
         before: 'Before',
         after: 'After',
+        dateIs: 'Date is',
+        dateIsNot: 'Date is not',
+        dateBefore: 'Date is before',
+        dateAfter: 'Date is after',
         clear: 'Clear',
         apply: 'Apply',
         matchAll: 'Match All',
@@ -66,7 +70,13 @@ export class PrimeNGConfig {
         monthNames: ["January","February","March","April","May","June","July","August","September","October","November","December"],
         monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         today: 'Today',
-        weekHeader: 'Wk'
+        weekHeader: 'Wk',
+        weak: 'Weak',
+        medium: 'Medium',
+        strong: 'Strong',
+        passwordPrompt: 'Enter a password',
+        emptyMessage: 'No results found',
+        emptyFilterMessage: 'No results found'
     }
 
     private translationSource = new Subject<any>();

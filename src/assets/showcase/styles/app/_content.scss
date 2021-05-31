@@ -1,6 +1,5 @@
 .layout-content {
     margin-left: 250px;
-    padding-top: 70px;
 
     .content-section {
         padding: 2rem;
@@ -33,6 +32,15 @@
                     &:hover {
                         text-decoration: underline;
                     }
+                }
+            }
+
+            app-demoActions {
+                display: flex;
+                justify-content: flex-end;
+                
+                .p-button-icon-only {
+                    padding: .5rem 0;
                 }
             }
 
@@ -175,10 +183,26 @@
                 text-align: left;
             }
 
-            tbody{
+            tbody {
                 td {
                     padding: 1rem;
                     border-bottom: 1px solid var(--surface-d);
+
+                    &:first-child {
+                        font-family: "Courier New", monospace;
+                        font-weight: bold;
+                        color: var(--text-color-secondary);
+                    }
+                }
+            }
+
+            &.browsers {
+                td {
+                    &:first-child {
+                        font-family: var(--font-family);
+                        font-weight: normal;
+                        color: var(--text-color);
+                    }
                 }
             }
         }

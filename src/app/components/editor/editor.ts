@@ -15,11 +15,11 @@ export const EDITOR_VALUE_ACCESSOR: any = {
     selector: 'p-editor',
     template: `
         <div [ngClass]="'p-editor-container'" [class]="styleClass">
-            <div class="p-editor-toolbar" *ngIf="toolbar || toolbarTemplate">
+            <div class="p-editor-toolbar" *ngIf="toolbar || headerTemplate">
                 <ng-content select="p-header"></ng-content>
                 <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
             </div>
-            <div class="p-editor-toolbar" *ngIf="!toolbar && !toolbarTemplate">
+            <div class="p-editor-toolbar" *ngIf="!toolbar && !headerTemplate">
                 <span class="ql-formats">
                     <select class="ql-header">
                       <option value="1">Heading</option>
@@ -106,8 +106,6 @@ export class Editor implements AfterViewInit,AfterContentInit,ControlValueAccess
     
     quill: any;
 
-    toolbarTemplate: TemplateRef<any>;
-
     headerTemplate: TemplateRef<any>;
     
     constructor(public el: ElementRef) {}
@@ -135,7 +133,7 @@ export class Editor implements AfterViewInit,AfterContentInit,ControlValueAccess
         
         this.quill.on('text-change', (delta, oldContents, source) => {
             if (source === 'user') {
-                let html = editorElement.children[0].innerHTML;
+                let html = DomHandler.findSingle(editorElement, '.ql-editor').innerHTML;
                 let text = this.quill.getText().trim();
                 if (html === '<p><br></p>') {
                     html = null;
@@ -169,9 +167,6 @@ export class Editor implements AfterViewInit,AfterContentInit,ControlValueAccess
     ngAfterContentInit() {
         this.templates.forEach((item) => {
             switch(item.getType()) {
-                case 'toolbar':
-                    this.toolbarTemplate = item.template;
-                break;
                 case 'header':
                     this.headerTemplate = item.template;
                 break;

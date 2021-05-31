@@ -46,12 +46,10 @@ export class RadioControlRegistry {
     template: `
         <div [ngStyle]="style" [ngClass]="{'p-radiobutton p-component':true,'p-radiobutton-checked': checked, 'p-radiobutton-disabled': disabled, 'p-radiobutton-focused': focused}" [class]="styleClass">
             <div class="p-hidden-accessible">
-                <input #rb type="radio" [attr.id]="inputId" [attr.name]="name" [attr.value]="value" [attr.tabindex]="tabindex" [attr.aria-labelledby]="ariaLabelledBy"
-                    [checked]="checked" (change)="onChange($event)" (focus)="onInputFocus($event)" (blur)="onInputBlur($event)" [disabled]="disabled">
+                <input #rb type="radio" [attr.id]="inputId" [attr.name]="name" [attr.value]="value" [attr.tabindex]="tabindex" [attr.aria-checked]="checked" [attr.aria-label]="ariaLabel"
+                    [attr.aria-labelledby]="ariaLabelledBy" [checked]="checked" (change)="onChange($event)" (focus)="onInputFocus($event)" (blur)="onInputBlur($event)" [disabled]="disabled">
             </div>
-            <div (click)="handleClick($event, rb, true)" role="radio" [attr.aria-checked]="checked"
-                [ngClass]="{'p-radiobutton-box':true,
-                'p-highlight': checked, 'p-disabled': disabled, 'p-focus': focused}">
+            <div (click)="handleClick($event, rb, true)" [ngClass]="{'p-radiobutton-box':true, 'p-highlight': checked, 'p-disabled': disabled, 'p-focus': focused}">
                 <span class="p-radiobutton-icon"></span>
             </div>
         </div>
@@ -80,6 +78,8 @@ export class RadioButton implements ControlValueAccessor, OnInit, OnDestroy {
 
     @Input() ariaLabelledBy: string;
 
+    @Input() ariaLabel: string;
+
     @Input() style: any;
 
     @Input() styleClass: string;
@@ -107,11 +107,9 @@ export class RadioButton implements ControlValueAccessor, OnInit, OnDestroy {
     constructor(public cd: ChangeDetectorRef, private injector: Injector, private registry: RadioControlRegistry) {}
 
     ngOnInit() {
-        if (this.formControlName) {
-            this.control = this.injector.get(NgControl);
-            this.checkName();
-            this.registry.add(this.control, this);
-        }
+        this.control = this.injector.get(NgControl);
+        this.checkName();
+        this.registry.add(this.control, this);
     }
     
     handleClick(event, radioButton, focus) {
@@ -133,11 +131,7 @@ export class RadioButton implements ControlValueAccessor, OnInit, OnDestroy {
             this.inputViewChild.nativeElement.checked = true;
             this.checked = true;
             this.onModelChange(this.value);
-            
-            if (this.formControlName) {
-                this.registry.select(this);
-            }
-
+            this.registry.select(this);
             this.onClick.emit(event);
         }
     }
@@ -185,9 +179,7 @@ export class RadioButton implements ControlValueAccessor, OnInit, OnDestroy {
     }
 
     ngOnDestroy() {
-        if (this.formControlName) {
-            this.registry.remove(this);
-        }
+        this.registry.remove(this);
     }
 
     private checkName() {

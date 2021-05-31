@@ -32,4 +32,10 @@ export class TranslationKeys {
     public static readonly MONTH_NAMES_SHORT = 'monthNamesShort';
     public static readonly TODAY = 'today';
     public static readonly WEEK_HEADER = 'weekHeader';
+    public static readonly WEAK = 'weak';
+    public static readonly MEDIUM = 'medium';
+    public static readonly STRONG = 'strong';
+    public static readonly PASSWORD_PROMPT = 'passwordPrompt';
+    public static readonly EMPTY_MESSAGE = 'emptyMessage';
+    public static readonly EMPTY_FILTER_MESSAGE = 'emptyFilterMessage';
 }

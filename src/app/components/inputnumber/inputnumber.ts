@@ -18,7 +18,7 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
                 [ngStyle]="style" [class]="styleClass">
             <input #input [ngClass]="'p-inputnumber-input'" [ngStyle]="inputStyle" [class]="inputStyleClass" pInputText [value]="formattedValue()" [attr.placeholder]="placeholder" [attr.title]="title" [attr.id]="inputId"
                 [attr.size]="size" [attr.name]="name" [attr.autocomplete]="autocomplete" [attr.maxlength]="maxlength" [attr.tabindex]="tabindex" [attr.aria-label]="ariaLabel"
-                [attr.aria-required]="ariaRequired" [disabled]="disabled" [attr.required]="required" [attr.aria-valumin]="min" [attr.aria-valuemax]="max"
+                [attr.aria-required]="ariaRequired" [disabled]="disabled" [attr.required]="required" [attr.aria-valuemin]="min" [attr.aria-valuemax]="max"
                 (input)="onUserInput($event)" (keydown)="onInputKeyDown($event)" (keypress)="onInputKeyPress($event)" (paste)="onPaste($event)" (click)="onInputClick()"
                 (focus)="onInputFocus($event)" (blur)="onInputBlur($event)">
             <span class="p-inputnumber-button-group" *ngIf="showButtons && buttonLayout === 'stacked'">
@@ -49,8 +49,6 @@ export class InputNumber implements OnInit,ControlValueAccessor {
     @Input() format: boolean = true;
 
     @Input() buttonLayout: string = "stacked";
-
-    @Input() disabled: boolean;
 
     @Input() inputId: string;
 
@@ -166,6 +164,8 @@ export class InputNumber implements OnInit,ControlValueAccessor {
 
     _suffixOption: string;
 
+    _disabled: boolean;
+
     @Input() get locale(): string {
         return this._localeOption;
     }
@@ -254,6 +254,21 @@ export class InputNumber implements OnInit,ControlValueAccessor {
     set suffix(suffixOption: string) {
         this._suffixOption = suffixOption;
         this.updateConstructParser();
+    }
+
+
+    @Input() get disabled(): boolean {
+        return this._disabled;
+    }
+
+    set disabled(disabled: boolean) {
+        if (disabled)
+            this.focused = false;
+
+        this._disabled = disabled;
+        
+        if (this.timer)
+            this.clearTimer();
     }
 
     constructor(public el: ElementRef, private cd: ChangeDetectorRef) { }
@@ -628,12 +643,14 @@ export class InputNumber implements OnInit,ControlValueAccessor {
     }
 
     onPaste(event) {
-        event.preventDefault();
-        let data = (event.clipboardData || window['clipboardData']).getData('Text');
-        if (data) {
-            let filteredData = this.parseValue(data);
-            if (filteredData != null) {
-                this.insert(event, filteredData.toString());
+        if (!this.disabled) {
+            event.preventDefault();
+            let data = (event.clipboardData || window['clipboardData']).getData('Text');
+            if (data) {
+                let filteredData = this.parseValue(data);
+                if (filteredData != null) {
+                    this.insert(event, filteredData.toString());
+                }
             }
         }
     }

@@ -3,7 +3,7 @@
         <h1>Float Label</h1>
         <p>All input text components support floating labels.</p>
     </div>
-    <app-inputStyleSwitch></app-inputStyleSwitch>
+    <app-demoActions github="floatlabel" stackblitz="floatlabel-demo"></app-demoActions>
 </div>
 
 <div class="content-section implementation">
@@ -13,6 +13,20 @@
                 <span class="p-float-label">
                     <input type="text" id="inputtext" pInputText [(ngModel)]="value1"> 
                     <label for="inputtext">InputText</label>
+                </span>
+            </div>
+            <div class="p-field p-col-12 p-md-4">
+                <span class="p-float-label p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input type="text" id="inputtext-left" pInputText [(ngModel)]="valueIconLeft"> 
+                    <label for="inputtext-left">Left Icon</label>
+                </span>
+            </div>
+            <div class="p-field p-col-12 p-md-4">
+                <span class="p-float-label p-input-icon-right">
+                    <i class="pi pi-spin pi-spinner"></i>
+                    <input type="text" id="inputtext-right" pInputText [(ngModel)]="valueIconRight"> 
+                    <label for="inputtext-right">Right Icon</label>
                 </span>
             </div>
             <div class="p-field p-col-12 p-md-4">
@@ -58,6 +72,13 @@
             </div>
             <div class="p-field p-col-12 p-md-4">
                 <span class="p-float-label">
+                    <p-cascadeSelect inputId="cascadeSelect" [options]="cascadeSelectCountries" optionLabel="cname" optionGroupLabel="name" 
+                        [optionGroupChildren]="['states', 'cities']"></p-cascadeSelect>
+                    <label for="cascadeSelect">CascadeSelect</label>
+                </span>
+            </div>
+            <div class="p-field p-col-12 p-md-4">
+                <span class="p-float-label">
                     <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value8" optionLabel="name"></p-dropdown>
                     <label for="dropdown">Dropdown</label>
                 </span>
@@ -70,8 +91,14 @@
             </div>
             <div class="p-field p-col-12 p-md-4">
                 <span class="p-float-label">
-                    <textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value10" pInputTextarea></textarea>
+                    <textarea inputId="textarea" rows="3" style="resize: none;" cols="30" [(ngModel)]="value10" pInputTextarea></textarea>
                     <label for="textarea">Textarea</label>
+                </span>
+            </div>
+            <div class="p-field p-col-12 p-md-4">
+                <span class="p-float-label">
+                    <p-password inputId="password" [(ngModel)]="value11"></p-password>
+                    <label for="password">Password</label>
                 </span>
             </div>
         </div>
@@ -85,6 +112,9 @@
             <a href="https://github.com/primefaces/primeng/tree/master/src/app/showcase/components/floatlabel" class="btn-viewsource" target="_blank">
                 <span>View on GitHub</span>
             </a>
+            <a href="https://stackblitz.com/edit/primeng-floatlabel-demo" class="btn-viewsource" style="margin-left: .5em;" target="_blank">
+                <span>Edit in StackBlitz</span>
+            </a>
             
 <app-code lang="markup" ngNonBindable ngPreserveWhitespaces>
 &lt;div class="p-fluid p-grid"&gt;
@@ -92,6 +122,20 @@
         &lt;span class="p-float-label"&gt;
             &lt;input type="text" id="inputtext" pInputText [(ngModel)]="value1"&gt; 
             &lt;label for="inputtext"&gt;InputText&lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="p-field p-col-12 p-md-4"&gt;
+        &lt;span class="p-float-label p-input-icon-left"&gt;
+            &lt;i class="pi pi-search"&gt;&lt;/i&gt;
+            &lt;input type="text" id="inputtext-left" pInputText [(ngModel)]="valueIconLeft"&gt; 
+            &lt;label for="inputtext-left"&gt;Left Icon&lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="p-field p-col-12 p-md-4"&gt;
+        &lt;span class="p-float-label p-input-icon-right"&gt;
+            &lt;i class="pi pi-spin pi-spinner"&gt;&lt;/i&gt;
+            &lt;input type="text" id="inputtext-right" pInputText [(ngModel)]="valueIconRight"&gt; 
+            &lt;label for="inputtext-right"&gt;Right Icon&lt;/label&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
@@ -137,6 +181,13 @@
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
         &lt;span class="p-float-label"&gt;
+            &lt;p-cascadeSelect inputId="cascadeSelect" [options]="cascadeSelectCountries" optionLabel="cname" optionGroupLabel="name" 
+                [optionGroupChildren]="['states', 'cities']"&gt;&lt;/p-cascadeSelect&gt;
+            &lt;label for="cascadeSelect"&gt;CascadeSelect&lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="p-field p-col-12 p-md-4"&gt;
+        &lt;span class="p-float-label"&gt;
             &lt;p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" [(ngModel)]="value8" optionLabel="name"&gt;&lt;/p-dropdown&gt;
             &lt;label for="dropdown"&gt;Dropdown&lt;/label&gt;
         &lt;/span&gt;
@@ -149,8 +200,14 @@
     &lt;/div&gt;
     &lt;div class="p-field p-col-12 p-md-4"&gt;
         &lt;span class="p-float-label"&gt;
-            &lt;textarea inputId="textarea" rows="3" cols="30" [(ngModel)]="value10" pInputTextarea&gt;&lt;/textarea&gt;
+            &lt;textarea inputId="textarea" rows="3" style="resize: none;" cols="30" [(ngModel)]="value10" pInputTextarea&gt;&lt;/textarea&gt;
             &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="p-field p-col-12 p-md-4"&gt;
+        &lt;span class="p-float-label"&gt;
+            &lt;p-password inputId="password" [(ngModel)]="value11"&gt;&lt;/p-password&gt;
+            &lt;label for="password"&gt;Password&lt;/label&gt;
         &lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -159,6 +216,8 @@
 export class FloatLabelDemo &#123;
 
     countries: any[];
+
+    cascadeSelectCountries: any[];
 
     cities: any[];
 
@@ -184,6 +243,12 @@ export class FloatLabelDemo &#123;
 
     value10: any;
 
+    value11: any;
+
+    valueIconLeft: any;
+
+    valueIconRight: any;
+
     constructor(private countryService: CountryService) &#123;
         this.cities = [
             &#123;name: 'New York', code: 'NY'&#125;,
@@ -198,6 +263,83 @@ export class FloatLabelDemo &#123;
         this.countryService.getCountries().then(countries =&gt; &#123;
             this.countries = countries;
         &#125;);
+
+        this.cascadeSelectCountries = [
+            &#123;
+                name: 'Australia',
+                code: 'AU',
+                states: [
+                    &#123;
+                        name: 'New South Wales',
+                        cities: [
+                            &#123;cname: 'Sydney', code: 'A-SY'&#125;,
+                            &#123;cname: 'Newcastle', code: 'A-NE'&#125;,
+                            &#123;cname: 'Wollongong', code: 'A-WO'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Queensland',
+                        cities: [
+                            &#123;cname: 'Brisbane', code: 'A-BR'&#125;,
+                            &#123;cname: 'Townsville', code: 'A-TO'&#125;
+                        ]
+                    &#125;,
+                    
+                ]
+            &#125;,
+            &#123;
+                name: 'Canada', 
+                code: 'CA',
+                states: [
+                    &#123;
+                        name: 'Quebec',
+                        cities: [
+                            &#123;cname: 'Montreal', code: 'C-MO'&#125;,
+                            &#123;cname: 'Quebec City', code: 'C-QU'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Ontario',
+                        cities: [
+                            &#123;cname: 'Ottawa', code: 'C-OT'&#125;,
+                            &#123;cname: 'Toronto', code: 'C-TO'&#125;
+                        ]
+                    &#125;,
+                    
+                ]
+            &#125;,
+            &#123;
+                name: 'United States',
+                code: 'US',
+                states: [
+                    &#123;
+                        name: 'California',
+                        cities: [
+                            &#123;cname: 'Los Angeles', code: 'US-LA'&#125;,
+                            &#123;cname: 'San Diego', code: 'US-SD'&#125;,
+                            &#123;cname: 'San Francisco', code: 'US-SF'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Florida',
+                        cities: [
+                            &#123;cname: 'Jacksonville', code: 'US-JA'&#125;,
+                            &#123;cname: 'Miami', code: 'US-MI'&#125;,
+                            &#123;cname: 'Tampa', code: 'US-TA'&#125;,
+                            &#123;cname: 'Orlando', code: 'US-OR'&#125;
+                        ]
+                    &#125;,
+                    &#123;
+                        name: 'Texas',
+                        cities: [
+                            &#123;cname: 'Austin', code: 'US-AU'&#125;,
+                            &#123;cname: 'Dallas', code: 'US-DA'&#125;,
+                            &#123;cname: 'Houston', code: 'US-HO'&#125;
+                        ]
+                    &#125;
+                ]
+            &#125;
+        ];
     &#125;
 
     searchCountry(event) &#123;
@@ -215,6 +357,11 @@ export class FloatLabelDemo &#123;
     &#125;
 &#125;
 </app-code>
+        </p-tabPanel>
+        <p-tabPanel header="StackBlitz">
+            <ng-template pTemplate="content">
+                <iframe src="https://stackblitz.com/edit/primeng-floatlabel-demo?embed=1" style="width: 100%; height: 768px; border: none;"></iframe>
+            </ng-template>
         </p-tabPanel>
     </p-tabView>
 </div>

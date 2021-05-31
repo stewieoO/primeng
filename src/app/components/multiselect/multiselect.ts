@@ -4,7 +4,7 @@ import { trigger,style,transition,animate,AnimationEvent} from '@angular/animati
 import { CommonModule } from '@angular/common';
 import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
 import { ObjectUtils } from 'primeng/utils';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService } from 'primeng/api';
+import { SharedModule, PrimeTemplate, Footer, Header, FilterService, PrimeNGConfig, TranslationKeys } from 'primeng/api';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { TooltipModule } from 'primeng/tooltip';
@@ -112,7 +112,7 @@ export class MultiSelectItem {
                         </div>
                     </div>
                     <div class="p-multiselect-filter-container" *ngIf="filter">
-                        <input #filterInput type="text" role="textbox" [value]="filterValue||''" (input)="onFilter($event)" class="p-multiselect-filter p-inputtext p-component" [disabled]="disabled" [attr.placeholder]="filterPlaceHolder" [attr.aria-label]="ariaFilterLabel">
+                        <input #filterInput type="text" role="textbox" [value]="filterValue||''" (input)="onFilterInputChange($event)" class="p-multiselect-filter p-inputtext p-component" [disabled]="disabled" [attr.placeholder]="filterPlaceHolder" [attr.aria-label]="ariaFilterLabel">
                         <span class="p-multiselect-filter-icon pi pi-search"></span>
                     </div>
                     <button class="p-multiselect-close p-link" type="button" (click)="close($event)" pRipple>
@@ -120,22 +120,47 @@ export class MultiSelectItem {
                     </button>
                 </div>
                 <div class="p-multiselect-items-wrapper" [style.max-height]="virtualScroll ? 'auto' : (scrollHeight||'auto')">
-                    <ul class="p-multiselect-items p-component" role="listbox" aria-multiselectable="true">
-                        <ng-container *ngIf="!virtualScroll; else virtualScrollList">
-                            <ng-template ngFor let-option let-i="index" [ngForOf]="optionsToRender">
-                                <p-multiSelectItem [option]="option" [selected]="isSelected(option)" [label]="getOptionLabel(option)" [disabled]="isOptionDisabled(option)" (onClick)="onOptionClick($event)" (onKeydown)="onOptionKeydown($event)"
-                                        [template]="itemTemplate"></p-multiSelectItem>
+                    <ul class="p-multiselect-items p-component" [ngClass]="{'p-multiselect-virtualscroll': virtualScroll}" role="listbox" aria-multiselectable="true">
+                        <ng-container *ngIf="group">
+                            <ng-template ngFor let-optgroup [ngForOf]="optionsToRender">
+                                <li class="p-multiselect-item-group">
+                                    <span *ngIf="!groupTemplate">{{getOptionGroupLabel(optgroup)||'empty'}}</span>
+                                    <ng-container *ngTemplateOutlet="groupTemplate; context: {$implicit: optgroup}"></ng-container>
+                                </li>
+                                <ng-container *ngTemplateOutlet="itemslist; context: {$implicit: getOptionGroupChildren(optgroup)}"></ng-container>
                             </ng-template>
                         </ng-container>
-                        <ng-template #virtualScrollList>
-                            <cdk-virtual-scroll-viewport #viewport [ngStyle]="{'height': scrollHeight}" [itemSize]="itemSize" *ngIf="virtualScroll && !emptyOptions">
-                                <ng-container *cdkVirtualFor="let option of optionsToRender; let i = index; let c = count; let f = first; let l = last; let e = even; let o = odd">
+                        <ng-container *ngIf="!group">
+                            <ng-container *ngTemplateOutlet="itemslist; context: {$implicit: optionsToRender}"></ng-container>
+                        </ng-container>
+                        <ng-template #itemslist let-optionsToDisplay let-selectedOption="selectedOption">
+                            <ng-container *ngIf="!virtualScroll; else virtualScrollList">
+                                <ng-template ngFor let-option let-i="index" [ngForOf]="optionsToDisplay">
                                     <p-multiSelectItem [option]="option" [selected]="isSelected(option)" [label]="getOptionLabel(option)" [disabled]="isOptionDisabled(option)" (onClick)="onOptionClick($event)" (onKeydown)="onOptionKeydown($event)"
-                                        [template]="itemTemplate" [itemSize]="itemSize"></p-multiSelectItem>
+                                            [template]="itemTemplate"></p-multiSelectItem>
+                                </ng-template>
+                            </ng-container>
+                            <ng-template #virtualScrollList>
+                                <cdk-virtual-scroll-viewport #viewport [ngStyle]="{'height': scrollHeight}" [itemSize]="itemSize" *ngIf="virtualScroll && !emptyOptions">
+                                    <ng-container *cdkVirtualFor="let option of optionsToDisplay; let i = index; let c = count; let f = first; let l = last; let e = even; let o = odd">
+                                        <p-multiSelectItem [option]="option" [selected]="isSelected(option)" [label]="getOptionLabel(option)" [disabled]="isOptionDisabled(option)" (onClick)="onOptionClick($event)" (onKeydown)="onOptionKeydown($event)"
+                                            [template]="itemTemplate" [itemSize]="itemSize"></p-multiSelectItem>
+                                    </ng-container>
+                                </cdk-virtual-scroll-viewport>
+                            </ng-template>
+                            <li *ngIf="hasFilter() && emptyOptions" class="p-multiselect-empty-message">
+                                <ng-container *ngIf="!emptyFilterTemplate && !emptyTemplate; else emptyFilter">
+                                    {{emptyFilterMessageLabel}}
                                 </ng-container>
-                            </cdk-virtual-scroll-viewport>
+                                <ng-container #emptyFilter *ngTemplateOutlet="emptyFilterTemplate || emptyTemplate"></ng-container>
+                            </li>
+                            <li *ngIf="!hasFilter() && emptyOptions" class="p-multiselect-empty-message">
+                                <ng-container *ngIf="!emptyTemplate; else empty">
+                                    {{emptyMessageLabel}}
+                                </ng-container>
+                                <ng-container #empty *ngTemplateOutlet="emptyTemplate"></ng-container>
+                            </li>
                         </ng-template>
-                        <li *ngIf="emptyOptions" class="p-multiselect-empty-message">{{emptyFilterMessage}}</li>
                     </ul>
                 </div>
                 <div class="p-multiselect-footer" *ngIf="footerFacet || footerTemplate">
@@ -158,7 +183,7 @@ export class MultiSelectItem {
     ],
     host: {
         '[class.p-inputwrapper-filled]': 'filled',
-        '[class.p-inputwrapper-focus]': 'focus'
+        '[class.p-inputwrapper-focus]': 'focus || overlayVisible'
     },
     providers: [MULTISELECT_VALUE_ACCESSOR],
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -180,6 +205,8 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
     @Input() disabled: boolean;
 
     @Input() readonly: boolean;
+
+    @Input() group: boolean;
 
     @Input() filter: boolean = true;
 
@@ -205,11 +232,13 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
 
     @Input() selectionLimit: number;
 
-    @Input() selectedItemsLabel: string = '{0} items selected';
+    @Input() selectedItemsLabel: string = 'ellipsis';
 
     @Input() showToggleAll: boolean = true;
 
-    @Input() emptyFilterMessage: string = 'No results found';
+    @Input() emptyFilterMessage: string = '';
+
+    @Input() emptyMessage: string = '';
 
     @Input() resetFilterOnHide: boolean = false;
 
@@ -220,6 +249,10 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
     @Input() optionValue: string;
 
     @Input() optionDisabled: string;
+
+    @Input() optionGroupLabel: string;
+
+    @Input() optionGroupChildren: string = "items";
 
     @Input() showHeader: boolean = true;
 
@@ -267,6 +300,8 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
 
     @Output() onChange: EventEmitter<any> = new EventEmitter();
 
+    @Output() onFilter: EventEmitter<any> = new EventEmitter();
+
     @Output() onFocus: EventEmitter<any> = new EventEmitter();
 
     @Output() onBlur: EventEmitter<any> = new EventEmitter();
@@ -307,6 +342,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
 
     set options(val: any[]) {
         this._options = val;
+        this.updateLabel();
     }
 
     @Input() get filterValue(): string {
@@ -315,7 +351,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
 
     set filterValue(val: string) {
         this._filterValue = val;
-        this.filterOptions();
+        this.activateFilter();
     }
 
     public value: any[];
@@ -342,9 +378,15 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
 
     public itemTemplate: TemplateRef<any>;
 
+    public groupTemplate: TemplateRef<any>;
+
     public headerTemplate: TemplateRef<any>;
 
     public footerTemplate: TemplateRef<any>;
+
+    public emptyFilterTemplate: TemplateRef<any>;
+
+    public emptyTemplate: TemplateRef<any>;
 
     public selectedItemsTemplate: TemplateRef<any>;
 
@@ -360,7 +402,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
 
     preventModelTouched: boolean;
 
-    constructor(public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public filterService: FilterService) {}
+    constructor(public el: ElementRef, public renderer: Renderer2, public cd: ChangeDetectorRef, public filterService: FilterService, public config: PrimeNGConfig) {}
 
     ngOnInit() {
         this.updateLabel();
@@ -373,12 +415,24 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
                     this.itemTemplate = item.template;
                 break;
 
+                case 'group':
+                    this.groupTemplate = item.template;
+                break;
+
                 case 'selectedItems':
                     this.selectedItemsTemplate = item.template;
                 break;
 
                 case 'header':
                     this.headerTemplate = item.template;
+                break;
+
+                case 'emptyfilter':
+                    this.emptyFilterTemplate = item.template;
+                break;
+
+                case 'empty':
+                    this.emptyTemplate = item.template;
                 break;
 
                 case 'footer':
@@ -411,7 +465,15 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
     }
 
     getOptionValue(option: any) {
-        return this.optionValue ? ObjectUtils.resolveFieldData(option, this.optionValue) : (this.optionLabel ? option : option.value);
+        return this.optionValue ? ObjectUtils.resolveFieldData(option, this.optionValue) : (this.optionLabel || option.value === undefined ? option : option.value);
+    }
+
+    getOptionGroupLabel(optionGroup: any) {
+        return this.optionGroupLabel ? ObjectUtils.resolveFieldData(optionGroup, this.optionGroupLabel) : (optionGroup.label != undefined ? optionGroup.label : optionGroup);
+    }
+
+    getOptionGroupChildren(optionGroup: any) {
+        return this.optionGroupChildren ? ObjectUtils.resolveFieldData(optionGroup, this.optionGroupChildren) : optionGroup.items;
     }
 
     isOptionDisabled(option: any) {
@@ -541,9 +603,23 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
         let val: any[] = [];
 
         optionsToRender.forEach(opt => {
-            let optionDisabled = this.isOptionDisabled(opt); 
-            if (!optionDisabled || (optionDisabled && this.isSelected(opt))) {
-                val.push(this.getOptionValue(opt));
+            if (!this.group) {
+                let optionDisabled = this.isOptionDisabled(opt); 
+                if (!optionDisabled || (optionDisabled && this.isSelected(opt))) {
+                    val.push(this.getOptionValue(opt));
+                }
+            }
+            else {
+                let subOptions = this.getOptionGroupChildren(opt);
+
+                if (subOptions) {
+                    subOptions.forEach(option => {
+                        let optionDisabled = this.isOptionDisabled(option); 
+                        if (!optionDisabled || (optionDisabled && this.isSelected(option))) {
+                            val.push(this.getOptionValue(option));
+                        }
+                    });
+                }
             }
         });
 
@@ -555,9 +631,21 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
         let val: any[] = [];
 
         optionsToRender.forEach(opt => {
-            let optionDisabled = this.isOptionDisabled(opt); 
-            if (optionDisabled && this.isSelected(opt)) {
-                val.push(this.getOptionValue(opt));
+            if (!this.group) {
+                let optionDisabled = this.isOptionDisabled(opt); 
+                if (optionDisabled && this.isSelected(opt)) {
+                    val.push(this.getOptionValue(opt));
+                }
+            }
+            else {
+                if (opt.items) {
+                    opt.items.forEach(option => {
+                        let optionDisabled = this.isOptionDisabled(option); 
+                        if (optionDisabled && this.isSelected(option)) {
+                            val.push(this.getOptionValue(option));
+                        }
+                    });
+                }
             }
         });
 
@@ -735,7 +823,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
         let nextItem = item.nextElementSibling;
 
         if (nextItem)
-            return DomHandler.hasClass(nextItem.children[0], 'p-disabled') || DomHandler.isHidden(nextItem.children[0]) ? this.findNextItem(nextItem) : nextItem.children[0];
+            return DomHandler.hasClass(nextItem.children[0], 'p-disabled') || DomHandler.isHidden(nextItem.children[0]) || DomHandler.hasClass(nextItem, 'p-multiselect-item-group') ? this.findNextItem(nextItem) : nextItem.children[0];
         else
             return null;
     }
@@ -744,7 +832,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
         let prevItem = item.previousElementSibling;
 
         if (prevItem)
-            return DomHandler.hasClass(prevItem.children[0], 'p-disabled') || DomHandler.isHidden(prevItem.children[0]) ? this.findPrevItem(prevItem) : prevItem.children[0];
+            return DomHandler.hasClass(prevItem.children[0], 'p-disabled') || DomHandler.isHidden(prevItem.children[0]) || DomHandler.hasClass(prevItem, 'p-multiselect-item-group') ? this.findPrevItem(prevItem) : prevItem.children[0];
         else
             return null;
     }
@@ -787,7 +875,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
                 }
             }
 
-            if (this.value.length <= this.maxSelectedLabels) {
+            if (this.value.length <= this.maxSelectedLabels || this.selectedItemsLabel === 'ellipsis') {
                 this.valuesAsString = label;
             }
             else {
@@ -805,9 +893,32 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
     }
 
     findLabelByValue(val: any): string {
+        if (this.group) {
+            let label = null;
+
+            for (let i = 0; i < this.options.length; i++) {
+                let subOptions = this.getOptionGroupChildren(this.options[i]);
+                if (subOptions) {
+                    label = this.searchLabelByValue(val, subOptions);
+
+                    if (label) {
+                        break;
+                    }
+                }
+            }
+
+            return label;
+        }
+        else {
+            return this.searchLabelByValue(val, this.options)
+        }
+    }
+
+    searchLabelByValue(val: any, options: any[]): string {
         let label = null;
-        for (let i = 0; i < this.options.length; i++) {
-            let option = this.options[i];
+
+        for (let i = 0; i < options.length; i++) {
+            let option = options[i];
             let optionValue = this.getOptionValue(option);
 
             if (val == null && optionValue == null || ObjectUtils.equals(val, optionValue, this.dataKey)) {
@@ -815,6 +926,7 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
                 break;
             }
         }
+
         return label;
     }
 
@@ -827,28 +939,53 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
             let selectedDisabledItemsLength = 0;
             let unselectedDisabledItemsLength = 0;
             let selectedEnabledItemsLength = 0;
-
+            let visibleOptionsLength = this.group ? 0 : this.optionsToRender.length;
+            
             for (let option of optionsToRender) {
-                let disabled = this.isOptionDisabled(option);
-                let selected = this.isSelected(option);
-
-                if (disabled) {
-                    if (selected)
-                        selectedDisabledItemsLength++;
-                    else 
-                        unselectedDisabledItemsLength++;
+                if (!this.group) {
+                    let disabled = this.isOptionDisabled(option);
+                    let selected = this.isSelected(option);
+    
+                    if (disabled) {
+                        if (selected)
+                            selectedDisabledItemsLength++;
+                        else 
+                            unselectedDisabledItemsLength++;
+                    }
+                    else {
+                        if (selected)
+                            selectedEnabledItemsLength++;
+                        else
+                            return false;
+                    }
                 }
                 else {
-                    if (selected)
-                        selectedEnabledItemsLength++;
-                    else
-                        return false;
+                    for (let opt of this.getOptionGroupChildren(option)) {
+                        let disabled = this.isOptionDisabled(opt);
+                        let selected = this.isSelected(opt);
+        
+                        if (disabled) {
+                            if (selected)
+                                selectedDisabledItemsLength++;
+                            else 
+                                unselectedDisabledItemsLength++;
+                        }
+                        else {
+                            if (selected)
+                                selectedEnabledItemsLength++;
+                            else {
+                                return false;
+                            }
+                        }
+
+                        visibleOptionsLength++;
+                    }
                 }
             }
 
-            return (optionsToRender.length === selectedDisabledItemsLength 
-                    || optionsToRender.length === selectedEnabledItemsLength 
-                    || selectedEnabledItemsLength && optionsToRender.length === (selectedEnabledItemsLength + unselectedDisabledItemsLength + selectedDisabledItemsLength));
+            return (visibleOptionsLength === selectedDisabledItemsLength 
+                    || visibleOptionsLength === selectedEnabledItemsLength 
+                    || selectedEnabledItemsLength && visibleOptionsLength === (selectedEnabledItemsLength + unselectedDisabledItemsLength + selectedDisabledItemsLength));
         }
     }
 
@@ -861,19 +998,43 @@ export class MultiSelect implements OnInit,AfterViewInit,AfterContentInit,AfterV
         return !optionsToRender || optionsToRender.length === 0;
     }
 
+    get emptyMessageLabel(): string {
+        return this.emptyMessage || this.config.getTranslation(TranslationKeys.EMPTY_MESSAGE);
+    }
+
+    get emptyFilterMessageLabel(): string {
+        return this.emptyFilterMessage || this.config.getTranslation(TranslationKeys.EMPTY_FILTER_MESSAGE);
+    }
+
     hasFilter() {
         return this._filterValue && this._filterValue.trim().length > 0; 
     }
 
-    onFilter(event: KeyboardEvent) {
+    onFilterInputChange(event: KeyboardEvent) {
         this._filterValue = (<HTMLInputElement> event.target).value;
-        this.filterOptions();
+        this.activateFilter();
+        this.onFilter.emit({originalEvent: event, filter: this._filterValue});
     }
 
-    filterOptions() {
+    activateFilter() {
         if (this.hasFilter() && this._options) {
             let searchFields: string[] = (this.filterBy || this.optionLabel || 'label').split(',');
-            this._filteredOptions = this.filterService.filter(this.options, searchFields, this._filterValue, this.filterMatchMode, this.filterLocale);        
+            if (this.group) {
+                let searchFields: string[] = (this.optionLabel || 'label').split(',');
+
+                let filteredGroups = [];
+                for (let optgroup of this.options) {
+                    let filteredSubOptions = this.filterService.filter(this.getOptionGroupChildren(optgroup), searchFields, this.filterValue, this.filterMatchMode, this.filterLocale);
+                    if (filteredSubOptions && filteredSubOptions.length) {
+                        filteredGroups.push({...optgroup, ...{[this.optionGroupChildren]: filteredSubOptions}});
+                    }
+                }
+
+                this._filteredOptions = filteredGroups;
+            }
+            else {
+                this._filteredOptions = this.filterService.filter(this.options, searchFields, this._filterValue, this.filterMatchMode, this.filterLocale);        
+            }
         }
         else {
             this._filteredOptions = null;

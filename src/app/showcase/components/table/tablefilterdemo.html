@@ -3,6 +3,7 @@
         <h1>Table <span>Filter</span></h1>
         <p>Filtering feature provides advanced and flexible options to query the data. Tip: Visit the <a [routerLink]="['/filterservice']">FilterService</a> for a custom filtering example.</p>
     </div>
+    <app-demoActions github="table" stackblitz="tablefilter-demo"></app-demoActions>
 </div>
 
 <div class="content-section implementation">
@@ -15,6 +16,7 @@
             [globalFilterFields]="['name','country.name','representative.name','status']">
             <ng-template pTemplate="caption">
                 <div class="p-d-flex">
+                    <button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash" (click)="clear(dt1)"></button>
                     <span class="p-input-icon-left p-ml-auto">
                         <i class="pi pi-search"></i>
                         <input pInputText type="text" (input)="dt1.filterGlobal($event.target.value, 'contains')" placeholder="Search keyword" />
@@ -252,6 +254,7 @@
         [globalFilterFields]="['name','country.name','representative.name','status']"&gt;
         &lt;ng-template pTemplate="caption"&gt;
             &lt;div class="p-d-flex"&gt;
+                &lt;button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash" (click)="clear(dt1)"&gt;&lt;/button&gt;
                 &lt;span class="p-input-icon-left p-ml-auto"&gt;
                     &lt;i class="pi pi-search"&gt;&lt;/i&gt;
                     &lt;input pInputText type="text" (input)="dt1.filterGlobal($event.target.value, 'contains')" placeholder="Search keyword" /&gt;
@@ -522,6 +525,10 @@ export class TableFilterDemo implements OnInit &#123;
             &#123;label: 'Renewal', value: 'renewal'&#125;,
             &#123;label: 'Proposal', value: 'proposal'&#125;
         ]
+    &#125;
+
+    clear(table: Table) &#123;
+        table.clear();
     &#125;
 
 &#125;

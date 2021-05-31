@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ButtonModule } from 'primeng/button';
 import { TooltipModule } from 'primeng/tooltip';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 import { InputSwitchModule } from 'primeng/inputswitch';
 
 import { CarService } from './service/carservice';
@@ -30,6 +31,7 @@ import { AppMenuComponent } from './app.menu.component';
 import { AppConfigComponent } from './app.config.component';
 import { AppFooterComponent } from './app.footer.component';
 import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
+import { AppDemoActionsModule } from './app.demoactions.component';
 
 @NgModule({
     declarations: [
@@ -47,11 +49,13 @@ import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
         AppRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
+        AutoCompleteModule,
         ButtonModule,
         RadioButtonModule,
         InputSwitchModule,
         TooltipModule,
-        AppInputStyleSwitchModule
+        AppInputStyleSwitchModule,
+        AppDemoActionsModule,
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

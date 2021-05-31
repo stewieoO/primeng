@@ -7,6 +7,7 @@ import {RippleModule} from 'primeng/ripple';
 import {DomHandler, ConnectedOverlayScrollHandler} from 'primeng/dom';
 import {SharedModule,PrimeTemplate,PrimeNGConfig,TranslationKeys} from 'primeng/api';
 import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms';
+import {Subscription} from 'rxjs';
 
 export const CALENDAR_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -30,7 +31,7 @@ export interface LocaleSettings {
 @Component({
     selector: 'p-calendar',
     template:  `
-        <span #container [ngClass]="{'p-calendar':true, 'p-calendar-w-btn': showIcon, 'p-calendar-timeonly': timeOnly, 'p-focus': focus}" [ngStyle]="style" [class]="styleClass">
+        <span #container [ngClass]="{'p-calendar':true, 'p-calendar-w-btn': showIcon, 'p-calendar-timeonly': timeOnly, 'p-calendar-disabled':disabled, 'p-focus': focus}" [ngStyle]="style" [class]="styleClass">
             <ng-template [ngIf]="!inline">
                 <input #inputfield type="text" [attr.id]="inputId" [attr.name]="name" [attr.required]="required" [attr.aria-required]="required" [value]="inputFieldValue" (focus)="onInputFocus($event)" (keydown)="onInputKeydown($event)" (click)="onInputClick()" (blur)="onInputBlur($event)"
                     [readonly]="readonlyInput" (input)="onUserInput($event)" [ngStyle]="inputStyle" [class]="inputStyleClass" [placeholder]="placeholder||''" [disabled]="disabled" [attr.tabindex]="tabindex" [attr.inputmode]="touchUI ? 'off' : null"
@@ -81,7 +82,7 @@ export interface LocaleSettings {
                                     <tbody>
                                         <tr *ngFor="let week of month.dates; let j = index;">
                                             <td *ngIf="showWeek" class="p-datepicker-weeknumber">
-                                                <span>
+                                                <span class="p-disabled">
                                                     {{month.weekNumbers[j]}}
                                                 </span>
                                             </td>
@@ -108,11 +109,11 @@ export interface LocaleSettings {
                 </ng-container>
                 <div class="p-timepicker" *ngIf="showTime||timeOnly">
                     <div class="p-hour-picker">
-                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="incrementHour($event)" (mousedown)="onTimePickerElementMouseDown($event, 0, 1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseout)="onTimePickerElementMouseOut($event)" pRipple>
+                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="incrementHour($event)" (mousedown)="onTimePickerElementMouseDown($event, 0, 1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseleave)="onTimePickerElementMouseLeave()" pRipple>
                             <span class="pi pi-chevron-up"></span>
                         </button>
                         <span><ng-container *ngIf="currentHour < 10">0</ng-container>{{currentHour}}</span>
-                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="decrementHour($event)" (mousedown)="onTimePickerElementMouseDown($event, 0, -1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseout)="onTimePickerElementMouseOut($event)" pRipple>
+                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="decrementHour($event)" (mousedown)="onTimePickerElementMouseDown($event, 0, -1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseleave)="onTimePickerElementMouseLeave()" pRipple>
                             <span class="pi pi-chevron-down"></span>
                         </button>
                     </div>
@@ -120,11 +121,11 @@ export interface LocaleSettings {
                         <span>{{timeSeparator}}</span>
                     </div>
                     <div class="p-minute-picker">
-                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="incrementMinute($event)" (mousedown)="onTimePickerElementMouseDown($event, 1, 1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseout)="onTimePickerElementMouseOut($event)" pRipple>
+                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="incrementMinute($event)" (mousedown)="onTimePickerElementMouseDown($event, 1, 1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseleave)="onTimePickerElementMouseLeave()" pRipple>
                             <span class="pi pi-chevron-up"></span>
                         </button>
                         <span><ng-container *ngIf="currentMinute < 10">0</ng-container>{{currentMinute}}</span>
-                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="decrementMinute($event)" (mousedown)="onTimePickerElementMouseDown($event, 1, -1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseout)="onTimePickerElementMouseOut($event)" pRipple>
+                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="decrementMinute($event)" (mousedown)="onTimePickerElementMouseDown($event, 1, -1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseleave)="onTimePickerElementMouseLeave()" pRipple>
                             <span class="pi pi-chevron-down"></span>
                         </button>
                     </div>
@@ -132,11 +133,11 @@ export interface LocaleSettings {
                         <span>{{timeSeparator}}</span>
                     </div>
                     <div class="p-second-picker" *ngIf="showSeconds">
-                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="incrementSecond($event)" (mousedown)="onTimePickerElementMouseDown($event, 2, 1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseout)="onTimePickerElementMouseOut($event)" pRipple>
+                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="incrementSecond($event)" (mousedown)="onTimePickerElementMouseDown($event, 2, 1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseleave)="onTimePickerElementMouseLeave()" pRipple>
                             <span class="pi pi-chevron-up"></span>
                         </button>
                         <span><ng-container *ngIf="currentSecond < 10">0</ng-container>{{currentSecond}}</span>
-                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="decrementSecond($event)" (mousedown)="onTimePickerElementMouseDown($event, 2, -1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseout)="onTimePickerElementMouseOut($event)" pRipple>
+                        <button class="p-link" type="button" (keydown)="onContainerButtonKeydown($event)" (keydown.enter)="decrementSecond($event)" (mousedown)="onTimePickerElementMouseDown($event, 2, -1)" (mouseup)="onTimePickerElementMouseUp($event)" (mouseleave)="onTimePickerElementMouseLeave()" pRipple>
                             <span class="pi pi-chevron-down"></span>
                         </button>
                     </div>
@@ -434,6 +435,8 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
 
     initialized: boolean;
 
+    translationSubscription: Subscription;
+
     _locale: LocaleSettings;
 
     @Input() get defaultDate(): Date {
@@ -453,7 +456,6 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
     }
 
     _defaultDate: Date;
-
 
     @Input() get minDate(): Date {
         return this._minDate;
@@ -557,6 +559,10 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
         else if (this.view === 'month') {
             this.createMonthPickerValues();
         }
+
+        this.translationSubscription = this.config.translationObserver.subscribe(() => {
+            this.createWeekDays();
+        });
 
         this.initialized = true;
     }
@@ -1264,6 +1270,12 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
                 event.preventDefault();
             }
         }
+        else if (event.keyCode === 13) {
+            if (this.overlayVisible) {
+                this.overlayVisible = false;
+                event.preventDefault();
+            }
+        }
         else if (event.keyCode === 9 && this.contentViewChild) {
             DomHandler.getFocusableElements(this.contentViewChild.nativeElement).forEach(el => el.tabIndex = '-1');
             if (this.overlayVisible) {
@@ -1702,7 +1714,7 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
         }
     }
 
-    onTimePickerElementMouseOut(event: Event) {
+    onTimePickerElementMouseLeave() {
         if (!this.disabled && this.timePickerTimer) {
             this.clearTimePickerTimer();
             this.updateTime();
@@ -1747,6 +1759,7 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
     clearTimePickerTimer() {
         if (this.timePickerTimer) {
             clearTimeout(this.timePickerTimer);
+            this.timePickerTimer = null;
         }
     }
 
@@ -2571,6 +2584,10 @@ export class Calendar implements OnInit,OnDestroy,ControlValueAccessor {
         if (this.scrollHandler) {
             this.scrollHandler.destroy();
             this.scrollHandler = null;
+        }
+
+        if (this.translationSubscription) {
+            this.translationSubscription.unsubscribe();
         }
 
         this.clearTimePickerTimer();

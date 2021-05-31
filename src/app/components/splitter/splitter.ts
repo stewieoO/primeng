@@ -1,17 +1,18 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, ContentChildren, QueryList, ElementRef, ChangeDetectorRef, TemplateRef, ViewChild, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomHandler } from 'primeng/dom';
+import { PrimeTemplate, SharedModule } from 'primeng/api';
 
 @Component({
     selector: 'p-splitter',
     template: `
         <div #container [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">
             <ng-template ngFor let-panel let-i="index" [ngForOf]="panels">
-                <div [ngClass]="panelContainerClass()" [class]="panelStyleClass">
+                <div [ngClass]="panelContainerClass()" [class]="panelStyleClass" [ngStyle]="panelStyle">
                     <ng-container *ngTemplateOutlet="panel"></ng-container>
                 </div>
                 <div class="p-splitter-gutter" *ngIf="i !== (panels.length - 1)" [ngStyle]="gutterStyle()" 
-                    (mousedown)="onGutterMouseDown($event, i)" (touchstart)="onGutterTouchStart($event, i)" (touchmove)="onGutterTouchMove($event, i)" (touchend)="onGutterTouchEnd($event, i)">
+                    (mousedown)="onGutterMouseDown($event, i)" (touchstart)="onGutterTouchStart($event, i)">
                     <div class="p-splitter-gutter-handle"></div>
                 </div>
             </ng-template>
@@ -32,6 +33,8 @@ export class Splitter {
 
     @Input() style: any;
 
+    @Input() panelStyle: any;
+
     @Input() stateStorage: string = "session";
 
     @Input() stateKey: string = null;
@@ -46,17 +49,23 @@ export class Splitter {
 
     @Output() onResizeEnd: EventEmitter<any> = new EventEmitter();
 
-    @ContentChildren(TemplateRef) panels: QueryList<any>;
+    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
     
     @ViewChild('container', { static: false }) containerViewChild: ElementRef;
 
     nested = false;
+
+    panels = [];
 
     dragging = false;
 
     mouseMoveListener = null;
 
     mouseUpListener = null;
+
+    touchMoveListener = null;
+
+    touchEndListener = null;
 
     size = null;
 
@@ -80,6 +89,19 @@ export class Splitter {
 
     ngOnInit() {
         this.nested = this.isNested();
+    }
+
+    ngAfterContentInit() {
+        this.templates.forEach((item) => {
+            switch(item.getType()) {
+                case 'panel':
+                    this.panels.push(item.template);
+                break;
+                default: 
+                    this.panels.push(item.template);
+                break;
+            }
+        })
     }
 
     ngAfterViewInit() {
@@ -109,7 +131,7 @@ export class Splitter {
         this.gutterElement = event.currentTarget;
         this.size = this.horizontal() ? DomHandler.getWidth(this.containerViewChild.nativeElement) : DomHandler.getHeight(this.containerViewChild.nativeElement);
         this.dragging = true;
-        this.startPos = this.horizontal() ? event.pageX : event.pageY;
+        this.startPos = this.horizontal() ? (event.pageX || event.changedTouches[0].pageX) : (event.pageY || event.changedTouches[0].pageY);
         this.prevPanelElement = this.gutterElement.previousElementSibling;
         this.nextPanelElement = this.gutterElement.nextElementSibling;
         this.prevPanelSize = 100 * (this.horizontal() ? DomHandler.getOuterWidth(this.prevPanelElement, true): DomHandler.getOuterHeight(this.prevPanelElement, true)) / this.size;
@@ -122,9 +144,9 @@ export class Splitter {
     onResize(event) {
         let newPos;
         if (this.horizontal())
-            newPos = (event.pageX * 100 / this.size) - (this.startPos * 100 / this.size);
+            newPos = ((event.pageX || event.changedTouches[0].pageX)  * 100 / this.size) - (this.startPos * 100 / this.size);
         else
-            newPos = (event.pageY * 100 / this.size) - (this.startPos * 100 / this.size);
+            newPos = ((event.pageY || event.changedTouches[0].pageY)  * 100 / this.size) - (this.startPos * 100 / this.size);
 
         let newPrevPanelSize = this.prevPanelSize + newPos;
         let newNextPanelSize = this.nextPanelSize - newPos;
@@ -154,18 +176,20 @@ export class Splitter {
     }
 
     onGutterTouchStart(event, index) {
-        this.onResizeStart(event, index);
-        event.preventDefault();
-    }
+        if (event.cancelable){
+            this.onResizeStart(event, index);
+            this.bindTouchListeners();
 
-    onGutterTouchMove(event) {
-        this.onResize(event);
-        event.preventDefault();
+            event.preventDefault();
+        }
     }
 
     onGutterTouchEnd(event) {
         this.resizeEnd(event);
-        event.preventDefault();
+        this.unbindTouchListeners();
+        
+        if (event.cancelable)
+            event.preventDefault();
     }
 
     validateResize(newPrevPanelSize, newNextPanelSize) {
@@ -195,6 +219,21 @@ export class Splitter {
         }
     }
 
+    bindTouchListeners() {
+        if (!this.touchMoveListener) {
+            this.touchMoveListener = event => this.onResize(event)
+            document.addEventListener('touchmove', this.touchMoveListener);
+        }
+
+        if (!this.touchEndListener) {
+            this.touchEndListener = event => {
+                this.resizeEnd(event);
+                this.unbindTouchListeners();
+            }
+            document.addEventListener('touchend', this.touchEndListener);
+        }
+    }
+
     unbindMouseListeners() {
         if (this.mouseMoveListener) {
             document.removeEventListener('mousemove', this.mouseMoveListener);
@@ -204,6 +243,18 @@ export class Splitter {
         if (this.mouseUpListener) {
             document.removeEventListener('mouseup', this.mouseUpListener);
             this.mouseUpListener = null;
+        }
+    }
+
+    unbindTouchListeners() {
+        if (this.touchMoveListener) {
+            document.removeEventListener('touchmove', this.touchMoveListener);
+            this.touchMoveListener = null;
+        }
+
+        if (this.touchEndListener) {
+            document.removeEventListener('touchend', this.touchEndListener);
+            this.touchEndListener = null;
         }
     }
 
@@ -300,7 +351,7 @@ export class Splitter {
 
 @NgModule({
     imports: [CommonModule],
-    exports: [Splitter],
+    exports: [Splitter, SharedModule],
     declarations: [Splitter]
 })
 export class SplitterModule { }
