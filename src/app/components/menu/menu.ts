@@ -30,7 +30,7 @@ import { RippleModule } from 'primeng/ripple';
       <span class="p-menuitem-icon" *ngIf="item.icon" [ngClass]="item.icon"></span>
       <span class="p-menuitem-text" *ngIf="item.escape !== false; else htmlLabel"
             [class.p-overlay-badge]="item.badge">{{item.label}}
-        <span id="pr_id_1_badge" *ngIf="item.badge"
+        <span *ngIf="item.badge"
               class="p-badge p-component p-badge-no-gutter {{item.badgeStyleClass}}">{{item.badge}}</span>
       </span>
       <ng-template #htmlLabel><span class="p-menuitem-text" [innerHTML]="item.label"></span></ng-template>
@@ -45,7 +45,7 @@ import { RippleModule } from 'primeng/ripple';
       <span class="p-menuitem-icon" *ngIf="item.icon" [ngClass]="item.icon"></span>
       <span class="p-menuitem-text" *ngIf="item.escape !== false; else htmlRouteLabel"
             [class.p-overlay-badge]="item.badge">{{item.label}}
-        <span id="pr_id_1_badge" *ngIf="item.badge"
+        <span *ngIf="item.badge"
               class="p-badge p-component p-badge-no-gutter {{item.badgeStyleClass}}">{{item.badge}}</span>
       </span>
       <ng-template #htmlRouteLabel><span class="p-menuitem-text" [innerHTML]="item.label"></span></ng-template>
