@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'command-doc',

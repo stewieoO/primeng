@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'position-doc',
@@ -41,16 +41,16 @@ export class PositionDoc {
 <p-toast position="bottom-left" key="bl" />
 <p-toast position="bottom-right" key="br" />
 
-<p-button 
-    (onClick)="showTopLeft()" 
+<p-button
+    (onClick)="showTopLeft()"
     label="Top Left" />
-<p-button 
-    (onClick)="showBottomLeft()" 
-    label="Bottom Left" 
+<p-button
+    (onClick)="showBottomLeft()"
+    label="Bottom Left"
     severity="warning" />
-<p-button 
-    (onClick)="showBottomRight()" 
-    label="Bottom Right" 
+<p-button
+    (onClick)="showBottomRight()"
+    label="Bottom Right"
     severity="help" />`,
 
         html: `<div class="card flex justify-content-center gap-2">
@@ -58,16 +58,16 @@ export class PositionDoc {
     <p-toast position="bottom-left" key="bl" />
     <p-toast position="bottom-right" key="br" />
 
-    <p-button 
-        (onClick)="showTopLeft()" 
+    <p-button
+        (onClick)="showTopLeft()"
         label="Top Left" />
-    <p-button 
-        (onClick)="showBottomLeft()" 
-        label="Bottom Left" 
+    <p-button
+        (onClick)="showBottomLeft()"
+        label="Bottom Left"
         severity="warning" />
-    <p-button 
-        (onClick)="showBottomRight()" 
-        label="Bottom Right" 
+    <p-button
+        (onClick)="showBottomRight()"
+        label="Bottom Right"
         severity="help" />
 </div>`,
 

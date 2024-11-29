@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'context-menu-basic-demo',
@@ -26,20 +26,20 @@ export class BasicDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<img 
-    #img 
-    src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg" 
-    alt="Logo" 
-    aria-haspopup="true" 
+        basic: `<img
+    #img
+    src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg"
+    alt="Logo"
+    aria-haspopup="true"
     class="max-w-full" />
 <p-contextMenu [target]="img" [model]="items" />`,
 
         html: `<div class="card flex justify-content-center">
-    <img 
-        #img 
-        src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg" 
+    <img
+        #img
+        src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg"
         alt="Logo"
-        aria-haspopup="true" 
+        aria-haspopup="true"
         class="max-w-full" />
     <p-contextMenu [target]="img" [model]="items" />
 </div>`,

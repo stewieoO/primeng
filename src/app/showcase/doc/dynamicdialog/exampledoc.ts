@@ -1,9 +1,9 @@
 import { Component, OnDestroy } from '@angular/core';
+import { Code } from '@domain/code';
 import { MessageService } from 'primeng/api';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
-import { Code } from '@domain/code';
-import { ProductListDemo } from './productlistdemo';
 import { Footer } from './footer';
+import { ProductListDemo } from './productlistdemo';
 
 @Component({
     selector: 'dynamic-dialog-example-demo',

@@ -1,5 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { DataView } from './dataview';
+
 /**
  * State of the paginator.
  * @group Interface

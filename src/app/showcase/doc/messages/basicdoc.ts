@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from 'primeng/api';
 import { Code } from '@domain/code';
+import { Message } from 'primeng/api';
 
 @Component({
     selector: 'basic-doc',
@@ -25,14 +25,14 @@ export class BasicDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-messages 
-    [(value)]="messages" 
-    [enableService]="false" 
+        basic: `<p-messages
+    [(value)]="messages"
+    [enableService]="false"
     [closable]="false" />`,
         html: `<div class="card">
-    <p-messages 
-        [(value)]="messages" 
-        [enableService]="false" 
+    <p-messages
+        [(value)]="messages"
+        [enableService]="false"
         [closable]="false" />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';

@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { ProgressBar } from './progressbar';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ProgressBar } from './progressbar';
 
 describe('ProgressBar', () => {
     let progressbar: ProgressBar;

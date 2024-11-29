@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { Code } from '@domain/code';
 import { Router } from '@angular/router';
+import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'router-doc',

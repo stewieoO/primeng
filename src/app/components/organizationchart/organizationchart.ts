@@ -2,12 +2,14 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
     ContentChildren,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
@@ -15,9 +17,7 @@ import {
     Output,
     QueryList,
     TemplateRef,
-    ViewEncapsulation,
-    booleanAttribute,
-    forwardRef
+    ViewEncapsulation
 } from '@angular/core';
 import { PrimeTemplate, SharedModule, TreeNode } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
@@ -26,6 +26,7 @@ import { ChevronUpIcon } from 'primeng/icons/chevronup';
 import { Nullable } from 'primeng/ts-helpers';
 import { Subject, Subscription } from 'rxjs';
 import { OrganizationChartNodeCollapseEvent, OrganizationChartNodeExpandEvent, OrganizationChartNodeSelectEvent, OrganizationChartNodeUnSelectEvent } from './organizationchart.interface';
+
 @Component({
     selector: '[pOrganizationChartNode]',
     template: `

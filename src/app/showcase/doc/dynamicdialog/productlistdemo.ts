@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { InfoDemo } from './infodemo';
+
 @Component({
     template: ` <div class="flex justify-content-end mt-1 mb-3">
             <p-button icon="pi pi-external-link" label="Nested Dialog" [outlined]="true" severity="success" (onClick)="showInfo()" />

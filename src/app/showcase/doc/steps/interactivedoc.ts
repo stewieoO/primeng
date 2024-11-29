@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'interactive-doc',
@@ -50,18 +50,18 @@ export class InteractiveDoc implements OnInit {
 
     code: Code = {
         basic: `<p-toast />
-<p-steps 
-    [model]="items" 
-    [readonly]="false" 
-    [activeIndex]="activeIndex" 
+<p-steps
+    [model]="items"
+    [readonly]="false"
+    [activeIndex]="activeIndex"
     (activeIndexChange)="onActiveIndexChange($event)" />`,
 
         html: `<div class="card">
     <p-toast />
-    <p-steps 
-        [model]="items" 
-        [readonly]="false" 
-        [activeIndex]="activeIndex" 
+    <p-steps
+        [model]="items"
+        [readonly]="false"
+        [activeIndex]="activeIndex"
         (activeIndexChange)="onActiveIndexChange($event)" />
 </div>`,
 

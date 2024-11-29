@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ScrollerOptions, SelectItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { ScrollerOptions, SelectItem } from 'primeng/api';
 
 @Component({
     selector: 'dropdown-lazy-virtualscroll-demo',
@@ -58,16 +58,16 @@ export class LazyVirtualScrollDoc {
     }
 
     code: Code = {
-        basic: `<p-dropdown 
-    [options]="items" 
-    [(ngModel)]="selectedItem" 
-    placeholder="Select Item" 
-    [virtualScroll]="true" 
-    [virtualScrollItemSize]="38" 
+        basic: `<p-dropdown
+    [options]="items"
+    [(ngModel)]="selectedItem"
+    placeholder="Select Item"
+    [virtualScroll]="true"
+    [virtualScrollItemSize]="38"
     [virtualScrollOptions]="options" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-dropdown 
+    <p-dropdown
         [options]="items"
         [(ngModel)]="selectedItem"
         placeholder="Select Item"

@@ -1,16 +1,19 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
     ContentChildren,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Injector,
     Input,
     NgModule,
+    numberAttribute,
     OnChanges,
     OnInit,
     Output,
@@ -18,10 +21,7 @@ import {
     SimpleChanges,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    forwardRef,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
 import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';

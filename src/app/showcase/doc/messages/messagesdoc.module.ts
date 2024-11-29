@@ -1,26 +1,26 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { MessagesModule } from 'primeng/messages';
-import { MessageModule } from 'primeng/message';
-import { AppDocModule } from '@layout/doc/app.doc.module';
+import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
-import { ImportDoc } from './importdoc';
-import { BasicDoc } from './basicdoc';
-import { MessagesStyleDoc } from './messagesstyledoc';
-import { MessageStyleDoc } from './messagestyledoc';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { AvatarModule } from 'primeng/avatar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-import { SeverityDoc } from './severitydoc';
-import { ClosableDoc } from './closabledoc';
-import { StaticDoc } from './staticdoc';
-import { DynamicDoc } from './dynamicdoc';
-import { ServiceDoc } from './servicedoc';
-import { InlineDoc } from './inlinedoc';
-import { AnimationDoc } from './animationdoc';
+import { MessageModule } from 'primeng/message';
+import { MessagesModule } from 'primeng/messages';
 import { AccessibilityDoc } from './accessibilitydoc';
-import { AvatarModule } from 'primeng/avatar';
+import { AnimationDoc } from './animationdoc';
+import { BasicDoc } from './basicdoc';
+import { ClosableDoc } from './closabledoc';
+import { DynamicDoc } from './dynamicdoc';
+import { ImportDoc } from './importdoc';
+import { InlineDoc } from './inlinedoc';
+import { MessagesStyleDoc } from './messagesstyledoc';
+import { MessageStyleDoc } from './messagestyledoc';
+import { ServiceDoc } from './servicedoc';
+import { SeverityDoc } from './severitydoc';
+import { StaticDoc } from './staticdoc';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, FormsModule, RouterModule, MessagesModule, ButtonModule, MessageModule, InputTextModule, AvatarModule, AppDocModule],

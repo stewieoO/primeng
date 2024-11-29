@@ -2,6 +2,7 @@ import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
     AfterViewInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -11,17 +12,16 @@ import {
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
+    signal,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';

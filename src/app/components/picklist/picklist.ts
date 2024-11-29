@@ -3,6 +3,7 @@ import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
     AfterViewChecked,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -12,15 +13,14 @@ import {
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { FilterService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
@@ -51,6 +51,7 @@ import {
     PickListTargetReorderEvent,
     PickListTargetSelectEvent
 } from './picklist.interface';
+
 /**
  * PickList is used to reorder items between different lists.
  * @group Components

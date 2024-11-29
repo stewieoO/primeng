@@ -1,8 +1,9 @@
-import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentChecked,
     AfterViewInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -15,6 +16,7 @@ import {
     Input,
     KeyValueDiffers,
     NgModule,
+    numberAttribute,
     OnChanges,
     OnDestroy,
     OnInit,
@@ -25,12 +27,11 @@ import {
     SimpleChanges,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
+import { FocusTrapModule } from 'primeng/focustrap';
 import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
 import { ChevronRightIcon } from 'primeng/icons/chevronright';
 import { TimesIcon } from 'primeng/icons/times';
@@ -40,7 +41,7 @@ import { RippleModule } from 'primeng/ripple';
 import { VoidListener } from 'primeng/ts-helpers';
 import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
 import { GalleriaResponsiveOptions } from './galleria.interface';
-import { FocusTrapModule } from 'primeng/focustrap';
+
 /**
  * Galleria is an advanced content gallery component.
  * @group Components

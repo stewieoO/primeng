@@ -1,9 +1,8 @@
-import { TestBed, ComponentFixture, waitForAsync, fakeAsync, tick } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { Accordion } from './accordion';
-import { AccordionTab } from './accordion';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
+import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Accordion, AccordionTab } from './accordion';
 
 @Component({
     template: `<p-accordion [collapseIcon]="collapseIcon" [expandIcon]="expandIcon" [styleClass]="styleClass" [style]="style">

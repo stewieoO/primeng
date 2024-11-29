@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { AccessibilityDoc } from '@doc/tieredmenu/accessibilitydoc';
 import { BasicDoc } from '@doc/tieredmenu/basicdoc';
+import { CommandDoc } from '@doc/tieredmenu/commanddoc';
 import { ImportDoc } from '@doc/tieredmenu/importdoc';
 import { PopupDoc } from '@doc/tieredmenu/popupdoc';
-import { TemplateDoc } from '@doc/tieredmenu/templatedoc';
-import { CommandDoc } from '@doc/tieredmenu/commanddoc';
 import { RouterDoc } from '@doc/tieredmenu/routerdoc';
 import { StyleDoc } from '@doc/tieredmenu/styledoc';
-import { AccessibilityDoc } from '@doc/tieredmenu/accessibilitydoc';
+import { TemplateDoc } from '@doc/tieredmenu/templatedoc';
 
 @Component({
     templateUrl: './tieredmenudemo.html'

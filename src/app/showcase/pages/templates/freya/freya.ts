@@ -9,6 +9,7 @@ import { TemplateSeparatorModule } from 'src/app/showcase/layout/templates/templ
 import { TemplateYoutubeModule } from 'src/app/showcase/layout/templates/templateyoutube';
 import { FreyaLogo } from './freyalogo';
 import { FreyaSeparator } from './freyaseparator';
+
 @Component({
     standalone: true,
     selector: 'freya-page',

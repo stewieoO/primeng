@@ -1,9 +1,9 @@
 import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Panel } from './panel';
-import { PlusIcon } from 'primeng/icons/plus';
 import { MinusIcon } from 'primeng/icons/minus';
+import { PlusIcon } from 'primeng/icons/plus';
+import { Panel } from './panel';
 
 describe('Panel', () => {
     let panel: Panel;

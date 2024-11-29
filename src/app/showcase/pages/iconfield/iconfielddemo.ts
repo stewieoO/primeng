@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/iconfield/importdoc';
-import { BasicDoc } from '@doc/iconfield/basicdoc';
-import { TemplateDoc } from '@doc/iconfield/templatedoc';
-import { StyleDoc } from '@doc/iconfield/styledoc';
 import { AccessibilityDoc } from '@doc/iconfield/accessibilitydoc';
+import { BasicDoc } from '@doc/iconfield/basicdoc';
+import { ImportDoc } from '@doc/iconfield/importdoc';
+import { StyleDoc } from '@doc/iconfield/styledoc';
+import { TemplateDoc } from '@doc/iconfield/templatedoc';
 
 @Component({
     templateUrl: './iconfielddemo.html',

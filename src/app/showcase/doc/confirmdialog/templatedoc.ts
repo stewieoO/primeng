@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { ConfirmationService, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'confirm-dialog-template-demo',
@@ -84,7 +84,7 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ToastModule } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
-        
+
 @Component({
     selector: 'confirm-dialog-template-demo',
     templateUrl: './confirm-dialog-template-demo.html',

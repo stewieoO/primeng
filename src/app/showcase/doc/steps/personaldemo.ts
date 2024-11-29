@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TicketService } from '@service/ticketservice';
 import { Router } from '@angular/router';
+import { TicketService } from '@service/ticketservice';
 
 @Component({
     template: `

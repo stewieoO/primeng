@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, Injectable, Injector, Input, NgModule, OnDestroy, OnInit, Output, ViewChild, booleanAttribute, forwardRef, numberAttribute } from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, Injectable, Injector, Input, NgModule, numberAttribute, OnDestroy, OnInit, Output, ViewChild } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { Nullable } from 'primeng/ts-helpers';
+import { PrimeNGConfig } from 'primeng/api';
 import { AutoFocusModule } from 'primeng/autofocus';
+import { Nullable } from 'primeng/ts-helpers';
 
 import { RadioButtonClickEvent } from './radiobutton.interface';
-import { PrimeNGConfig } from 'primeng/api';
 
 export const RADIO_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

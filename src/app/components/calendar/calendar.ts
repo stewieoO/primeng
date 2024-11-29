@@ -25,20 +25,20 @@ import {
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
+import { AutoFocusModule } from 'primeng/autofocus';
 import { ButtonModule } from 'primeng/button';
 import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { Subscription } from 'rxjs';
+import { CalendarIcon } from 'primeng/icons/calendar';
+import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
 import { ChevronRightIcon } from 'primeng/icons/chevronright';
 import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { TimesIcon } from 'primeng/icons/times';
-import { CalendarIcon } from 'primeng/icons/calendar';
+import { RippleModule } from 'primeng/ripple';
 import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { Subscription } from 'rxjs';
 import { CalendarMonthChangeEvent, CalendarResponsiveOptions, CalendarTypeView, CalendarYearChangeEvent, LocaleSettings, Month, NavigationState } from './calendar.interface';
-import { AutoFocusModule } from 'primeng/autofocus';
 
 export const CALENDAR_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

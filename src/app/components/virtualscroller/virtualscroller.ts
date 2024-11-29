@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -10,18 +11,18 @@ import {
     EventEmitter,
     Input,
     NgModule,
+    numberAttribute,
     Output,
     QueryList,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { BlockableUI, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
 import { Scroller, ScrollerModule } from 'primeng/scroller';
 import { Nullable } from 'primeng/ts-helpers';
 import { VirtualScrollerLazyLoadEvent } from './virtualscroller.interface';
+
 /**
  * VirtualScroller is a performant approach to handle huge data efficiently.
  * @group Components

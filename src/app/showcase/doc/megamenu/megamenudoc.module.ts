@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
-import { ImportDoc } from './importdoc';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { AvatarModule } from 'primeng/avatar';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { MegaMenuModule } from 'primeng/megamenu';
+import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
+import { CommandDoc } from './commanddoc';
+import { ImportDoc } from './importdoc';
+import { RouterDoc } from './routerdoc';
 import { StyleDoc } from './styledoc';
 import { TemplateDoc } from './templatedoc';
 import { VerticalDoc } from './verticaldoc';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { AccessibilityDoc } from './accessibilitydoc';
-import { AvatarModule } from 'primeng/avatar';
-import { CommandDoc } from './commanddoc';
-import { RouterDoc } from './routerdoc';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, RouterModule, MegaMenuModule, InputTextModule, ButtonModule, AppDocModule, AvatarModule],

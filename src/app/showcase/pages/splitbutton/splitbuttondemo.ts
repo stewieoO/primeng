@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { TextDoc } from '@doc/splitbutton/textdoc';
+import { AccessibilityDoc } from '@doc/splitbutton/accessibilitydoc';
 import { BasicDoc } from '@doc/splitbutton/basicdoc';
+import { DisabledDoc } from '@doc/splitbutton/disableddoc';
 import { ImportDoc } from '@doc/splitbutton/importdoc';
 import { NestedDoc } from '@doc/splitbutton/nesteddoc';
+import { OutlinedDoc } from '@doc/splitbutton/outlineddoc';
 import { RaisedDoc } from '@doc/splitbutton/raiseddoc';
+import { RaisedTextDoc } from '@doc/splitbutton/raisedtextdoc';
 import { RoundedDoc } from '@doc/splitbutton/roundeddoc';
 import { SeverityDoc } from '@doc/splitbutton/severitydoc';
-import { RaisedTextDoc } from '@doc/splitbutton/raisedtextdoc';
-import { OutlinedDoc } from '@doc/splitbutton/outlineddoc';
 import { SizesDoc } from '@doc/splitbutton/sizesdoc';
-import { DisabledDoc } from '@doc/splitbutton/disableddoc';
-import { TemplateDoc } from '@doc/splitbutton/templatedoc';
 import { StyleDoc } from '@doc/splitbutton/styledoc';
-import { AccessibilityDoc } from '@doc/splitbutton/accessibilitydoc';
+import { TemplateDoc } from '@doc/splitbutton/templatedoc';
+import { TextDoc } from '@doc/splitbutton/textdoc';
 
 @Component({
     templateUrl: './splitbuttondemo.html'

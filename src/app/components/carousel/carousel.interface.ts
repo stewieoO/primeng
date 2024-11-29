@@ -1,4 +1,5 @@
 import { TemplateRef } from '@angular/core';
+
 /**
  * Responsive options of the component.
  * @group Interface

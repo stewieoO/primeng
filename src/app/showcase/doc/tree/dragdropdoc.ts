@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TreeDragDropService, TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeDragDropService, TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'drag-drop-doc',
@@ -26,21 +26,21 @@ export class DragDropDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-tree 
-    class="w-full md:w-30rem" 
-    [value]="files" 
-    [draggableNodes]="true" 
-    [droppableNodes]="true" 
-    draggableScope="self" 
+        basic: `<p-tree
+    class="w-full md:w-30rem"
+    [value]="files"
+    [draggableNodes]="true"
+    [droppableNodes]="true"
+    draggableScope="self"
     droppableScope="self" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-tree 
-        class="w-full md:w-30rem" 
-        [value]="files" 
-        [draggableNodes]="true" 
-        [droppableNodes]="true" 
-        draggableScope="self" 
+    <p-tree
+        class="w-full md:w-30rem"
+        [value]="files"
+        [draggableNodes]="true"
+        [droppableNodes]="true"
+        draggableScope="self"
         droppableScope="self" />
 </div>`,
 

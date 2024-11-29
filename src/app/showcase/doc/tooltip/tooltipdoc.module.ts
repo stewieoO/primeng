@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TooltipModule } from 'primeng/tooltip';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
-import { ImportDoc } from './importdoc';
-import { StyleDoc } from './styledoc';
-import { PositionDoc } from './positiondoc';
-import { EventDoc } from './eventdoc';
-import { AutoHideDoc } from './autohidedoc';
-import { DelayDoc } from './delaydoc';
-import { OptionsDoc } from './optionsdoc';
+import { TooltipModule } from 'primeng/tooltip';
 import { AccessibilityDoc } from './accessibilitydoc';
+import { AutoHideDoc } from './autohidedoc';
 import { CustomDoc } from './customdoc';
+import { DelayDoc } from './delaydoc';
+import { EventDoc } from './eventdoc';
+import { ImportDoc } from './importdoc';
+import { OptionsDoc } from './optionsdoc';
+import { PositionDoc } from './positiondoc';
+import { StyleDoc } from './styledoc';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, RouterModule, TooltipModule, ButtonModule, InputTextModule, AppDocModule],

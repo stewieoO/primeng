@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { GuidesDocModule } from '@doc/guides/guidesdoc.module';
 import { AccessibilityDemoComponent } from './accessibility/accessibilitydemo.component';
+import { CssLayerDemoComponent } from './csslayer/csslayerdemo.component';
 import { GuidesRoutingModule } from './guides-routing.module';
 import { TemplateUpdateDemoComponent } from './templateupdate/templateupdatedemo.component';
-import { CssLayerDemoComponent } from './csslayer/csslayerdemo.component';
-import { GuidesDocModule } from '@doc/guides/guidesdoc.module';
 
 @NgModule({
     imports: [CommonModule, GuidesRoutingModule, GuidesDocModule],

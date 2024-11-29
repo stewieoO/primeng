@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Message } from 'primeng/api';
 import { Code } from '@domain/code';
+import { Message } from 'primeng/api';
 
 @Component({
     selector: 'messages-dynamic-demo',
@@ -32,31 +32,31 @@ export class DynamicDoc {
     }
 
     code: Code = {
-        basic: `<p-button 
-    type="button" 
-    pRipple 
-    (onClick)="addMessages()" 
-    label="Show" 
+        basic: `<p-button
+    type="button"
+    pRipple
+    (onClick)="addMessages()"
+    label="Show"
     styleClass="mr-2" />
-<p-button 
-    type="button" 
-    pRipple 
-    (onClick)="clearMessages()" 
-    label="Clear" 
+<p-button
+    type="button"
+    pRipple
+    (onClick)="clearMessages()"
+    label="Clear"
     severity="secondary" />
 <p-messages [(value)]="messages" [enableService]="false" />`,
         html: `<div class="card">
-    <p-button 
-        type="button" 
-        pRipple 
-        (onClick)="addMessages()" 
-        label="Show" 
-        styleClass="mr-2" />
-    <p-button 
+    <p-button
         type="button"
-        pRipple 
-        (onClick)="clearMessages()" 
-        label="Clear" 
+        pRipple
+        (onClick)="addMessages()"
+        label="Show"
+        styleClass="mr-2" />
+    <p-button
+        type="button"
+        pRipple
+        (onClick)="clearMessages()"
+        label="Clear"
         severity="secondary" />
     <p-messages [(value)]="messages" [enableService]="false" />
 </div>`,

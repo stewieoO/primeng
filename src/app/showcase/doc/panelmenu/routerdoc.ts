@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { Code } from '@domain/code';
 import { Router } from '@angular/router';
+import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'router-doc',
@@ -91,14 +91,14 @@ export class RouterDoc implements OnInit {
         basic: `<p-panelMenu [model]="items" styleClass="w-full md:w-20rem">
     <ng-template pTemplate="item" let-item>
         <ng-container *ngIf="item.route; else urlRef">
-            <a [routerLink]="item.route" class="flex align-items-center 
+            <a [routerLink]="item.route" class="flex align-items-center
                 cursor-pointer text-color px-3 py-2">
                 <span [class]="item.icon"></span>
                 <span class="ml-2 text-color">{{ item.label }}</span>
             </a>
         </ng-container>
         <ng-template #urlRef>
-            <a *ngIf="item.url; else noLink" [href]="item.url" class="flex align-items-center 
+            <a *ngIf="item.url; else noLink" [href]="item.url" class="flex align-items-center
                 cursor-pointer text-color px-3 py-2">
                 <span [class]="item.icon"></span>
                 <span class="ml-2">{{ item.label }}</span>
@@ -118,14 +118,14 @@ export class RouterDoc implements OnInit {
     <p-panelMenu [model]="items" styleClass="w-full md:w-20rem">
         <ng-template pTemplate="item" let-item>
             <ng-container *ngIf="item.route; else urlRef">
-                <a [routerLink]="item.route" class="flex align-items-center 
+                <a [routerLink]="item.route" class="flex align-items-center
                     cursor-pointer text-color px-3 py-2">
                     <span [class]="item.icon"></span>
                     <span class="ml-2 text-color">{{ item.label }}</span>
                 </a>
             </ng-container>
             <ng-template #urlRef>
-                <a *ngIf="item.url; else noLink" [href]="item.url" class="flex align-items-center 
+                <a *ngIf="item.url; else noLink" [href]="item.url" class="flex align-items-center
                     cursor-pointer text-color px-3 py-2">
                     <span [class]="item.icon"></span>
                     <span class="ml-2">{{ item.label }}</span>

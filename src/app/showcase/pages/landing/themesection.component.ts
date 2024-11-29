@@ -1,14 +1,13 @@
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { Customer } from '@domain/customer';
+import { AppConfigService } from '@service/appconfigservice';
+import { CustomerService } from '@service/customerservice';
 import { ButtonModule } from 'primeng/button';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { Table, TableModule } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
-import { Customer } from '@domain/customer';
 import { AppComponent } from '../../layout/app.component';
-import { AppConfigService } from '@service/appconfigservice';
-import { CustomerService } from '@service/customerservice';
-import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'theme-section',

@@ -26,10 +26,6 @@ import {
 } from '@angular/core';
 import { BlockableUI, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { ObjectUtils } from 'primeng/utils';
-import { Subscription } from 'rxjs';
 import { CheckIcon } from 'primeng/icons/check';
 import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { ChevronRightIcon } from 'primeng/icons/chevronright';
@@ -37,7 +33,11 @@ import { MinusIcon } from 'primeng/icons/minus';
 import { PlusIcon } from 'primeng/icons/plus';
 import { SearchIcon } from 'primeng/icons/search';
 import { SpinnerIcon } from 'primeng/icons/spinner';
+import { RippleModule } from 'primeng/ripple';
+import { Scroller, ScrollerModule } from 'primeng/scroller';
 import { Nullable } from 'primeng/ts-helpers';
+import { ObjectUtils } from 'primeng/utils';
+import { Subscription } from 'rxjs';
 import {
     TreeFilterEvent,
     TreeLazyLoadEvent,

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'file-upload-custom-demo',
@@ -63,7 +63,7 @@ export class CustomDoc {
         reader.onloadend = function () {
             const base64data = reader.result;
         };
-        
+
         this.messageService.add({ severity: 'info', summary: 'Success', detail: 'File Uploaded with Basic Mode' });
     }
 }`

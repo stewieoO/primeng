@@ -1,7 +1,7 @@
-import { NgModule, Component, ElementRef, OnInit, Input, Output, EventEmitter, forwardRef, ViewChild, ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, booleanAttribute, numberAttribute } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { booleanAttribute, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, Input, NgModule, numberAttribute, OnInit, Output, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
-import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 export const SPINNER_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

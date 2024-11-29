@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'circle-doc',
@@ -56,18 +56,18 @@ export class CircleDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-speedDial 
-    [model]="items" 
-    type="circle" 
-    [radius]="80" 
+        basic: `<p-speedDial
+    [model]="items"
+    type="circle"
+    [radius]="80"
     buttonClassName="p-button-warning" />`,
 
         html: `<div class="card">
     <div style="height: 500px" class="flex align-items-center justify-content-center">
         <p-toast />
-        <p-speedDial 
-            [model]="items" 
-            type="circle" 
+        <p-speedDial
+            [model]="items"
+            type="circle"
             [radius]="80"
             buttonClassName="p-button-warning" />
     </div>

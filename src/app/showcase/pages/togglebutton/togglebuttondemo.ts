@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsDoc } from '@doc/togglebutton/reactiveformsdoc';
 import { AccessibilityDoc } from '@doc/togglebutton/accessibilitydoc';
 import { BasicDoc } from '@doc/togglebutton/basicdoc';
 import { CustomizedDoc } from '@doc/togglebutton/customizeddoc';
 import { DisabledDoc } from '@doc/togglebutton/disableddoc';
 import { ImportDoc } from '@doc/togglebutton/importdoc';
+import { ReactiveFormsDoc } from '@doc/togglebutton/reactiveformsdoc';
 import { StyleDoc } from '@doc/togglebutton/styledoc';
 
 @Component({

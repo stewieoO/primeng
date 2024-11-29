@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FilterMatchMode, FilterService, SelectItem } from 'primeng/api';
 import { Car } from '@domain/car';
 import { Code } from '@domain/code';
 import { CarService } from '@service/carservice';
+import { FilterMatchMode, FilterService, SelectItem } from 'primeng/api';
 
 @Component({
     selector: 'filter-service-table-integration-demo',
@@ -86,10 +86,10 @@ export class TableIntegrationDoc implements OnInit {
         </tr>
         <tr>
             <th *ngFor="let col of columns">
-                <p-columnFilter 
-                    type="text" 
-                    [field]="col.field" 
-                    [matchModeOptions]="matchModeOptions" 
+                <p-columnFilter
+                    type="text"
+                    [field]="col.field"
+                    [matchModeOptions]="matchModeOptions"
                     [matchMode]="'custom-equals'" />
             </th>
         </tr>
@@ -110,10 +110,10 @@ export class TableIntegrationDoc implements OnInit {
             </tr>
             <tr>
                 <th *ngFor="let col of columns">
-                    <p-columnFilter 
-                        type="text" 
-                        [field]="col.field" 
-                        [matchModeOptions]="matchModeOptions" 
+                    <p-columnFilter
+                        type="text"
+                        [field]="col.field"
+                        [matchModeOptions]="matchModeOptions"
                         [matchMode]="'custom-equals'" />
                 </th>
             </tr>

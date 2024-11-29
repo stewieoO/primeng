@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'size-doc',
@@ -60,17 +60,17 @@ export class SizeDoc {
 
     code: Code = {
         basic: `<div class="flex justify-content-center mb-3">
-    <p-selectButton 
-        [options]="sizes" 
-        [(ngModel)]="selectedSize" 
-        [multiple]="false" 
-        optionLabel="name" 
+    <p-selectButton
+        [options]="sizes"
+        [(ngModel)]="selectedSize"
+        [multiple]="false"
+        optionLabel="name"
         optionValue="class" />
 </div>
-<p-treeTable 
-    [value]="files" 
-    [scrollable]="true" 
-    [tableStyle]="{'min-width':'50rem'}" 
+<p-treeTable
+    [value]="files"
+    [scrollable]="true"
+    [tableStyle]="{'min-width':'50rem'}"
     [styleClass]="selectedSize">
         <ng-template pTemplate="header">
             <tr>
@@ -93,17 +93,17 @@ export class SizeDoc {
 
         html: `<div class="card">
     <div class="flex justify-content-center mb-3">
-        <p-selectButton 
-            [options]="sizes" 
-            [(ngModel)]="selectedSize" 
-            [multiple]="false" 
-            optionLabel="name" 
+        <p-selectButton
+            [options]="sizes"
+            [(ngModel)]="selectedSize"
+            [multiple]="false"
+            optionLabel="name"
             optionValue="class" />
     </div>
-    <p-treeTable 
-        [value]="files" 
-        [scrollable]="true" 
-        [tableStyle]="{'min-width':'50rem'}" 
+    <p-treeTable
+        [value]="files"
+        [scrollable]="true"
+        [tableStyle]="{'min-width':'50rem'}"
         [styleClass]="selectedSize">
             <ng-template pTemplate="header">
                 <tr>

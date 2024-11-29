@@ -1,22 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { CheckboxModule } from 'primeng/checkbox';
+import { InputSwitchModule } from 'primeng/inputswitch';
 import { ColorsDoc } from './accessibility/colorsdoc';
 import { FormControlsDoc } from './accessibility/formcontrolsdoc';
 import { IntroductionDoc } from './accessibility/introductiondoc';
 import { SemanticHTMLDoc } from './accessibility/semantichtmldoc';
 import { WAIARIADoc } from './accessibility/waiariadoc';
 import { WCAGDoc } from './accessibility/wcagdoc';
-import { SpecificityDoc } from './csslayer/specificitydoc';
-import { ResetDoc } from './csslayer/resetdoc';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { TailwindDoc } from './csslayer/tailwinddoc';
 import { BootstrapDoc } from './csslayer/bootstrapdoc';
 import { NormalizeDoc } from './csslayer/normalizedoc';
+import { ResetDoc } from './csslayer/resetdoc';
+import { SpecificityDoc } from './csslayer/specificitydoc';
+import { TailwindDoc } from './csslayer/tailwinddoc';
+
 @NgModule({
     imports: [CommonModule, AppCodeModule, AppDocModule, RouterModule, FormsModule, CheckboxModule, InputSwitchModule],
     exports: [AppDocModule],

@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { Badge, BadgeModule } from './badge';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Badge, BadgeModule } from './badge';
 
 describe('Badge', () => {
     let badge: Badge;

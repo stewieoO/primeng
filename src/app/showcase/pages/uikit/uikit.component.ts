@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { Subscription } from 'rxjs';
 import { AppConfigService } from '@service/appconfigservice';
+import { Subscription } from 'rxjs';
 
 @Component({
     templateUrl: './uikit.component.html',

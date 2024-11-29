@@ -1,12 +1,12 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, ElementRef, EventEmitter, Inject, Input, OnDestroy, Output, Renderer2, afterNextRender } from '@angular/core';
+import { afterNextRender, Component, ElementRef, EventEmitter, Inject, Input, OnDestroy, Output, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import docsearch from '@docsearch/js';
+import { AppConfigService } from '@service/appconfigservice';
 import { DomHandler } from 'primeng/dom';
 import { StyleClassModule } from 'primeng/styleclass';
 import Versions from '../../data/versions.json';
-import { AppConfigService } from '@service/appconfigservice';
 
 @Component({
     selector: 'app-topbar',

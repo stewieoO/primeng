@@ -1,32 +1,30 @@
-import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
+    computed,
     ContentChildren,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     Output,
-    PLATFORM_ID,
     Pipe,
     PipeTransform,
+    PLATFORM_ID,
     QueryList,
     Renderer2,
+    signal,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    ViewRef,
-    booleanAttribute,
-    computed,
-    effect,
-    forwardRef,
-    numberAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';

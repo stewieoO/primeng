@@ -1,7 +1,8 @@
-import { AnimationEvent, animate, animation, style, transition, trigger, useAnimation } from '@angular/animations';
+import { animate, animation, AnimationEvent, style, transition, trigger, useAnimation } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -13,21 +14,20 @@ import {
     Input,
     NgModule,
     NgZone,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
-    SimpleChanges,
     TemplateRef,
     ViewChild,
     ViewEncapsulation,
-    ViewRef,
-    booleanAttribute,
-    numberAttribute
+    ViewRef
 } from '@angular/core';
 import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
+import { ButtonModule } from 'primeng/button';
 import { DomHandler } from 'primeng/dom';
 import { FocusTrapModule } from 'primeng/focustrap';
 import { TimesIcon } from 'primeng/icons/times';
@@ -36,7 +36,6 @@ import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
 import { RippleModule } from 'primeng/ripple';
 import { Nullable, VoidListener } from 'primeng/ts-helpers';
 import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { ButtonModule } from 'primeng/button';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);
 

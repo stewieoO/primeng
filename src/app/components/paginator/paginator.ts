@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -9,15 +10,14 @@ import {
     EventEmitter,
     Input,
     NgModule,
+    numberAttribute,
     OnChanges,
     OnInit,
     Output,
     QueryList,
     SimpleChanges,
     TemplateRef,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Aria, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule } from 'primeng/api';
@@ -30,6 +30,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { RippleModule } from 'primeng/ripple';
 import { Nullable } from 'primeng/ts-helpers';
 import { PaginatorState } from './paginator.interface';
+
 /**
  * Paginator is a generic component to display content in paged format.
  * @group Components

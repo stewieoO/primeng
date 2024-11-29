@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'toast-multiple-demo',
@@ -31,14 +31,14 @@ export class MultipleDoc {
     code: Code = {
         basic: `<p-toast />
 <p-button
-    (onClick)="show()" 
-    label="Multiple" 
+    (onClick)="show()"
+    label="Multiple"
     severity="warning" />`,
         html: `<div class="card flex justify-content-center">
     <p-toast />
-    <p-button 
-        (onClick)="show()" 
-        label="Multiple" 
+    <p-button
+        (onClick)="show()"
+        label="Multiple"
         severity="warning" />
 </div>`,
         typescript: `import { Component } from '@angular/core';

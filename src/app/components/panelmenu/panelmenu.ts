@@ -2,27 +2,27 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
+    computed,
     ContentChildren,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnChanges,
     Output,
     QueryList,
+    signal,
     SimpleChanges,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    computed,
-    forwardRef,
-    numberAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';

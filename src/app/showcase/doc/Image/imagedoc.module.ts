@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { ImageModule } from 'primeng/image';
-import { AppDocModule } from '@layout/doc/app.doc.module';
+import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { ImageModule } from 'primeng/image';
+import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
-import { TemplateDoc } from './templatedoc';
+import { ImportDoc } from './importdoc';
 import { PreviewDoc } from './previewdoc';
 import { PreviewImageSourceDoc } from './previewimagesourcedoc';
 import { StyleDoc } from './styledoc';
-import { ImportDoc } from './importdoc';
-import { AccessibilityDoc } from './accessibilitydoc';
+import { TemplateDoc } from './templatedoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, ImageModule, AppCodeModule, AppDocModule],

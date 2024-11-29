@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { ConfirmationService, MessageService } from 'primeng/api';
 import { ConfirmPopup } from 'primeng/confirmpopup';
+
 @Component({
     selector: 'confirm-popup-headless-demo',
     template: `

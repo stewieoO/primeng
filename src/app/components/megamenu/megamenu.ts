@@ -1,29 +1,29 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
     ContentChildren,
+    effect,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
+    signal,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    effect,
-    forwardRef,
-    numberAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MegaMenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';

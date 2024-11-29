@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AccessibilityDemoComponent } from './accessibility/accessibilitydemo.component';
-import { TemplateUpdateDemoComponent } from './templateupdate/templateupdatedemo.component';
 import { CssLayerDemoComponent } from './csslayer/csslayerdemo.component';
+import { TemplateUpdateDemoComponent } from './templateupdate/templateupdatedemo.component';
 
 @NgModule({
     imports: [

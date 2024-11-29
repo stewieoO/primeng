@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
+import { TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'column-group-doc',

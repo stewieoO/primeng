@@ -1,10 +1,10 @@
-import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { Component } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Menu, MenuModule } from './menu';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { Component } from '@angular/core';
 import { ButtonModule } from '../button/button';
+import { Menu, MenuModule } from './menu';
 
 @Component({
     template: `<p-menu #menu></p-menu>

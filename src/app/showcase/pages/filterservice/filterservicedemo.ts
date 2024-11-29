@@ -3,8 +3,8 @@ import { ApiDoc } from '@doc/filterservice/apidoc';
 import { BuiltInConstraintsDoc } from '@doc/filterservice/builtinconstraintsdoc';
 import { CustomConstraintsDoc } from '@doc/filterservice/customconstraintsdoc';
 import { ImportDoc } from '@doc/filterservice/importdoc';
-import { UsageDoc } from '@doc/filterservice/usagedoc';
 import { TableIntegrationDoc } from '@doc/filterservice/tableintegrationdoc';
+import { UsageDoc } from '@doc/filterservice/usagedoc';
 
 @Component({
     templateUrl: './filterservicedemo.html'

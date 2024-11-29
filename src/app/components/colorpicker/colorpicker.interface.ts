@@ -1,4 +1,5 @@
 import { ColorPicker } from './colorpicker';
+
 /**
  * Custom change event.
  * @see {@link ColorPicker.onChange}

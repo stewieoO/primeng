@@ -1,8 +1,8 @@
-import { NgModule, Directive, ElementRef, HostListener, DoCheck, Optional, ChangeDetectorRef, AfterViewInit, Input } from '@angular/core';
-import { NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Nullable } from 'primeng/ts-helpers';
+import { AfterViewInit, ChangeDetectorRef, Directive, DoCheck, ElementRef, HostListener, Input, NgModule, Optional } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { PrimeNGConfig } from 'primeng/api';
+import { Nullable } from 'primeng/ts-helpers';
 
 /**
  * InputText directive is an extension to standard input element with theming.

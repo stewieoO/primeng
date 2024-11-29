@@ -1,22 +1,22 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { AccessibilityDoc } from '@doc/autocomplete/accessibilitydoc';
+import { AutoCompleteDocModule } from '@doc/autocomplete/autocompletedoc.module';
 import { BasicDoc } from '@doc/autocomplete/basicdoc';
+import { DisabledDoc } from '@doc/autocomplete/disableddoc';
+import { DropdownDoc } from '@doc/autocomplete/dropdowndoc';
+import { FilledDoc } from '@doc/autocomplete/filleddoc';
+import { FloatLabelDoc } from '@doc/autocomplete/floatlabeldoc';
+import { ForceSelectionDoc } from '@doc/autocomplete/forceselectiondoc';
 import { GroupDoc } from '@doc/autocomplete/groupdoc';
 import { ImportDoc } from '@doc/autocomplete/importdoc';
+import { InvalidDoc } from '@doc/autocomplete/invaliddoc';
 import { MultipleDoc } from '@doc/autocomplete/multipledoc';
+import { ObjectsDoc } from '@doc/autocomplete/objectsdoc';
+import { ReactiveFormsDoc } from '@doc/autocomplete/reactiveformsdoc';
+import { ShowClearDoc } from '@doc/autocomplete/showclear-doc.component';
 import { StyleDoc } from '@doc/autocomplete/styledoc';
 import { TemplateDoc } from '@doc/autocomplete/templatedoc';
 import { VirtualScrollDoc } from '@doc/autocomplete/virtualscrolldoc';
-import { AccessibilityDoc } from '@doc/autocomplete/accessibilitydoc';
-import { DropdownDoc } from '@doc/autocomplete/dropdowndoc';
-import { ForceSelectionDoc } from '@doc/autocomplete/forceselectiondoc';
-import { ObjectsDoc } from '@doc/autocomplete/objectsdoc';
-import { ReactiveFormsDoc } from '@doc/autocomplete/reactiveformsdoc';
-import { FloatLabelDoc } from '@doc/autocomplete/floatlabeldoc';
-import { DisabledDoc } from '@doc/autocomplete/disableddoc';
-import { InvalidDoc } from '@doc/autocomplete/invaliddoc';
-import { AutoCompleteDocModule } from '@doc/autocomplete/autocompletedoc.module';
-import { FilledDoc } from '@doc/autocomplete/filleddoc';
-import { ShowClearDoc } from '@doc/autocomplete/showclear-doc.component';
 
 @Component({
     template: `<app-doc docTitle="Angular AutoComplete Component" header="AutoComplete" description="AutoComplete is an input component that provides real-time suggestions when being typed." [docs]="docs" [apiDocs]="['AutoComplete']"></app-doc>`,

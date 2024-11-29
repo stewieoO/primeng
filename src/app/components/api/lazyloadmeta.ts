@@ -1,5 +1,6 @@
 import { FilterMetadata } from './filtermetadata';
 import { SortMeta } from './sortmeta';
+
 /**
  * Meta data for lazy load event.
  * @group Interface

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
+import { TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -71,13 +71,13 @@ export class PaginatorBasicDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    [paginator]="true" 
-    [rows]="5" 
-    [rowsPerPageOptions]="[5, 10, 25]" 
-    [scrollable]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    [paginator]="true"
+    [rows]="5"
+    [rowsPerPageOptions]="[5, 10, 25]"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -97,13 +97,13 @@ export class PaginatorBasicDoc {
 </p-treeTable>`,
 
         html: `<div class="card">
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        [paginator]="true" 
-        [rows]="5" 
-        [rowsPerPageOptions]="[5, 10, 25]" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        [paginator]="true"
+        [rows]="5"
+        [rowsPerPageOptions]="[5, 10, 25]"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>
@@ -148,14 +148,14 @@ export class TreeTablePaginatorBasicDemo implements OnInit {
         this.files = [];
         for(let i = 0; i < 50; i++) {
             let node = {
-                data:{  
+                data:{
                     name: 'Item ' + i,
                     size: Math.floor(Math.random() * 1000) + 1 + 'kb',
                     type: 'Type ' + i
                 },
                 children: [
                     {
-                        data: {  
+                        data: {
                             name: 'Item ' + i + ' - 0',
                             size: Math.floor(Math.random() * 1000) + 1 + 'kb',
                             type: 'Type ' + i

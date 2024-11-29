@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/stepper/importdoc';
+import { AccessibilityDoc } from '@doc/stepper/accessibilitydoc';
 import { BasicDoc } from '@doc/stepper/basicdoc';
-import { VerticalDoc } from '@doc/stepper/verticaldoc';
+import { ImportDoc } from '@doc/stepper/importdoc';
 import { LinearDoc } from '@doc/stepper/lineardoc';
 import { TemplateDoc } from '@doc/stepper/templatedoc';
-import { AccessibilityDoc } from '@doc/stepper/accessibilitydoc';
+import { VerticalDoc } from '@doc/stepper/verticaldoc';
+
 @Component({
     templateUrl: './stepperdemo.html'
 })

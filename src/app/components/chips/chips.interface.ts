@@ -1,5 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { Chips } from './chips';
+
 /**
  * Custom add event.
  * @see {@link Chips.onAdd}

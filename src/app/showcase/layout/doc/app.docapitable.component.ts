@@ -1,5 +1,5 @@
 import { Location } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input, ViewContainerRef, booleanAttribute, numberAttribute } from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, Component, Input, numberAttribute, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppConfigService } from '@service/appconfigservice';
 

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { SortEvent } from 'primeng/api';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
+import { SortEvent } from 'primeng/api';
 
 @Component({
     selector: 'custom-sort-doc',

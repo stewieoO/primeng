@@ -1,10 +1,10 @@
-import { TestBed, ComponentFixture, fakeAsync, tick, waitForAsync } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { KeyFilter } from './keyfilter';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InputText } from 'primeng/inputtext';
+import { KeyFilter } from './keyfilter';
 
 @Component({
     template: `<input type="text" [pValidateOnly]="validateOnly" [(ngModel)]="cc" pKeyFilter="int" pInputText placeholder="Integers" />`

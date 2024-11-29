@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'selection-events-doc',
@@ -64,13 +64,13 @@ export class SelectionEventsDoc {
 
     code: Code = {
         basic: `<p-toast />
-<p-table 
-    [value]="products" 
-    selectionMode="single" 
-    [(selection)]="selectedProduct" 
-    dataKey="code" 
-    (onRowSelect)="onRowSelect($event)" 
-    (onRowUnselect)="onRowUnselect($event)" 
+<p-table
+    [value]="products"
+    selectionMode="single"
+    [(selection)]="selectedProduct"
+    dataKey="code"
+    (onRowSelect)="onRowSelect($event)"
+    (onRowUnselect)="onRowUnselect($event)"
     [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header">
             <tr>
@@ -91,13 +91,13 @@ export class SelectionEventsDoc {
 </p-table>`,
         html: `<div class="card">
     <p-toast />
-    <p-table 
-        [value]="products" 
-        selectionMode="single" 
-        [(selection)]="selectedProduct" 
+    <p-table
+        [value]="products"
+        selectionMode="single"
+        [(selection)]="selectedProduct"
         dataKey="code"
-        (onRowSelect)="onRowSelect($event)" 
-        (onRowUnselect)="onRowUnselect($event)" 
+        (onRowSelect)="onRowSelect($event)"
+        (onRowUnselect)="onRowUnselect($event)"
         [tableStyle]="{'min-width': '50rem'}">
             <ng-template pTemplate="header">
                 <tr>

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -56,10 +56,10 @@ export class ResizeExpandDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    [resizableColumns]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    [resizableColumns]="true"
     columnResizeMode="expand">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -79,10 +79,10 @@ export class ResizeExpandDoc {
 </p-treeTable>`,
 
         html: `<div class="card">
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        [resizableColumns]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        [resizableColumns]="true"
         columnResizeMode="expand">
             <ng-template pTemplate="header" let-columns>
                 <tr>

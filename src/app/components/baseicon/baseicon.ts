@@ -1,4 +1,4 @@
-import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation, ElementRef, HostBinding, booleanAttribute } from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 import { ObjectUtils } from 'primeng/utils';
 
 @Component({

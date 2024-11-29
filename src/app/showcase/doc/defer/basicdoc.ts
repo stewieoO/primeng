@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'basic-doc',
@@ -31,9 +31,9 @@ export class BasicDoc {
     code: Code = {
         basic: `<div pDefer (onLoad)="onLoad()">
     <ng-template>
-        <img 
-            class="w-full md:w-30rem md:block md:mx-auto" 
-            src="https://primefaces.org/cdn/primeng/images/demo/nature/nature1.jpg" 
+        <img
+            class="w-full md:w-30rem md:block md:mx-auto"
+            src="https://primefaces.org/cdn/primeng/images/demo/nature/nature1.jpg"
             alt="Prime" />
     </ng-template>
 </div>`,
@@ -44,9 +44,9 @@ export class BasicDoc {
     <p-toast />
     <div pDefer (onLoad)="onLoad()">
         <ng-template>
-            <img 
-                class="w-full md:w-30rem md:block md:mx-auto" 
-                src="https://primefaces.org/cdn/primeng/images/demo/nature/nature1.jpg" 
+            <img
+                class="w-full md:w-30rem md:block md:mx-auto"
+                src="https://primefaces.org/cdn/primeng/images/demo/nature/nature1.jpg"
                 alt="Prime" />
         </ng-template>
     </div>

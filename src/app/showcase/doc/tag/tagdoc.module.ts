@@ -1,18 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
-import { StyleDoc } from './styledoc';
+import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { IconDoc } from './icondoc';
 import { ImportDoc } from './importdoc';
 import { PillDoc } from './pilldoc';
-import { TemplateDoc } from './templatedoc';
 import { SeverityDoc } from './severitydoc';
-import { AccessibilityDoc } from './accessibilitydoc';
+import { StyleDoc } from './styledoc';
+import { TemplateDoc } from './templatedoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, TagModule, ButtonModule],

@@ -1,6 +1,7 @@
-import { NgModule, Component, ElementRef, AfterViewInit, OnDestroy, Input, Output, EventEmitter, ChangeDetectionStrategy, ViewEncapsulation, Inject, PLATFORM_ID, NgZone, booleanAttribute } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { AfterViewInit, booleanAttribute, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Inject, Input, NgModule, NgZone, OnDestroy, Output, PLATFORM_ID, ViewEncapsulation } from '@angular/core';
 import Chart from 'chart.js/auto';
+
 /**
  * Chart groups a collection of contents in tabs.
  * @group Components

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { BasicDoc } from '@doc/panelmenu/basicdoc';
-import { ImportDoc } from '@doc/panelmenu/importdoc';
-import { StyleDoc } from '@doc/panelmenu/styledoc';
-import { MultipleDoc } from '@doc/panelmenu/multipledoc';
 import { AccessibilityDoc } from '@doc/panelmenu/accessibilitydoc';
-import { ControlledDoc } from '@doc/panelmenu/controlleddoc';
-import { TemplateDoc } from '@doc/panelmenu/templatedoc';
+import { BasicDoc } from '@doc/panelmenu/basicdoc';
 import { CommandDoc } from '@doc/panelmenu/commanddoc';
+import { ControlledDoc } from '@doc/panelmenu/controlleddoc';
+import { ImportDoc } from '@doc/panelmenu/importdoc';
+import { MultipleDoc } from '@doc/panelmenu/multipledoc';
 import { RouterDoc } from '@doc/panelmenu/routerdoc';
+import { StyleDoc } from '@doc/panelmenu/styledoc';
+import { TemplateDoc } from '@doc/panelmenu/templatedoc';
 
 @Component({
     templateUrl: './panelmenudemo.html'

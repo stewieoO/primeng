@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'clear-doc',
@@ -33,21 +33,21 @@ export class ClearDoc {
 
     code: Code = {
         basic: `<p-toast key="myKey" />
-<p-button 
-    (onClick)="show()" 
+<p-button
+    (onClick)="show()"
     label="Show" />
-<p-button 
-    (onClick)="clear()" 
-    label="Clear" 
+<p-button
+    (onClick)="clear()"
+    label="Clear"
     severity="secondary" />`,
         html: `<div class="card flex justify-content-center gap-2">
     <p-toast key="myKey" />
-    <p-button 
-        (onClick)="show()" 
+    <p-button
+        (onClick)="show()"
         label="Show" />
-    <p-button 
-        (onClick)="clear()" 
-        label="Clear" 
+    <p-button
+        (onClick)="clear()"
+        label="Clear"
         severity="secondary" />
 </div>`,
         typescript: `import { Component } from '@angular/core';

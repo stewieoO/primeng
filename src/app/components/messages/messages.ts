@@ -2,6 +2,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -15,11 +16,9 @@ import {
     Output,
     QueryList,
     TemplateRef,
-    ViewEncapsulation,
-    booleanAttribute
+    ViewEncapsulation
 } from '@angular/core';
-import { Message, MessageService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { PrimeNGConfig } from 'primeng/api';
+import { Message, MessageService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
 import { CheckIcon } from 'primeng/icons/check';
 import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
 import { InfoCircleIcon } from 'primeng/icons/infocircle';
@@ -27,6 +26,7 @@ import { TimesIcon } from 'primeng/icons/times';
 import { TimesCircleIcon } from 'primeng/icons/timescircle';
 import { RippleModule } from 'primeng/ripple';
 import { Subscription, timer } from 'rxjs';
+
 /**
  * Messages is used to display alerts inline.
  * @group Components

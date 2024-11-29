@@ -1,5 +1,6 @@
-import { PickList } from './picklist';
 import { TemplateRef } from '@angular/core';
+import { PickList } from './picklist';
+
 /**
  * Callbacks to invoke on filter.
  * @group Interface

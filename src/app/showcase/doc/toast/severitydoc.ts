@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'severity-doc',
@@ -53,67 +53,67 @@ export class SeverityDoc {
 
     code: Code = {
         basic: `<p-toast />
-<p-button 
-    type="button" 
-    (onClick)="showSuccess()" 
-    label="Success" 
-    severity="success" />
-<p-button 
+<p-button
     type="button"
-    (onClick)="showInfo()" 
-    label="Info" 
+    (onClick)="showSuccess()"
+    label="Success"
+    severity="success" />
+<p-button
+    type="button"
+    (onClick)="showInfo()"
+    label="Info"
     severity="info" />
-<p-button 
-    type="button" 
-    (onClick)="showWarn()" 
-    label="Warn" 
+<p-button
+    type="button"
+    (onClick)="showWarn()"
+    label="Warn"
     severity="warning" />
-<p-button 
-    type="button" 
-    (onClick)="showError()" 
-    label="Error" 
+<p-button
+    type="button"
+    (onClick)="showError()"
+    label="Error"
     severity="danger" />
-<p-button 
-    type="button" 
-    (onClick)="showSecondary()" 
-    label="Secondary" 
+<p-button
+    type="button"
+    (onClick)="showSecondary()"
+    label="Secondary"
     severity="secondary" />
-<p-button 
-    type="button" 
-    (onClick)="showContrast()" 
-    label="Contrast" 
+<p-button
+    type="button"
+    (onClick)="showContrast()"
+    label="Contrast"
     severity="contrast" />`,
         html: `<div class="card flex justify-content-center gap-2">
     <p-toast />
-    <p-button 
+    <p-button
         type="button"
-        (onClick)="showSuccess()" 
-        label="Success" 
+        (onClick)="showSuccess()"
+        label="Success"
         severity="success" />
-    <p-button 
+    <p-button
         type="button"
-        (onClick)="showInfo()" 
-        label="Info" 
+        (onClick)="showInfo()"
+        label="Info"
         severity="info" />
-    <p-button 
+    <p-button
         type="button"
-        (onClick)="showWarn()" 
-        label="Warn" 
+        (onClick)="showWarn()"
+        label="Warn"
         severity="warning"  />
-    <p-button 
+    <p-button
         type="button"
-        (onClick)="showError()" 
-        label="Error" 
+        (onClick)="showError()"
+        label="Error"
         severity="danger" />
-    <p-button 
+    <p-button
         type="button"
-        (onClick)="showSecondary()" 
-        label="Secondary" 
+        (onClick)="showSecondary()"
+        label="Secondary"
         severity="secondary" />
-    <p-button 
+    <p-button
         type="button"
-        (onClick)="showContrast()" 
-        label="Contrast" 
+        (onClick)="showContrast()"
+        label="Contrast"
         severity="contrast" />
 </div>`,
         typescript: `import { Component } from '@angular/core';

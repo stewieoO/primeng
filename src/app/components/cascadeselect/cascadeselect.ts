@@ -12,7 +12,6 @@ import {
     ElementRef,
     EventEmitter,
     forwardRef,
-    Inject,
     Input,
     NgModule,
     numberAttribute,
@@ -27,9 +26,9 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
+import { AutoFocusModule } from 'primeng/autofocus';
 import { DomHandler } from 'primeng/dom';
 import { AngleRightIcon } from 'primeng/icons/angleright';
-import { AutoFocusModule } from 'primeng/autofocus';
 
 import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { TimesIcon } from 'primeng/icons/times';

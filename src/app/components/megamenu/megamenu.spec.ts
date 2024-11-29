@@ -1,8 +1,8 @@
-import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { MegaMenu, MegaMenuModule } from './megamenu';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
+import { MegaMenu, MegaMenuModule } from './megamenu';
 
 describe('MegaMenu', () => {
     let megamenu: MegaMenu;

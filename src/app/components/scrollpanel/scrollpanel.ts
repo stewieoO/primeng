@@ -11,14 +11,14 @@ import {
     Input,
     NgModule,
     NgZone,
+    numberAttribute,
     OnDestroy,
     PLATFORM_ID,
     QueryList,
     Renderer2,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { PrimeTemplate } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';

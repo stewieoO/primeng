@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'controlled-doc',
@@ -51,28 +51,28 @@ export class ControlledDoc implements OnInit {
 
     code: Code = {
         basic: `<div class="mb-3">
-    <p-button 
-        icon="pi pi-plus" 
-        label="Expand all" 
-        (onClick)="expandAll()" 
+    <p-button
+        icon="pi pi-plus"
+        label="Expand all"
+        (onClick)="expandAll()"
         class="mr-2" />
-    <p-button 
-        icon="pi pi-minus" 
-        label="Collapse all" 
+    <p-button
+        icon="pi pi-minus"
+        label="Collapse all"
         (onClick)="collapseAll()" />
 </div>
 <p-tree [value]="files" class="w-full md:w-30rem" />`,
 
         html: `<div class="card flex flex-column align-items-center justify-content-center">
     <div class="mb-3">
-        <p-button 
-            icon="pi pi-plus" 
-            label="Expand all" 
-            (onClick)="expandAll()" 
+        <p-button
+            icon="pi pi-plus"
+            label="Expand all"
+            (onClick)="expandAll()"
             class="mr-2" />
         <p-button
-            icon="pi pi-minus" 
-            label="Collapse all" 
+            icon="pi pi-minus"
+            label="Collapse all"
             (onClick)="collapseAll()" />
     </div>
     <p-tree [value]="files" class="w-full md:w-30rem" />

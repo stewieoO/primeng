@@ -1,7 +1,8 @@
-import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -16,21 +17,20 @@ import {
     QueryList,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
 import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
+import { FocusTrapModule } from 'primeng/focustrap';
 import { EyeIcon } from 'primeng/icons/eye';
 import { RefreshIcon } from 'primeng/icons/refresh';
 import { SearchMinusIcon } from 'primeng/icons/searchminus';
 import { SearchPlusIcon } from 'primeng/icons/searchplus';
 import { TimesIcon } from 'primeng/icons/times';
 import { UndoIcon } from 'primeng/icons/undo';
-import { ZIndexUtils } from 'primeng/utils';
 import { Nullable } from 'primeng/ts-helpers';
-import { FocusTrapModule } from 'primeng/focustrap';
+import { ZIndexUtils } from 'primeng/utils';
 
 /**
  * Displays an image with preview and tranformation options. For multiple image, see Galleria.

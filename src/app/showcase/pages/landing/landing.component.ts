@@ -1,23 +1,22 @@
-import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { Component, OnInit, afterNextRender } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { AppConfigService } from '@service/appconfigservice';
+import { Subscription } from 'rxjs';
 import { AppNewsComponent } from '../../layout/news/app.news.component';
 import { AppTopBarComponent } from '../../layout/topbar/app.topbar.component';
-import { AppConfigService } from '@service/appconfigservice';
 import { BlockSectionComponent } from './blocksection.component';
-import { FeaturesSectionComponent } from './featuressection.component';
 import { FooterSectionComponent } from './footersection.component';
 import { HeroSectionComponent } from './herosection.component';
 import { TemplateSectionComponent } from './templatesection.component';
 import { ThemeSectionComponent } from './themesection.component';
 import { UsersSectionComponent } from './userssection.component';
-import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'landing',
     standalone: true,
     templateUrl: './landing.component.html',
-    imports: [CommonModule, NgOptimizedImage, AppNewsComponent, AppTopBarComponent, HeroSectionComponent, FeaturesSectionComponent, UsersSectionComponent, ThemeSectionComponent, BlockSectionComponent, TemplateSectionComponent, FooterSectionComponent]
+    imports: [CommonModule, AppNewsComponent, AppTopBarComponent, HeroSectionComponent, UsersSectionComponent, ThemeSectionComponent, BlockSectionComponent, TemplateSectionComponent, FooterSectionComponent]
 })
 export class LandingComponent implements OnInit {
     get tableTheme() {

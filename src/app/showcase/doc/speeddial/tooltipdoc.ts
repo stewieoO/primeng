@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'tooltip-doc',
@@ -122,25 +122,25 @@ export class TooltipDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-speedDial 
-    [model]="leftTooltipItems" 
-    className="speeddial-right" 
+        basic: `<p-speedDial
+    [model]="leftTooltipItems"
+    className="speeddial-right"
     direction="up" />
-<p-speedDial 
-    [model]="tooltipItems" 
-    className="speeddial-left" 
+<p-speedDial
+    [model]="tooltipItems"
+    className="speeddial-left"
     direction="up" />`,
 
         html: `<div class="card">
     <div style="height: 350px; position: relative;" class="speeddial-tooltip-demo">
         <p-toast />
-        <p-speedDial 
-            [model]="leftTooltipItems" 
-            className="speeddial-right" 
+        <p-speedDial
+            [model]="leftTooltipItems"
+            className="speeddial-right"
             direction="up" />
-        <p-speedDial 
-            [model]="tooltipItems" 
-            className="speeddial-left" 
+        <p-speedDial
+            [model]="tooltipItems"
+            className="speeddial-left"
             direction="up" />
     </div>
 </div>`,
@@ -161,7 +161,7 @@ import { ToastModule } from 'primeng/toast';
                         left: 0;
                         bottom: 0;
                     }
-        
+
                     &.speeddial-right {
                         right: 0;
                         bottom: 0;

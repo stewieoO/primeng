@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'raised-doc',
@@ -58,90 +58,90 @@ export class RaisedDoc {
     }
 
     code: Code = {
-        basic: `<p-splitButton 
-    label="Primary" 
-    [model]="items" 
-    (onClick)="save('info')" 
-    raised />
-<p-splitButton 
-    label="Secondary" 
-    [model]="items" 
-    (onClick)="save('info')" 
-    raised 
-    severity="secondary" />
-<p-splitButton 
-    label="Success" 
-    [model]="items" 
-    (onClick)="save('info')" 
-    raised 
-    severity="success" />
-<p-splitButton 
-    label="Info" 
-    [model]="items" 
-    (onClick)="save('info')" 
-    raised 
-    severity="info" />
-<p-splitButton 
-    label="Warning" 
-    [model]="items" 
-    (onClick)="save('info')" 
-    raised 
-    severity="warning" />
-<p-splitButton 
-    label="Help" 
-    [model]="items" 
-    (onClick)="save('info')" 
-    raised 
-    severity="help" />
-<p-splitButton 
-    label="Danger" 
-    [model]="items" 
+        basic: `<p-splitButton
+    label="Primary"
+    [model]="items"
     (onClick)="save('info')"
-    raised 
+    raised />
+<p-splitButton
+    label="Secondary"
+    [model]="items"
+    (onClick)="save('info')"
+    raised
+    severity="secondary" />
+<p-splitButton
+    label="Success"
+    [model]="items"
+    (onClick)="save('info')"
+    raised
+    severity="success" />
+<p-splitButton
+    label="Info"
+    [model]="items"
+    (onClick)="save('info')"
+    raised
+    severity="info" />
+<p-splitButton
+    label="Warning"
+    [model]="items"
+    (onClick)="save('info')"
+    raised
+    severity="warning" />
+<p-splitButton
+    label="Help"
+    [model]="items"
+    (onClick)="save('info')"
+    raised
+    severity="help" />
+<p-splitButton
+    label="Danger"
+    [model]="items"
+    (onClick)="save('info')"
+    raised
     severity="danger" />`,
 
         html: `<div class="card flex justify-content-center flex-wrap gap-3">
     <p-toast />
-    <p-splitButton 
-        label="Primary" 
-        [model]="items" 
-        (onClick)="save('info')" 
+    <p-splitButton
+        label="Primary"
+        [model]="items"
+        (onClick)="save('info')"
         raised />
-    <p-splitButton 
-        label="Secondary" 
-        [model]="items" 
-        (onClick)="save('info')" 
-        raised 
+    <p-splitButton
+        label="Secondary"
+        [model]="items"
+        (onClick)="save('info')"
+        raised
         severity="secondary" />
-    <p-splitButton 
-        label="Success" 
-        [model]="items" 
-        (onClick)="save('info')" 
-        raised 
+    <p-splitButton
+        label="Success"
+        [model]="items"
+        (onClick)="save('info')"
+        raised
         severity="success" />
-    <p-splitButton 
-        label="Info" 
-        [model]="items" 
-        (onClick)="save('info')" 
-        raised 
+    <p-splitButton
+        label="Info"
+        [model]="items"
+        (onClick)="save('info')"
+        raised
         severity="info" />
-    <p-splitButton 
-        label="Warning" 
-        [model]="items" 
-        (onClick)="save('info')" 
-        raised 
+    <p-splitButton
+        label="Warning"
+        [model]="items"
+        (onClick)="save('info')"
+        raised
         severity="warning" />
-    <p-splitButton 
-        label="Help" 
-        [model]="items" 
-        (onClick)="save('info')" 
-        raised 
+    <p-splitButton
+        label="Help"
+        [model]="items"
+        (onClick)="save('info')"
+        raised
         severity="help" />
-    <p-splitButton 
-        label="Danger" 
-        [model]="items" 
-        (onClick)="save('info')" 
-        raised 
+    <p-splitButton
+        label="Danger"
+        [model]="items"
+        (onClick)="save('info')"
+        raised
         severity="danger" />
 </div>`,
 

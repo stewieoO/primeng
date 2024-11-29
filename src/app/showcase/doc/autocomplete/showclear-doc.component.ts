@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Code } from '@domain/code';
 import { CountryService } from '@service/countryservice';
 import { PlatformService } from '@service/platformservice';
-import { FormControl, FormGroup } from '@angular/forms';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ContentChildren, ElementRef, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation, booleanAttribute, numberAttribute, signal } from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChildren, ElementRef, EventEmitter, Input, NgModule, numberAttribute, Output, QueryList, signal, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { MenuItem, PrimeTemplate, TooltipOptions } from 'primeng/api';
+import { AutoFocusModule } from 'primeng/autofocus';
 import { ButtonModule } from 'primeng/button';
 import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { TieredMenu, TieredMenuModule } from 'primeng/tieredmenu';
 import { UniqueComponentId } from 'primeng/utils';
-import { AutoFocusModule } from 'primeng/autofocus';
 
 import { ButtonProps, MenuButtonProps } from './splitbutton.interface';
 

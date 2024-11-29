@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'column-selection-doc',
@@ -81,11 +81,11 @@ export class ColumnSelectionDoc {
             <td>{{ product.category }}</td>
             <td>{{ product.quantity }}</td>
             <td>
-                <button 
-                    type="button" 
-                    pButton 
-                    pRipple 
-                    icon="pi pi-plus" 
+                <button
+                    type="button"
+                    pButton
+                    pRipple
+                    icon="pi pi-plus"
                     (click)="selectProduct(product)">
                 </button>
             </td>
@@ -111,11 +111,11 @@ export class ColumnSelectionDoc {
                 <td>{{ product.category }}</td>
                 <td>{{ product.quantity }}</td>
                 <td>
-                    <button 
-                        type="button" 
-                        pButton 
-                        pRipple 
-                        icon="pi pi-plus" 
+                    <button
+                        type="button"
+                        pButton
+                        pRipple
+                        icon="pi pi-plus"
                         (click)="selectProduct(product)">
                     </button>
                 </td>

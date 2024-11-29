@@ -1,8 +1,7 @@
-import { TestBed, ComponentFixture, tick, fakeAsync } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { SelectButton } from './selectbutton';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { SimpleChange } from '@angular/core';
+import { SelectButton } from './selectbutton';
 
 describe('SelectButton', () => {
     let selectButton: SelectButton;

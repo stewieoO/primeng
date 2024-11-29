@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { MultipleDoc } from '@doc/inputgroup/multipledoc';
+import { AccessibilityDoc } from '@doc/inputgroup/accessibilitydoc';
 import { BasicDoc } from '@doc/inputgroup/basicdoc';
-import { ImportDoc } from '@doc/inputgroup/importdoc';
 import { ButtonDoc } from '@doc/inputgroup/buttondoc';
 import { CheckboxDoc } from '@doc/inputgroup/checkboxdoc';
-import { AccessibilityDoc } from '@doc/inputgroup/accessibilitydoc';
+import { ImportDoc } from '@doc/inputgroup/importdoc';
+import { MultipleDoc } from '@doc/inputgroup/multipledoc';
 
 @Component({
     templateUrl: './inputgroupdemo.html'

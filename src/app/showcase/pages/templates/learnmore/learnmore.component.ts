@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as templateData from './templatedata.json';
+
 @Component({
     selector: 'templates',
     templateUrl: './learnmore.component.html',

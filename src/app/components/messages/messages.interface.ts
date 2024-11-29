@@ -1,4 +1,5 @@
 import { TemplateRef } from '@angular/core';
+
 /**
  * Defines valid templates in Messages.
  * @group Templates

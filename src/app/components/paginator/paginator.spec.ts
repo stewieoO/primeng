@@ -1,11 +1,11 @@
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { Paginator, PaginatorModule } from './paginator';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
 import { SimpleChange } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { DropdownModule } from 'primeng/dropdown';
+import { Paginator, PaginatorModule } from './paginator';
 
 describe('Paginator', () => {
     let paginator: Paginator;

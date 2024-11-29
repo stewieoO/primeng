@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 import { ContextMenu } from 'primeng/contextmenu';
 
 interface Users {
@@ -141,9 +141,9 @@ export class CommandDoc implements OnInit {
         ]"
         (contextmenu)="onContextMenu($event, user)">
         <div class="flex align-items-center gap-2">
-            <img 
-                [alt]="user.name" 
-                [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image" 
+            <img
+                [alt]="user.name"
+                [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image"
                 style="width: 32px" />
             <span class="font-bold">
                 {{ user.name }}
@@ -174,9 +174,9 @@ export class CommandDoc implements OnInit {
             ]"
             (contextmenu)="onContextMenu($event, user)">
             <div class="flex align-items-center gap-2">
-                <img 
-                    [alt]="user.name" 
-                    [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image" 
+                <img
+                    [alt]="user.name"
+                    [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image"
                     style="width: 32px" />
                 <span class="font-bold">
                     {{ user.name }}

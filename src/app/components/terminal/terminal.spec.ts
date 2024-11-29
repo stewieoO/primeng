@@ -1,11 +1,11 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { Terminal } from './terminal';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { TerminalService } from './terminalservice';
-import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Subscription } from 'rxjs';
+import { Terminal } from './terminal';
+import { TerminalService } from './terminalservice';
 
 @Component({
     template: `<p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>`

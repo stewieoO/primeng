@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/tooltip/importdoc';
-import { StyleDoc } from '@doc/tooltip/styledoc';
-import { PositionDoc } from '@doc/tooltip/positiondoc';
-import { EventDoc } from '@doc/tooltip/eventdoc';
-import { AutoHideDoc } from '@doc/tooltip/autohidedoc';
-import { DelayDoc } from '@doc/tooltip/delaydoc';
-import { OptionsDoc } from '@doc/tooltip/optionsdoc';
 import { AccessibilityDoc } from '@doc/tooltip/accessibilitydoc';
+import { AutoHideDoc } from '@doc/tooltip/autohidedoc';
 import { CustomDoc } from '@doc/tooltip/customdoc';
+import { DelayDoc } from '@doc/tooltip/delaydoc';
+import { EventDoc } from '@doc/tooltip/eventdoc';
+import { ImportDoc } from '@doc/tooltip/importdoc';
+import { OptionsDoc } from '@doc/tooltip/optionsdoc';
+import { PositionDoc } from '@doc/tooltip/positiondoc';
+import { StyleDoc } from '@doc/tooltip/styledoc';
 
 @Component({
     templateUrl: './tooltipdemo.html'

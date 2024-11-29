@@ -1,5 +1,4 @@
-import { Component, Input, ViewChild } from '@angular/core';
-import { AppDocSectionTextComponent } from '@layout/doc/app.docsectiontext.component';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'hide-on-escape-doc',

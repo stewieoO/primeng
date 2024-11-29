@@ -1,6 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
     selector: 'csp-doc',

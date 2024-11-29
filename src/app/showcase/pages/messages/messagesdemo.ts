@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/messages/importdoc';
+import { AccessibilityDoc } from '@doc/messages/accessibilitydoc';
+import { AnimationDoc } from '@doc/messages/animationdoc';
 import { BasicDoc } from '@doc/messages/basicdoc';
-import { MessagesStyleDoc } from '@doc/messages/messagesstyledoc';
-import { MessageStyleDoc } from '@doc/messages/messagestyledoc';
 import { ClosableDoc } from '@doc/messages/closabledoc';
 import { DynamicDoc } from '@doc/messages/dynamicdoc';
-import { StaticDoc } from '@doc/messages/staticdoc';
-import { AnimationDoc } from '@doc/messages/animationdoc';
-import { SeverityDoc } from '@doc/messages/severitydoc';
-import { AccessibilityDoc } from '@doc/messages/accessibilitydoc';
+import { ImportDoc } from '@doc/messages/importdoc';
+import { MessagesStyleDoc } from '@doc/messages/messagesstyledoc';
+import { MessageStyleDoc } from '@doc/messages/messagestyledoc';
 import { ServiceDoc } from '@doc/messages/servicedoc';
+import { SeverityDoc } from '@doc/messages/severitydoc';
+import { StaticDoc } from '@doc/messages/staticdoc';
 
 @Component({
     templateUrl: './messagesdemo.html'

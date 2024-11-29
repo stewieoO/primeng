@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
 import { Code } from '@domain/code';
+import { SelectItemGroup } from 'primeng/api';
 
 interface Country {
     name: string;
@@ -67,17 +67,17 @@ export class GroupDoc {
     }
 
     code: Code = {
-        basic: `<p-listbox 
-    [options]="groupedCities" 
-    [group]="true" 
-    [(ngModel)]="selectedCountry" 
-    [listStyle]="{ 'max-height': '250px' }" 
+        basic: `<p-listbox
+    [options]="groupedCities"
+    [group]="true"
+    [(ngModel)]="selectedCountry"
+    [listStyle]="{ 'max-height': '250px' }"
     [style]="{ width: '15rem' }">
         <ng-template let-group pTemplate="group">
             <div class="flex align-items-center">
-                <img 
+                <img
                     src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
-                    [class]="'mr-2 flag flag-' + group.value" 
+                    [class]="'mr-2 flag flag-' + group.value"
                     style="width: 20px" />
                 <span>{{ group.label }}</span>
             </div>
@@ -85,17 +85,17 @@ export class GroupDoc {
 </p-listbox>`,
 
         html: `<div class="card flex justify-content-center">
-    <p-listbox 
-        [options]="groupedCities" 
-        [group]="true" 
-        [(ngModel)]="selectedCountry" 
-        [listStyle]="{ 'max-height': '250px' }" 
+    <p-listbox
+        [options]="groupedCities"
+        [group]="true"
+        [(ngModel)]="selectedCountry"
+        [listStyle]="{ 'max-height': '250px' }"
         [style]="{ width: '15rem' }">
             <ng-template let-group pTemplate="group">
                 <div class="flex align-items-center">
-                    <img 
+                    <img
                         src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
-                        [class]="'mr-2 flag flag-' + group.value" 
+                        [class]="'mr-2 flag flag-' + group.value"
                         style="width: 20px" />
                     <span>{{ group.label }}</span>
                 </div>

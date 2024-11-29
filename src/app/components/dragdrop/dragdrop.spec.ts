@@ -1,8 +1,9 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { Draggable, DragDropModule, Droppable } from './dragdrop';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule, Draggable, Droppable } from './dragdrop';
+
 @Component({
     template: `
         <ul style="margin:0;padding:0">

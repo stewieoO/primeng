@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'service-doc',
@@ -81,7 +81,7 @@ export class MessagesServiceDemo {
             { severity: 'info', summary: 'Info Message', detail: 'Via MessageService' }
         ]);
     }
-    
+
     clear() {
         this.messageService.clear();
     }

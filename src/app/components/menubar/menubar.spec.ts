@@ -1,8 +1,8 @@
 import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Menubar, MenubarModule, MenubarService, MenubarSub } from './menubar';
 import { RouterModule } from '@angular/router';
+import { Menubar, MenubarModule, MenubarService, MenubarSub } from './menubar';
 
 describe('Menubar', () => {
     let menubar: Menubar;

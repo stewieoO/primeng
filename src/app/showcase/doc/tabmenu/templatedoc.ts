@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'tab-menu-template-demo',
@@ -39,9 +39,9 @@ export class TemplateDoc implements OnInit {
         basic: `<p-tabMenu [model]="items" [activeItem]="activeItem">
     <ng-template pTemplate="item" let-item>
         <a pRipple class="flex align-items-center gap-2 p-menuitem-link">
-            <img 
-                [alt]="item.name" 
-                [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image" 
+            <img
+                [alt]="item.name"
+                [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image"
                 style="width: 32px" />
             <span class="font-bold">
                 {{ item.name }}
@@ -54,9 +54,9 @@ export class TemplateDoc implements OnInit {
     <p-tabMenu [model]="items" [activeItem]="activeItem">
         <ng-template pTemplate="item" let-item>
             <a pRipple class="flex align-items-center gap-2 p-menuitem-link">
-                <img 
-                    [alt]="item.name" 
-                    [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image" 
+                <img
+                    [alt]="item.name"
+                    [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image"
                     style="width: 32px" />
                 <span class="font-bold">
                     {{ item.name }}

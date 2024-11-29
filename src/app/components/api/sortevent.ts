@@ -1,4 +1,5 @@
 import { SortMeta } from './sortmeta';
+
 /**
  * Represents an event triggered when sorting is applied.
  * @group Interface

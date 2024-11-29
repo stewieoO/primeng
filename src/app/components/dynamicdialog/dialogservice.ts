@@ -1,11 +1,11 @@
-import { Injectable, ApplicationRef, Injector, Type, EmbeddedViewRef, ComponentRef, Inject, createComponent } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { ApplicationRef, ComponentRef, createComponent, EmbeddedViewRef, Inject, Injectable, Injector, Type } from '@angular/core';
 import { DomHandler } from 'primeng/dom';
 import { DynamicDialogComponent } from './dynamicdialog';
-import { DynamicDialogInjector } from './dynamicdialog-injector';
 import { DynamicDialogConfig } from './dynamicdialog-config';
+import { DynamicDialogInjector } from './dynamicdialog-injector';
 import { DynamicDialogRef } from './dynamicdialog-ref';
-import { DOCUMENT } from '@angular/common';
-import { ObjectUtils } from 'primeng/utils';
+
 /**
  * Dynamic Dialog component methods.
  * @group Service

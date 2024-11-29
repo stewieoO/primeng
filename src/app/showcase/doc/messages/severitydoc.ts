@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from 'primeng/api';
 import { Code } from '@domain/code';
+import { Message } from 'primeng/api';
 
 @Component({
     selector: 'severity-doc',

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -136,17 +136,17 @@ export class LazyLoadDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    [paginator]="true" 
-    [rows]="10" 
-    [lazy]="true" 
-    (onLazyLoad)="loadNodes($event)" 
-    [totalRecords]="1000" 
-    [loading]="loading" 
-    (onNodeExpand)="onNodeExpand($event)" 
-    [scrollable]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    [paginator]="true"
+    [rows]="10"
+    [lazy]="true"
+    (onLazyLoad)="loadNodes($event)"
+    [totalRecords]="1000"
+    [loading]="loading"
+    (onNodeExpand)="onNodeExpand($event)"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -166,17 +166,17 @@ export class LazyLoadDoc implements OnInit {
 </p-treeTable>`,
 
         html: `<div class="card">
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        [paginator]="true" 
-        [rows]="10" 
-        [lazy]="true" 
-        (onLazyLoad)="loadNodes($event)" 
-        [totalRecords]="1000" 
-        [loading]="loading" 
-        (onNodeExpand)="onNodeExpand($event)" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        [paginator]="true"
+        [rows]="10"
+        [lazy]="true"
+        (onLazyLoad)="loadNodes($event)"
+        [totalRecords]="1000"
+        [loading]="loading"
+        (onNodeExpand)="onNodeExpand($event)"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>

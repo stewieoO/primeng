@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { StyleDoc } from '@doc/dock/styledoc';
+import { AccessibilityDoc } from '@doc/dock/accessibilitydoc';
 import { AdvancedDoc } from '@doc/dock/advanceddoc';
 import { BasicDoc } from '@doc/dock/basicdoc';
 import { ImportDoc } from '@doc/dock/importdoc';
-import { AccessibilityDoc } from '@doc/dock/accessibilitydoc';
+import { StyleDoc } from '@doc/dock/styledoc';
 
 @Component({
     templateUrl: './dockdemo.html',

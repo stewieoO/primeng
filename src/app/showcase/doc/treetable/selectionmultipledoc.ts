@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -69,14 +69,14 @@ export class SelectionMultipleDoc {
 
     code: Code = {
         basic: `<p-inputSwitch [(ngModel)]="metaKeySelection" />
-<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    selectionMode="multiple" 
-    [(selection)]="selectedNodes" 
-    dataKey="name" 
-    [metaKeySelection]="metaKeySelection" 
-    [scrollable]="true" 
+<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    selectionMode="multiple"
+    [(selection)]="selectedNodes"
+    dataKey="name"
+    [metaKeySelection]="metaKeySelection"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -100,14 +100,14 @@ export class SelectionMultipleDoc {
         <p-inputSwitch [(ngModel)]="metaKeySelection" />
         <span>Metakey</span>
     </div>
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        selectionMode="multiple" 
-        [(selection)]="selectedNodes" 
-        dataKey="name" 
-        [metaKeySelection]="metaKeySelection" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        selectionMode="multiple"
+        [(selection)]="selectedNodes"
+        dataKey="name"
+        [metaKeySelection]="metaKeySelection"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>

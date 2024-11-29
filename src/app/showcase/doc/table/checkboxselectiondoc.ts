@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
@@ -57,10 +57,10 @@ export class CheckboxSelectionDoc {
     }
 
     code: Code = {
-        basic: `<p-table 
-    [value]="products" 
-    [(selection)]="selectedProducts" 
-    dataKey="code" 
+        basic: `<p-table
+    [value]="products"
+    [(selection)]="selectedProducts"
+    dataKey="code"
     [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header">
             <tr>
@@ -84,10 +84,10 @@ export class CheckboxSelectionDoc {
         </ng-template>
 </p-table>`,
         html: `<div class="card">
-    <p-table 
-        [value]="products" 
-        [(selection)]="selectedProducts" 
-        dataKey="code" 
+    <p-table
+        [value]="products"
+        [(selection)]="selectedProducts"
+        dataKey="code"
         [tableStyle]="{'min-width': '50rem'}">
             <ng-template pTemplate="header">
                 <tr>

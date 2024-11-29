@@ -1,8 +1,9 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, Inject, OnInit, PLATFORM_ID, ChangeDetectorRef } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { Code } from '@domain/code';
-import { Subscription, debounceTime } from 'rxjs';
 import { AppConfigService } from '@service/appconfigservice';
+import { debounceTime, Subscription } from 'rxjs';
+
 @Component({
     selector: 'chart-polar-area-demo',
     template: `
@@ -101,7 +102,7 @@ export class ChartPolarAreaDemo implements OnInit {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-        
+
         this.data = {
             datasets: [
                 {
@@ -118,7 +119,7 @@ export class ChartPolarAreaDemo implements OnInit {
             ],
             labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue']
         };
-        
+
         this.options = {
             plugins: {
                 legend: {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'single-doc',
@@ -27,17 +27,17 @@ export class SingleDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-tree 
-    [value]="files" 
-    class="w-full md:w-30rem" 
-    selectionMode="single" 
+        basic: `<p-tree
+    [value]="files"
+    class="w-full md:w-30rem"
+    selectionMode="single"
     [(selection)]="selectedFile" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-tree 
-        [value]="files" 
-        class="w-full md:w-30rem" 
-        selectionMode="single" 
+    <p-tree
+        [value]="files"
+        class="w-full md:w-30rem"
+        selectionMode="single"
         [(selection)]="selectedFile" />
 </div>`,
 
@@ -57,7 +57,7 @@ export class TreeSingleDemo implements OnInit {
     files!: TreeNode[];
 
     selectedFile!: TreeNode;
-    
+
     constructor(private nodeService: NodeService) {}
 
     ngOnInit() {

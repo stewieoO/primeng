@@ -1,11 +1,11 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { Steps, StepsModule } from './steps';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
-import { Toast } from 'primeng/toast';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MenuItem } from 'primeng/api';
+import { Toast } from 'primeng/toast';
+import { Steps, StepsModule } from './steps';
 
 @Component({
     template: `<p-steps [model]="items"></p-steps> `

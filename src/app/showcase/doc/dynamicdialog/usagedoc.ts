@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { Code } from '@domain/code';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 
 @Component({
     selector: 'usage-doc',
@@ -29,7 +29,7 @@ import { ProductListDemo } from './productlistdemo';
     providers: [DialogService]
 })
 export class DynamicDialogDemo implements OnDestroy {
-    
+
     ref: DynamicDialogRef | undefined;
 
     constructor(public dialogService: DialogService) {}

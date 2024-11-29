@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'breadcrumb-basic-demo',
@@ -26,15 +26,15 @@ export class BasicDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-breadcrumb 
-    class="max-w-full" 
-    [model]="items" 
+        basic: `<p-breadcrumb
+    class="max-w-full"
+    [model]="items"
     [home]="home" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-breadcrumb 
-        class="max-w-full" 
-        [model]="items" 
+    <p-breadcrumb
+        class="max-w-full"
+        [model]="items"
         [home]="home" />
 </div>`,
 
@@ -55,10 +55,10 @@ export class BreadcrumbBasicDemo implements OnInit {
 
     ngOnInit() {
         this.items = [
-            { label: 'Electronics' }, 
-            { label: 'Computer' }, 
-            { label: 'Accessories' }, 
-            { label: 'Keyboard' }, 
+            { label: 'Electronics' },
+            { label: 'Computer' },
+            { label: 'Accessories' },
+            { label: 'Keyboard' },
             { label: 'Wireless' }
         ];
 

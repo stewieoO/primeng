@@ -1,6 +1,6 @@
 import { HttpEvent } from '@angular/common/http';
-import { FileUpload } from './fileupload';
 import { TemplateRef } from '@angular/core';
+import { FileUpload } from './fileupload';
 
 /**
  * Upload event.

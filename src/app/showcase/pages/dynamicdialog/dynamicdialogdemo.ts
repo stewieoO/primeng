@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { OpenDoc } from '@doc/dynamicdialog/opendoc';
-import { ImportDoc } from '@doc/dynamicdialog/importdoc';
-import { StyleDoc } from '@doc/dynamicdialog/styledoc';
-import { ExampleDoc } from '@doc/dynamicdialog/exampledoc';
-import { UsageDoc } from '@doc/dynamicdialog/usagedoc';
-import { PassingDataDoc } from '@doc/dynamicdialog/passingdatadoc';
 import { CloseDoc } from '@doc/dynamicdialog/closedoc';
 import { CustomizationDoc } from '@doc/dynamicdialog/customizationdoc';
+import { ExampleDoc } from '@doc/dynamicdialog/exampledoc';
+import { ImportDoc } from '@doc/dynamicdialog/importdoc';
+import { OpenDoc } from '@doc/dynamicdialog/opendoc';
+import { PassingDataDoc } from '@doc/dynamicdialog/passingdatadoc';
+import { StyleDoc } from '@doc/dynamicdialog/styledoc';
+import { UsageDoc } from '@doc/dynamicdialog/usagedoc';
 
 @Component({
     templateUrl: './dynamicdialogdemo.html'

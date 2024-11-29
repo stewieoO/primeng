@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { TemplateDoc } from '@doc/menubar/templatedoc';
-import { BasicDoc } from '@doc/menubar/basicdoc';
-import { ImportDoc } from '@doc/menubar/importdoc';
-import { StyleDoc } from '@doc/menubar/styledoc';
 import { AccessibilityDoc } from '@doc/menubar/accessibilitydoc';
+import { BasicDoc } from '@doc/menubar/basicdoc';
 import { CommandDoc } from '@doc/menubar/commanddoc';
+import { ImportDoc } from '@doc/menubar/importdoc';
 import { RouterDoc } from '@doc/menubar/routerdoc';
+import { StyleDoc } from '@doc/menubar/styledoc';
+import { TemplateDoc } from '@doc/menubar/templatedoc';
 
 @Component({
     templateUrl: './menubardemo.html'

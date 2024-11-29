@@ -2,6 +2,7 @@ import { DOCUMENT, NgClass, NgIf, NgStyle, NgTemplateOutlet } from '@angular/com
 import {
     AfterContentInit,
     AfterViewInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     Component,
     ContentChildren,
@@ -11,13 +12,12 @@ import {
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     Output,
     QueryList,
     TemplateRef,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { PrimeTemplate, SharedModule } from 'primeng/api';
 import { AutoFocus } from 'primeng/autofocus';

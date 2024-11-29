@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { AdvancedDoc } from './advanceddoc';
 import { BasicDoc } from './basicdoc';

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
@@ -83,10 +83,10 @@ export class ResponsiveStackDoc {
     }
 
     code: Code = {
-        basic: `<p-table 
-    [value]="products" 
-    responsiveLayout="stack" 
-    [breakpoint]="'960px'" 
+        basic: `<p-table
+    [value]="products"
+    responsiveLayout="stack"
+    [breakpoint]="'960px'"
     [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -113,15 +113,15 @@ export class ResponsiveStackDoc {
                     <span class="p-column-title">Quantity</span>{{product.quantity}}
                 </td>
                 <td>
-                    <p-tag 
-                        [value]="product.inventoryStatus" 
+                    <p-tag
+                        [value]="product.inventoryStatus"
                         [severity]="getSeverity(product.inventoryStatus)" />
                 </td>
                 <td>
                     <span class="p-column-title">Reviews</span>
-                    <p-rating 
-                        [(ngModel)]="product.rating" 
-                        [readonly]="true" 
+                    <p-rating
+                        [(ngModel)]="product.rating"
+                        [readonly]="true"
                         [cancel]="false" />
                 </td>
             </tr>
@@ -154,15 +154,15 @@ export class ResponsiveStackDoc {
                     <span class="p-column-title">Quantity</span>{{product.quantity}}
                 </td>
                 <td>
-                    <p-tag 
-                        [value]="product.inventoryStatus" 
+                    <p-tag
+                        [value]="product.inventoryStatus"
                         [severity]="getSeverity(product.inventoryStatus)" />
                 </td>
                 <td>
                     <span class="p-column-title">Reviews</span>
-                    <p-rating 
-                        [(ngModel)]="product.rating" 
-                        [readonly]="true" 
+                    <p-rating
+                        [(ngModel)]="product.rating"
+                        [readonly]="true"
                         [cancel]="false" />
                 </td>
             </tr>

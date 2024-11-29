@@ -1,9 +1,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { BasicDoc } from '@doc/scrollpanel/basicdoc';
-import { ImportDoc } from '@doc/scrollpanel/importdoc';
-import { CusstomDoc } from '@doc/scrollpanel/customdoc';
-import { StyleDoc } from '@doc/scrollpanel/styledoc';
 import { AccessibilityDoc } from '@doc/scrollpanel/accessibilitydoc';
+import { BasicDoc } from '@doc/scrollpanel/basicdoc';
+import { CusstomDoc } from '@doc/scrollpanel/customdoc';
+import { ImportDoc } from '@doc/scrollpanel/importdoc';
+import { StyleDoc } from '@doc/scrollpanel/styledoc';
 
 @Component({
     templateUrl: './scrollpaneldemo.html',

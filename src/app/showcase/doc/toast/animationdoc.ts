@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'animation-doc',
@@ -24,17 +24,17 @@ export class AnimationDoc {
     }
 
     code: Code = {
-        basic: `<p-toast 
-    [showTransformOptions]="'translateY(100%)'" 
-    [showTransitionOptions]="'1000ms'" 
-    [hideTransitionOptions]="'1000ms'" 
+        basic: `<p-toast
+    [showTransformOptions]="'translateY(100%)'"
+    [showTransitionOptions]="'1000ms'"
+    [hideTransitionOptions]="'1000ms'"
     [showTransformOptions]="'translateX(100%)'" />
 <p-button (onClick)="show()" label="Show" />`,
         html: `<div class="card flex justify-content-center">
-    <p-toast 
-        [showTransformOptions]="'translateY(100%)'" 
-        [showTransitionOptions]="'1000ms'" 
-        [hideTransitionOptions]="'1000ms'" 
+    <p-toast
+        [showTransformOptions]="'translateY(100%)'"
+        [showTransitionOptions]="'1000ms'"
+        [hideTransitionOptions]="'1000ms'"
         [showTransformOptions]="'translateX(100%)'" />
     <p-button (onClick)="show()" label="Show" />
 </div>`,

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { TemplatesRoutingModule } from './templates-routing.module';
 import { TemplatesComponent } from './templates.component';

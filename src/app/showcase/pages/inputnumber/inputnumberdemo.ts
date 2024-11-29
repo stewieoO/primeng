@@ -1,18 +1,18 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { LocaleDoc } from '@doc/inputnumber/localedoc';
-import { ImportDoc } from '@doc/inputnumber/importdoc';
-import { NumeralsDoc } from '@doc/inputnumber/numeralsdoc';
-import { CurrencyDoc } from '@doc/inputnumber/currencydoc';
-import { PrefixSuffixDoc } from '@doc/inputnumber/prefixsuffixdoc';
-import { ButtonsDoc } from '@doc/inputnumber/buttonsdoc';
-import { VerticalDoc } from '@doc/inputnumber/verticaldoc';
-import { FloatlabelDoc } from '@doc/inputnumber/floatlabeldoc';
-import { InvalidDoc } from '@doc/inputnumber/invaliddoc';
-import { DisabledDoc } from '@doc/inputnumber/disableddoc';
-import { StyleDoc } from '@doc/inputnumber/styledoc';
 import { AccessibilityDoc } from '@doc/inputnumber/accessibilitydoc';
-import { ReactiveFormsDoc } from '@doc/inputnumber/reactiveformsdoc';
+import { ButtonsDoc } from '@doc/inputnumber/buttonsdoc';
+import { CurrencyDoc } from '@doc/inputnumber/currencydoc';
+import { DisabledDoc } from '@doc/inputnumber/disableddoc';
 import { FilledDoc } from '@doc/inputnumber/filleddoc';
+import { FloatlabelDoc } from '@doc/inputnumber/floatlabeldoc';
+import { ImportDoc } from '@doc/inputnumber/importdoc';
+import { InvalidDoc } from '@doc/inputnumber/invaliddoc';
+import { LocaleDoc } from '@doc/inputnumber/localedoc';
+import { NumeralsDoc } from '@doc/inputnumber/numeralsdoc';
+import { PrefixSuffixDoc } from '@doc/inputnumber/prefixsuffixdoc';
+import { ReactiveFormsDoc } from '@doc/inputnumber/reactiveformsdoc';
+import { StyleDoc } from '@doc/inputnumber/styledoc';
+import { VerticalDoc } from '@doc/inputnumber/verticaldoc';
 
 @Component({
     templateUrl: './inputnumberdemo.html',

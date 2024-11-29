@@ -1,5 +1,5 @@
 import sdk from '@stackblitz/sdk';
-import { Props, getAngularApp } from './templates';
+import { getAngularApp, Props } from './templates';
 
 const useCodeSandbox = (props: Props) => {
     const { files } = getAngularApp(props);

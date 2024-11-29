@@ -1,32 +1,32 @@
-import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
     ContentChildren,
+    effect,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
+    signal,
     TemplateRef,
     ViewChild,
     ViewContainerRef,
     ViewEncapsulation,
-    ViewRef,
-    booleanAttribute,
-    effect,
-    forwardRef,
-    numberAttribute,
-    signal
+    ViewRef
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';

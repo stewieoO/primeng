@@ -1,11 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
-import { GalleriaModule } from 'primeng/galleria';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { ButtonModule } from 'primeng/button';
+import { CheckboxModule } from 'primeng/checkbox';
+import { GalleriaModule } from 'primeng/galleria';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { AccessibilityDoc } from './accessibilitydoc';
 import { AdvancedDoc } from './advanceddoc';
 import { AutoPlayDoc } from './autoplaydoc';
 import { BasicDoc } from './basicdoc';
@@ -26,9 +29,6 @@ import { ItemWithoutThumbnailsDoc } from './navigator/itemwithoutthumbnailsdoc';
 import { ResponsiveDoc } from './responsivedoc';
 import { StyleDoc } from './styledoc';
 import { ThumbnailDoc } from './thumbnaildoc';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { CheckboxModule } from 'primeng/checkbox';
-import { AccessibilityDoc } from './accessibilitydoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, GalleriaModule, FormsModule, ButtonModule, RadioButtonModule, CheckboxModule],

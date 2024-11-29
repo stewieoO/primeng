@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SelectItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { SelectItem } from 'primeng/api';
 
 @Component({
     selector: 'dropdown-virtualscroll-demo',
@@ -30,15 +30,15 @@ export class VirtualScrollDoc {
     }
 
     code: Code = {
-        basic: `<p-dropdown 
-    [options]="items" 
-    [(ngModel)]="selectedItem" 
-    placeholder="Select Item" 
+        basic: `<p-dropdown
+    [options]="items"
+    [(ngModel)]="selectedItem"
+    placeholder="Select Item"
     [virtualScroll]="true"
     [virtualScrollItemSize]="38" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-dropdown 
+    <p-dropdown
         [options]="items"
         [(ngModel)]="selectedItem"
         placeholder="Select Item"
@@ -59,7 +59,7 @@ import { DropdownModule } from 'primeng/dropdown';
 })
 export class DropdownVirtualscrollDemo {
     items: SelectItem[];
-    
+
     selectedItem: string | undefined;
 
     constructor() {

@@ -7,8 +7,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { SharedModule } from 'primeng/api';
 import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
 import { DropdownModule } from 'primeng/dropdown';
-import { EditableColumn, Table, TableModule } from './table';
 import type { Paginator } from '../paginator/paginator';
+import { EditableColumn, Table, TableModule } from './table';
 
 @Component({
     template: `

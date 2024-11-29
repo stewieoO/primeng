@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -50,16 +50,16 @@ export class TemplateDoc {
     }
 
     code: Code = {
-        basic: `<p-toast 
-    position="bottom-center" 
-    key="confirm" 
-    (onClose)="onReject()" 
+        basic: `<p-toast
+    position="bottom-center"
+    key="confirm"
+    (onClose)="onReject()"
     [baseZIndex]="5000">
         <ng-template let-message pTemplate="message">
             <div class="flex flex-column align-items-start" style="flex: 1">
                 <div class="flex align-items-center gap-2">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
                         shape="circle" />
                     <span class="font-bold text-900">
                         Amy Elsner
@@ -74,16 +74,16 @@ export class TemplateDoc {
 </p-toast>
 <p-button (onClick)="showConfirm()" label="View" />`,
         html: `<div class="card flex justify-content-center">
-    <p-toast 
-        position="bottom-center" 
-        key="confirm" 
-        (onClose)="onReject()" 
+    <p-toast
+        position="bottom-center"
+        key="confirm"
+        (onClose)="onReject()"
         [baseZIndex]="5000">
             <ng-template let-message pTemplate="message">
                 <div class="flex flex-column align-items-start" style="flex: 1">
                     <div class="flex align-items-center gap-2">
-                        <p-avatar 
-                            image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                        <p-avatar
+                            image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
                             shape="circle" />
                         <span class="font-bold text-900">
                             Amy Elsner

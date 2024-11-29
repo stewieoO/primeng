@@ -1,9 +1,10 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
 import { SortEvent } from 'primeng/api';
 import { Table } from 'primeng/table';
+
 @Component({
     selector: 'removable-sort-doc',
     template: ` <app-docsectiontext>

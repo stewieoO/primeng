@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
-import { TimelineModule } from 'primeng/timeline';
-import { ImportDoc } from './importdoc';
-import { BasicDoc } from './basicdoc';
-import { AlignmentDoc } from './alignmentdoc';
-import { OppositeDoc } from './oppositedoc';
-import { TemplateDoc } from './templatedoc';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
-import { HorizontalDoc } from './horizontaldoc';
-import { StyleDoc } from './styledoc';
 import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { TimelineModule } from 'primeng/timeline';
 import { AccessibilityDoc } from './accessibilitydoc';
+import { AlignmentDoc } from './alignmentdoc';
+import { BasicDoc } from './basicdoc';
+import { HorizontalDoc } from './horizontaldoc';
+import { ImportDoc } from './importdoc';
+import { OppositeDoc } from './oppositedoc';
+import { StyleDoc } from './styledoc';
+import { TemplateDoc } from './templatedoc';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, AppDocModule, TimelineModule, CardModule, ButtonModule, RouterModule],

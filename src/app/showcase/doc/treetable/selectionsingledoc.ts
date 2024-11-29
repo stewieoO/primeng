@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -69,13 +69,13 @@ export class SelectionSingleDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    selectionMode="single" 
-    [(selection)]="selectedNode" 
-    dataKey="name" 
-    [scrollable]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    selectionMode="single"
+    [(selection)]="selectedNode"
+    dataKey="name"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -99,13 +99,13 @@ export class SelectionSingleDoc {
         <p-inputSwitch [(ngModel)]="metaKeySelection" />
         <span>Metakey</span>
     </div>
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        selectionMode="single" 
-        [(selection)]="selectedNode" 
-        dataKey="name" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        selectionMode="single"
+        [(selection)]="selectedNode"
+        dataKey="name"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>

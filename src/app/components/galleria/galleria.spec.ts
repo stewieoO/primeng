@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture, fakeAsync, tick, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Galleria, GalleriaModule } from './galleria';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Galleria, GalleriaModule } from './galleria';
 
 describe('Galleria', () => {
     let galleria: Galleria;

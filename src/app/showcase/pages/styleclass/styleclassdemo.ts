@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/styleclass/importdoc';
 import { AnimationDoc } from '@doc/styleclass/animationdoc';
+import { ImportDoc } from '@doc/styleclass/importdoc';
 import { ToggleClassDoc } from '@doc/styleclass/toggleclassdoc';
 
 @Component({

@@ -3,6 +3,7 @@ import {
     AfterContentInit,
     AfterViewChecked,
     AfterViewInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -16,13 +17,12 @@ import {
     Output,
     PLATFORM_ID,
     QueryList,
+    signal,
     SimpleChanges,
     TemplateRef,
     ViewChild,
     ViewChildren,
-    ViewEncapsulation,
-    booleanAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
 import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';

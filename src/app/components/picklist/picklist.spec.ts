@@ -1,8 +1,8 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { PickListModule, PickList } from './picklist';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component, EventEmitter } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { PickList, PickListModule } from './picklist';
 
 @Component({
     template: `<p-pickList [source]="sourceCars" [target]="targetCars">

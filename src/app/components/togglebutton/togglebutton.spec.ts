@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { ToggleButton } from './togglebutton';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ToggleButton } from './togglebutton';
 
 describe('ToggleButton', () => {
     let toggleButton: ToggleButton;

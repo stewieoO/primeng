@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'scrollable-doc',

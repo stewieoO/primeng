@@ -1,8 +1,8 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Chips } from './chips';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { TimesCircleIcon } from 'primeng/icons/timescircle';
+import { Chips } from './chips';
 
 describe('Chips', () => {
     let chips: Chips;

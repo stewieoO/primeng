@@ -1,5 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { Scroller } from './scroller';
+
 /**
  * Options of the scroll direction.
  * @group Types

@@ -1,9 +1,9 @@
-import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { PanelMenu, PanelMenuSub } from './panelmenu';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { PanelModule } from '../panel/panel';
+import { PanelMenu } from './panelmenu';
 
 describe('PanelMenu', () => {
     let panelmenu: PanelMenu;

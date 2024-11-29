@@ -1,6 +1,7 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -12,6 +13,7 @@ import {
     Input,
     NgModule,
     NgZone,
+    numberAttribute,
     Output,
     PLATFORM_ID,
     QueryList,
@@ -19,11 +21,10 @@ import {
     SimpleChanges,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
-import { Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
+import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { DomHandler } from 'primeng/dom';
 import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
 import { ChevronRightIcon } from 'primeng/icons/chevronright';
@@ -31,8 +32,7 @@ import { ChevronUpIcon } from 'primeng/icons/chevronup';
 import { RippleModule } from 'primeng/ripple';
 import { UniqueComponentId } from 'primeng/utils';
 import { CarouselPageEvent, CarouselResponsiveOptions } from './carousel.interface';
-import { PrimeNGConfig } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
+
 /**
  * Carousel is a content slider featuring various customization options.
  * @group Components

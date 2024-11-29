@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'disabled-doc',
@@ -55,40 +55,40 @@ export class DisabledDoc {
     }
 
     code: Code = {
-        basic: `<p-splitButton 
-    label="Save" 
-    icon="pi pi-plus" 
-    (onClick)="save('info')" 
-    [model]="items" 
+        basic: `<p-splitButton
+    label="Save"
+    icon="pi pi-plus"
+    (onClick)="save('info')"
+    [model]="items"
     [disabled]="true" />`,
 
         html: `<div class="card flex justify-content-center">
     <p-toast />
-    <p-splitButton 
-        label="Save" 
-        icon="pi pi-plus" 
-        (onClick)="save('info')" 
-        [model]="items" 
+    <p-splitButton
+        label="Save"
+        icon="pi pi-plus"
+        (onClick)="save('info')"
+        [model]="items"
         [disabled]="true" />
 </div>
 
 <div class="card flex justify-content-center">
     <p-toast />
-    <p-splitButton 
-        label="Save" 
-        icon="pi pi-plus" 
-        (onClick)="save('info')" 
-        [model]="items" 
+    <p-splitButton
+        label="Save"
+        icon="pi pi-plus"
+        (onClick)="save('info')"
+        [model]="items"
         [menuButtonDisabled]="true" />
 </div>
 
 <div class="card flex justify-content-center">
     <p-toast />
-    <p-splitButton 
+    <p-splitButton
         label="Save"
         icon="pi pi-plus"
-        (onClick)="save('info')" 
-        [model]="items" 
+        (onClick)="save('info')"
+        [model]="items"
         [buttonDisabled]="true" />
 </div>
 `,

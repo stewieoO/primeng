@@ -1,7 +1,8 @@
-import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -10,28 +11,28 @@ import {
     DoCheck,
     ElementRef,
     EventEmitter,
+    forwardRef,
     HostListener,
     Inject,
     Input,
     NgModule,
     NgZone,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
-    PLATFORM_ID,
     Pipe,
     PipeTransform,
+    PLATFORM_ID,
     QueryList,
     Renderer2,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    forwardRef,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
+import { AutoFocusModule } from 'primeng/autofocus';
 import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
 import { EyeIcon } from 'primeng/icons/eye';
 import { EyeSlashIcon } from 'primeng/icons/eyeslash';
@@ -39,7 +40,6 @@ import { TimesIcon } from 'primeng/icons/times';
 import { InputTextModule } from 'primeng/inputtext';
 import { Nullable, VoidListener } from 'primeng/ts-helpers';
 import { ZIndexUtils } from 'primeng/utils';
-import { AutoFocusModule } from 'primeng/autofocus';
 import { Subscription } from 'rxjs';
 
 type Meter = {

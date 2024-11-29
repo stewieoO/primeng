@@ -1,22 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { AppDocModule } from '@layout/doc/app.doc.module';
+import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
-import { ImportDoc } from './importdoc';
-import { BasicDoc } from './basicdoc';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { ButtonModule } from 'primeng/button';
-import { MeterGroupModule } from 'primeng/metergroup';
-import { MultipleDoc } from './multipledoc';
-import { IconDoc } from './icondoc';
-import { LabelDoc } from './labeldoc';
-import { StyleDoc } from './styledoc';
-import { VerticalDoc } from './verticaldoc';
-import { MinMaxDoc } from './minmaxdoc';
-import { TemplateDoc } from './templatedoc';
-import { AccessibilityDoc } from './accessibilitydoc';
 import { CardModule } from 'primeng/card';
+import { MeterGroupModule } from 'primeng/metergroup';
+import { AccessibilityDoc } from './accessibilitydoc';
+import { BasicDoc } from './basicdoc';
+import { IconDoc } from './icondoc';
+import { ImportDoc } from './importdoc';
+import { LabelDoc } from './labeldoc';
+import { MinMaxDoc } from './minmaxdoc';
+import { MultipleDoc } from './multipledoc';
+import { StyleDoc } from './styledoc';
+import { TemplateDoc } from './templatedoc';
+import { VerticalDoc } from './verticaldoc';
+
 @NgModule({
     imports: [CommonModule, AppCodeModule, FormsModule, RouterModule, ButtonModule, AppDocModule, MeterGroupModule, CardModule],
     declarations: [BasicDoc, ImportDoc, MultipleDoc, IconDoc, LabelDoc, VerticalDoc, MinMaxDoc, TemplateDoc, StyleDoc, AccessibilityDoc],

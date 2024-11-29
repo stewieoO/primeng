@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ImageDoc } from '@doc/inplace/imagedoc';
-import { StyleDoc } from '@doc/inplace/styledoc';
+import { AccessibilityDoc } from '@doc/inplace/accessibilitydoc';
 import { BasicDoc } from '@doc/inplace/basicdoc';
 import { DataDoc } from '@doc/inplace/datadoc';
+import { ImageDoc } from '@doc/inplace/imagedoc';
 import { ImportDoc } from '@doc/inplace/importdoc';
 import { InputDoc } from '@doc/inplace/inputdoc';
-import { AccessibilityDoc } from '@doc/inplace/accessibilitydoc';
 import { LazyDoc } from '@doc/inplace/lazydoc';
+import { StyleDoc } from '@doc/inplace/styledoc';
 
 @Component({
     templateUrl: './inplacedemo.html'

@@ -1,18 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
-import { BasicDoc } from './basicdoc';
-import { InvalidDoc } from './invaliddoc';
-import { ImportDoc } from './importdoc';
-import { DisabledDoc } from './disableddoc';
-import { StyleDoc } from './styledoc';
 import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
 import { AccessibilityDoc } from './accessibilitydoc';
-import { ReactiveFormsDoc } from './reactiveformsdoc';
+import { BasicDoc } from './basicdoc';
+import { DisabledDoc } from './disableddoc';
 import { FilledDoc } from './filleddoc';
+import { ImportDoc } from './importdoc';
+import { InvalidDoc } from './invaliddoc';
+import { ReactiveFormsDoc } from './reactiveformsdoc';
+import { StyleDoc } from './styledoc';
 
 @NgModule({
     imports: [CommonModule, AppCodeModule, AppDocModule, TriStateCheckboxModule, FormsModule, ReactiveFormsModule, RouterModule],

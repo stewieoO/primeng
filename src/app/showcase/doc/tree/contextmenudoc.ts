@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService, TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { MenuItem, MessageService, TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'context-menu-doc',
@@ -48,21 +48,21 @@ export class ContextMenuDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-tree 
-    class="w-full md:w-30rem" 
-    [value]="files" 
-    selectionMode="single" 
-    [(selection)]="selectedFile" 
+        basic: `<p-tree
+    class="w-full md:w-30rem"
+    [value]="files"
+    selectionMode="single"
+    [(selection)]="selectedFile"
     [contextMenu]="cm" />
 <p-contextMenu #cm [model]="items" />
 <p-toast />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-tree 
-        class="w-full md:w-30rem" 
+    <p-tree
+        class="w-full md:w-30rem"
         [value]="files"
-        selectionMode="single" 
-        [(selection)]="selectedFile" 
+        selectionMode="single"
+        [(selection)]="selectedFile"
         [contextMenu]="cm" />
     <p-contextMenu #cm [model]="items" />
     <p-toast />

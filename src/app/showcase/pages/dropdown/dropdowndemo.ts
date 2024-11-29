@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
-import { BasicDoc } from '@doc/dropdown/basicdoc';
-import { DisabledDoc } from '@doc/dropdown/disableddoc';
-import { EditableDoc } from '@doc/dropdown/editabledoc';
-import { FilterDoc } from '@doc/dropdown/filterdoc';
-import { GroupDoc } from '@doc/dropdown/groupdoc';
-import { ImportDoc } from '@doc/dropdown/importdoc';
-import { TemplateDoc } from '@doc/dropdown/templatedoc';
-import { VirtualScrollDoc } from '@doc/dropdown/virtualscrolldoc';
-import { FloatLabelDoc } from '@doc/dropdown/floatlabeldoc';
-import { StyleDoc } from '@doc/dropdown/styledoc';
 import { AccessibilityDoc } from '@doc/dropdown/accessibilitydoc';
-import { ReactiveFormsDoc } from '@doc/dropdown/reactiveformsdoc';
-import { LazyVirtualScrollDoc } from '@doc/dropdown/lazyvirtualscrolldoc';
-import { InvalidDoc } from '@doc/dropdown/invaliddoc';
-import { CustomFilterDoc } from '@doc/dropdown/customfilterdoc';
+import { BasicDoc } from '@doc/dropdown/basicdoc';
 import { CheckmarkDoc } from '@doc/dropdown/checkmarkdoc';
 import { ClearIconDoc } from '@doc/dropdown/clearicondoc';
-import { LoadingStateDoc } from '@doc/dropdown/loadingstatedoc';
+import { CustomFilterDoc } from '@doc/dropdown/customfilterdoc';
+import { DisabledDoc } from '@doc/dropdown/disableddoc';
+import { EditableDoc } from '@doc/dropdown/editabledoc';
 import { FilledDoc } from '@doc/dropdown/filleddoc';
+import { FilterDoc } from '@doc/dropdown/filterdoc';
+import { FloatLabelDoc } from '@doc/dropdown/floatlabeldoc';
+import { GroupDoc } from '@doc/dropdown/groupdoc';
+import { ImportDoc } from '@doc/dropdown/importdoc';
+import { InvalidDoc } from '@doc/dropdown/invaliddoc';
+import { LazyVirtualScrollDoc } from '@doc/dropdown/lazyvirtualscrolldoc';
+import { LoadingStateDoc } from '@doc/dropdown/loadingstatedoc';
+import { ReactiveFormsDoc } from '@doc/dropdown/reactiveformsdoc';
+import { StyleDoc } from '@doc/dropdown/styledoc';
+import { TemplateDoc } from '@doc/dropdown/templatedoc';
+import { VirtualScrollDoc } from '@doc/dropdown/virtualscrolldoc';
 
 @Component({
     templateUrl: './dropdowndemo.html',

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/animateonscroll/importdoc';
-import { BasicDoc } from '@doc/animateonscroll/basicdoc';
 import { AccessibilityDoc } from '@doc/animateonscroll/accessibilitydoc';
+import { BasicDoc } from '@doc/animateonscroll/basicdoc';
+import { ImportDoc } from '@doc/animateonscroll/importdoc';
 
 @Component({
     templateUrl: './animateonscrolldemo.html'

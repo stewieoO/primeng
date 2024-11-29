@@ -1,8 +1,9 @@
-import { NgModule, Directive, ElementRef, HostListener, Input, Output, EventEmitter, Optional, AfterViewInit, OnInit, OnDestroy, ChangeDetectorRef, AfterViewChecked, booleanAttribute } from '@angular/core';
-import { NgModel, NgControl, FormControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Subscription } from 'rxjs';
+import { AfterViewInit, booleanAttribute, ChangeDetectorRef, Directive, ElementRef, EventEmitter, HostListener, Input, NgModule, OnDestroy, OnInit, Optional, Output } from '@angular/core';
+import { NgControl, NgModel } from '@angular/forms';
 import { PrimeNGConfig } from 'primeng/api';
+import { Subscription } from 'rxjs';
+
 /**
  * InputTextarea adds styling and autoResize functionality to standard textarea element.
  * @group Components

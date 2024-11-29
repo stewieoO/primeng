@@ -1,9 +1,10 @@
-import { NgModule, Component, AfterViewInit, AfterViewChecked, OnDestroy, Input, ElementRef, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AfterViewChecked, AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input, NgModule, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { DomHandler } from 'primeng/dom';
-import { TerminalService } from './terminalservice';
 import { Subscription } from 'rxjs';
+import { TerminalService } from './terminalservice';
+
 /**
  * Terminal is a text based user interface.
  * @group Components

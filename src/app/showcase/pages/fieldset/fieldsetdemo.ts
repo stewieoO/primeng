@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/fieldset/importdoc';
-import { BasicDoc } from '@doc/fieldset/basicdoc';
-import { ToggleableDoc } from '@doc/fieldset/toggleabledoc';
-import { TemplateDoc } from '@doc/fieldset/templatedoc';
-import { StyleDoc } from '@doc/fieldset/styledoc';
 import { AccessibilityDoc } from '@doc/fieldset/accessibilitydoc';
+import { BasicDoc } from '@doc/fieldset/basicdoc';
+import { ImportDoc } from '@doc/fieldset/importdoc';
+import { StyleDoc } from '@doc/fieldset/styledoc';
+import { TemplateDoc } from '@doc/fieldset/templatedoc';
+import { ToggleableDoc } from '@doc/fieldset/toggleabledoc';
 
 @Component({
     templateUrl: './fieldsetdemo.html'

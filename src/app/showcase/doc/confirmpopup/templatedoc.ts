@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { ConfirmationService, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'confirm-popup-template-demo',
@@ -90,7 +90,7 @@ import { ButtonModule } from 'primeng/button';
 })
 export class ConfirmPopupTemplateDemo {
     constructor(private confirmationService: ConfirmationService, private messageService: MessageService) {}
-    
+
     confirm(event: Event) {
         this.confirmationService.confirm({
             target: event.target as EventTarget,

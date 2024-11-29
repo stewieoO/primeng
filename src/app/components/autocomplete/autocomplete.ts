@@ -32,16 +32,16 @@ import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerO
 import { AutoFocusModule } from 'primeng/autofocus';
 import { ButtonModule } from 'primeng/button';
 import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
+import { ChevronDownIcon } from 'primeng/icons/chevrondown';
+import { SpinnerIcon } from 'primeng/icons/spinner';
+import { TimesIcon } from 'primeng/icons/times';
+import { TimesCircleIcon } from 'primeng/icons/timescircle';
 import { InputTextModule } from 'primeng/inputtext';
 import { Overlay, OverlayModule } from 'primeng/overlay';
 import { RippleModule } from 'primeng/ripple';
 import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { Nullable } from 'primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
 import { AutoCompleteCompleteEvent, AutoCompleteDropdownClickEvent, AutoCompleteLazyLoadEvent, AutoCompleteSelectEvent, AutoCompleteUnselectEvent } from './autocomplete.interface';
 
 export const AUTOCOMPLETE_VALUE_ACCESSOR: any = {

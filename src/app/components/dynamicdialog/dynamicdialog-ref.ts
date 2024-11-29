@@ -1,5 +1,5 @@
 import { Observable, Subject } from 'rxjs';
-import { Output, EventEmitter, Type } from '@angular/core';
+
 /**
  * Dynamic Dialog instance.
  * @group Components

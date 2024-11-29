@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { BasicDoc } from '@doc/inputswitch/basicdoc';
-import { ImportDoc } from '@doc/inputswitch/importdoc';
-import { DisabledDoc } from '@doc/inputswitch/disableddoc';
-import { PreselectionDoc } from '@doc/inputswitch/preselectiondoc';
-import { StyleDoc } from '@doc/inputswitch/styledoc';
 import { AccessibilityDoc } from '@doc/inputswitch/accessibilitydoc';
-import { ReactiveFormsDoc } from '@doc/inputswitch/reactiveformsdoc';
+import { BasicDoc } from '@doc/inputswitch/basicdoc';
+import { DisabledDoc } from '@doc/inputswitch/disableddoc';
+import { ImportDoc } from '@doc/inputswitch/importdoc';
 import { InvalidDoc } from '@doc/inputswitch/invaliddoc';
+import { PreselectionDoc } from '@doc/inputswitch/preselectiondoc';
+import { ReactiveFormsDoc } from '@doc/inputswitch/reactiveformsdoc';
+import { StyleDoc } from '@doc/inputswitch/styledoc';
+
 @Component({
     templateUrl: './inputswitchdemo.html'
 })

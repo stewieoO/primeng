@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'basic-doc',
@@ -52,16 +52,16 @@ export class BasicDoc {
     }
 
     code: Code = {
-        basic: `<p-splitButton 
-    label="Save" 
-    (onClick)="save('info')" 
+        basic: `<p-splitButton
+    label="Save"
+    (onClick)="save('info')"
     [model]="items" />`,
 
         html: `<div class="card flex justify-content-center">
     <p-toast />
-    <p-splitButton 
-        label="Save" 
-        (onClick)="save('info')" 
+    <p-splitButton
+        label="Save"
+        (onClick)="save('info')"
         [model]="items" />
 </div>`,
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -120,7 +120,7 @@ export class TemplateDoc implements OnInit {
                 {{ item.label }}
             </span>
             <p-badge *ngIf="item.badge" class="ml-auto" [value]="item.badge" />
-            <span *ngIf="item.shortcut" class="ml-auto border-1 surface-border 
+            <span *ngIf="item.shortcut" class="ml-auto border-1 surface-border
             border-round surface-100 text-xs p-1">
                 {{ item.shortcut }}
             </span>
@@ -137,7 +137,7 @@ export class TemplateDoc implements OnInit {
                     {{ item.label }}
                 </span>
                 <p-badge *ngIf="item.badge" class="ml-auto" [value]="item.badge" />
-                <span *ngIf="item.shortcut" class="ml-auto border-1 surface-border 
+                <span *ngIf="item.shortcut" class="ml-auto border-1 surface-border
                 border-round surface-100 text-xs p-1">
                     {{ item.shortcut }}
                 </span>

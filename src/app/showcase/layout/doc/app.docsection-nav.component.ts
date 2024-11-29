@@ -1,4 +1,4 @@
-import { DOCUMENT, Location, isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser, Location } from '@angular/common';
 import { Component, ElementRef, Inject, Input, NgZone, OnDestroy, OnInit, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { DomHandler } from 'primeng/dom';

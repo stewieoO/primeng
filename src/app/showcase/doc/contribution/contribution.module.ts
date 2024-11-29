@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
-import { IntroductionDoc } from './introductiondoc';
-import { HelpNeededDoc } from './helpneededdoc';
-import { CommunicationDoc } from './communicationdoc';
-import { PathwayDoc } from './pathwaydoc';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { BenefitsDoc } from './benefitsdoc';
 import { ClaDoc } from './cladoc';
+import { CommunicationDoc } from './communicationdoc';
+import { HelpNeededDoc } from './helpneededdoc';
+import { IntroductionDoc } from './introductiondoc';
 import { KeyPointsDoc } from './keypoints';
+import { PathwayDoc } from './pathwaydoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule],

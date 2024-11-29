@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
+import { AccessibilityDoc } from '@doc/inputtext/accessibilitydoc';
+import { BasicDoc } from '@doc/inputtext/basicdoc';
+import { FilledDoc } from '@doc/inputtext/filleddoc';
+import { ReactiveFormsDoc } from '@doc/inputtext/reactiveformsdoc';
+import { StyleDoc } from '@doc/inputtext/styledoc';
 import { DisabledDoc } from 'src/app/showcase/doc/inputtext/disableddoc';
 import { FloatLabelDoc } from 'src/app/showcase/doc/inputtext/floatlabeldoc';
 import { HelpTextDoc } from 'src/app/showcase/doc/inputtext/helptextdoc';
-import { IconsDoc } from 'src/app/showcase/doc/inputtext/iconsdoc';
 import { ImportDoc } from 'src/app/showcase/doc/inputtext/importdoc';
 import { InvalidDoc } from 'src/app/showcase/doc/inputtext/invaliddoc';
-import { SizesDoc } from 'src/app/showcase/doc/inputtext/sizesdoc';
-import { AccessibilityDoc } from '@doc/inputtext/accessibilitydoc';
-import { BasicDoc } from '@doc/inputtext/basicdoc';
-import { KeyFilterDoc } from '@doc/inputtext/keyfilterdoc';
-import { ReactiveFormsDoc } from '@doc/inputtext/reactiveformsdoc';
-import { StyleDoc } from '@doc/inputtext/styledoc';
-import { FilledDoc } from '@doc/inputtext/filleddoc';
 
 @Component({
     templateUrl: './inputtextdemo.html',

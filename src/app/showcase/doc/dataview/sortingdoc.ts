@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SelectItem } from 'primeng/api';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
+import { SelectItem } from 'primeng/api';
 
 @Component({
     selector: 'data-view-sorting-demo',

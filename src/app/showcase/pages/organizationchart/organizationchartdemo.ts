@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { TemplateDoc } from '@doc/organizationchart/templatedoc';
+import { AccessibilityDoc } from '@doc/organizationchart/accessibilitydoc';
 import { BasicDoc } from '@doc/organizationchart/basicdoc';
+import { ColoredDoc } from '@doc/organizationchart/colored.doc';
 import { ImportDoc } from '@doc/organizationchart/importdoc';
 import { SelectionDoc } from '@doc/organizationchart/selectiondoc';
-import { ColoredDoc } from '@doc/organizationchart/colored.doc';
 import { StyleDoc } from '@doc/organizationchart/styledoc';
-import { AccessibilityDoc } from '@doc/organizationchart/accessibilitydoc';
+import { TemplateDoc } from '@doc/organizationchart/templatedoc';
 
 @Component({
     templateUrl: './organizationchartdemo.html',

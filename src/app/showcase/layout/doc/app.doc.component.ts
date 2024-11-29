@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Doc } from '@domain/doc';
-import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-doc',

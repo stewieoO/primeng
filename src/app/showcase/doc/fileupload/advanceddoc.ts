@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 interface UploadEvent {
     originalEvent: Event;
@@ -42,12 +42,12 @@ export class AdvancedDoc {
     }
 
     code: Code = {
-        basic: `<p-fileUpload 
-    name="demo[]" 
-    url="https://www.primefaces.org/cdn/api/upload.php" 
-    (onUpload)="onUpload($event)" 
-    [multiple]="true" 
-    accept="image/*" 
+        basic: `<p-fileUpload
+    name="demo[]"
+    url="https://www.primefaces.org/cdn/api/upload.php"
+    (onUpload)="onUpload($event)"
+    [multiple]="true"
+    accept="image/*"
     maxFileSize="1000000">
         <ng-template pTemplate="content">
             <ul *ngIf="uploadedFiles.length">
@@ -59,12 +59,12 @@ export class AdvancedDoc {
 </p-fileUpload>`,
         html: `<div class="card flex justify-content-center">
     <p-toast />
-    <p-fileUpload 
-        name="demo[]" 
-        url="https://www.primefaces.org/cdn/api/upload.php" 
-        (onUpload)="onUpload($event)" 
-        [multiple]="true" 
-        accept="image/*" 
+    <p-fileUpload
+        name="demo[]"
+        url="https://www.primefaces.org/cdn/api/upload.php"
+        (onUpload)="onUpload($event)"
+        [multiple]="true"
+        accept="image/*"
         maxFileSize="1000000">
             <ng-template pTemplate="content">
                 <ul *ngIf="uploadedFiles.length">

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Code } from '@domain/code';
 
 @Component({
@@ -36,7 +36,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'overlay-basic-demo',
-    templateUrl: './overlay-basic-demo.html' 
+    templateUrl: './overlay-basic-demo.html'
 })
 export class OverlayBasicDemo {
     overlayVisible: boolean = false;

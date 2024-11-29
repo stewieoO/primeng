@@ -2,6 +2,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AppConfigService } from '@service/appconfigservice';
 import { MenuItem, SelectItem } from 'primeng/api';
 import { BadgeModule } from 'primeng/badge';
 import { CalendarModule } from 'primeng/calendar';
@@ -14,8 +15,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { SliderModule } from 'primeng/slider';
 import { TabMenuModule } from 'primeng/tabmenu';
-import { Subscription, debounceTime } from 'rxjs';
-import { AppConfigService } from '@service/appconfigservice';
+import { debounceTime, Subscription } from 'rxjs';
 
 @Component({
     selector: 'hero-section',

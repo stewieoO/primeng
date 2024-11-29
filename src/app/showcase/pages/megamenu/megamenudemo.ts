@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/megamenu/importdoc';
+import { AccessibilityDoc } from '@doc/megamenu/accessibilitydoc';
 import { BasicDoc } from '@doc/megamenu/basicdoc';
+import { CommandDoc } from '@doc/megamenu/commanddoc';
+import { ImportDoc } from '@doc/megamenu/importdoc';
+import { RouterDoc } from '@doc/megamenu/routerdoc';
 import { StyleDoc } from '@doc/megamenu/styledoc';
 import { TemplateDoc } from '@doc/megamenu/templatedoc';
 import { VerticalDoc } from '@doc/megamenu/verticaldoc';
-import { AccessibilityDoc } from '@doc/megamenu/accessibilitydoc';
-import { CommandDoc } from '@doc/megamenu/commanddoc';
-import { RouterDoc } from '@doc/megamenu/routerdoc';
 
 @Component({
     templateUrl: './megamenudemo.html',

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'gridlines-doc',
@@ -46,10 +46,10 @@ export class GridlinesDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [scrollable]="true" 
-    [tableStyle]="{'min-width':'50rem'}" 
+        basic: `<p-treeTable
+    [value]="files"
+    [scrollable]="true"
+    [tableStyle]="{'min-width':'50rem'}"
     styleClass="p-treetable-gridlines">
         <ng-template pTemplate="header">
             <tr>
@@ -71,9 +71,9 @@ export class GridlinesDoc {
 </p-treeTable>`,
 
         html: `<div class="card">
-    <p-treeTable 
-        [value]="files" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header">
                 <tr>

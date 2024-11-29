@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MegaMenuItem } from 'primeng/api';
 
 @Component({
     selector: 'template-doc',

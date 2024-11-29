@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'sizes-doc',
@@ -54,36 +54,36 @@ export class SizesDoc {
     }
 
     code: Code = {
-        basic: `<p-splitButton 
-    label="Small" 
-    [model]="items" 
-    (onClick)="save('info')" 
+        basic: `<p-splitButton
+    label="Small"
+    [model]="items"
+    (onClick)="save('info')"
     size="sm" />
-<p-splitButton 
-    label="Normal" 
-    [model]="items" 
+<p-splitButton
+    label="Normal"
+    [model]="items"
     (onClick)="save('info')" />
-<p-splitButton 
-    label="Large" 
-    [model]="items" 
-    (onClick)="save('info')" 
+<p-splitButton
+    label="Large"
+    [model]="items"
+    (onClick)="save('info')"
     size="lg" />`,
 
         html: `<div class="card flex flex-wrap gap-3 justify-content-center">
     <p-toast />
-    <p-splitButton 
-        label="Small" 
-        [model]="items" 
-        (onClick)="save('info')" 
+    <p-splitButton
+        label="Small"
+        [model]="items"
+        (onClick)="save('info')"
         size="sm" />
-    <p-splitButton 
-        label="Normal" 
-        [model]="items" 
+    <p-splitButton
+        label="Normal"
+        [model]="items"
         (onClick)="save('info')" />
-    <p-splitButton 
-        label="Large" 
-        [model]="items" 
-        (onClick)="save('info')" 
+    <p-splitButton
+        label="Large"
+        [model]="items"
+        (onClick)="save('info')"
         size="lg" />
 </div>`,
 

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { AccessibilityDoc } from '@doc/chip/accessibilitydoc';
+import { BasicDoc } from '@doc/chip/basicdoc';
 import { IconDoc } from '@doc/chip/icondoc';
 import { ImageDoc } from '@doc/chip/imagedoc';
 import { ImportDoc } from '@doc/chip/importdoc';
-import { TemplateDoc } from '@doc/chip/templatedoc';
-import { BasicDoc } from '@doc/chip/basicdoc';
 import { StyleDoc } from '@doc/chip/styledoc';
-import { AccessibilityDoc } from '@doc/chip/accessibilitydoc';
+import { TemplateDoc } from '@doc/chip/templatedoc';
 
 @Component({
     templateUrl: './chipdemo.html',

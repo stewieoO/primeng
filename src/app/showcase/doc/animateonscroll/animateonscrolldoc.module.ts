@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
-import { ImportDoc } from './importdoc';
-import { BasicDoc } from './basicdoc';
-import { AccessibilityDoc } from './accessibilitydoc';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { AccessibilityDoc } from './accessibilitydoc';
+import { BasicDoc } from './basicdoc';
+import { ImportDoc } from './importdoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, AnimateOnScrollModule],

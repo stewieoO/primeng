@@ -1,5 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { Splitter } from './splitter';
+
 /**
  * Custom panel resize start event.
  * @see {@link Splitter.onResizeStart}

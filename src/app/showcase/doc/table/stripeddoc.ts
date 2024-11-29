@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
@@ -49,9 +49,9 @@ export class StripedDoc {
     }
 
     code: Code = {
-        basic: `<p-table 
-    [value]="products" 
-    styleClass="p-datatable-striped" 
+        basic: `<p-table
+    [value]="products"
+    styleClass="p-datatable-striped"
     [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header">
             <tr>
@@ -71,9 +71,9 @@ export class StripedDoc {
         </ng-template>
 </p-table>`,
         html: `<div class="card">
-    <p-table 
-        [value]="products" 
-        styleClass="p-datatable-striped" 
+    <p-table
+        [value]="products"
+        styleClass="p-datatable-striped"
         [tableStyle]="{'min-width': '50rem'}">
             <ng-template pTemplate="header">
                 <tr>

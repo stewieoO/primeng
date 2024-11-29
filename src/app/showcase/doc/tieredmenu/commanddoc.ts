@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
-import { MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'command-doc',
@@ -99,10 +98,10 @@ import { ToastModule } from 'primeng/toast';
     providers: [MessageService]
 })
 export class TieredMenuCommandDemo implements OnInit {
-  
+
     items: MenuItem[] | undefined;
 
-    constructor(private messageService: MessageService) {} 
+    constructor(private messageService: MessageService) {}
 
     ngOnInit() {
         this.items = [

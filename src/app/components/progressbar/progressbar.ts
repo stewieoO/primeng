@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, TemplateRef, ContentChildren, Input, NgModule, ViewEncapsulation, booleanAttribute, numberAttribute } from '@angular/core';
+import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChildren, Input, NgModule, numberAttribute, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { PrimeTemplate } from 'primeng/api';
-import { QueryList } from '@angular/core';
+
 /**
  * ProgressBar is a process status indicator.
  * @group Components

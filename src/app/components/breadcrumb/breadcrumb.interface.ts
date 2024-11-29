@@ -1,6 +1,7 @@
 import { TemplateRef } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Breadcrumb } from './breadcrumb';
+
 /**
  * Defines valid templates in Breadcumb.
  * @group Templates

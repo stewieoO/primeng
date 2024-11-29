@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputNumberModule } from 'primeng/inputnumber';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { ButtonsDoc } from './buttonsdoc';
 import { CurrencyDoc } from './currencydoc';
 import { DisabledDoc } from './disableddoc';
+import { FilledDoc } from './filleddoc';
 import { FloatlabelDoc } from './floatlabeldoc';
 import { ImportDoc } from './importdoc';
 import { InvalidDoc } from './invaliddoc';
@@ -18,8 +20,6 @@ import { PrefixSuffixDoc } from './prefixsuffixdoc';
 import { ReactiveFormsDoc } from './reactiveformsdoc';
 import { StyleDoc } from './styledoc';
 import { VerticalDoc } from './verticaldoc';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { FilledDoc } from './filleddoc';
 
 @NgModule({
     imports: [CommonModule, FormsModule, ReactiveFormsModule, InputNumberModule, RouterModule, AppCodeModule, AppDocModule, FloatLabelModule],

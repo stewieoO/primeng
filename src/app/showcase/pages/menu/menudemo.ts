@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
+import { AccessibilityDoc } from '@doc/menu/accessibilitydoc';
 import { BasicDoc } from '@doc/menu/basicdoc';
-import { TemplateDoc } from '@doc/menu/templatedoc';
 import { CommandDoc } from '@doc/menu/commanddoc';
 import { GroupDoc } from '@doc/menu/groupdoc';
 import { ImportDoc } from '@doc/menu/importdoc';
-import { RouterDoc } from '@doc/menu/routerdoc';
 import { PopupDoc } from '@doc/menu/popupdoc';
+import { RouterDoc } from '@doc/menu/routerdoc';
 import { StyleDoc } from '@doc/menu/styledoc';
-import { AccessibilityDoc } from '@doc/menu/accessibilitydoc';
+import { TemplateDoc } from '@doc/menu/templatedoc';
 
 @Component({
     templateUrl: './menudemo.html'

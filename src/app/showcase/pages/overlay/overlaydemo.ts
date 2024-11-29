@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { OverlayBasicDemo } from '@doc/overlay/basicdoc';
+import { AccessibilityDoc } from '@doc/overlay/accessibilitydoc';
 import { AppendToDoc } from '@doc/overlay/appendtodoc';
 import { AutoZIndexDoc } from '@doc/overlay/autozindexdoc';
 import { BaseZIndexDoc } from '@doc/overlay/basezindexdoc';
+import { OverlayBasicDemo } from '@doc/overlay/basicdoc';
 import { EventsDoc } from '@doc/overlay/eventsdoc';
 import { HideOnEscapeDoc } from '@doc/overlay/hideonescapedoc';
 import { ImportDoc } from '@doc/overlay/importdoc';
@@ -12,7 +13,6 @@ import { StyleDoc } from '@doc/overlay/styledoc';
 import { TargetDoc } from '@doc/overlay/targetdoc';
 import { OverlayTemplateDemo } from '@doc/overlay/templatedoc';
 import { TransitionOptionsDoc } from '@doc/overlay/transitionoptionsdoc';
-import { AccessibilityDoc } from '@doc/overlay/accessibilitydoc';
 
 @Component({
     templateUrl: './overlaydemo.html'

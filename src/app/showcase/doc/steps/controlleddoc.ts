@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'controlled-doc',
@@ -40,46 +40,46 @@ export class ControlledDoc implements OnInit {
 
     code: Code = {
         basic: `<div class="flex mb-5 gap-2 justify-content-end">
-    <p-button 
-        (onClick)="active = 0" 
-        [rounded]="true" 
-        label="1" 
-        styleClass="w-2rem h-2rem p-0" 
-        [outlined]="active !== 0" />
-    <p-button 
-        (onClick)="active = 1" 
+    <p-button
+        (onClick)="active = 0"
         [rounded]="true"
-        label="2" 
-        styleClass="w-2rem h-2rem p-0" 
+        label="1"
+        styleClass="w-2rem h-2rem p-0"
+        [outlined]="active !== 0" />
+    <p-button
+        (onClick)="active = 1"
+        [rounded]="true"
+        label="2"
+        styleClass="w-2rem h-2rem p-0"
         [outlined]="active !== 1" />
-    <p-button 
-        (onClick)="active = 2" 
-        [rounded]="true" 
-        label="3" 
-        styleClass="w-2rem h-2rem p-0" 
+    <p-button
+        (onClick)="active = 2"
+        [rounded]="true"
+        label="3"
+        styleClass="w-2rem h-2rem p-0"
         [outlined]="active !== 2" />
 </div>
 <p-steps [activeIndex]="active" [model]="items" />`,
 
         html: `<div class="card">
     <div class="flex mb-5 gap-2 justify-content-end">
-        <p-button 
-            (onClick)="active = 0" 
-            [rounded]="true" 
-            label="1" 
-            styleClass="w-2rem h-2rem p-0" 
+        <p-button
+            (onClick)="active = 0"
+            [rounded]="true"
+            label="1"
+            styleClass="w-2rem h-2rem p-0"
             [outlined]="active !== 0" />
-        <p-button 
-            (onClick)="active = 1" 
-            [rounded]="true" 
-            label="2" 
-            styleClass="w-2rem h-2rem p-0" 
+        <p-button
+            (onClick)="active = 1"
+            [rounded]="true"
+            label="2"
+            styleClass="w-2rem h-2rem p-0"
             [outlined]="active !== 1" />
-        <p-button 
-            (onClick)="active = 2" 
-            [rounded]="true" 
-            label="3" 
-            styleClass="w-2rem h-2rem p-0" 
+        <p-button
+            (onClick)="active = 2"
+            [rounded]="true"
+            label="3"
+            styleClass="w-2rem h-2rem p-0"
             [outlined]="active !== 2" />
     </div>
     <p-steps [activeIndex]="active" [model]="items" />

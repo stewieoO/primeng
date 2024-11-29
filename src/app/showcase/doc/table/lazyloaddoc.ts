@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { LazyLoadEvent } from 'primeng/api';
 import { Code } from '@domain/code';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
+import { LazyLoadEvent } from 'primeng/api';
 
 @Component({
     selector: 'lazy-load-doc',

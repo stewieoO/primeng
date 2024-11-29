@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService, TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { MessageService, TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'event-doc',
@@ -57,25 +57,25 @@ export class EventDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-tree 
-    [value]="files" 
-    class="w-full md:w-30rem" 
-    selectionMode="single" 
+        basic: `<p-tree
+    [value]="files"
+    class="w-full md:w-30rem"
+    selectionMode="single"
     [(selection)]="selectedFile"
     (onNodeExpand)="nodeExpand($event)"
-    (onNodeCollapse)="nodeCollapse($event)" 
+    (onNodeCollapse)="nodeCollapse($event)"
     (onNodeSelect)="nodeSelect($event)"
     (onNodeUnselect)="nodeUnselect($event)" />`,
 
         html: `<div class="card flex justify-content-center">
     <p-toast />
-    <p-tree 
-        [value]="files" 
-        class="w-full md:w-30rem" 
-        selectionMode="single" 
+    <p-tree
+        [value]="files"
+        class="w-full md:w-30rem"
+        selectionMode="single"
         [(selection)]="selectedFile"
-        (onNodeExpand)="nodeExpand($event)" 
-        (onNodeCollapse)="nodeCollapse($event)" 
+        (onNodeExpand)="nodeExpand($event)"
+        (onNodeCollapse)="nodeCollapse($event)"
         (onNodeSelect)="nodeSelect($event)"
         (onNodeUnselect)="nodeUnselect($event)" />
 </div>`,

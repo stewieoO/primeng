@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
-import { SortEvent, TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { SortEvent, TreeNode } from 'primeng/api';
 import { TreeTable } from 'primeng/treetable';
 
 interface Column {
@@ -112,13 +112,13 @@ export class SortRemovableDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    selectionMode="single" 
-    [(selection)]="selectedNode" 
-    dataKey="name" 
-    [scrollable]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    selectionMode="single"
+    [(selection)]="selectedNode"
+    dataKey="name"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -142,13 +142,13 @@ export class SortRemovableDoc {
         <p-inputSwitch [(ngModel)]="metaKeySelection" />
         <span>Metakey</span>
     </div>
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        selectionMode="single" 
-        [(selection)]="selectedNode" 
-        dataKey="name" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        selectionMode="single"
+        [(selection)]="selectedNode"
+        dataKey="name"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>

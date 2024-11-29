@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/chips/importdoc';
-import { BasicDoc } from '@doc/chips/basicdoc';
-import { SeparatorDoc } from '@doc/chips/separatordoc';
-import { TemplateDoc } from '@doc/chips/templatedoc';
-import { StyleDoc } from '@doc/chips/styledoc';
 import { AccessibilityDoc } from '@doc/chips/accessibilitydoc';
-import { ReactiveFormsDoc } from '@doc/chips/reactiveformsdoc';
-import { MaxValuesDoc } from '@doc/chips/maxvaluesdoc';
+import { BasicDoc } from '@doc/chips/basicdoc';
+import { DisabledDoc } from '@doc/chips/disableddoc';
 import { FilledDoc } from '@doc/chips/filleddoc';
 import { FloatLabelDoc } from '@doc/chips/floatlabeldoc';
+import { ImportDoc } from '@doc/chips/importdoc';
 import { InvalidDoc } from '@doc/chips/invaliddoc';
-import { DisabledDoc } from '@doc/chips/disableddoc';
+import { MaxValuesDoc } from '@doc/chips/maxvaluesdoc';
+import { ReactiveFormsDoc } from '@doc/chips/reactiveformsdoc';
+import { SeparatorDoc } from '@doc/chips/separatordoc';
+import { StyleDoc } from '@doc/chips/styledoc';
+import { TemplateDoc } from '@doc/chips/templatedoc';
 
 @Component({
     templateUrl: './chipsdemo.html'

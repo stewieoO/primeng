@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MenuItem, MessageService, TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { MenuItem, MessageService, TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -83,13 +83,13 @@ export class ContextMenuDoc {
     code: Code = {
         basic: `<p-toast [style]="{ marginTop: '80px' }" />
 
-<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    dataKey="name" 
-    [(contextMenuSelection)]="selectedNode" 
-    [contextMenu]="cm" 
-    [scrollable]="true" 
+<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    dataKey="name"
+    [(contextMenuSelection)]="selectedNode"
+    [contextMenu]="cm"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -113,13 +113,13 @@ export class ContextMenuDoc {
         html: `<div class="card">
     <p-toast [style]="{ marginTop: '80px' }" />
 
-    <p-treeTable 
-        [value]="files" 
+    <p-treeTable
+        [value]="files"
         [columns]="cols"
-        dataKey="name" 
-        [(contextMenuSelection)]="selectedNode" 
-        [contextMenu]="cm" 
-        [scrollable]="true" 
+        dataKey="name"
+        [(contextMenuSelection)]="selectedNode"
+        [contextMenu]="cm"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>

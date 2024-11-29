@@ -2,6 +2,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
     AfterViewChecked,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -9,9 +10,11 @@ import {
     ElementRef,
     EmbeddedViewRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     Output,
     PLATFORM_ID,
@@ -20,11 +23,7 @@ import {
     TemplateRef,
     ViewChild,
     ViewContainerRef,
-    ViewEncapsulation,
-    booleanAttribute,
-    forwardRef,
-    numberAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { BlockableUI, PrimeTemplate, SharedModule } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
@@ -33,10 +32,10 @@ import { ChevronRightIcon } from 'primeng/icons/chevronright';
 import { TimesIcon } from 'primeng/icons/times';
 import { RippleModule } from 'primeng/ripple';
 import { TooltipModule } from 'primeng/tooltip';
+import { Nullable } from 'primeng/ts-helpers';
+import { UniqueComponentId } from 'primeng/utils';
 import { Subscription } from 'rxjs';
 import { TabViewChangeEvent, TabViewCloseEvent } from './tabview.interface';
-import { UniqueComponentId } from 'primeng/utils';
-import { Nullable } from 'primeng/ts-helpers';
 
 /**
  * TabPanel is a helper component for TabView component.

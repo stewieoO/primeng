@@ -1,5 +1,4 @@
 import { TemplateRef } from '@angular/core';
-import { Paginator } from './paginator';
 
 /**
  * Paginator state.

@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { AccessibilityDoc } from '@doc/accordion/accessibilitydoc';
+import { AccordionDocModule } from '@doc/accordion/accordiondoc.module';
 import { BasicDoc } from '@doc/accordion/basicdoc';
 import { ControlledDoc } from '@doc/accordion/controlleddoc';
 import { DisabledDoc } from '@doc/accordion/disableddoc';
+import { DynamicDoc } from '@doc/accordion/dynamicdoc';
 import { ImportDoc } from '@doc/accordion/importdoc';
 import { MultipleDoc } from '@doc/accordion/multipledoc';
 import { StyleDoc } from '@doc/accordion/styledoc';
 import { TemplateDoc } from '@doc/accordion/templatedoc';
-import { AccordionDocModule } from '@doc/accordion/accordiondoc.module';
-import { DynamicDoc } from '@doc/accordion/dynamicdoc';
 
 @Component({
     template: `<app-doc docTitle="Angular Accordion Component" header="Accordion" description="Accordion groups a collection of contents in tabs." [docs]="docs" [apiDocs]="['Accordion', 'AccordionTab']"></app-doc>`,

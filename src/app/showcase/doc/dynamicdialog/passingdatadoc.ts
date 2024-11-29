@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { Code } from '@domain/code';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ProductListDemo } from './productlistdemo';
 
 @Component({
@@ -43,11 +43,11 @@ import { ProductListDemo } from './productlistdemo';
 export class DynamicDialogDemo {
 
     ref: DynamicDialogRef | undefined;
-    
+
     constructor(public dialogService: DialogService) {}
 
     show() {
-        this.ref = this.dialogService.open(ProductListDemo, { 
+        this.ref = this.dialogService.open(ProductListDemo, {
             data: {
                 id: '51gF3'
             },

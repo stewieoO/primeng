@@ -1,40 +1,40 @@
-import {
-    NgModule,
-    Component,
-    ElementRef,
-    Input,
-    Output,
-    EventEmitter,
-    AfterContentInit,
-    ContentChildren,
-    ContentChild,
-    QueryList,
-    TemplateRef,
-    forwardRef,
-    ChangeDetectorRef,
-    ViewChild,
-    ChangeDetectionStrategy,
-    ViewEncapsulation,
-    OnInit,
-    OnDestroy,
-    computed,
-    signal,
-    Renderer2,
-    booleanAttribute,
-    numberAttribute
-} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService, TranslationKeys, PrimeNGConfig, ScrollerOptions } from 'primeng/api';
+import {
+    AfterContentInit,
+    booleanAttribute,
+    ChangeDetectionStrategy,
+    ChangeDetectorRef,
+    Component,
+    computed,
+    ContentChild,
+    ContentChildren,
+    ElementRef,
+    EventEmitter,
+    forwardRef,
+    Input,
+    NgModule,
+    numberAttribute,
+    OnDestroy,
+    OnInit,
+    Output,
+    QueryList,
+    Renderer2,
+    signal,
+    TemplateRef,
+    ViewChild,
+    ViewEncapsulation
+} from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { FilterService, Footer, Header, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { RippleModule } from 'primeng/ripple';
-import { Subscription } from 'rxjs';
-import { SearchIcon } from 'primeng/icons/search';
 import { CheckIcon } from 'primeng/icons/check';
-import { Nullable } from 'primeng/ts-helpers';
-import { ListboxChangeEvent, ListboxClickEvent, ListboxDoubleClickEvent, ListboxFilterEvent, ListboxFilterOptions, ListboxSelectAllChangeEvent } from './listbox.interface';
+import { SearchIcon } from 'primeng/icons/search';
+import { RippleModule } from 'primeng/ripple';
 import { Scroller, ScrollerModule } from 'primeng/scroller';
+import { Nullable } from 'primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { Subscription } from 'rxjs';
+import { ListboxChangeEvent, ListboxClickEvent, ListboxDoubleClickEvent, ListboxFilterEvent, ListboxFilterOptions, ListboxSelectAllChangeEvent } from './listbox.interface';
 
 export const LISTBOX_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

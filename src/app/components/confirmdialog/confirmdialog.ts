@@ -1,7 +1,8 @@
-import { AnimationEvent, animate, animation, style, transition, trigger, useAnimation } from '@angular/animations';
+import { animate, animation, AnimationEvent, style, transition, trigger, useAnimation } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -13,6 +14,7 @@ import {
     Input,
     NgModule,
     NgZone,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
@@ -21,11 +23,9 @@ import {
     TemplateRef,
     ViewChild,
     ViewEncapsulation,
-    ViewRef,
-    booleanAttribute,
-    numberAttribute
+    ViewRef
 } from '@angular/core';
-import { ConfirmEventType, Confirmation, ConfirmationService, Footer, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
+import { Confirmation, ConfirmationService, ConfirmEventType, Footer, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { DomHandler } from 'primeng/dom';
 import { CheckIcon } from 'primeng/icons/check';

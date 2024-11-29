@@ -1,8 +1,8 @@
-import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { TieredMenu, TieredMenuModule, TieredMenuSub } from './tieredmenu';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
+import { TieredMenu, TieredMenuModule, TieredMenuSub } from './tieredmenu';
 
 describe('TieredMenu', () => {
     let tieredmenu: TieredMenu;

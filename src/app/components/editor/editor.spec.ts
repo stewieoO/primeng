@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Editor } from './editor';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Editor } from './editor';
 
 describe('Editor', () => {
     let editor: Editor;

@@ -1,36 +1,36 @@
+import { CommonModule } from '@angular/common';
 import {
-    NgModule,
-    Component,
-    ElementRef,
-    OnInit,
     AfterContentInit,
-    Input,
-    Output,
-    EventEmitter,
-    ContentChild,
-    ContentChildren,
-    QueryList,
-    TemplateRef,
-    OnChanges,
-    SimpleChanges,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
-    ViewEncapsulation,
+    Component,
+    ContentChild,
+    ContentChildren,
+    ElementRef,
+    EventEmitter,
+    Input,
+    NgModule,
+    numberAttribute,
+    OnChanges,
     OnDestroy,
-    booleanAttribute,
-    numberAttribute
+    OnInit,
+    Output,
+    QueryList,
+    SimpleChanges,
+    TemplateRef,
+    ViewEncapsulation
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ObjectUtils } from 'primeng/utils';
-import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from 'primeng/api';
-import { PaginatorModule } from 'primeng/paginator';
-import { BlockableUI } from 'primeng/api';
-import { Subscription } from 'rxjs';
+import { BlockableUI, FilterService, Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
+import { BarsIcon } from 'primeng/icons/bars';
 import { SpinnerIcon } from 'primeng/icons/spinner';
 import { ThLargeIcon } from 'primeng/icons/thlarge';
-import { BarsIcon } from 'primeng/icons/bars';
+import { PaginatorModule } from 'primeng/paginator';
 import { Nullable } from 'primeng/ts-helpers';
+import { ObjectUtils } from 'primeng/utils';
+import { Subscription } from 'rxjs';
 import { DataViewLayoutChangeEvent, DataViewLazyLoadEvent, DataViewPageEvent, DataViewPaginatorState, DataViewSortEvent } from './dataview.interface';
+
 /**
  * DataView displays data in grid or list layout with pagination and sorting features.
  * @group Components

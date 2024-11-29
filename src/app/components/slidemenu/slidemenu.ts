@@ -1,41 +1,41 @@
-import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
     ContentChildren,
+    effect,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
+    signal,
     TemplateRef,
     ViewChild,
     ViewEncapsulation,
-    ViewRef,
-    booleanAttribute,
-    effect,
-    forwardRef,
-    numberAttribute,
-    signal
+    ViewRef
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
 import { AngleRightIcon } from 'primeng/icons/angleright';
+import { CaretLeftIcon } from 'primeng/icons/caretleft';
 import { RippleModule } from 'primeng/ripple';
 import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
 import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { CaretLeftIcon } from 'primeng/icons/caretleft';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
 
 @Component({
     selector: 'p-slideMenuSub',

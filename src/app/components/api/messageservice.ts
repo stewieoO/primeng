@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { Message } from './message';
+
 /**
  * Message service used in messages and toast components.
  * @group Service

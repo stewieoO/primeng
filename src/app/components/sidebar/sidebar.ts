@@ -3,6 +3,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import {
     AfterContentInit,
     AfterViewInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -12,14 +13,13 @@ import {
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     Output,
     QueryList,
     Renderer2,
     TemplateRef,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';

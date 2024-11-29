@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SplitterModule } from 'primeng/splitter';
-import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { SplitterModule } from 'primeng/splitter';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { HorizontalDoc } from './horizontaldoc';
 import { ImportDoc } from './importdoc';

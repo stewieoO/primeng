@@ -1,6 +1,6 @@
-import { ChangeDetectorRef, Component, OnInit, OnDestroy, NgZone } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { ChangeDetectorRef, Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'dynamic-doc',

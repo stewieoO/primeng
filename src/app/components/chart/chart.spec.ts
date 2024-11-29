@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { UIChart } from './chart';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { UIChart } from './chart';
 
 describe('UIChart', () => {
     let chart: UIChart;

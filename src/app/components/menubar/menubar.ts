@@ -1,29 +1,29 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
     ContentChildren,
+    effect,
     ElementRef,
     EventEmitter,
     Inject,
     Injectable,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     OnInit,
     Output,
     PLATFORM_ID,
     QueryList,
     Renderer2,
+    signal,
     TemplateRef,
     ViewChild,
-    ViewEncapsulation,
-    booleanAttribute,
-    effect,
-    numberAttribute,
-    signal
+    ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
@@ -35,7 +35,7 @@ import { RippleModule } from 'primeng/ripple';
 import { TooltipModule } from 'primeng/tooltip';
 import { VoidListener } from 'primeng/ts-helpers';
 import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { Subject, Subscription, interval } from 'rxjs';
+import { interval, Subject, Subscription } from 'rxjs';
 import { debounce, filter } from 'rxjs/operators';
 
 @Injectable()

@@ -1,5 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { Rating } from './rating';
+
 /**
  * Custom change event.
  * @see {@link Rating.onRate}

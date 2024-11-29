@@ -1,12 +1,14 @@
 import { CommonModule, isPlatformServer } from '@angular/common';
 import {
     AfterContentInit,
+    afterNextRender,
     ChangeDetectionStrategy,
     Component,
     ContentChild,
     ContentChildren,
     ElementRef,
     EventEmitter,
+    forwardRef,
     Inject,
     Input,
     NgModule,
@@ -14,9 +16,7 @@ import {
     PLATFORM_ID,
     QueryList,
     TemplateRef,
-    ViewEncapsulation,
-    afterNextRender,
-    forwardRef
+    ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Header, PrimeTemplate, SharedModule } from 'primeng/api';

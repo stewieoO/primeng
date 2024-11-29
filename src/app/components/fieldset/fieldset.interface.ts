@@ -1,5 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { Fieldset } from './fieldset';
+
 /**
  * Custom panel toggle event, emits after toggle.
  * @see {@link Fieldset.onAfterToggle}

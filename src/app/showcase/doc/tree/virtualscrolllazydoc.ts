@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 @Component({
     selector: 'lazy-virtual-scroll-doc',
@@ -59,25 +59,25 @@ export class LazyVirtualScrollDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-tree 
-    class="w-full md:w-30rem" 
-    scrollHeight="250px" 
-    [virtualScroll]="true" 
-    [lazy]="true" 
-    [virtualScrollItemSize]="46" 
-    [value]="files" 
-    (onNodeExpand)="nodeExpand($event)" 
+        basic: `<p-tree
+    class="w-full md:w-30rem"
+    scrollHeight="250px"
+    [virtualScroll]="true"
+    [lazy]="true"
+    [virtualScrollItemSize]="46"
+    [value]="files"
+    (onNodeExpand)="nodeExpand($event)"
     [loading]="loading" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-tree 
-        class="w-full md:w-30rem" 
-        scrollHeight="250px" 
-        [virtualScroll]="true" 
-        [lazy]="true" 
-        [virtualScrollItemSize]="46" 
-        [value]="files" 
-        (onNodeExpand)="nodeExpand($event)" 
+    <p-tree
+        class="w-full md:w-30rem"
+        scrollHeight="250px"
+        [virtualScroll]="true"
+        [lazy]="true"
+        [virtualScrollItemSize]="46"
+        [value]="files"
+        (onNodeExpand)="nodeExpand($event)"
         [loading]="loading" />
 </div>`,
 

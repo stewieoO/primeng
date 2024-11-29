@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'sticky-doc',
@@ -34,22 +34,22 @@ export class StickyDoc {
         basic: `<p-toast />
 <div class="flex flex-wrap gap-2">
     <p-button
-        (onClick)="show()" 
-        severity="success" 
+        (onClick)="show()"
+        severity="success"
         label="Sticky" />
     <p-button
-        (onClick)="clear()" 
+        (onClick)="clear()"
         label="Clear" />
 </div>`,
         html: `<div class="card flex justify-content-center">
     <p-toast />
     <div class="flex flex-wrap gap-2">
         <p-button
-            (onClick)="show()" 
-            severity="success" 
+            (onClick)="show()"
+            severity="success"
             label="Sticky" />
         <p-button
-            (onClick)="clear()" 
+            (onClick)="clear()"
             label="Clear" />
     </div>
 </div>`,

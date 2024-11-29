@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { CascadeSelect, CascadeSelectModule } from './cascadeselect';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { CascadeSelect, CascadeSelectModule } from './cascadeselect';
 
 describe('CascadeSelect', () => {
     let cascadeSelect: CascadeSelect;

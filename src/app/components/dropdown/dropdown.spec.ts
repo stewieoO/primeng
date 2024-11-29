@@ -1,15 +1,15 @@
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { TestBed, ComponentFixture, fakeAsync, flush } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { Dropdown, DropdownItem } from './dropdown';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
-import { TooltipModule } from 'primeng/tooltip';
-import { OverlayModule } from 'primeng/overlay';
+import { ComponentFixture, fakeAsync, flush, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ChevronDownIcon } from 'primeng/icons/chevrondown';
 import { SearchIcon } from 'primeng/icons/search';
 import { TimesIcon } from 'primeng/icons/times';
+import { OverlayModule } from 'primeng/overlay';
+import { TooltipModule } from 'primeng/tooltip';
+import { Dropdown, DropdownItem } from './dropdown';
 
 @Component({
     template: `

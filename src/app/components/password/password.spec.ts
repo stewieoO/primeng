@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Password, PasswordModule } from './password';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Password, PasswordModule } from './password';
 
 describe('Password', () => {
     let password: Password;

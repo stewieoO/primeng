@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { BasicDoc } from '@doc/confirmdialog/basicdoc';
-import { ImportDoc } from '@doc/confirmdialog/importdoc';
-import { StyleDoc } from '@doc/confirmdialog/styledoc';
-import { PositionDoc } from '@doc/confirmdialog/positiondoc';
-import { TemplateDoc } from '@doc/confirmdialog/templatedoc';
-import { HeadlessDoc } from '@doc/confirmdialog/headlessdoc';
 import { AccessibilityDoc } from '@doc/confirmdialog/accessibilitydoc';
+import { BasicDoc } from '@doc/confirmdialog/basicdoc';
+import { HeadlessDoc } from '@doc/confirmdialog/headlessdoc';
+import { ImportDoc } from '@doc/confirmdialog/importdoc';
+import { PositionDoc } from '@doc/confirmdialog/positiondoc';
+import { StyleDoc } from '@doc/confirmdialog/styledoc';
+import { TemplateDoc } from '@doc/confirmdialog/templatedoc';
 
 @Component({
     templateUrl: './confirmdialogdemo.html'

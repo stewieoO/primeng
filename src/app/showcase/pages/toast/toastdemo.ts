@@ -3,6 +3,7 @@ import { AccessibilityDoc } from '@doc/toast/accessibilitydoc';
 import { AnimationDoc } from '@doc/toast/animationdoc';
 import { BasicDoc } from '@doc/toast/basicdoc';
 import { ClearDoc } from '@doc/toast/cleardoc';
+import { HeadlessDoc } from '@doc/toast/headlessdoc';
 import { ImportDoc } from '@doc/toast/importdoc';
 import { LifeDoc } from '@doc/toast/lifedoc';
 import { MultipleDoc } from '@doc/toast/multipledoc';
@@ -13,7 +14,6 @@ import { StickyDoc } from '@doc/toast/stickydoc';
 import { StyleDoc } from '@doc/toast/styledoc';
 import { TargetDoc } from '@doc/toast/targetdoc';
 import { TemplateDoc } from '@doc/toast/templatedoc';
-import { HeadlessDoc } from '@doc/toast/headlessdoc';
 
 @Component({
     templateUrl: './toastdemo.html'

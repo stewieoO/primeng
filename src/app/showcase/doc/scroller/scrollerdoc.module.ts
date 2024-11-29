@@ -1,24 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
+import { ButtonModule } from 'primeng/button';
 import { ScrollerModule } from 'primeng/scroller';
 import { SkeletonModule } from 'primeng/skeleton';
 import { SpinnerModule } from 'primeng/spinner';
-import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { DelayDoc } from './delaydoc';
-import { HorizontalDoc } from './horizontaldoc';
 import { GridDoc } from './griddoc';
+import { HorizontalDoc } from './horizontaldoc';
 import { ImportDoc } from './importdoc';
 import { LazyLoadDoc } from './lazyloaddoc';
 import { LoaderDoc } from './loaderdoc';
+import { ProgrammaticDoc } from './programmaticdoc';
 import { ScrollOptionsDoc } from './scrolloptionsdoc';
 import { StyleDoc } from './styledoc';
 import { TemplateDoc } from './templatedoc';
-import { ButtonModule } from 'primeng/button';
-import { ProgrammaticDoc } from './programmaticdoc';
-import { AccessibilityDoc } from './accessibilitydoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, ScrollerModule, SkeletonModule, SpinnerModule, ButtonModule],

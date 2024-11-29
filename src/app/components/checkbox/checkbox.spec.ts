@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Checkbox } from './checkbox';
 import { CheckIcon } from 'primeng/icons/check';
+import { Checkbox } from './checkbox';
 
 @Component({
     template: ` <p-checkbox [(ngModel)]="checked"> </p-checkbox> `

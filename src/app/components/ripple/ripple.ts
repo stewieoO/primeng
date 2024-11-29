@@ -3,6 +3,7 @@ import { AfterViewInit, Directive, ElementRef, Inject, NgModule, NgZone, OnDestr
 import { PrimeNGConfig } from 'primeng/api';
 import { DomHandler } from 'primeng/dom';
 import { VoidListener } from 'primeng/ts-helpers';
+
 /**
  * Ripple directive adds ripple effect to the host element.
  * @group Components

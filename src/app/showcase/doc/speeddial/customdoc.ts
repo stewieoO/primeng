@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'custom-doc',
@@ -56,23 +56,23 @@ export class CustomDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-speedDial 
-    [model]="items" 
-    direction="up" 
-    transitionDelay="80" 
-    showIcon="pi pi-bars" 
-    hideIcon="pi pi-times" 
+        basic: `<p-speedDial
+    [model]="items"
+    direction="up"
+    transitionDelay="80"
+    showIcon="pi pi-bars"
+    hideIcon="pi pi-times"
     buttonClassName="p-button-outlined" />`,
 
         html: `<div class="card">
     <div style="height: 500px" class="flex justify-content-center">
         <p-toast />
-        <p-speedDial 
-            [model]="items" 
-            direction="up" 
-            transitionDelay="80" 
-            showIcon="pi pi-bars" 
-            hideIcon="pi pi-times" 
+        <p-speedDial
+            [model]="items"
+            direction="up"
+            transitionDelay="80"
+            showIcon="pi pi-bars"
+            hideIcon="pi pi-times"
             buttonClassName="p-button-outlined" />
     </div>
 </div>`,

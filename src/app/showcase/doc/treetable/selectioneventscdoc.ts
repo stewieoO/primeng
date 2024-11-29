@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MessageService, TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { MessageService, TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -87,15 +87,15 @@ export class SelectionEventsDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="cols" 
-    selectionMode="single" 
-    [(selection)]="selectedNode" 
-    dataKey="name" 
-    (onNodeSelect)="nodeSelect($event)" 
-    (onNodeUnselect)="nodeUnselect($event)" 
-    [scrollable]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="cols"
+    selectionMode="single"
+    [(selection)]="selectedNode"
+    dataKey="name"
+    (onNodeSelect)="nodeSelect($event)"
+    (onNodeUnselect)="nodeUnselect($event)"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="header" let-columns>
             <tr>
@@ -116,15 +116,15 @@ export class SelectionEventsDoc {
 
         html: `<div class="card">
     <p-toast />
-    <p-treeTable 
-        [value]="files" 
-        [columns]="cols" 
-        selectionMode="single" 
-        [(selection)]="selectedNode" 
-        dataKey="name" 
-        (onNodeSelect)="nodeSelect($event)" 
-        (onNodeUnselect)="nodeUnselect($event)" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="cols"
+        selectionMode="single"
+        [(selection)]="selectedNode"
+        dataKey="name"
+        (onNodeSelect)="nodeSelect($event)"
+        (onNodeUnselect)="nodeUnselect($event)"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="header" let-columns>
                 <tr>

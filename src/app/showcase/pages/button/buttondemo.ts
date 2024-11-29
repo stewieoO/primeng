@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AccessibilityDoc } from '@doc/button/accessibilitydoc';
 import { BadgeDoc } from '@doc/button/badgedoc';
 import { BasicDoc } from '@doc/button/basicdoc';
+import { ButtonGroupDoc } from '@doc/button/buttongroupdoc';
 import { DirectiveDoc } from '@doc/button/directivedoc';
 import { DisabledDoc } from '@doc/button/disableddoc';
 import { IconsDoc } from '@doc/button/iconsdoc';
@@ -18,7 +19,7 @@ import { SizesDoc } from '@doc/button/sizesdoc';
 import { StyleDoc } from '@doc/button/styledoc';
 import { TemplateDoc } from '@doc/button/templatedoc';
 import { TextDoc } from '@doc/button/textdoc';
-import { ButtonGroupDoc } from '@doc/button/buttongroupdoc';
+
 @Component({
     templateUrl: './buttondemo.html'
 })

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ImportDoc } from '@doc/scrolltop/importdoc';
-import { BasicDoc } from '@doc/scrolltop/basicdoc';
-import { StyleDoc } from '@doc/scrolltop/styledoc';
-import { ElementDoc } from '@doc/scrolltop/elementdoc';
 import { AccessibilityDoc } from '@doc/scrolltop/accessibilitydoc';
+import { BasicDoc } from '@doc/scrolltop/basicdoc';
+import { ElementDoc } from '@doc/scrolltop/elementdoc';
+import { ImportDoc } from '@doc/scrolltop/importdoc';
+import { StyleDoc } from '@doc/scrolltop/styledoc';
 
 @Component({
     templateUrl: './scrolltopdemo.html',

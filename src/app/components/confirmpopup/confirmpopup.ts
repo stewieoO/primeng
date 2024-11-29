@@ -1,7 +1,8 @@
-import { AnimationEvent, animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import {
     AfterContentInit,
+    booleanAttribute,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -12,13 +13,12 @@ import {
     Inject,
     Input,
     NgModule,
+    numberAttribute,
     OnDestroy,
     QueryList,
     Renderer2,
     TemplateRef,
-    ViewEncapsulation,
-    booleanAttribute,
-    numberAttribute
+    ViewEncapsulation
 } from '@angular/core';
 import { Confirmation, ConfirmationService, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
@@ -26,6 +26,7 @@ import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
 import { Nullable, VoidListener } from 'primeng/ts-helpers';
 import { ZIndexUtils } from 'primeng/utils';
 import { Subscription } from 'rxjs';
+
 /**
  * ConfirmPopup displays a confirmation overlay displayed relatively to its target.
  * @group Components

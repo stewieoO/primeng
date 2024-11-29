@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { AccessibilityDoc } from '@doc/cascadeselect/accessibilitydoc';
 import { BasicDoc } from '@doc/cascadeselect/basicdoc';
-import { ImportDoc } from '@doc/cascadeselect/importdoc';
-import { ReactiveFormsDoc } from '@doc/cascadeselect/reactiveformsdoc';
-import { InvalidDoc } from '@doc/cascadeselect/invaliddoc';
-import { FloatLabelDoc } from '@doc/cascadeselect/floatlabeldoc';
-import { StyleDoc } from '@doc/cascadeselect/styledoc';
-import { TemplateDoc } from '@doc/cascadeselect/templatedoc';
 import { DisabledDoc } from '@doc/cascadeselect/disableddoc';
 import { FilledDoc } from '@doc/cascadeselect/filleddoc';
+import { FloatLabelDoc } from '@doc/cascadeselect/floatlabeldoc';
+import { ImportDoc } from '@doc/cascadeselect/importdoc';
+import { InvalidDoc } from '@doc/cascadeselect/invaliddoc';
 import { LoadingDoc } from '@doc/cascadeselect/loadingdoc';
+import { ReactiveFormsDoc } from '@doc/cascadeselect/reactiveformsdoc';
+import { StyleDoc } from '@doc/cascadeselect/styledoc';
+import { TemplateDoc } from '@doc/cascadeselect/templatedoc';
 
 @Component({
     templateUrl: './cascadeselectdemo.html'

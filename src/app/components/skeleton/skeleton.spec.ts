@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { Skeleton, SkeletonModule } from './skeleton';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Skeleton, SkeletonModule } from './skeleton';
 
 describe('Skeleton', () => {
     let skeleton: Skeleton;

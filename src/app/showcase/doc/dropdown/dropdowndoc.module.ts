@@ -1,32 +1,33 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppDocModule } from '@layout/doc/app.doc.module';
+import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
-import { ImportDoc } from './importdoc';
-import { BasicDoc } from './basicdoc';
-import { DropdownModule } from 'primeng/dropdown';
-import { EditableDoc } from './editabledoc';
-import { GroupDoc } from './groupdoc';
-import { TemplateDoc } from './templatedoc';
-import { DisabledDoc } from './disableddoc';
-import { InvalidDoc } from './invaliddoc';
-import { VirtualScrollDoc } from './virtualscrolldoc';
-import { LazyVirtualScrollDoc } from './lazyvirtualscrolldoc';
-import { FilterDoc } from './filterdoc';
-import { CustomFilterDoc } from './customfilterdoc';
-import { FloatLabelDoc } from './floatlabeldoc';
-import { StyleDoc } from './styledoc';
-import { AccessibilityDoc } from './accessibilitydoc';
-import { ReactiveFormsDoc } from './reactiveformsdoc';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { ButtonModule } from 'primeng/button';
+import { DropdownModule } from 'primeng/dropdown';
+import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
+import { AccessibilityDoc } from './accessibilitydoc';
+import { BasicDoc } from './basicdoc';
 import { CheckmarkDoc } from './checkmarkdoc';
 import { ClearIconDoc } from './clearicondoc';
-import { LoadingStateDoc } from './loadingstatedoc';
+import { CustomFilterDoc } from './customfilterdoc';
+import { DisabledDoc } from './disableddoc';
+import { EditableDoc } from './editabledoc';
 import { FilledDoc } from './filleddoc';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import { FilterDoc } from './filterdoc';
+import { FloatLabelDoc } from './floatlabeldoc';
+import { GroupDoc } from './groupdoc';
+import { ImportDoc } from './importdoc';
+import { InvalidDoc } from './invaliddoc';
+import { LazyVirtualScrollDoc } from './lazyvirtualscrolldoc';
+import { LoadingStateDoc } from './loadingstatedoc';
+import { ReactiveFormsDoc } from './reactiveformsdoc';
+import { StyleDoc } from './styledoc';
+import { TemplateDoc } from './templatedoc';
+import { VirtualScrollDoc } from './virtualscrolldoc';
+
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, FormsModule, ReactiveFormsModule, DropdownModule, ButtonModule, InputTextModule, FloatLabelModule],
     exports: [AppDocModule],

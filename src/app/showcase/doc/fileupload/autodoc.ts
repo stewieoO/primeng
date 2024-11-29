@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
+import { MessageService } from 'primeng/api';
 
 interface UploadEvent {
     originalEvent: Event;
@@ -29,25 +29,25 @@ export class AutoDoc {
     }
 
     code: Code = {
-        basic: `<p-fileUpload 
-    mode="basic" 
-    name="demo[]" 
-    chooseIcon="pi pi-upload" 
-    url="https://www.primefaces.org/cdn/api/upload.php" 
-    accept="image/*" maxFileSize="1000000" 
-    (onUpload)="onBasicUploadAuto($event)" 
-    [auto]="true" 
+        basic: `<p-fileUpload
+    mode="basic"
+    name="demo[]"
+    chooseIcon="pi pi-upload"
+    url="https://www.primefaces.org/cdn/api/upload.php"
+    accept="image/*" maxFileSize="1000000"
+    (onUpload)="onBasicUploadAuto($event)"
+    [auto]="true"
     chooseLabel="Browse" />`,
         html: `<div class="card flex justify-content-center">
     <p-toast />
-    <p-fileUpload 
-        mode="basic" 
-        name="demo[]" 
-        chooseIcon="pi pi-upload" 
-        url="https://www.primefaces.org/cdn/api/upload.php" 
-        accept="image/*" maxFileSize="1000000" 
-        (onUpload)="onBasicUploadAuto($event)" 
-        [auto]="true" 
+    <p-fileUpload
+        mode="basic"
+        name="demo[]"
+        chooseIcon="pi pi-upload"
+        url="https://www.primefaces.org/cdn/api/upload.php"
+        accept="image/*" maxFileSize="1000000"
+        (onUpload)="onBasicUploadAuto($event)"
+        [auto]="true"
         chooseLabel="Browse" />
 </div>`,
 

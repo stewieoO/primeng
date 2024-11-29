@@ -1,6 +1,6 @@
-import { DomHandler } from 'primeng/dom';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { Directive, ElementRef, Input, NgModule, inject, booleanAttribute, PLATFORM_ID, SimpleChanges } from '@angular/core';
+import { booleanAttribute, Directive, ElementRef, inject, Input, NgModule, PLATFORM_ID, SimpleChanges } from '@angular/core';
+import { DomHandler } from 'primeng/dom';
 
 /**
  * Focus Trap keeps focus within a certain DOM element while tabbing.

@@ -1,7 +1,7 @@
-import { TestBed, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { InputSwitch } from './inputswitch';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { InputSwitch } from './inputswitch';
 
 describe('InputSwitch', () => {
     let inputswitch: InputSwitch;

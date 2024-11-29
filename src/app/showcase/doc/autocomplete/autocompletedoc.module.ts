@@ -1,28 +1,28 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppDocModule } from '@layout/doc/app.doc.module';
+import { RouterModule } from '@angular/router';
+import { ShowClearDoc } from '@doc/autocomplete/showclear-doc.component';
 import { AppCodeModule } from '@layout/doc/app.code.component';
+import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AutoCompleteModule } from 'primeng/autocomplete';
-import { ImportDoc } from './importdoc';
-import { BasicDoc } from './basicdoc';
-import { TemplateDoc } from './templatedoc';
-import { GroupDoc } from './groupdoc';
-import { VirtualScrollDoc } from './virtualscrolldoc';
-import { MultipleDoc } from './multipledoc';
-import { StyleDoc } from './styledoc';
+import { FloatLabelModule } from 'primeng/floatlabel';
 import { AccessibilityDoc } from './accessibilitydoc';
+import { BasicDoc } from './basicdoc';
+import { DisabledDoc } from './disableddoc';
 import { DropdownDoc } from './dropdowndoc';
+import { FilledDoc } from './filleddoc';
+import { FloatLabelDoc } from './floatlabeldoc';
 import { ForceSelectionDoc } from './forceselectiondoc';
+import { GroupDoc } from './groupdoc';
+import { ImportDoc } from './importdoc';
+import { InvalidDoc } from './invaliddoc';
+import { MultipleDoc } from './multipledoc';
 import { ObjectsDoc } from './objectsdoc';
 import { ReactiveFormsDoc } from './reactiveformsdoc';
-import { FloatLabelDoc } from './floatlabeldoc';
-import { DisabledDoc } from './disableddoc';
-import { InvalidDoc } from './invaliddoc';
-import { FilledDoc } from './filleddoc';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { ShowClearDoc } from '@doc/autocomplete/showclear-doc.component';
+import { StyleDoc } from './styledoc';
+import { TemplateDoc } from './templatedoc';
+import { VirtualScrollDoc } from './virtualscrolldoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, FormsModule, AppDocModule, AutoCompleteModule, ReactiveFormsModule, RouterModule, FloatLabelModule],

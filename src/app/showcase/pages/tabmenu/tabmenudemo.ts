@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ControlledDoc } from '@doc/tabmenu/controlleddoc';
+import { AccessibilityDoc } from '@doc/tabmenu/accessibilitydoc';
 import { BasicDoc } from '@doc/tabmenu/basicdoc';
+import { CommandDoc } from '@doc/tabmenu/commanddoc';
+import { ControlledDoc } from '@doc/tabmenu/controlleddoc';
 import { ImportDoc } from '@doc/tabmenu/importdoc';
+import { RouterDoc } from '@doc/tabmenu/routerdoc';
 import { StyleDoc } from '@doc/tabmenu/styledoc';
 import { TemplateDoc } from '@doc/tabmenu/templatedoc';
-import { AccessibilityDoc } from '@doc/tabmenu/accessibilitydoc';
-import { CommandDoc } from '@doc/tabmenu/commanddoc';
-import { RouterDoc } from '@doc/tabmenu/routerdoc';
 
 @Component({
     templateUrl: './tabmenudemo.html'

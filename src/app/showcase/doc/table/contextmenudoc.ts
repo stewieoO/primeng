@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
     selector: 'context-menu-doc',
@@ -77,11 +77,11 @@ export class ContextMenuDoc {
 
     code: Code = {
         basic: `<p-contextMenu #cm [model]="items" />
-<p-table 
-    [value]="products" 
-    [(contextMenuSelection)]="selectedProduct" 
-    [contextMenu]="cm" 
-    dataKey="code" 
+<p-table
+    [value]="products"
+    [(contextMenuSelection)]="selectedProduct"
+    [contextMenu]="cm"
+    dataKey="code"
     [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header">
             <tr>
@@ -102,11 +102,11 @@ export class ContextMenuDoc {
 </p-table>`,
         html: `<div class="card">
     <p-contextMenu #cm [model]="items" />
-    <p-table 
-        [value]="products" 
-        [(contextMenuSelection)]="selectedProduct" 
-        [contextMenu]="cm" 
-        dataKey="code" 
+    <p-table
+        [value]="products"
+        [(contextMenuSelection)]="selectedProduct"
+        [contextMenu]="cm"
+        dataKey="code"
         [tableStyle]="{'min-width': '50rem'}">
             <ng-template pTemplate="header">
                 <tr>

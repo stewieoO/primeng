@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
+import { TreeNode } from 'primeng/api';
 
 interface Column {
     field: string;
@@ -83,14 +83,14 @@ export class FrozenColumnsDoc {
     }
 
     code: Code = {
-        basic: `<p-treeTable 
-    [value]="files" 
-    [columns]="scrollableCols" 
-    [frozenColumns]="frozenCols" 
-    [scrollable]="true" 
-    scrollHeight="250px" 
-    frozenWidth="200px" 
-    [scrollable]="true" 
+        basic: `<p-treeTable
+    [value]="files"
+    [columns]="scrollableCols"
+    [frozenColumns]="frozenCols"
+    [scrollable]="true"
+    scrollHeight="250px"
+    frozenWidth="200px"
+    [scrollable]="true"
     [tableStyle]="{'min-width':'50rem'}">
         <ng-template pTemplate="colgroup" let-columns>
             <colgroup>
@@ -122,14 +122,14 @@ export class FrozenColumnsDoc {
 </p-treeTable>`,
 
         html: `<div class="card">
-    <p-treeTable 
-        [value]="files" 
-        [columns]="scrollableCols" 
-        [frozenColumns]="frozenCols" 
-        [scrollable]="true" 
-        scrollHeight="250px" 
-        frozenWidth="200px" 
-        [scrollable]="true" 
+    <p-treeTable
+        [value]="files"
+        [columns]="scrollableCols"
+        [frozenColumns]="frozenCols"
+        [scrollable]="true"
+        scrollHeight="250px"
+        frozenWidth="200px"
+        [scrollable]="true"
         [tableStyle]="{'min-width':'50rem'}">
             <ng-template pTemplate="colgroup" let-columns>
                 <colgroup>

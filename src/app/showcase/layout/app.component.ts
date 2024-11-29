@@ -1,10 +1,8 @@
 import { DOCUMENT, IMAGE_CONFIG } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Component, Inject, OnInit, PLATFORM_ID, Renderer2, afterNextRender } from '@angular/core';
+import { afterNextRender, Component, Inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { PrimeNGConfig } from 'primeng/api';
-import { LandingComponent } from '@pages/landing/landing.component';
 import { AppConfigService } from '@service/appconfigservice';
 import { CarService } from '@service/carservice';
 import { CountryService } from '@service/countryservice';
@@ -13,17 +11,13 @@ import { EventService } from '@service/eventservice';
 import { NodeService } from '@service/nodeservice';
 import { PhotoService } from '@service/photoservice';
 import { ProductService } from '@service/productservice';
-import { AppMainComponent } from './app.main.component';
-import { AppConfigComponent } from './config/app.config.component';
-import { AppMenuComponent } from './menu/app.menu.component';
-import { AppNewsComponent } from './news/app.news.component';
-import { AppTopBarComponent } from './topbar/app.topbar.component';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     standalone: true,
-    imports: [RouterOutlet, FormsModule, ReactiveFormsModule, HttpClientModule, AppMainComponent, LandingComponent, AppNewsComponent, AppConfigComponent, AppTopBarComponent, AppMenuComponent],
+    imports: [RouterOutlet, FormsModule, ReactiveFormsModule, HttpClientModule],
     providers: [
         CarService,
         CountryService,
@@ -75,7 +69,7 @@ export class AppComponent implements OnInit {
           window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
-    
+
           gtag('config', 'G-W297P962XH');
         `;
         this.renderer.appendChild(this.document.body, scriptBody);

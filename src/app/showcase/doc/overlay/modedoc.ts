@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { Code } from '@domain/code';
 
 @Component({
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
         this.primengConfig.overlayOptions: OverlayOptions = {
             mode: 'modal'
         };
-    } 
+    }
 }`
     };
 

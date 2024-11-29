@@ -1,8 +1,8 @@
-import { Inject, Injectable, PLATFORM_ID, effect, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { effect, Inject, Injectable, PLATFORM_ID, signal } from '@angular/core';
 import { Subject } from 'rxjs';
 import { AppConfig } from '../domain/appconfig';
 import { AppState } from '../domain/appstate';
-import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
     providedIn: 'root'
