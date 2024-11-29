@@ -1,6 +1,6 @@
 {
-    "name": "primeng",
-    "version": "17.18.12",
+    "name": "@stewie/primeng",
+    "version": "17.19.0",
     "license": "SEE LICENSE IN LICENSE.md",
     "scripts": {
         "ng": "ng",
