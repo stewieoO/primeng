@@ -22,17 +22,17 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { FilterService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { AngleDoubleDownIcon } from 'primeng/icons/angledoubledown';
-import { AngleDoubleUpIcon } from 'primeng/icons/angledoubleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { SearchIcon } from 'primeng/icons/search';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { FilterService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { ButtonModule } from '@stewie/primeng/button';
+import { DomHandler } from '@stewie/primeng/dom';
+import { AngleDoubleDownIcon } from '@stewie/primeng/icons/angledoubledown';
+import { AngleDoubleUpIcon } from '@stewie/primeng/icons/angledoubleup';
+import { AngleDownIcon } from '@stewie/primeng/icons/angledown';
+import { AngleUpIcon } from '@stewie/primeng/icons/angleup';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from '@stewie/primeng/utils';
 import { OrderListFilterEvent, OrderListFilterOptions, OrderListSelectionChangeEvent } from './orderlist.interface';
 
 /**

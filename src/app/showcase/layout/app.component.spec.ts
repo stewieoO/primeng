@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppConfigService } from '@service/appconfigservice';
 import { JsonService } from '@service/jsonservice';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from '@stewie/primeng/autocomplete';
 import { AppComponent } from './app.component';
 import { AppConfigComponent } from './config/app.config.component';
 import { AppFooterComponent } from './footer/app.footer.component';

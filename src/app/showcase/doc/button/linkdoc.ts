@@ -37,7 +37,7 @@ export class LinkDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@stewie/primeng/button';
 import { RouterModule } from '@angular/router';
 
 @Component({

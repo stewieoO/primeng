@@ -3,11 +3,11 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
-import { OverlayModule } from 'primeng/overlay';
-import { TooltipModule } from 'primeng/tooltip';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { OverlayModule } from '@stewie/primeng/overlay';
+import { TooltipModule } from '@stewie/primeng/tooltip';
 import { MultiSelect, MultiSelectItem } from './multiselect';
 
 describe('MultiSelect', () => {

@@ -1,12 +1,12 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChildren, ElementRef, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, PrimeTemplate, SharedModule } from 'primeng/api';
-import { MinusIcon } from 'primeng/icons/minus';
-import { PlusIcon } from 'primeng/icons/plus';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
-import { UniqueComponentId } from 'primeng/utils';
+import { BlockableUI, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { MinusIcon } from '@stewie/primeng/icons/minus';
+import { PlusIcon } from '@stewie/primeng/icons/plus';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { UniqueComponentId } from '@stewie/primeng/utils';
 import { FieldsetAfterToggleEvent, FieldsetBeforeToggleEvent } from './fieldset.interface';
 
 /**
@@ -67,12 +67,18 @@ import { FieldsetAfterToggleEvent, FieldsetBeforeToggleEvent } from './fieldset.
     `,
     animations: [
         trigger('fieldsetContent', [
-            state('hidden', style({
-                height: '0'
-            })),
-            state('visible', style({
-                height: '*'
-            })),
+            state(
+                'hidden',
+                style({
+                    height: '0'
+                })
+            ),
+            state(
+                'visible',
+                style({
+                    height: '*'
+                })
+            ),
             transition('visible <=> hidden', [animate('{{transitionParams}}')]),
             transition('void => *', animate(0))
         ])

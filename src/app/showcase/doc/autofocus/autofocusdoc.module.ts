@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { InputTextModule } from 'primeng/inputtext';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { InputTextModule } from '@stewie/primeng/inputtext';
 import { BasicDoc } from './basicdoc';
 import { ImportDoc } from './importdoc';
 

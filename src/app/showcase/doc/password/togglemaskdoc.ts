@@ -25,7 +25,7 @@ export class ToggleMaskDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { PasswordModule } from 'primeng/password';
+import { PasswordModule } from '@stewie/primeng/password';
 import { FormsModule } from '@angular/forms';
 
 @Component({

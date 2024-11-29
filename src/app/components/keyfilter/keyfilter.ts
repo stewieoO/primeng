@@ -1,7 +1,7 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { booleanAttribute, Directive, ElementRef, EventEmitter, forwardRef, HostListener, Inject, Input, NgModule, Output, PLATFORM_ID, Provider } from '@angular/core';
 import { AbstractControl, NG_VALIDATORS, Validator } from '@angular/forms';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@stewie/primeng/dom';
 import { KeyFilterPattern } from './keyfilter.interface';
 
 export const KEYFILTER_VALIDATOR: Provider = {

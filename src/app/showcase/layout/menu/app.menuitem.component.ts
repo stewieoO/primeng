@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, Component, Input } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { StyleClassModule } from 'primeng/styleclass';
-import { TagModule } from 'primeng/tag';
+import { StyleClassModule } from '@stewie/primeng/styleclass';
+import { TagModule } from '@stewie/primeng/tag';
 import { MenuItem } from './app.menu.component';
 
 @Component({

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 
 interface Column {
     field: string;
@@ -126,10 +126,10 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 import { NodeService } from '@service/nodeservice';
-import { ButtonModule } from 'primeng/button';
-import { TreeTableModule } from 'primeng/treetable';
+import { ButtonModule } from '@stewie/primeng/button';
+import { TreeTableModule } from '@stewie/primeng/treetable';
 import { CommonModule } from '@angular/common';
 
 interface Column {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem, PrimeIcons } from 'primeng/api';
+import { MenuItem, PrimeIcons } from '@stewie/primeng/api';
 
 @Component({
     selector: 'prime-icons-constants-demo',
@@ -34,7 +34,7 @@ export class ConstantsDoc {
     code: Code = {
         typescript: `
 import { Component } from '@angular/core';
-import { PrimeIcons, MenuItem } from 'primeng/api';
+import { PrimeIcons, MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'prime-icons-constants-demo',

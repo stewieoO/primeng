@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, NgModule, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from '@stewie/primeng/api';
 
 /**
  * FloatLabel appears on top of the input field when focused.

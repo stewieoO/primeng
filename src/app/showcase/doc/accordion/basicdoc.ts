@@ -77,7 +77,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { AccordionModule } from 'primeng/accordion';
+import { AccordionModule } from '@stewie/primeng/accordion';
 
 @Component({
     selector: 'accordion-basic-demo',

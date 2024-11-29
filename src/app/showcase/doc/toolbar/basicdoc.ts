@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'basic-doc',
@@ -84,11 +84,11 @@ export class BasicDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { ToolbarModule } from 'primeng/toolbar';
-import { ButtonModule } from 'primeng/button';
-import { SplitButtonModule } from 'primeng/splitbutton';
-import { InputTextModule } from 'primeng/inputtext';
+import { MenuItem } from '@stewie/primeng/api';
+import { ToolbarModule } from '@stewie/primeng/toolbar';
+import { ButtonModule } from '@stewie/primeng/button';
+import { SplitButtonModule } from '@stewie/primeng/splitbutton';
+import { InputTextModule } from '@stewie/primeng/inputtext';
 
 @Component({
     selector: 'toolbar-basic-demo',

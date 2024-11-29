@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { ListboxModule } from 'primeng/listbox';
+import { ListboxModule } from '@stewie/primeng/listbox';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { DisabledDoc } from './disableddoc';

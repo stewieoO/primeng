@@ -108,7 +108,7 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'button-template-demo',

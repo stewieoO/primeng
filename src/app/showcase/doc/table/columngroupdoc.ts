@@ -167,7 +167,7 @@ export class ColumnGroupDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@stewie/primeng/table';
 import { CommonModule } from '@angular/common';
 
 @Component({

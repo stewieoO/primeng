@@ -28,20 +28,20 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { InputTextModule } from 'primeng/inputtext';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { ButtonModule } from '@stewie/primeng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { SpinnerIcon } from '@stewie/primeng/icons/spinner';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { TimesCircleIcon } from '@stewie/primeng/icons/timescircle';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { Overlay, OverlayModule } from '@stewie/primeng/overlay';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Scroller, ScrollerModule } from '@stewie/primeng/scroller';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from '@stewie/primeng/utils';
 import { AutoCompleteCompleteEvent, AutoCompleteDropdownClickEvent, AutoCompleteLazyLoadEvent, AutoCompleteSelectEvent, AutoCompleteUnselectEvent } from './autocomplete.interface';
 
 export const AUTOCOMPLETE_VALUE_ACCESSOR: any = {

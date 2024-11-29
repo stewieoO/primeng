@@ -19,17 +19,17 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TreeNode } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { DomHandler } from 'primeng/dom';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Tree, TreeFilterEvent, TreeModule, TreeNodeSelectEvent, TreeNodeUnSelectEvent } from 'primeng/tree';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TreeNode } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { Overlay, OverlayModule } from '@stewie/primeng/overlay';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Tree, TreeFilterEvent, TreeModule, TreeNodeSelectEvent, TreeNodeUnSelectEvent } from '@stewie/primeng/tree';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from '@stewie/primeng/utils';
 import { TreeSelectNodeCollapseEvent, TreeSelectNodeExpandEvent } from './treeselect.interface';
 
 export const TREESELECT_VALUE_ACCESSOR: any = {

@@ -2,7 +2,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AppConfigService } from '@service/appconfigservice';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@stewie/primeng/dom';
 import { AppConfigComponent } from './config/app.config.component';
 import { AppFooterComponent } from './footer/app.footer.component';
 import { AppMenuComponent } from './menu/app.menu.component';

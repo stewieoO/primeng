@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -76,8 +76,8 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { TreeModule } from 'primeng/tree';
+import { TreeNode } from '@stewie/primeng/api';
+import { TreeModule } from '@stewie/primeng/tree';
 
 @Component({
     selector: 'tree-template-demo',

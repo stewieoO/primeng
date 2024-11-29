@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@stewie/primeng/dynamicdialog';
 import { ProductListDemo } from './productlistdemo';
 
 @Component({
@@ -26,7 +26,7 @@ export class OpenDoc {
     code: Code = {
         typescript: `
 import { Component } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@stewie/primeng/dynamicdialog';
 import { ProductListDemo } from './productlistdemo';
 
 @Component({

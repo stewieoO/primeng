@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 
 @Component({
     selector: 'virtual-scroll-doc',
@@ -59,9 +59,9 @@ export class VirtualScrollDoc implements OnInit {
 </div>`,
 
         typescript: `import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 import { NodeService } from '@service/nodeservice';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@stewie/primeng/tree';
 
 @Component({
     selector: 'tree-virtual-scroll-demo',

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MessageService } from 'primeng/api';
-import { CheckIcon } from 'primeng/icons/check';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { TimesIcon } from 'primeng/icons/times';
+import { MessageService } from '@stewie/primeng/api';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ExclamationTriangleIcon } from '@stewie/primeng/icons/exclamationtriangle';
+import { TimesIcon } from '@stewie/primeng/icons/times';
 import { Toast, ToastItem } from './toast';
 
 @Component({

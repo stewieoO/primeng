@@ -18,13 +18,13 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { Message, MessageService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { CheckIcon } from 'primeng/icons/check';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { RippleModule } from 'primeng/ripple';
+import { Message, MessageService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ExclamationTriangleIcon } from '@stewie/primeng/icons/exclamationtriangle';
+import { InfoCircleIcon } from '@stewie/primeng/icons/infocircle';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { TimesCircleIcon } from '@stewie/primeng/icons/timescircle';
+import { RippleModule } from '@stewie/primeng/ripple';
 import { Subscription, timer } from 'rxjs';
 
 /**

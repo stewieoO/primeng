@@ -111,7 +111,7 @@ export class ShapesDoc {
     </div>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { SkeletonModule } from 'primeng/skeleton';
+import { SkeletonModule } from '@stewie/primeng/skeleton';
 
 @Component({
     selector: 'skeleton-shapes-demo',

@@ -67,9 +67,9 @@ export class TemplateDoc implements OnInit {
         basic: `<p-panel [toggleable]="true">
     <ng-template pTemplate="header">
         <div class="flex align-items-center gap-2">
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
-                size="large" 
+            <p-avatar
+                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                size="large"
                 shape="circle" />
             <span class="font-bold">
                 Amy Elsner
@@ -102,9 +102,9 @@ export class TemplateDoc implements OnInit {
     <p-panel [toggleable]="true">
     <ng-template pTemplate="header">
         <div class="flex align-items-center gap-2">
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
-                size="large" 
+            <p-avatar
+                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                size="large"
                 shape="circle" />
             <span class="font-bold">
                 Amy Elsner
@@ -136,9 +136,9 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
+import { PanelModule } from '@stewie/primeng/panel';
+import { AvatarModule } from '@stewie/primeng/avatar';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'panel-template-demo',

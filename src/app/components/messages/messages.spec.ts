@@ -3,13 +3,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Message, MessageService } from 'primeng/api';
-import { Button } from 'primeng/button';
-import { CheckIcon } from 'primeng/icons/check';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
+import { Message, MessageService } from '@stewie/primeng/api';
+import { Button } from '@stewie/primeng/button';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ExclamationTriangleIcon } from '@stewie/primeng/icons/exclamationtriangle';
+import { InfoCircleIcon } from '@stewie/primeng/icons/infocircle';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { TimesCircleIcon } from '@stewie/primeng/icons/timescircle';
 import { Messages } from './messages';
 
 @Component({

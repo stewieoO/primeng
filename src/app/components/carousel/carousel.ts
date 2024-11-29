@@ -23,14 +23,14 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { RippleModule } from 'primeng/ripple';
-import { UniqueComponentId } from 'primeng/utils';
+import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronLeftIcon } from '@stewie/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { ChevronUpIcon } from '@stewie/primeng/icons/chevronup';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { UniqueComponentId } from '@stewie/primeng/utils';
 import { CarouselPageEvent, CarouselResponsiveOptions } from './carousel.interface';
 
 /**

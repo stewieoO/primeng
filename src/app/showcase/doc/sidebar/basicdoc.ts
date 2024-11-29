@@ -37,7 +37,7 @@ export class BasicDoc {
     <p-sidebar [(visible)]="sidebarVisible">
         <h3>Sidebar</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
     </p-sidebar>
@@ -45,8 +45,8 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from '@stewie/primeng/sidebar';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'sidebar-basic-demo',

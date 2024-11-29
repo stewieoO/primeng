@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Car } from '@domain/car';
 import { Code } from '@domain/code';
 import { CarService } from '@service/carservice';
-import { LazyLoadEvent } from 'primeng/api';
+import { LazyLoadEvent } from '@stewie/primeng/api';
 
 interface Column {
     field: string;
@@ -155,10 +155,10 @@ export class VirtualScrollLazyDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { LazyLoadEvent } from 'primeng/api';
+import { LazyLoadEvent } from '@stewie/primeng/api';
 import { Car } from '@domain/car';
 import { CarService } from '@service/carservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@stewie/primeng/table';
 import { CommonModule } from '@angular/common';
 
 interface Column {

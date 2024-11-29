@@ -8,6 +8,6 @@ import { Code } from '@domain/code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ScrollPanelModule } from 'primeng/scrollpanel';`
+        typescript: `import { ScrollPanelModule } from '@stewie/primeng/scrollpanel';`
     };
 }

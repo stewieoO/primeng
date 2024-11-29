@@ -126,7 +126,7 @@ export class StyleDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@stewie/primeng/table';
 import { CommonModule } from '@angular/common';
 
 @Component({

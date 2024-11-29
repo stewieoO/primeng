@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
-import { MenuItem, MessageService, TreeNode } from 'primeng/api';
+import { MenuItem, MessageService, TreeNode } from '@stewie/primeng/api';
 
 @Component({
     selector: 'context-menu-doc',
@@ -70,11 +70,11 @@ export class ContextMenuDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService, TreeNode } from 'primeng/api';
+import { MenuItem, MessageService, TreeNode } from '@stewie/primeng/api';
 import { NodeService } from '@service/nodeservice';
-import { TreeModule } from 'primeng/tree';
-import { ContextMenuModule } from 'primeng/contextmenu';
-import { ToastModule } from 'primeng/toast';
+import { TreeModule } from '@stewie/primeng/tree';
+import { ContextMenuModule } from '@stewie/primeng/contextmenu';
+import { ToastModule } from '@stewie/primeng/toast';
 
 @Component({
     selector: 'tree-context-menu-demo',

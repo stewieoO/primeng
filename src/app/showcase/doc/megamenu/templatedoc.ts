@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MegaMenuItem } from 'primeng/api';
+import { MegaMenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -242,11 +242,11 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { ButtonModule } from 'primeng/button';
+import { MegaMenuItem } from '@stewie/primeng/api';
+import { MegaMenuModule } from '@stewie/primeng/megamenu';
+import { ButtonModule } from '@stewie/primeng/button';
 import { CommonModule } from '@angular/common';
-import { AvatarModule } from 'primeng/avatar';
+import { AvatarModule } from '@stewie/primeng/avatar';
 
 
 @Component({

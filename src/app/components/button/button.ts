@@ -19,12 +19,12 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { DomHandler } from 'primeng/dom';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { Ripple } from 'primeng/ripple';
-import { ObjectUtils } from 'primeng/utils';
+import { PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { DomHandler } from '@stewie/primeng/dom';
+import { SpinnerIcon } from '@stewie/primeng/icons/spinner';
+import { Ripple } from '@stewie/primeng/ripple';
+import { ObjectUtils } from '@stewie/primeng/utils';
 
 type ButtonIconPosition = 'left' | 'right' | 'top' | 'bottom';
 
@@ -349,7 +349,7 @@ export class ButtonDirective implements AfterViewInit, OnDestroy {
     encapsulation: ViewEncapsulation.None,
     host: {
         class: 'p-element',
-        '[class.p-disabled]': 'disabled' || 'loading'
+        '[class.p-disabled]': 'disabled || loading'
     }
 })
 export class Button implements AfterContentInit {

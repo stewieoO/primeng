@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Panel } from 'primeng/panel';
+import { Panel } from '@stewie/primeng/panel';
 import { BlockUI } from './blockui';
 
 @Component({

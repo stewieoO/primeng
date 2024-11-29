@@ -52,7 +52,7 @@ export class HorizontalDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SplitterModule } from 'primeng/splitter';      
+import { SplitterModule } from '@stewie/primeng/splitter';
 
 @Component({
     selector: 'splitter-horizontal-demo',

@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, NgModule, numberAttribute, OnDestroy, OnInit, Output, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { MenuItem } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 
 /**

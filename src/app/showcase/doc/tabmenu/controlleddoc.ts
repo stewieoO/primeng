@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'controlled-doc',
@@ -92,9 +92,9 @@ export class ControlledDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem } from '@stewie/primeng/api';
+import { TabMenuModule } from '@stewie/primeng/tabmenu';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'tab-menu-controlled-demo',
@@ -125,10 +125,10 @@ export class TabMenuControlledDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { TabMenuModule } from '@stewie/primeng/tabmenu';
+import { TabMenuModule } from '@stewie/primeng/tabmenu';
+import { ButtonModule } from '@stewie/primeng/button';
+import { RippleModule } from '@stewie/primeng/ripple';
 import { TabMenuDemo } from './tabmenudemo';
 
 @NgModule({

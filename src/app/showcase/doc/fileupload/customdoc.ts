@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'file-upload-custom-demo',
@@ -42,7 +42,7 @@ export class CustomDoc {
 </div>`,
         typescript: `
 import { Component, Input } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'file-upload-custom-demo',

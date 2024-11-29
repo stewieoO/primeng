@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { ConfirmationService, MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'products-doc',
@@ -692,26 +692,26 @@ export class ProductsDoc {
     <p-confirmDialog [style]="{ width: '450px' }" />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from '@stewie/primeng/api';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { TableModule } from 'primeng/table';
-import { DialogModule } from 'primeng/dialog';
-import { RippleModule } from 'primeng/ripple';
-import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { ToolbarModule } from 'primeng/toolbar';
-import { ConfirmDialogModule } from 'primeng/confirmdialog';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputTextareaModule } from 'primeng/inputtextarea';
+import { TableModule } from '@stewie/primeng/table';
+import { DialogModule } from '@stewie/primeng/dialog';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { ButtonModule } from '@stewie/primeng/button';
+import { ToastModule } from '@stewie/primeng/toast';
+import { ToolbarModule } from '@stewie/primeng/toolbar';
+import { ConfirmDialogModule } from '@stewie/primeng/confirmdialog';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { InputTextareaModule } from '@stewie/primeng/inputtextarea';
 import { CommonModule } from '@angular/common';
-import { FileUploadModule } from 'primeng/fileupload';
-import { DropdownModule } from 'primeng/dropdown';
-import { TagModule } from 'primeng/tag';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { RatingModule } from 'primeng/rating';
+import { FileUploadModule } from '@stewie/primeng/fileupload';
+import { DropdownModule } from '@stewie/primeng/dropdown';
+import { TagModule } from '@stewie/primeng/tag';
+import { RadioButtonModule } from '@stewie/primeng/radiobutton';
+import { RatingModule } from '@stewie/primeng/rating';
 import { FormsModule } from '@angular/forms';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { InputNumberModule } from '@stewie/primeng/inputnumber';
 
 @Component({
     selector: 'table-products-demo',

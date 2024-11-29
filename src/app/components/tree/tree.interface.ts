@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { ScrollerOptions, TreeNode } from 'primeng/api';
+import { ScrollerOptions, TreeNode } from '@stewie/primeng/api';
 import { Tree } from './tree';
 
 /**

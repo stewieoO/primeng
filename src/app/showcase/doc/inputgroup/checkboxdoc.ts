@@ -63,12 +63,12 @@ export class CheckboxDoc {
             <p-radioButton [(ngModel)]="radioValue1" name="rb1" value="rb1"/>
         </p-inputGroupAddon>
     </p-inputGroup>
-    
+
     <p-inputGroup>
         <p-inputGroupAddon><p-checkbox [(ngModel)]="checked1" [binary]="true"/></p-inputGroupAddon>
         <input type="text" pInputText placeholder="Username" />
     </p-inputGroup>
-    
+
     <p-inputGroup>
         <p-inputGroupAddon><p-checkbox [(ngModel)]="checked2" [binary]="true"/></p-inputGroupAddon>
         <input type="text" pInputText placeholder="Website" />
@@ -78,11 +78,11 @@ export class CheckboxDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { CheckboxModule } from 'primeng/checkbox';
-import { RadioButtonModule } from 'primeng/radiobutton';
+import { InputGroupModule } from '@stewie/primeng/inputgroup';
+import { InputGroupAddonModule } from '@stewie/primeng/inputgroupaddon';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { CheckboxModule } from '@stewie/primeng/checkbox';
+import { RadioButtonModule } from '@stewie/primeng/radiobutton';
 
 @Component({
     selector: 'input-group-checkbox-demo',

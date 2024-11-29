@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'context-menu-basic-demo',
@@ -46,8 +46,8 @@ export class BasicDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { MenuItem } from '@stewie/primeng/api';
+import { ContextMenuModule } from '@stewie/primeng/contextmenu';
 
 @Component({
     selector: 'context-menu-basic-demo',

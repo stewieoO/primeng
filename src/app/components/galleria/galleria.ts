@@ -29,17 +29,17 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
-import { RippleModule } from 'primeng/ripple';
-import { VoidListener } from 'primeng/ts-helpers';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { FocusTrapModule } from '@stewie/primeng/focustrap';
+import { ChevronLeftIcon } from '@stewie/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { WindowMaximizeIcon } from '@stewie/primeng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@stewie/primeng/icons/windowminimize';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { VoidListener } from '@stewie/primeng/ts-helpers';
+import { UniqueComponentId, ZIndexUtils } from '@stewie/primeng/utils';
 import { GalleriaResponsiveOptions } from './galleria.interface';
 
 /**

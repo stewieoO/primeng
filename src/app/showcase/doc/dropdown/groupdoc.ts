@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@stewie/primeng/api';
 
 @Component({
     selector: 'dropdown-group-demo',
@@ -97,10 +97,10 @@ export class GroupDoc {
     </p-dropdown>
 </div>`,
 
-        typescript: `import { SelectItemGroup } from 'primeng/api';
+        typescript: `import { SelectItemGroup } from '@stewie/primeng/api';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
+import { DropdownModule } from '@stewie/primeng/dropdown';
 
 @Component({
     selector: 'dropdown-group-demo',

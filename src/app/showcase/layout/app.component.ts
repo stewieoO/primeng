@@ -11,7 +11,7 @@ import { EventService } from '@service/eventservice';
 import { NodeService } from '@service/nodeservice';
 import { PhotoService } from '@service/photoservice';
 import { ProductService } from '@service/productservice';
-import { PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from '@stewie/primeng/api';
 
 @Component({
     selector: 'app-root',

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CheckboxDocModule } from '@doc/checkbox/checkboxdoc.module';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { CheckboxModule } from 'primeng/checkbox';
+import { CheckboxModule } from '@stewie/primeng/checkbox';
 import { CheckboxDemo } from './checkboxdemo';
 import { CheckboxDemoRoutingModule } from './checkboxdemo-routing.module';
 

@@ -3,18 +3,18 @@ import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID } 
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppConfigService } from '@service/appconfigservice';
-import { MenuItem, SelectItem } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { CalendarModule } from 'primeng/calendar';
-import { ChartModule } from 'primeng/chart';
-import { ChipModule } from 'primeng/chip';
-import { DropdownModule } from 'primeng/dropdown';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { SliderModule } from 'primeng/slider';
-import { TabMenuModule } from 'primeng/tabmenu';
+import { MenuItem, SelectItem } from '@stewie/primeng/api';
+import { BadgeModule } from '@stewie/primeng/badge';
+import { CalendarModule } from '@stewie/primeng/calendar';
+import { ChartModule } from '@stewie/primeng/chart';
+import { ChipModule } from '@stewie/primeng/chip';
+import { DropdownModule } from '@stewie/primeng/dropdown';
+import { InputNumberModule } from '@stewie/primeng/inputnumber';
+import { InputSwitchModule } from '@stewie/primeng/inputswitch';
+import { RadioButtonModule } from '@stewie/primeng/radiobutton';
+import { SelectButtonModule } from '@stewie/primeng/selectbutton';
+import { SliderModule } from '@stewie/primeng/slider';
+import { TabMenuModule } from '@stewie/primeng/tabmenu';
 import { debounceTime, Subscription } from 'rxjs';
 
 @Component({

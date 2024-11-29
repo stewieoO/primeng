@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { OrderList, OrderListModule } from 'primeng/orderlist';
+import { OrderList, OrderListModule } from '@stewie/primeng/orderlist';
 
 @Component({
     template: `<p-orderList [value]="cars">

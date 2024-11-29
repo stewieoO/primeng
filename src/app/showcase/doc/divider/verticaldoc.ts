@@ -63,7 +63,7 @@ export class VerticalDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DividerModule } from 'primeng/divider';
+import { DividerModule } from '@stewie/primeng/divider';
 
 @Component({
     selector: 'divider-vertical-demo',

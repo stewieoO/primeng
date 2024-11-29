@@ -24,19 +24,19 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { MinusIcon } from 'primeng/icons/minus';
-import { PlusIcon } from 'primeng/icons/plus';
-import { SearchIcon } from 'primeng/icons/search';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { MinusIcon } from '@stewie/primeng/icons/minus';
+import { PlusIcon } from '@stewie/primeng/icons/plus';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { SpinnerIcon } from '@stewie/primeng/icons/spinner';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Scroller, ScrollerModule } from '@stewie/primeng/scroller';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import {
     TreeFilterEvent,

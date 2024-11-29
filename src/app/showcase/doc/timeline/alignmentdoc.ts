@@ -88,7 +88,7 @@ export class AlignmentDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TimelineModule } from 'primeng/timeline';
+import { TimelineModule } from '@stewie/primeng/timeline';
 
 interface EventItem {
     status?: string;

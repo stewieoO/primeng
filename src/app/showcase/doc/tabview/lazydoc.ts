@@ -50,7 +50,7 @@ export class LazyDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TabViewModule } from 'primeng/tabview';
+import { TabViewModule } from '@stewie/primeng/tabview';
 
 @Component({
     selector: 'tab-view-lazy-demo',

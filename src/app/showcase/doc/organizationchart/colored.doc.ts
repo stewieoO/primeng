@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 
 @Component({
     selector: 'organization-chart-colored-demo',
@@ -117,8 +117,8 @@ export class ColoredDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { OrganizationChartModule } from 'primeng/organizationchart';
+import { TreeNode } from '@stewie/primeng/api';
+import { OrganizationChartModule } from '@stewie/primeng/organizationchart';
 
 @Component({
     selector: 'organization-chart-colored-demo',

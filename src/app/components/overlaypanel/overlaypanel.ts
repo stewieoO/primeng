@@ -24,12 +24,12 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { TimesIcon } from 'primeng/icons/times';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 
 /**
@@ -67,17 +67,26 @@ import { Subscription } from 'rxjs';
     `,
     animations: [
         trigger('animation', [
-            state('void', style({
-                transform: 'scaleY(0.8)',
-                opacity: 0
-            })),
-            state('close', style({
-                opacity: 0
-            })),
-            state('open', style({
-                transform: 'translateY(0)',
-                opacity: 1
-            })),
+            state(
+                'void',
+                style({
+                    transform: 'scaleY(0.8)',
+                    opacity: 0
+                })
+            ),
+            state(
+                'close',
+                style({
+                    opacity: 0
+                })
+            ),
+            state(
+                'open',
+                style({
+                    transform: 'translateY(0)',
+                    opacity: 1
+                })
+            ),
             transition('void => open', animate('{{showTransitionParams}}')),
             transition('open => close', animate('{{hideTransitionParams}}'))
         ])

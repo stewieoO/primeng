@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
-import { SortEvent, TreeNode } from 'primeng/api';
-import { TreeTable } from 'primeng/treetable';
+import { SortEvent, TreeNode } from '@stewie/primeng/api';
+import { TreeTable } from '@stewie/primeng/treetable';
 
 interface Column {
     field: string;
@@ -170,10 +170,10 @@ export class SortRemovableDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 import { NodeService } from '@service/nodeservice';
-import { TreeTableModule } from 'primeng/treetable';
-import { InputSwitchModule } from 'primeng/inputswitch';
+import { TreeTableModule } from '@stewie/primeng/treetable';
+import { InputSwitchModule } from '@stewie/primeng/inputswitch';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 

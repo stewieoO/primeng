@@ -24,15 +24,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { TimesIcon } from 'primeng/icons/times';
-import { InputTextModule } from 'primeng/inputtext';
-import { Nullable } from 'primeng/ts-helpers';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { ButtonModule } from '@stewie/primeng/button';
+import { DomHandler } from '@stewie/primeng/dom';
+import { AngleDownIcon } from '@stewie/primeng/icons/angledown';
+import { AngleUpIcon } from '@stewie/primeng/icons/angleup';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { InputNumberInputEvent } from './inputnumber.interface';
 
 export const INPUTNUMBER_VALUE_ACCESSOR: any = {
@@ -352,22 +352,22 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
      * The locale matching algorithm to use. Possible values are "lookup" and "best fit"; the default is "best fit". See Locale Negotiation for details.
      * @group Props
      */
-    @Input() localeMatcher: string | undefined;
+    @Input() localeMatcher: Intl.NumberFormatOptions['localeMatcher'] | undefined;
     /**
      * Defines the behavior of the component, valid values are "decimal" and "currency".
      * @group Props
      */
-    @Input() mode: string = 'decimal';
+    @Input() mode: Intl.NumberFormatOptions['style'] = 'decimal';
     /**
      * The currency to use in currency formatting. Possible values are the ISO 4217 currency codes, such as "USD" for the US dollar, "EUR" for the euro, or "CNY" for the Chinese RMB. There is no default value; if the style is "currency", the currency property must be provided.
      * @group Props
      */
-    @Input() currency: string | undefined;
+    @Input() currency: Intl.NumberFormatOptions['currency'] | undefined;
     /**
      * How to display the currency in currency formatting. Possible values are "symbol" to use a localized currency symbol such as €, ü"code" to use the ISO currency code, "name" to use a localized currency name such as "dollar"; the default is "symbol".
      * @group Props
      */
-    @Input() currencyDisplay: string | undefined;
+    @Input() currencyDisplay: Intl.NumberFormatOptions['currencyDisplay'] | undefined;
     /**
      * Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators.
      * @group Props

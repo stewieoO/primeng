@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { MenuModule } from 'primeng/menu';
+import { MenuModule } from '@stewie/primeng/menu';
 import { BasicDoc } from './basicdoc';
 import { ColorDoc } from './colordoc';
 import { ConstantsDoc } from './constantsdoc';

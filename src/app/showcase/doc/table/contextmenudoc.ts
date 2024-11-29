@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'context-menu-doc',
@@ -128,11 +128,11 @@ export class ContextMenuDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MessageService, MenuItem } from 'primeng/api';
+import { MessageService, MenuItem } from '@stewie/primeng/api';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { TableModule } from 'primeng/table';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { TableModule } from '@stewie/primeng/table';
+import { ContextMenuModule } from '@stewie/primeng/contextmenu';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'menubar-template-demo',
@@ -225,13 +225,13 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { MenubarModule } from 'primeng/menubar';
-import { BadgeModule } from 'primeng/badge';
-import { AvatarModule } from 'primeng/avatar';
-import { InputTextModule } from 'primeng/inputtext';
+import { MenuItem } from '@stewie/primeng/api';
+import { MenubarModule } from '@stewie/primeng/menubar';
+import { BadgeModule } from '@stewie/primeng/badge';
+import { AvatarModule } from '@stewie/primeng/avatar';
+import { InputTextModule } from '@stewie/primeng/inputtext';
 import { CommonModule } from '@angular/common';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@stewie/primeng/ripple';
 
 @Component({
     selector: 'menubar-template-demo',

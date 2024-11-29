@@ -8,7 +8,7 @@ import { Code } from '@domain/code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';`
+        typescript: `import { InputGroupModule } from '@stewie/primeng/inputgroup';
+import { InputGroupAddonModule } from '@stewie/primeng/inputgroupaddon';`
     };
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@stewie/primeng/api';
 
 interface UploadEvent {
     originalEvent: Event;
@@ -77,9 +77,9 @@ export class AdvancedDoc {
     </p-fileUpload>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { FileUploadModule } from 'primeng/fileupload';
-import { ToastModule } from 'primeng/toast';
+import { MessageService } from '@stewie/primeng/api';
+import { FileUploadModule } from '@stewie/primeng/fileupload';
+import { ToastModule } from '@stewie/primeng/toast';
 import { CommonModule } from '@angular/common';
 
 interface UploadEvent {

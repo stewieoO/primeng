@@ -51,7 +51,7 @@ export class DynamicDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TabViewModule } from 'primeng/tabview';
+import { TabViewModule } from '@stewie/primeng/tabview';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'breadcrumb-basic-demo',
@@ -40,8 +40,8 @@ export class BasicDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { MenuItem } from '@stewie/primeng/api';
+import { BreadcrumbModule } from '@stewie/primeng/breadcrumb';
 
 @Component({
     selector: 'breadcrumb-basic-demo',

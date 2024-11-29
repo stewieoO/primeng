@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'popup-doc',
@@ -101,9 +101,9 @@ export class PopupDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { TieredMenuModule } from 'primeng/tieredmenu';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem } from '@stewie/primeng/api';
+import { TieredMenuModule } from '@stewie/primeng/tieredmenu';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'tiered-menu-popup-demo',

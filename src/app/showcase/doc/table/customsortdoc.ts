@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { SortEvent } from 'primeng/api';
+import { SortEvent } from '@stewie/primeng/api';
 
 @Component({
     selector: 'custom-sort-doc',
@@ -119,7 +119,7 @@ export class CustomSortDoc {
 import { Component, OnInit } from '@angular/core';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { SortEvent } from 'primeng/api';
+import { SortEvent } from '@stewie/primeng/api';
 
 @Component({
     selector: 'table-custom-sort-demo',

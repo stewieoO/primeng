@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@stewie/primeng/api';
 
 interface City {
     name: string;
@@ -107,9 +107,9 @@ export class GroupDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@stewie/primeng/api';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@stewie/primeng/multiselect';
 
 interface City {
     name: string,

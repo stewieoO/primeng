@@ -26,16 +26,16 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { ButtonModule } from '@stewie/primeng/button';
+import { DomHandler } from '@stewie/primeng/dom';
+import { FocusTrapModule } from '@stewie/primeng/focustrap';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { WindowMaximizeIcon } from '@stewie/primeng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@stewie/primeng/icons/windowminimize';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { UniqueComponentId, ZIndexUtils } from '@stewie/primeng/utils';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);
 

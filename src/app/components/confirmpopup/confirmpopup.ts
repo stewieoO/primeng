@@ -20,11 +20,11 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { Confirmation, ConfirmationService, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { Confirmation, ConfirmationService, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { ButtonModule } from '@stewie/primeng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 
 /**
@@ -91,14 +91,20 @@ import { Subscription } from 'rxjs';
     `,
     animations: [
         trigger('animation', [
-            state('void', style({
-                transform: 'scaleY(0.8)',
-                opacity: 0
-            })),
-            state('open', style({
-                transform: 'translateY(0)',
-                opacity: 1
-            })),
+            state(
+                'void',
+                style({
+                    transform: 'scaleY(0.8)',
+                    opacity: 0
+                })
+            ),
+            state(
+                'open',
+                style({
+                    transform: 'translateY(0)',
+                    opacity: 1
+                })
+            ),
             transition('void => open', animate('{{showTransitionParams}}')),
             transition('open => void', animate('{{hideTransitionParams}}'))
         ])

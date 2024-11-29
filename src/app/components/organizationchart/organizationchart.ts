@@ -19,11 +19,11 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeTemplate, SharedModule, TreeNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { Nullable } from 'primeng/ts-helpers';
+import { PrimeTemplate, SharedModule, TreeNode } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronUpIcon } from '@stewie/primeng/icons/chevronup';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { Subject, Subscription } from 'rxjs';
 import { OrganizationChartNodeCollapseEvent, OrganizationChartNodeExpandEvent, OrganizationChartNodeSelectEvent, OrganizationChartNodeUnSelectEvent } from './organizationchart.interface';
 

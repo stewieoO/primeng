@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { MessageService } from 'primeng/api';
-import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
+import { MessageService } from '@stewie/primeng/api';
+import { TableRowCollapseEvent, TableRowExpandEvent } from '@stewie/primeng/table';
 
 @Component({
     selector: 'row-expansion-doc',
@@ -299,16 +299,16 @@ export class RowExpansionDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@stewie/primeng/table';
 import { Product } from '@domain/product';
-import { TagModule } from 'primeng/tag';
-import { RatingModule } from 'primeng/rating';
+import { TagModule } from '@stewie/primeng/tag';
+import { RatingModule } from '@stewie/primeng/rating';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@stewie/primeng/button';
 import { ProductService } from '@service/productservice';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
+import { MessageService } from '@stewie/primeng/api';
+import { ToastModule } from '@stewie/primeng/toast';
+import { TableRowCollapseEvent, TableRowExpandEvent } from '@stewie/primeng/table';
 
 @Component({
     selector: 'table-row-expansion-demo',

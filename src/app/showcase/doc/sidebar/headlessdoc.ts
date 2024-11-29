@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Code } from '@domain/code';
-import { Sidebar } from 'primeng/sidebar';
+import { Sidebar } from '@stewie/primeng/sidebar';
 
 @Component({
     selector: 'headless-doc',
@@ -617,12 +617,12 @@ export class HeadlessDoc {
 </div>`,
 
         typescript: `import { Component, ViewChild } from '@angular/core';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { AvatarModule } from 'primeng/avatar';
-import { StyleClassModule } from 'primeng/styleclass';
-import { Sidebar } from 'primeng/sidebar';
+import { SidebarModule } from '@stewie/primeng/sidebar';
+import { ButtonModule } from '@stewie/primeng/button';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { AvatarModule } from '@stewie/primeng/avatar';
+import { StyleClassModule } from '@stewie/primeng/styleclass';
+import { Sidebar } from '@stewie/primeng/sidebar';
 
 @Component({
     selector: 'sidebar-headless-demo',

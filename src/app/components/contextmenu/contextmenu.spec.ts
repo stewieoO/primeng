@@ -3,7 +3,7 @@ import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testin
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ContextMenuService } from 'primeng/api';
+import { ContextMenuService } from '@stewie/primeng/api';
 import { ContextMenu, ContextMenuModule } from './contextmenu';
 
 @Component({

@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { RadioButtonModule } from 'primeng/radiobutton';
+import { RadioButtonModule } from '@stewie/primeng/radiobutton';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { DisabledDoc } from './disableddoc';
 import { DynamicDoc } from './dynamicdoc';

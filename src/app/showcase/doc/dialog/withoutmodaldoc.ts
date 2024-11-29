@@ -74,9 +74,9 @@ export class WithoutModalDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { DialogModule } from '@stewie/primeng/dialog';
+import { ButtonModule } from '@stewie/primeng/button';
+import { InputTextModule } from '@stewie/primeng/inputtext';
 
 @Component({
     selector: 'dialog-without-modal-demo',

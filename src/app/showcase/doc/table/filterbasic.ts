@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { Table } from 'primeng/table';
+import { Table } from '@stewie/primeng/table';
 
 @Component({
     selector: 'filter-basic-doc',
@@ -459,16 +459,16 @@ export class FilterBasicDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { Table } from 'primeng/table';
+import { Table } from '@stewie/primeng/table';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TagModule } from 'primeng/tag';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
+import { TagModule } from '@stewie/primeng/tag';
+import { IconFieldModule } from '@stewie/primeng/iconfield';
+import { InputIconModule } from '@stewie/primeng/inputicon';
 import { HttpClientModule } from '@angular/common/http';
-import { InputTextModule } from 'primeng/inputtext';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { DropdownModule } from 'primeng/dropdown';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { MultiSelectModule } from '@stewie/primeng/multiselect';
+import { DropdownModule } from '@stewie/primeng/dropdown';
 import { CommonModule } from '@angular/common';
 
 @Component({

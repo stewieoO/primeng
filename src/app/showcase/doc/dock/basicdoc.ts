@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'dock-basic-demo',
@@ -99,9 +99,9 @@ export class BasicDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { DockModule } from 'primeng/dock';
-import { RadioButtonModule } from 'primeng/radiobutton';
+import { MenuItem } from '@stewie/primeng/api';
+import { DockModule } from '@stewie/primeng/dock';
+import { RadioButtonModule } from '@stewie/primeng/radiobutton';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 

@@ -21,13 +21,13 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, FilterService, Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BarsIcon } from 'primeng/icons/bars';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { ThLargeIcon } from 'primeng/icons/thlarge';
-import { PaginatorModule } from 'primeng/paginator';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, FilterService, Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { BarsIcon } from '@stewie/primeng/icons/bars';
+import { SpinnerIcon } from '@stewie/primeng/icons/spinner';
+import { ThLargeIcon } from '@stewie/primeng/icons/thlarge';
+import { PaginatorModule } from '@stewie/primeng/paginator';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { DataViewLayoutChangeEvent, DataViewLazyLoadEvent, DataViewPageEvent, DataViewPaginatorState, DataViewSortEvent } from './dataview.interface';
 

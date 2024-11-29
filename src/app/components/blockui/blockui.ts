@@ -19,9 +19,9 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 
 /**
  * BlockUI can either block other components or the whole page.

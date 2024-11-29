@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { Code } from '@domain/code';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { LazyLoadEvent } from 'primeng/api';
+import { LazyLoadEvent } from '@stewie/primeng/api';
 
 @Component({
     selector: 'lazy-load-doc',
@@ -297,11 +297,11 @@ export class LazyLoadDoc implements OnInit {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { LazyLoadEvent } from 'primeng/api';
+import { LazyLoadEvent } from '@stewie/primeng/api';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { TableModule } from '@stewie/primeng/table';
+import { MultiSelectModule } from '@stewie/primeng/multiselect';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({

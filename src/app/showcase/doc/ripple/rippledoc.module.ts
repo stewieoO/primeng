@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@stewie/primeng/ripple';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { CustomDoc } from './customdoc';
 import { DefaultDoc } from './defaultdoc';

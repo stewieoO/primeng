@@ -38,7 +38,7 @@ export class TemplateDoc {
     </p-chip>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { ChipModule } from 'primeng/chip';
+import { ChipModule } from '@stewie/primeng/chip';
 
 @Component({
     selector: 'chip-template-demo',

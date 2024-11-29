@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'data-view-sorting-demo',
@@ -190,14 +190,14 @@ export class SortingDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@stewie/primeng/api';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { DataViewModule } from 'primeng/dataview';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
+import { DataViewModule } from '@stewie/primeng/dataview';
+import { ButtonModule } from '@stewie/primeng/button';
+import { TagModule } from '@stewie/primeng/tag';
 import { CommonModule } from '@angular/common';
-import { DropdownModule } from 'primeng/dropdown';
+import { DropdownModule } from '@stewie/primeng/dropdown';
 
 @Component({
     selector: 'data-view-sorting-demo',

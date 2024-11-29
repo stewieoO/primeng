@@ -21,11 +21,11 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { UniqueComponentId } from 'primeng/utils';
+import { BlockableUI, Header, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { UniqueComponentId } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { AccordionTabCloseEvent, AccordionTabOpenEvent } from './accordion.interface';
 
@@ -90,14 +90,20 @@ import { AccordionTabCloseEvent, AccordionTabOpenEvent } from './accordion.inter
     `,
     animations: [
         trigger('tabContent', [
-            state('hidden', style({
-                height: '0',
-                visibility: 'hidden'
-            })),
-            state('visible', style({
-                height: '*',
-                visibility: 'visible'
-            })),
+            state(
+                'hidden',
+                style({
+                    height: '0',
+                    visibility: 'hidden'
+                })
+            ),
+            state(
+                'visible',
+                style({
+                    height: '*',
+                    visibility: 'visible'
+                })
+            ),
             transition('visible <=> hidden', [animate('{{transitionParams}}')]),
             transition('void => *', animate(0))
         ])

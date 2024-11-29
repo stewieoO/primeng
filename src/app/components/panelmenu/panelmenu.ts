@@ -25,14 +25,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { MenuItem, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { AngleDownIcon } from '@stewie/primeng/icons/angledown';
+import { AngleRightIcon } from '@stewie/primeng/icons/angleright';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { ObjectUtils, UniqueComponentId } from '@stewie/primeng/utils';
 
 @Component({
     selector: 'p-panelMenuSub',
@@ -149,12 +149,18 @@ import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
     `,
     animations: [
         trigger('submenu', [
-            state('hidden', style({
-                height: '0'
-            })),
-            state('visible', style({
-                height: '*'
-            })),
+            state(
+                'hidden',
+                style({
+                    height: '0'
+                })
+            ),
+            state(
+                'visible',
+                style({
+                    height: '*'
+                })
+            ),
             transition('visible <=> hidden', [animate('{{transitionParams}}')]),
             transition('void => *', animate(0))
         ])
@@ -827,12 +833,18 @@ export class PanelMenuList implements OnChanges {
     `,
     animations: [
         trigger('rootItem', [
-            state('hidden', style({
-                height: '0'
-            })),
-            state('visible', style({
-                height: '*'
-            })),
+            state(
+                'hidden',
+                style({
+                    height: '0'
+                })
+            ),
+            state(
+                'visible',
+                style({
+                    height: '*'
+                })
+            ),
             transition('visible <=> hidden', [animate('{{transitionParams}}')]),
             transition('void => *', animate(0))
         ])

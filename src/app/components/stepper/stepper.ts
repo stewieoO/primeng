@@ -1,9 +1,9 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChildren, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { Nullable } from 'primeng/ts-helpers';
-import { UniqueComponentId } from 'primeng/utils';
+import { PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { UniqueComponentId } from '@stewie/primeng/utils';
 
 @Component({
     selector: 'p-stepperHeader',
@@ -313,14 +313,20 @@ export class StepperPanel {
     },
     animations: [
         trigger('tabContent', [
-            state('hidden', style({
-                height: '0',
-                visibility: 'hidden'
-            })),
-            state('visible', style({
-                height: '*',
-                visibility: 'visible'
-            })),
+            state(
+                'hidden',
+                style({
+                    height: '0',
+                    visibility: 'hidden'
+                })
+            ),
+            state(
+                'visible',
+                style({
+                    height: '*',
+                    visibility: 'visible'
+                })
+            ),
             transition('visible <=> hidden', [animate('250ms cubic-bezier(0.86, 0, 0.07, 1)')]),
             transition('void => *', animate(0))
         ])

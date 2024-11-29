@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, Injectable, Injector, Input, NgModule, numberAttribute, OnDestroy, OnInit, Output, ViewChild } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { PrimeNGConfig } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { Nullable } from 'primeng/ts-helpers';
+import { PrimeNGConfig } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 
 import { RadioButtonClickEvent } from './radiobutton.interface';
 

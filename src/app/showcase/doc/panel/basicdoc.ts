@@ -37,7 +37,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
+import { PanelModule } from '@stewie/primeng/panel';
 
 @Component({
     selector: 'panel-basic-demo',

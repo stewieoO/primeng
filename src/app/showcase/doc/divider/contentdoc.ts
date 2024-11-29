@@ -112,7 +112,7 @@ export class ContentDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DividerModule } from 'primeng/divider';
+import { DividerModule } from '@stewie/primeng/divider';
 
 @Component({
     selector: 'divider-content-demo',

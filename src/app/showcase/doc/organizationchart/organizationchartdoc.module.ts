@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { OrganizationChartModule } from 'primeng/organizationchart';
+import { OrganizationChartModule } from '@stewie/primeng/organizationchart';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { ColoredDoc } from './colored.doc';

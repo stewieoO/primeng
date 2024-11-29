@@ -1,5 +1,5 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
-import { ObjectUtils } from 'primeng/utils';
+import { ObjectUtils } from '@stewie/primeng/utils';
 
 @Component({
     template: ` <ng-content></ng-content> `,

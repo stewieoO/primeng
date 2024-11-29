@@ -30,21 +30,21 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { DomHandler } from 'primeng/dom';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { MinusIcon } from 'primeng/icons/minus';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { DomHandler } from '@stewie/primeng/dom';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { MinusIcon } from '@stewie/primeng/icons/minus';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { TimesCircleIcon } from '@stewie/primeng/icons/timescircle';
+import { Overlay, OverlayModule } from '@stewie/primeng/overlay';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Scroller, ScrollerModule } from '@stewie/primeng/scroller';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from '@stewie/primeng/utils';
 import { MultiSelectBlurEvent, MultiSelectChangeEvent, MultiSelectFilterEvent, MultiSelectFilterOptions, MultiSelectFocusEvent, MultiSelectLazyLoadEvent, MultiSelectRemoveEvent, MultiSelectSelectAllChangeEvent } from './multiselect.interface';
 
 export const MULTISELECT_VALUE_ACCESSOR: any = {

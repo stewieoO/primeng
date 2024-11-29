@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'controlled-doc',
@@ -116,9 +116,9 @@ export class ControlledDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { PanelMenuModule } from 'primeng/panelmenu';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem } from '@stewie/primeng/api';
+import { PanelMenuModule } from '@stewie/primeng/panelmenu';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'panel-menu-controlled-demo',

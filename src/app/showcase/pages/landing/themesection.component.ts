@@ -3,10 +3,10 @@ import { Component, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { Customer } from '@domain/customer';
 import { AppConfigService } from '@service/appconfigservice';
 import { CustomerService } from '@service/customerservice';
-import { ButtonModule } from 'primeng/button';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@stewie/primeng/button';
+import { ProgressBarModule } from '@stewie/primeng/progressbar';
+import { Table, TableModule } from '@stewie/primeng/table';
+import { TagModule } from '@stewie/primeng/tag';
 import { AppComponent } from '../../layout/app.component';
 
 @Component({

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { AppDocModule } from '@layout/doc/app.doc.module';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@stewie/primeng/inputtext';
 import { IconFieldModule } from 'src/app/components/iconfield/iconfield';
 import { InputIconModule } from 'src/app/components/inputicon/inputicon';
 import { AccessibilityDoc } from './accessibilitydoc';

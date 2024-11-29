@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { ApplicationRef, ComponentRef, createComponent, EmbeddedViewRef, Inject, Injectable, Injector, Type } from '@angular/core';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@stewie/primeng/dom';
 import { DynamicDialogComponent } from './dynamicdialog';
 import { DynamicDialogConfig } from './dynamicdialog-config';
 import { DynamicDialogInjector } from './dynamicdialog-injector';

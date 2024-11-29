@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Code } from '@domain/code';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 
 @Component({
     selector: 'router-doc',
@@ -104,9 +104,9 @@ export class RouterDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@stewie/primeng/api';
 import { Router } from '@angular/router';
-import { MenuModule } from 'primeng/menu';
+import { MenuModule } from '@stewie/primeng/menu';
 
 @Component({
     selector: 'menu-router-demo',

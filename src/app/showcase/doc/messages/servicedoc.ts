@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'service-doc',
@@ -58,9 +58,9 @@ export class ServiceDoc {
     <p-messages />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { MessagesModule } from 'primeng/messages';
-import { ButtonModule } from 'primeng/button';
+import { MessageService } from '@stewie/primeng/api';
+import { MessagesModule } from '@stewie/primeng/messages';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'messages-service-demo',

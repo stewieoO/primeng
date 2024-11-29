@@ -1,7 +1,7 @@
 import { Location } from '@angular/common';
 import { ChangeDetectorRef, Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { ObjectUtils } from 'primeng/utils';
+import { ObjectUtils } from '@stewie/primeng/utils';
 import APIDoc from 'src/app/showcase/doc/apidoc/index.json';
 import { AppDocApiTable } from './app.docapitable.component';
 

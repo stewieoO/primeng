@@ -39,7 +39,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { PasswordModule } from 'primeng/password';
+import { PasswordModule } from '@stewie/primeng/password';
 
 @Component({
     selector: 'password-reactive-forms-demo',

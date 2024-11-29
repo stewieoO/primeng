@@ -88,10 +88,10 @@ export class LoginDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DividerModule } from 'primeng/divider';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-        
+import { DividerModule } from '@stewie/primeng/divider';
+import { ButtonModule } from '@stewie/primeng/button';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+
 @Component({
     selector: 'divider-login-demo',
     templateUrl: './divider-login-demo.html',

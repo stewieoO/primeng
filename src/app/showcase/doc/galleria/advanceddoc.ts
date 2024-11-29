@@ -2,7 +2,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
 import { Code } from '@domain/code';
 import { PhotoService } from '@service/photoservice';
-import { Galleria } from 'primeng/galleria';
+import { Galleria } from '@stewie/primeng/galleria';
 
 @Component({
     selector: 'galleria-advanced-doc',
@@ -249,7 +249,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
         </ng-template>
     </p-galleria>`,
         typescript: `import { ChangeDetectorRef, Component, OnInit, OnDestroy, ViewChild, PLATFORM_ID, Inject } from '@angular/core';
-import { Galleria } from 'primeng/galleria';
+import { Galleria } from '@stewie/primeng/galleria';
 import { PhotoService } from '@service/photoservice';
 
 @Component({

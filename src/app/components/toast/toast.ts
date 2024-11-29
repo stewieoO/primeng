@@ -24,15 +24,15 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { Message, MessageService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { CheckIcon } from 'primeng/icons/check';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { RippleModule } from 'primeng/ripple';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { Message, MessageService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ExclamationTriangleIcon } from '@stewie/primeng/icons/exclamationtriangle';
+import { InfoCircleIcon } from '@stewie/primeng/icons/infocircle';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { TimesCircleIcon } from '@stewie/primeng/icons/timescircle';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast.interface';
 
@@ -93,10 +93,13 @@ import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast
     `,
     animations: [
         trigger('messageState', [
-            state('visible', style({
-                transform: 'translateY(0)',
-                opacity: 1
-            })),
+            state(
+                'visible',
+                style({
+                    transform: 'translateY(0)',
+                    opacity: 1
+                })
+            ),
             transition('void => *', [
                 style({
                     transform: '{{showTransformParams}}',
@@ -105,11 +108,14 @@ import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast
                 animate('{{showTransitionParams}}')
             ]),
             transition('* => void', [
-                animate('{{hideTransitionParams}}', style({
-                    height: 0,
-                    opacity: 0,
-                    transform: '{{hideTransformParams}}'
-                }))
+                animate(
+                    '{{hideTransitionParams}}',
+                    style({
+                        height: 0,
+                        opacity: 0,
+                        transform: '{{hideTransformParams}}'
+                    })
+                )
             ])
         ])
     ],

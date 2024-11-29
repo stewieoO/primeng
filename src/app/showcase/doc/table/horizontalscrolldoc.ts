@@ -164,7 +164,7 @@ export class HorizontalScrollDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@stewie/primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({

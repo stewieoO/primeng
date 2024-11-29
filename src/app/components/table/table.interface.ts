@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { FilterMetadata, LazyLoadMeta } from 'primeng/api';
+import { FilterMetadata, LazyLoadMeta } from '@stewie/primeng/api';
 import { Table } from './table';
 
 /**

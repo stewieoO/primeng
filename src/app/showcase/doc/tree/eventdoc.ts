@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
-import { MessageService, TreeNode } from 'primeng/api';
+import { MessageService, TreeNode } from '@stewie/primeng/api';
 
 @Component({
     selector: 'event-doc',
@@ -82,10 +82,10 @@ export class EventDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MessageService, TreeNode } from 'primeng/api';
+import { MessageService, TreeNode } from '@stewie/primeng/api';
 import { NodeService } from '@service/nodeservice';
-import { TreeModule } from 'primeng/tree';
-import { ToastModule } from 'primeng/toast';
+import { TreeModule } from '@stewie/primeng/tree';
+import { ToastModule } from '@stewie/primeng/toast';
 
 @Component({
     selector: 'tree-events-demo',

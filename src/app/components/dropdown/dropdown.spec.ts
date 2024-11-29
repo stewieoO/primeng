@@ -4,11 +4,11 @@ import { ComponentFixture, fakeAsync, flush, TestBed } from '@angular/core/testi
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
-import { OverlayModule } from 'primeng/overlay';
-import { TooltipModule } from 'primeng/tooltip';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { OverlayModule } from '@stewie/primeng/overlay';
+import { TooltipModule } from '@stewie/primeng/tooltip';
 import { Dropdown, DropdownItem } from './dropdown';
 
 @Component({

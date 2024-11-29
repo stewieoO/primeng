@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewChecked, AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input, NgModule, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@stewie/primeng/dom';
 import { Subscription } from 'rxjs';
 import { TerminalService } from './terminalservice';
 

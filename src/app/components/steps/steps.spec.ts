@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuItem } from 'primeng/api';
-import { Toast } from 'primeng/toast';
+import { MenuItem } from '@stewie/primeng/api';
+import { Toast } from '@stewie/primeng/toast';
 import { Steps, StepsModule } from './steps';
 
 @Component({

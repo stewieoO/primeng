@@ -24,19 +24,19 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { CalendarIcon } from 'primeng/icons/calendar';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { TimesIcon } from 'primeng/icons/times';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { ButtonModule } from '@stewie/primeng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { CalendarIcon } from '@stewie/primeng/icons/calendar';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronLeftIcon } from '@stewie/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { ChevronUpIcon } from '@stewie/primeng/icons/chevronup';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { CalendarMonthChangeEvent, CalendarResponsiveOptions, CalendarTypeView, CalendarYearChangeEvent, LocaleSettings, Month, NavigationState } from './calendar.interface';
 
@@ -438,18 +438,24 @@ export const CALENDAR_VALUE_ACCESSOR: any = {
     `,
     animations: [
         trigger('overlayAnimation', [
-            state('visibleTouchUI', style({
-                transform: 'translate(-50%,-50%)',
-                opacity: 1
-            })),
+            state(
+                'visibleTouchUI',
+                style({
+                    transform: 'translate(-50%,-50%)',
+                    opacity: 1
+                })
+            ),
             transition('void => visible', [style({ opacity: 0, transform: 'scaleY(0.8)' }), animate('{{showTransitionParams}}', style({ opacity: 1, transform: '*' }))]),
             transition('visible => void', [animate('{{hideTransitionParams}}', style({ opacity: 0 }))]),
             transition('void => visibleTouchUI', [style({ opacity: 0, transform: 'translate3d(-50%, -40%, 0) scale(0.9)' }), animate('{{showTransitionParams}}')]),
             transition('visibleTouchUI => void', [
-                animate('{{hideTransitionParams}}', style({
-                    opacity: 0,
-                    transform: 'translate3d(-50%, -40%, 0) scale(0.9)'
-                }))
+                animate(
+                    '{{hideTransitionParams}}',
+                    style({
+                        opacity: 0,
+                        transform: 'translate3d(-50%, -40%, 0) scale(0.9)'
+                    })
+                )
             ])
         ])
     ],

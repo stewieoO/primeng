@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, ElementRef, Input, NgModule, QueryList, signal, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { ObjectUtils } from '@stewie/primeng/utils';
 
 /**
  * Card is a flexible container component.

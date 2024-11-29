@@ -8,6 +8,6 @@ import { Code } from '@domain/code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { MeterGroupModule } from 'primeng/metergroup';`
+        typescript: `import { MeterGroupModule } from '@stewie/primeng/metergroup';`
     };
 }

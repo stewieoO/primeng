@@ -39,7 +39,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { SliderModule } from 'primeng/slider';
+import { SliderModule } from '@stewie/primeng/slider';
 
 @Component({
     selector: 'slider-reactive-forms-demo',

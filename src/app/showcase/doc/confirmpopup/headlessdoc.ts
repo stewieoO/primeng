@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Code } from '@domain/code';
-import { ConfirmationService, MessageService } from 'primeng/api';
-import { ConfirmPopup } from 'primeng/confirmpopup';
+import { ConfirmationService, MessageService } from '@stewie/primeng/api';
+import { ConfirmPopup } from '@stewie/primeng/confirmpopup';
 
 @Component({
     selector: 'confirm-popup-headless-demo',
@@ -90,10 +90,10 @@ export class HeadlessDoc {
 </div>`,
 
         typescript: `import { Component, ViewChild } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
-import { ConfirmPopup, ConfirmPopupModule } from 'primeng/confirmpopup';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
+import { ConfirmationService, MessageService } from '@stewie/primeng/api';
+import { ConfirmPopup, ConfirmPopupModule } from '@stewie/primeng/confirmpopup';
+import { ToastModule } from '@stewie/primeng/toast';
+import { ButtonModule } from '@stewie/primeng/button';
 
 @Component({
     selector: 'confirm-popup-headless-demo',

@@ -29,23 +29,23 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, FilterMetadata, FilterService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { MinusIcon } from 'primeng/icons/minus';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { PaginatorModule } from 'primeng/paginator';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, FilterMetadata, FilterService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ArrowDownIcon } from '@stewie/primeng/icons/arrowdown';
+import { ArrowUpIcon } from '@stewie/primeng/icons/arrowup';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { ChevronRightIcon } from '@stewie/primeng/icons/chevronright';
+import { MinusIcon } from '@stewie/primeng/icons/minus';
+import { SortAltIcon } from '@stewie/primeng/icons/sortalt';
+import { SortAmountDownIcon } from '@stewie/primeng/icons/sortamountdown';
+import { SortAmountUpAltIcon } from '@stewie/primeng/icons/sortamountupalt';
+import { SpinnerIcon } from '@stewie/primeng/icons/spinner';
+import { PaginatorModule } from '@stewie/primeng/paginator';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Scroller, ScrollerModule } from '@stewie/primeng/scroller';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils } from '@stewie/primeng/utils';
 import { Subject, Subscription } from 'rxjs';
 import {
     TreeTableColResizeEvent,

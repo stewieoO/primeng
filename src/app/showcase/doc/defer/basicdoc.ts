@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'basic-doc',
@@ -53,9 +53,9 @@ export class BasicDoc {
     </div>
 </div>`,
         typescript: `import { Component, Input } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { DeferModule } from 'primeng/defer';
-import { ToastModule } from 'primeng/toast';
+import { MessageService } from '@stewie/primeng/api';
+import { DeferModule } from '@stewie/primeng/defer';
+import { ToastModule } from '@stewie/primeng/toast';
 
 @Component({
     selector: 'defer-basic-demo',

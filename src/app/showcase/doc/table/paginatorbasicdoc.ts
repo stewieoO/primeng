@@ -106,7 +106,7 @@ export class PaginatorBasicDoc {
         typescript: `import { Component } from '@angular/core';
 import { Customer } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@stewie/primeng/table';
 import { CommonModule } from '@angular/common';
 
 @Component({

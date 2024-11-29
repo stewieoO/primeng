@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@stewie/primeng/api';
 
 interface Column {
     field: string;
@@ -198,8 +198,8 @@ export class LazyLoadDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { TreeTableModule } from 'primeng/treetable';
+import { TreeNode } from '@stewie/primeng/api';
+import { TreeTableModule } from '@stewie/primeng/treetable';
 import { CommonModule } from '@angular/common';
 
 interface Column {

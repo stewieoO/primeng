@@ -4,7 +4,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { DropdownModule } from 'primeng/dropdown';
+import { DropdownModule } from '@stewie/primeng/dropdown';
 import { Paginator, PaginatorModule } from './paginator';
 
 describe('Paginator', () => {

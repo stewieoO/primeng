@@ -18,9 +18,9 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
+import { BlockableUI, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from '@stewie/primeng/api';
+import { Scroller, ScrollerModule } from '@stewie/primeng/scroller';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { VirtualScrollerLazyLoadEvent } from './virtualscroller.interface';
 
 /**
@@ -54,7 +54,8 @@ import { VirtualScrollerLazyLoadEvent } from './virtualscroller.interface';
     encapsulation: ViewEncapsulation.None,
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class VirtualScroller implements AfterContentInit, BlockableUI {
     /**

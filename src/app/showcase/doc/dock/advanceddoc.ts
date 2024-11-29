@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
 import { PhotoService } from '@service/photoservice';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from '@stewie/primeng/api';
+import { TerminalService } from '@stewie/primeng/terminal';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -497,18 +497,18 @@ export class AdvancedDoc implements OnInit, OnDestroy {
 </div>`,
 
         typescript: `import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalModule } from 'primeng/terminal';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from '@stewie/primeng/api';
+import { TerminalModule } from '@stewie/primeng/terminal';
+import { TerminalService } from '@stewie/primeng/terminal';
 import { Subscription } from 'rxjs';
 import { NodeService } from '@service/nodeservice';
 import { PhotoService } from '@service/photoservice';
-import { DockModule } from 'primeng/dock';
-import { MenubarModule } from 'primeng/menubar';
-import { ToastModule } from 'primeng/toast';
-import { DialogModule } from 'primeng/dialog';
-import { TreeModule } from 'primeng/tree';
-import { GalleriaModule } from 'primeng/galleria';
+import { DockModule } from '@stewie/primeng/dock';
+import { MenubarModule } from '@stewie/primeng/menubar';
+import { ToastModule } from '@stewie/primeng/toast';
+import { DialogModule } from '@stewie/primeng/dialog';
+import { TreeModule } from '@stewie/primeng/tree';
+import { GalleriaModule } from '@stewie/primeng/galleria';
 
 
 @Component({

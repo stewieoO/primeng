@@ -20,15 +20,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Aria, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule } from 'primeng/api';
-import { DropdownChangeEvent, DropdownModule } from 'primeng/dropdown';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
+import { Aria, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule } from '@stewie/primeng/api';
+import { DropdownChangeEvent, DropdownModule } from '@stewie/primeng/dropdown';
+import { AngleDoubleLeftIcon } from '@stewie/primeng/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from '@stewie/primeng/icons/angledoubleright';
+import { AngleLeftIcon } from '@stewie/primeng/icons/angleleft';
+import { AngleRightIcon } from '@stewie/primeng/icons/angleright';
+import { InputNumberModule } from '@stewie/primeng/inputnumber';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { PaginatorState } from './paginator.interface';
 
 /**

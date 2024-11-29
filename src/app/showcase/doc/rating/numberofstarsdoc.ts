@@ -26,7 +26,7 @@ export class NumberOfStarsDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RatingModule } from 'primeng/rating';
+import { RatingModule } from '@stewie/primeng/rating';
 
 @Component({
     selector: 'rating-number-of-stars-demo',

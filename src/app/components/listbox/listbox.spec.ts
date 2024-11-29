@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { CheckIcon } from 'primeng/icons/check';
-import { SearchIcon } from 'primeng/icons/search';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { SearchIcon } from '@stewie/primeng/icons/search';
 import { Listbox } from './listbox';
 
 describe('Listbox', () => {

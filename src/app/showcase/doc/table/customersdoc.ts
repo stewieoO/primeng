@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { Table } from 'primeng/table';
+import { Table } from '@stewie/primeng/table';
 
 @Component({
     selector: 'customers-doc',
@@ -582,24 +582,24 @@ export class CustomersDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ButtonModule } from 'primeng/button';
-import { InputIconModule } from 'primeng/inputicon';
-import { IconFieldModule } from 'primeng/iconfield';
+import { TableModule } from '@stewie/primeng/table';
+import { TagModule } from '@stewie/primeng/tag';
+import { ButtonModule } from '@stewie/primeng/button';
+import { InputIconModule } from '@stewie/primeng/inputicon';
+import { IconFieldModule } from '@stewie/primeng/iconfield';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { InputTextModule } from 'primeng/inputtext';
-import { DropdownModule } from 'primeng/dropdown';
-import { SliderModule } from 'primeng/slider';
-import { ProgressBarModule } from 'primeng/progressbar';
+import { MultiSelectModule } from '@stewie/primeng/multiselect';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { DropdownModule } from '@stewie/primeng/dropdown';
+import { SliderModule } from '@stewie/primeng/slider';
+import { ProgressBarModule } from '@stewie/primeng/progressbar';
 
 @Component({
     selector: 'table-customers-demo',
     templateUrl: 'table-customers-demo.html',
     standalone: true,
-    imports: [TableModule, TagModule, ButtonModule,IconFieldModule, InputIconModule, HttpClientModule, 
+    imports: [TableModule, TagModule, ButtonModule,IconFieldModule, InputIconModule, HttpClientModule,
     CommonModule, MultiSelectModule, InputTextModule, DropdownModule, SliderModule, ProgressBarModule ],
     providers: [CustomerService],
     styles: [
@@ -610,63 +610,63 @@ import { ProgressBarModule } from 'primeng/progressbar';
                 margin-left: auto;
             }
         }
-        
+
         .p-progressbar {
             height: .5rem;
             background-color: #D8DADC;
-        
+
             .p-progressbar-value {
                 background-color: #607D8B;
             }
         }
-        
+
         .table-header {
             display: flex;
             justify-content: space-between;
         }
-        
+
         .p-calendar .p-datepicker {
             min-width: 25rem;
-        
+
             td {
                 font-weight: 400;
             }
         }
-        
+
         .p-datatable.p-datatable-customers {
             .p-datatable-header {
                 padding: 1rem;
                 text-align: left;
                 font-size: 1.5rem;
             }
-        
+
             .p-paginator {
                 padding: 1rem;
             }
-        
+
             .p-datatable-thead > tr > th {
                 text-align: left;
             }
-        
+
             .p-datatable-tbody > tr > td {
                 cursor: auto;
             }
-        
+
             .p-dropdown-label:not(.p-placeholder) {
                 text-transform: uppercase;
             }
         }
-    
+
         .p-w-100 {
             width: 100%;
         }
-        
+
         /* Responsive */
         .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
             display: none;
         }
     }
-    
+
     @media screen and (max-width: 960px) {
         :host ::ng-deep {
             .p-datatable {
@@ -675,27 +675,27 @@ import { ProgressBarModule } from 'primeng/progressbar';
                     .p-datatable-tfoot > tr > td {
                         display: none !important;
                     }
-        
+
                     .p-datatable-tbody > tr {
                         border-bottom: 1px solid var(--layer-2);
-        
+
                         > td {
                             text-align: left;
                             width: 100%;
                             display: flex;
                             align-items: center;
                             border: 0 none;
-        
+
                             .p-column-title {
                                 min-width: 30%;
                                 display: inline-block;
                                 font-weight: bold;
                             }
-            
+
                             p-progressbar {
                                 width: 100%;
                             }
-    
+
                             &:last-child {
                                 border-bottom: 1px solid var(--surface-d);
                             }
@@ -703,8 +703,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
                     }
                 }
             }
-        } 
-    }   
+        }
+    }
     \`
     ],
 })

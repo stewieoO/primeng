@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { ContextMenuModule } from '@stewie/primeng/contextmenu';
 import { TreeTable, TreeTableModule } from './treetable';
 
 @Component({

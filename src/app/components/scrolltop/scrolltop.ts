@@ -1,10 +1,10 @@
 import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, Inject, Input, NgModule, numberAttribute, OnDestroy, OnInit, PLATFORM_ID, QueryList, Renderer2, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@stewie/primeng/api';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ChevronUpIcon } from '@stewie/primeng/icons/chevronup';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 
 /**
  * ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.
@@ -37,12 +37,18 @@ import { ZIndexUtils } from 'primeng/utils';
     styleUrls: ['./scrolltop.css'],
     animations: [
         trigger('animation', [
-            state('void', style({
-                opacity: 0
-            })),
-            state('open', style({
-                opacity: 1
-            })),
+            state(
+                'void',
+                style({
+                    opacity: 0
+                })
+            ),
+            state(
+                'open',
+                style({
+                    opacity: 1
+                })
+            ),
             transition('void => open', animate('{{showTransitionParams}}')),
             transition('open => void', animate('{{hideTransitionParams}}'))
         ])

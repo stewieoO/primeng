@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Code } from '@domain/code';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@stewie/primeng/api';
 
 @Component({
     selector: 'menu-group-demo',
@@ -60,9 +60,9 @@ export class GroupDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem } from '@stewie/primeng/api';
+import { MenuModule } from '@stewie/primeng/menu';
+import { ToastModule } from '@stewie/primeng/toast';
 
 @Component({
     selector: 'menu-group-demo',

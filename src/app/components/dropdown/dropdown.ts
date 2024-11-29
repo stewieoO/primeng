@@ -30,20 +30,20 @@ import {
     ViewRef
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { DomHandler } from 'primeng/dom';
-import { BlankIcon } from 'primeng/icons/blank';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { DomHandler } from '@stewie/primeng/dom';
+import { BlankIcon } from '@stewie/primeng/icons/blank';
+import { CheckIcon } from '@stewie/primeng/icons/check';
+import { ChevronDownIcon } from '@stewie/primeng/icons/chevrondown';
+import { SearchIcon } from '@stewie/primeng/icons/search';
+import { TimesIcon } from '@stewie/primeng/icons/times';
+import { Overlay, OverlayModule } from '@stewie/primeng/overlay';
+import { RippleModule } from '@stewie/primeng/ripple';
+import { Scroller, ScrollerModule } from '@stewie/primeng/scroller';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from '@stewie/primeng/utils';
 import { DropdownChangeEvent, DropdownFilterEvent, DropdownFilterOptions, DropdownLazyLoadEvent } from './dropdown.interface';
 
 export const DROPDOWN_VALUE_ACCESSOR: any = {
