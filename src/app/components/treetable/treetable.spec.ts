@@ -1,4 +1,4 @@
-import { TestBed, ComponentFixture, fakeAsync, tick, async } from '@angular/core/testing';
+import { TestBed, ComponentFixture, fakeAsync, tick, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { TreeTable, TreeTableModule, TTScrollableView } from './treetable';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -1392,7 +1392,7 @@ describe('TreeTable', () => {
         expect(contextMenuTreeTable.selection[0].data.name).toEqual('Applications');
     });
 
-    it('should filter global and show 6 item ', async(() => {
+    it('should filter global and show 6 item ', waitForAsync(() => {
         fixture.detectChanges();
 
         const globalFilter = fixture.debugElement.query(By.css('.globalFilter'));
@@ -1407,7 +1407,7 @@ describe('TreeTable', () => {
         });
     }));
 
-    it('should filter and show 1 item (contains)', async(() => {
+    it('should filter and show 1 item (contains)', waitForAsync(() => {
         fixture.detectChanges();
 
         const filterEls = fixture.debugElement.queryAll(By.css('.filterInput'));
@@ -1430,7 +1430,7 @@ describe('TreeTable', () => {
         });
     }));
 
-    it('should filter and show 1 item (endsWith)', async(() => {
+    it('should filter and show 1 item (endsWith)', waitForAsync(() => {
         testcomponent.filterMode = 'endsWith';
         fixture.detectChanges();
 
@@ -1446,7 +1446,7 @@ describe('TreeTable', () => {
         });
     }));
 
-    it('should filter and show 1 item (equals)', async(() => {
+    it('should filter and show 1 item (equals)', waitForAsync(() => {
         testcomponent.filterMode = 'equals';
         fixture.detectChanges();
 
