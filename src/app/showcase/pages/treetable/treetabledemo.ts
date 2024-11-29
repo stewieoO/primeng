@@ -34,7 +34,8 @@ import { StyleDoc } from '@doc/treetable/styledoc';
 import { TemplateDoc } from '@doc/treetable/templatedoc';
 
 @Component({
-    templateUrl: './treetabledemo.html'
+    templateUrl: './treetabledemo.html',
+    standalone: false
 })
 export class TreeTableDemo {
     docs = [

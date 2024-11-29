@@ -13,7 +13,8 @@ import { ImportDoc } from 'src/app/showcase/doc/avatar/importdoc';
 import { LabelDoc } from 'src/app/showcase/doc/avatar/labeldoc';
 
 @Component({
-    templateUrl: './avatardemo.html'
+    templateUrl: './avatardemo.html',
+    standalone: false
 })
 export class AvatarDemo {
     docs = [

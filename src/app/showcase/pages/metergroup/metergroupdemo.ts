@@ -11,7 +11,8 @@ import { TemplateDoc } from '@doc/metergroup/templatedoc';
 import { VerticalDoc } from '@doc/metergroup/verticaldoc';
 
 @Component({
-    templateUrl: './metergroupdemo.html'
+    templateUrl: './metergroupdemo.html',
+    standalone: false
 })
 export class MeterGroupDemo {
     docs = [

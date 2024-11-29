@@ -15,7 +15,8 @@ import { OverlayTemplateDemo } from '@doc/overlay/templatedoc';
 import { TransitionOptionsDoc } from '@doc/overlay/transitionoptionsdoc';
 
 @Component({
-    templateUrl: './overlaydemo.html'
+    templateUrl: './overlaydemo.html',
+    standalone: false
 })
 export class OverlayDemo {
     docs = [

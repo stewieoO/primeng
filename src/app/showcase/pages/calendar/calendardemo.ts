@@ -24,7 +24,8 @@ import { TouchUIDoc } from '@doc/calendar/touchuidoc';
 import { YearDoc } from '@doc/calendar/yeardoc';
 
 @Component({
-    templateUrl: './calendardemo.html'
+    templateUrl: './calendardemo.html',
+    standalone: false
 })
 export class CalendarDemo {
     docs = [

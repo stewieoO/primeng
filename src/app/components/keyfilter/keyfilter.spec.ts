@@ -7,7 +7,8 @@ import { InputText } from 'primeng/inputtext';
 import { KeyFilter } from './keyfilter';
 
 @Component({
-    template: `<input type="text" [pValidateOnly]="validateOnly" [(ngModel)]="cc" pKeyFilter="int" pInputText placeholder="Integers" />`
+    template: `<input type="text" [pValidateOnly]="validateOnly" [(ngModel)]="cc" pKeyFilter="int" pInputText placeholder="Integers" />`,
+    standalone: false
 })
 class TestKeyFilterComponent {
     type: string = 'int';

@@ -9,7 +9,8 @@ import { TemplateDoc } from '@doc/paginator/templatedoc';
 
 @Component({
     templateUrl: './paginatordemo.html',
-    styleUrls: ['./paginatordemo.scss']
+    styleUrls: ['./paginatordemo.scss'],
+    standalone: false
 })
 export class PaginatorDemo {
     docs = [

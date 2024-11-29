@@ -96,7 +96,8 @@ import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
     styleUrls: ['./dock.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Dock implements AfterContentInit {
     /**

@@ -17,7 +17,8 @@ import { VirtualScrollDoc } from '@doc/multiselect/virtualscrolldoc';
 
 @Component({
     templateUrl: './multiselectdemo.html',
-    styleUrls: ['./multiselectdemo.scss']
+    styleUrls: ['./multiselectdemo.scss'],
+    standalone: false
 })
 export class MultiSelectDemo {
     docs = [

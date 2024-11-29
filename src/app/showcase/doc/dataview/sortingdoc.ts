@@ -53,7 +53,8 @@ import { SelectItem } from 'primeng/api';
             </p-dataView>
         </div>
         <app-code [code]="code" selector="data-view-sorting-demo" [extFiles]="extFiles"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class SortingDoc {
     sortOptions!: SelectItem[];

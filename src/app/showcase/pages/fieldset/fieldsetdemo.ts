@@ -7,7 +7,8 @@ import { TemplateDoc } from '@doc/fieldset/templatedoc';
 import { ToggleableDoc } from '@doc/fieldset/toggleabledoc';
 
 @Component({
-    templateUrl: './fieldsetdemo.html'
+    templateUrl: './fieldsetdemo.html',
+    standalone: false
 })
 export class FieldsetDemo {
     docs = [

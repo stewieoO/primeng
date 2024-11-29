@@ -17,7 +17,8 @@ import { Scroller } from 'primeng/scroller';
             </p-scroller>
         </div>
         <app-code [code]="code" selector="scroller-programmatic-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class ProgrammaticDoc implements OnInit {
     @ViewChild('sc') sc!: Scroller;

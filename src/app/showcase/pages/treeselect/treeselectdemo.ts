@@ -15,7 +15,8 @@ import { StyleDoc } from '@doc/treeselect/styledoc';
 import { VirtualScrollDoc } from '@doc/treeselect/virtualscrolldoc';
 
 @Component({
-    templateUrl: './treeselectdemo.html'
+    templateUrl: './treeselectdemo.html',
+    standalone: false
 })
 export class TreeSelectDemo {
     docs = [

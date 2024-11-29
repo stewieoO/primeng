@@ -8,7 +8,8 @@ import { StyleDoc } from '@doc/confirmdialog/styledoc';
 import { TemplateDoc } from '@doc/confirmdialog/templatedoc';
 
 @Component({
-    templateUrl: './confirmdialogdemo.html'
+    templateUrl: './confirmdialogdemo.html',
+    standalone: false
 })
 export class ConfirmDialogDemo {
     docs = [

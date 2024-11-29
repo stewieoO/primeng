@@ -9,7 +9,8 @@ import { StyleDoc } from '@doc/dynamicdialog/styledoc';
 import { UsageDoc } from '@doc/dynamicdialog/usagedoc';
 
 @Component({
-    templateUrl: './dynamicdialogdemo.html'
+    templateUrl: './dynamicdialogdemo.html',
+    standalone: false
 })
 export class DynamicDialogDemo {
     docs = [

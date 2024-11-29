@@ -12,7 +12,8 @@ import { SeverityDoc } from '@doc/messages/severitydoc';
 import { StaticDoc } from '@doc/messages/staticdoc';
 
 @Component({
-    templateUrl: './messagesdemo.html'
+    templateUrl: './messagesdemo.html',
+    standalone: false
 })
 export class MessagesDemo {
     docs = [

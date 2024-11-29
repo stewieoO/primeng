@@ -18,7 +18,8 @@ import { StackedBarDoc } from '@doc/chart/stackedbardoc';
 import { VerticalBarDoc } from '@doc/chart/verticalbardoc';
 
 @Component({
-    templateUrl: './chartdemo.html'
+    templateUrl: './chartdemo.html',
+    standalone: false
 })
 export class ChartDemo {
     docs = [

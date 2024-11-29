@@ -11,7 +11,8 @@ import { ReactiveFormsDoc } from '@doc/inputtextarea/reactiveformsdoc';
 import { StyleDoc } from '@doc/inputtextarea/styledoc';
 
 @Component({
-    templateUrl: './inputtextareademo.html'
+    templateUrl: './inputtextareademo.html',
+    standalone: false
 })
 export class InputTextareaDemo {
     docs = [

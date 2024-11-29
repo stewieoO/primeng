@@ -21,7 +21,8 @@ import { VirtualScrollDoc } from '@doc/dropdown/virtualscrolldoc';
 
 @Component({
     templateUrl: './dropdowndemo.html',
-    styleUrls: ['./dropdowndemo.scss']
+    styleUrls: ['./dropdowndemo.scss'],
+    standalone: false
 })
 export class DropdownDemo {
     docs = [

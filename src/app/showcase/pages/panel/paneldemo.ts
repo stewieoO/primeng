@@ -7,7 +7,8 @@ import { TemplateDoc } from '@doc/panel/templatedoc';
 import { ToggleableDoc } from '@doc/panel/toggleabledoc';
 
 @Component({
-    templateUrl: './paneldemo.html'
+    templateUrl: './paneldemo.html',
+    standalone: false
 })
 export class PanelDemo {
     docs = [

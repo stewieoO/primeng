@@ -8,7 +8,8 @@ import { StyleDoc } from '@doc/orderlist/styledoc';
 
 @Component({
     templateUrl: './orderlistdemo.html',
-    styleUrls: ['./orderlistdemo.scss']
+    styleUrls: ['./orderlistdemo.scss'],
+    standalone: false
 })
 export class OrderListDemo {
     docs = [

@@ -10,7 +10,8 @@ import { Toast, ToastItem } from './toast';
 
 @Component({
     template: ` <p-toast></p-toast> `,
-    providers: [MessageService]
+    providers: [MessageService],
+    standalone: false
 })
 class TestToastComponent {
     constructor(private messageService: MessageService) {}

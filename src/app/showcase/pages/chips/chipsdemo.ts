@@ -13,7 +13,8 @@ import { StyleDoc } from '@doc/chips/styledoc';
 import { TemplateDoc } from '@doc/chips/templatedoc';
 
 @Component({
-    templateUrl: './chipsdemo.html'
+    templateUrl: './chipsdemo.html',
+    standalone: false
 })
 export class ChipsDemo {
     docs = [

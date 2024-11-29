@@ -15,7 +15,8 @@ import { Message } from 'primeng/api';
             <p-messages [(value)]="messages" [enableService]="false" [closable]="false" />
         </div>
         <app-code [code]="code" selector="messages-basic-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class BasicDoc implements OnInit {
     messages: Message[] | undefined;

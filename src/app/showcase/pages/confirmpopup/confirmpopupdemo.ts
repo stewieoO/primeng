@@ -7,7 +7,8 @@ import { StyleDoc } from '@doc/confirmpopup/styledoc';
 import { TemplateDoc } from '@doc/confirmpopup/templatedoc';
 
 @Component({
-    templateUrl: './confirmpopupdemo.html'
+    templateUrl: './confirmpopupdemo.html',
+    standalone: false
 })
 export class ConfirmPopupDemo {
     docs = [

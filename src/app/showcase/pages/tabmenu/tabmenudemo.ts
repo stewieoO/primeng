@@ -9,7 +9,8 @@ import { StyleDoc } from '@doc/tabmenu/styledoc';
 import { TemplateDoc } from '@doc/tabmenu/templatedoc';
 
 @Component({
-    templateUrl: './tabmenudemo.html'
+    templateUrl: './tabmenudemo.html',
+    standalone: false
 })
 export class TabMenuDemo {
     docs = [

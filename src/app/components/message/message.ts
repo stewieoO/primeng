@@ -30,7 +30,8 @@ import { TimesCircleIcon } from 'primeng/icons/timescircle';
     styleUrls: ['./message.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class UIMessage {
     /**

@@ -10,7 +10,8 @@ import { DomHandler } from 'primeng/dom';
     selector: '[pFocusTrap]',
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class FocusTrap {
     /**

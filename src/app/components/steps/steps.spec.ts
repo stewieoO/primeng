@@ -8,7 +8,8 @@ import { Toast } from 'primeng/toast';
 import { Steps, StepsModule } from './steps';
 
 @Component({
-    template: `<p-steps [model]="items"></p-steps> `
+    template: `<p-steps [model]="items"></p-steps> `,
+    standalone: false
 })
 class TestStepsComponent {
     items: MenuItem[];

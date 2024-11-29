@@ -4,7 +4,8 @@ import { BasicDoc } from '@doc/animateonscroll/basicdoc';
 import { ImportDoc } from '@doc/animateonscroll/importdoc';
 
 @Component({
-    templateUrl: './animateonscrolldemo.html'
+    templateUrl: './animateonscrolldemo.html',
+    standalone: false
 })
 export class AnimateOnScrollDemo {
     docs = [

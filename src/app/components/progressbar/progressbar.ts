@@ -59,7 +59,8 @@ import { PrimeTemplate } from 'primeng/api';
     styleUrls: ['./progressbar.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class ProgressBar {
     /**

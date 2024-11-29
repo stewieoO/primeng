@@ -13,7 +13,8 @@ import { StyleDoc } from '@doc/tabview/styledoc';
 
 @Component({
     templateUrl: './tabviewdemo.html',
-    styleUrls: ['./tabviewdemo.scss']
+    styleUrls: ['./tabviewdemo.scss'],
+    standalone: false
 })
 export class TabViewDemo {
     docs = [

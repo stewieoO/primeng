@@ -12,7 +12,8 @@ import { StyleDoc } from '@doc/cascadeselect/styledoc';
 import { TemplateDoc } from '@doc/cascadeselect/templatedoc';
 
 @Component({
-    templateUrl: './cascadeselectdemo.html'
+    templateUrl: './cascadeselectdemo.html',
+    standalone: false
 })
 export class CascadeSelectDemo {
     docs = [

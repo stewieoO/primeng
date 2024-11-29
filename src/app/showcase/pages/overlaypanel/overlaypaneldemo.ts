@@ -6,7 +6,8 @@ import { ImportDoc } from '@doc/overlaypanel/importdoc';
 import { StyleDoc } from '@doc/overlaypanel/styledoc';
 
 @Component({
-    templateUrl: './overlaypaneldemo.html'
+    templateUrl: './overlaypaneldemo.html',
+    standalone: false
 })
 export class OverlayPanelDemo {
     docs = [

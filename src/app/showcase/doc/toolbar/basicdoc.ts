@@ -27,7 +27,8 @@ import { MenuItem } from 'primeng/api';
             </p-toolbar>
         </div>
         <app-code [code]="code" selector="toolbar-basic-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class BasicDoc implements OnInit {
     items: MenuItem[] | undefined;

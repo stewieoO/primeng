@@ -14,7 +14,8 @@ import { debounceTime, Subscription } from 'rxjs';
             <p-chart type="radar" [data]="data" [options]="options" />
         </div>
         <app-code [code]="code" selector="chart-radar-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class RadarDoc implements OnInit {
     data: any;

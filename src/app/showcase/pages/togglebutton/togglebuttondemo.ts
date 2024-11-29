@@ -8,7 +8,8 @@ import { ReactiveFormsDoc } from '@doc/togglebutton/reactiveformsdoc';
 import { StyleDoc } from '@doc/togglebutton/styledoc';
 
 @Component({
-    templateUrl: './togglebuttondemo.html'
+    templateUrl: './togglebuttondemo.html',
+    standalone: false
 })
 export class ToggleButtonDemo {
     docs = [

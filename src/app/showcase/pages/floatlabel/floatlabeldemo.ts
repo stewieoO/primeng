@@ -5,7 +5,8 @@ import { ImportDoc } from '@doc/floatlabel/importdoc';
 import { StyleDoc } from '@doc/floatlabel/styledoc';
 
 @Component({
-    templateUrl: './floatlabeldemo.html'
+    templateUrl: './floatlabeldemo.html',
+    standalone: false
 })
 export class FloatLabelDemo {
     docs = [

@@ -7,7 +7,8 @@ import { StyleDoc } from '@doc/picklist/styledoc';
 
 @Component({
     templateUrl: './picklistdemo.html',
-    styleUrls: ['./picklistdemo.scss']
+    styleUrls: ['./picklistdemo.scss'],
+    standalone: false
 })
 export class PickListDemo {
     docs = [

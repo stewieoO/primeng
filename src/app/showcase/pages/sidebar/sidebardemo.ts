@@ -10,7 +10,8 @@ import { StyleDoc } from '@doc/sidebar/styledoc';
 import { TemplateDoc } from '@doc/sidebar/templatedoc';
 
 @Component({
-    templateUrl: './sidebardemo.html'
+    templateUrl: './sidebardemo.html',
+    standalone: false
 })
 export class SidebarDemo {
     docs = [

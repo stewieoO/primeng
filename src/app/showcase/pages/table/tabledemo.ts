@@ -53,7 +53,8 @@ import { VirtualScrollLazyDoc } from '@doc/table/virtualscrolllazydoc';
 
 @Component({
     templateUrl: './tabledemo.html',
-    styleUrls: ['./tabledemo.scss']
+    styleUrls: ['./tabledemo.scss'],
+    standalone: false
 })
 export class TableDemo {
     docs = [

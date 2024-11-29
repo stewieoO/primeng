@@ -18,7 +18,8 @@ import { VerticalDoc } from '@doc/megamenu/verticaldoc';
                 }
             }
         `
-    ]
+    ],
+    standalone: false
 })
 export class MegaMenuDemo {
     docs = [

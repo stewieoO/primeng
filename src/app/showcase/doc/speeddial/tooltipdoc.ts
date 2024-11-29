@@ -17,7 +17,8 @@ import { MenuItem, MessageService } from 'primeng/api';
         </div>
         <app-code [code]="code" selector="speed-dial-tooltip-demo"></app-code>
     `,
-    providers: [MessageService]
+    providers: [MessageService],
+    standalone: false
 })
 export class TooltipDoc implements OnInit {
     tooltipItems: MenuItem[] | undefined;

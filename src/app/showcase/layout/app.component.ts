@@ -16,7 +16,6 @@ import { PrimeNGConfig } from 'primeng/api';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    standalone: true,
     imports: [RouterOutlet, FormsModule, ReactiveFormsModule, HttpClientModule],
     providers: [
         CarService,

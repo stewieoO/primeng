@@ -9,7 +9,8 @@ import { StyleDoc } from '@doc/steps/styledoc';
 
 @Component({
     templateUrl: './stepsdemo.html',
-    styleUrls: ['stepsdemo.scss']
+    styleUrls: ['stepsdemo.scss'],
+    standalone: false
 })
 export class StepsDemo {
     docs = [

@@ -14,7 +14,8 @@ import { debounceTime, Subscription } from 'rxjs';
             <p-chart type="polarArea" [data]="data" [options]="options" />
         </div>
         <app-code [code]="code" selector="chart-polar-area-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class PolarAreaDoc implements OnInit {
     data: any;

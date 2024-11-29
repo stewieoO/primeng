@@ -7,7 +7,8 @@ import { StyleDoc } from '@doc/progressspinner/styledoc';
 
 @Component({
     templateUrl: './progressspinnerdemo.html',
-    styleUrls: ['./progressspinnerdemo.css']
+    styleUrls: ['./progressspinnerdemo.css'],
+    standalone: false
 })
 export class ProgressSpinnerDemo {
     docs = [

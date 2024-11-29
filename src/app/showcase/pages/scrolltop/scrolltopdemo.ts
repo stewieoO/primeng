@@ -7,7 +7,8 @@ import { StyleDoc } from '@doc/scrolltop/styledoc';
 
 @Component({
     templateUrl: './scrolltopdemo.html',
-    styleUrls: ['./scrolltopdemo.scss']
+    styleUrls: ['./scrolltopdemo.scss'],
+    standalone: false
 })
 export class ScrollTopDemo {
     docs = [

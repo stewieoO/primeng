@@ -15,7 +15,8 @@ import { Message } from 'primeng/api';
             <p-messages [(value)]="messages" [closable]="false" />
         </div>
         <app-code [code]="code" selector="messages-closable-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class ClosableDoc implements OnInit {
     messages: Message[] | undefined;

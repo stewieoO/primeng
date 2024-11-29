@@ -9,7 +9,8 @@ import { LazyDoc } from '@doc/inplace/lazydoc';
 import { StyleDoc } from '@doc/inplace/styledoc';
 
 @Component({
-    templateUrl: './inplacedemo.html'
+    templateUrl: './inplacedemo.html',
+    standalone: false
 })
 export class InplaceDemo {
     docs = [

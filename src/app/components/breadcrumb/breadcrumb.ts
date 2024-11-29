@@ -153,7 +153,8 @@ import { BreadcrumbItemClickEvent } from './breadcrumb.interface';
     styleUrls: ['./breadcrumb.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Breadcrumb implements AfterContentInit {
     /**

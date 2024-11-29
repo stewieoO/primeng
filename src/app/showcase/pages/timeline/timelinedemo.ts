@@ -10,7 +10,8 @@ import { TemplateDoc } from '@doc/timeline/templatedoc';
 
 @Component({
     templateUrl: './timelinedemo.html',
-    styleUrls: ['./timelinedemo.scss']
+    styleUrls: ['./timelinedemo.scss'],
+    standalone: false
 })
 export class TimelineDemo {
     docs = [

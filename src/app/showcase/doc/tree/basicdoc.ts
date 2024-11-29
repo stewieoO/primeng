@@ -13,7 +13,8 @@ import { TreeNode } from 'primeng/api';
             <p-tree class="w-full md:w-30rem" [value]="files" />
         </div>
         <app-code [code]="code" selector="tree-basic-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class BasicDoc implements OnInit {
     files!: TreeNode[];

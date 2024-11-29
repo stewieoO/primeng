@@ -36,7 +36,6 @@ import { MenuItem } from './app.menu.component';
             </ol>
         </div>
     `,
-    standalone: true,
     imports: [CommonModule, StyleClassModule, RouterModule, TagModule]
 })
 export class AppMenuItemComponent {

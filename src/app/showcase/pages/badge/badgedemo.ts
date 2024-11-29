@@ -10,7 +10,8 @@ import { SizeDoc } from '@doc/badge/sizedoc';
 import { StyleDoc } from '@doc/badge/styledoc';
 
 @Component({
-    templateUrl: './badgedemo.html'
+    templateUrl: './badgedemo.html',
+    standalone: false
 })
 export class BadgeDemo {
     docs = [

@@ -5,7 +5,8 @@ import { ImportDoc } from '@doc/terminal/importdoc';
 import { StyleDoc } from '@doc/terminal/styledoc';
 
 @Component({
-    templateUrl: './terminaldemo.html'
+    templateUrl: './terminaldemo.html',
+    standalone: false
 })
 export class TerminalDemo {
     docs = [

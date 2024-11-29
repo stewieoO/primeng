@@ -7,7 +7,6 @@ import News from '../../data/news.json';
 
 @Component({
     selector: 'app-news',
-    standalone: true,
     templateUrl: './app.news.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [CommonModule, FormsModule, StyleClassModule]

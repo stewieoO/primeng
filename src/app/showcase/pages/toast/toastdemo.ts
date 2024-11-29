@@ -16,7 +16,8 @@ import { TargetDoc } from '@doc/toast/targetdoc';
 import { TemplateDoc } from '@doc/toast/templatedoc';
 
 @Component({
-    templateUrl: './toastdemo.html'
+    templateUrl: './toastdemo.html',
+    standalone: false
 })
 export class ToastDemo {
     docs = [

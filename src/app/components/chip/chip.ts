@@ -41,7 +41,8 @@ import { TimesCircleIcon } from 'primeng/icons/timescircle';
     styleUrls: ['./chip.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Chip implements AfterContentInit {
     /**

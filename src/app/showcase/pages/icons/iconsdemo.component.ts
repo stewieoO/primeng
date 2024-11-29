@@ -11,7 +11,8 @@ import { SpinDoc } from '@doc/icons/spindoc';
 
 @Component({
     templateUrl: './iconsdemo.component.html',
-    styleUrls: ['./iconsdemo.component.scss']
+    styleUrls: ['./iconsdemo.component.scss'],
+    standalone: false
 })
 export class IconsDemoComponent {
     docs = [

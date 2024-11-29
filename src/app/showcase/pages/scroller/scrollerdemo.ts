@@ -14,7 +14,8 @@ import { TemplateDoc } from '@doc/scroller/templatedoc';
 
 @Component({
     templateUrl: './scrollerdemo.html',
-    styleUrls: ['./scrollerdemo.scss']
+    styleUrls: ['./scrollerdemo.scss'],
+    standalone: false
 })
 export class ScrollerDemo {
     docs = [

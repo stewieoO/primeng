@@ -8,7 +8,8 @@ import { StyleDoc } from '@doc/fileupload/styledoc';
 import { TemplateDoc } from '@doc/fileupload/templatedoc';
 
 @Component({
-    templateUrl: './fileuploaddemo.html'
+    templateUrl: './fileuploaddemo.html',
+    standalone: false
 })
 export class FileUploadDemo {
     docs = [

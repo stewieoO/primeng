@@ -80,7 +80,8 @@ import { Subscription } from 'rxjs';
     styleUrls: ['./steps.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Steps implements OnInit, OnDestroy {
     /**

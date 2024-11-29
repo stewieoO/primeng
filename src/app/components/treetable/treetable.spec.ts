@@ -271,7 +271,8 @@ import { TreeTable, TreeTableModule } from './treetable';
                 </tr>
             </ng-template>
         </p-treeTable>
-    `
+    `,
+    standalone: false
 })
 class TestTreeTableComponent {
     ngOnInit() {

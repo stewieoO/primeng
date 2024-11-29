@@ -14,7 +14,6 @@ import { UsersSectionComponent } from './userssection.component';
 
 @Component({
     selector: 'landing',
-    standalone: true,
     templateUrl: './landing.component.html',
     imports: [CommonModule, AppNewsComponent, AppTopBarComponent, HeroSectionComponent, UsersSectionComponent, ThemeSectionComponent, BlockSectionComponent, TemplateSectionComponent, FooterSectionComponent]
 })

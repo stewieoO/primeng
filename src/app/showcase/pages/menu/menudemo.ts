@@ -10,7 +10,8 @@ import { StyleDoc } from '@doc/menu/styledoc';
 import { TemplateDoc } from '@doc/menu/templatedoc';
 
 @Component({
-    templateUrl: './menudemo.html'
+    templateUrl: './menudemo.html',
+    standalone: false
 })
 export class MenuDemo {
     docs = [

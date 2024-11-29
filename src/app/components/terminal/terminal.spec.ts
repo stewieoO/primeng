@@ -8,7 +8,8 @@ import { Terminal } from './terminal';
 import { TerminalService } from './terminalservice';
 
 @Component({
-    template: `<p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>`
+    template: `<p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>`,
+    standalone: false
 })
 class TestTerminalComponent {
     subscription: Subscription;

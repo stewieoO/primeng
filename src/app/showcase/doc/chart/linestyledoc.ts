@@ -14,7 +14,8 @@ import { debounceTime, Subscription } from 'rxjs';
             <p-chart type="line" [data]="data" [options]="options" />
         </div>
         <app-code [code]="code" selector="chart-line-style-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class LineStyleDoc implements OnInit {
     data: any;

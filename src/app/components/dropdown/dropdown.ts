@@ -81,7 +81,8 @@ export const DROPDOWN_VALUE_ACCESSOR: any = {
     `,
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class DropdownItem {
     @Input() id: string | undefined;
@@ -353,7 +354,6 @@ export class DropdownItem {
             </p-overlay>
         </div>
     `,
-
     host: {
         class: 'p-element p-inputwrapper',
         '[class.p-inputwrapper-filled]': 'filled()',
@@ -362,7 +362,8 @@ export class DropdownItem {
     providers: [DROPDOWN_VALUE_ACCESSOR],
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
-    styleUrls: ['./dropdown.css']
+    styleUrls: ['./dropdown.css'],
+    standalone: false
 })
 export class Dropdown implements OnInit, AfterViewInit, AfterContentInit, AfterViewChecked, ControlValueAccessor {
     /**

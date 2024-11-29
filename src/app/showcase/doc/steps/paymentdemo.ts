@@ -40,7 +40,8 @@ import { TicketService } from '@service/ticketservice';
                 </ng-template>
             </p-card>
         </div>
-    `
+    `,
+    standalone: false
 })
 export class PaymentDemo implements OnInit {
     paymentInformation: any;

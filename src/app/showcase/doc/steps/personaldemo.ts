@@ -42,7 +42,8 @@ import { TicketService } from '@service/ticketservice';
                 </ng-template>
             </p-card>
         </div>
-    `
+    `,
+    standalone: false
 })
 export class PersonalDemo implements OnInit {
     personalInformation: any;

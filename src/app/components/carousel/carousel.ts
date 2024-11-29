@@ -146,7 +146,8 @@ import { CarouselPageEvent, CarouselResponsiveOptions } from './carousel.interfa
     styleUrls: ['./carousel.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Carousel implements AfterContentInit {
     /**

@@ -7,7 +7,8 @@ import { ImportDoc } from '@doc/inputgroup/importdoc';
 import { MultipleDoc } from '@doc/inputgroup/multipledoc';
 
 @Component({
-    templateUrl: './inputgroupdemo.html'
+    templateUrl: './inputgroupdemo.html',
+    standalone: false
 })
 export class InputGroupDemo {
     docs = [

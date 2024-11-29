@@ -10,7 +10,8 @@ import { StyleDoc } from '@doc/dataview/styledoc';
 
 @Component({
     templateUrl: './dataviewdemo.html',
-    styleUrls: ['./dataviewdemo.scss']
+    styleUrls: ['./dataviewdemo.scss'],
+    standalone: false
 })
 export class DataViewDemo {
     docs = [

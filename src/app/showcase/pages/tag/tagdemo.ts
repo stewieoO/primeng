@@ -9,7 +9,8 @@ import { StyleDoc } from '@doc/tag/styledoc';
 import { TemplateDoc } from '@doc/tag/templatedoc';
 
 @Component({
-    templateUrl: './tagdemo.html'
+    templateUrl: './tagdemo.html',
+    standalone: false
 })
 export class TagDemo {
     docs = [

@@ -11,7 +11,8 @@ import { TemplateDoc } from '@doc/rating/templatedoc';
 import { WithoutCancelDoc } from '@doc/rating/withoutcanceldoc';
 
 @Component({
-    templateUrl: './ratingdemo.html'
+    templateUrl: './ratingdemo.html',
+    standalone: false
 })
 export class RatingDemo {
     docs = [

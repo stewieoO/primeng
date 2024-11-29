@@ -8,7 +8,8 @@ import { StyleDoc } from '@doc/progressbar/styledoc';
 import { TemplateDoc } from '@doc/progressbar/templatedoc';
 
 @Component({
-    templateUrl: './progressbardemo.html'
+    templateUrl: './progressbardemo.html',
+    standalone: false
 })
 export class ProgressBarDemo {
     docs = [

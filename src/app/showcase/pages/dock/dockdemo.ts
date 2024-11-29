@@ -7,7 +7,8 @@ import { StyleDoc } from '@doc/dock/styledoc';
 
 @Component({
     templateUrl: './dockdemo.html',
-    styleUrls: ['./dockdemo.scss']
+    styleUrls: ['./dockdemo.scss'],
+    standalone: false
 })
 export class DockDemo {
     docs = [

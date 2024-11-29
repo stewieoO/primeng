@@ -11,7 +11,8 @@ import { VerticalDoc } from '@doc/carousel/verticaldoc';
 
 @Component({
     templateUrl: './carouseldemo.html',
-    styleUrls: ['./carouseldemo.scss']
+    styleUrls: ['./carouseldemo.scss'],
+    standalone: false
 })
 export class CarouselDemo {
     docs = [

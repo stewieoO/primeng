@@ -193,7 +193,8 @@ import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
     encapsulation: ViewEncapsulation.None,
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class SlideMenuSub {
     @Input() items: any[];
@@ -402,7 +403,8 @@ export class SlideMenuSub {
     styleUrls: ['./slidemenu.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class SlideMenu implements OnInit, AfterContentInit, OnDestroy {
     /**

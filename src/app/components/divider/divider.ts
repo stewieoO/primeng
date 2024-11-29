@@ -19,7 +19,8 @@ import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation 
     styleUrls: ['./divider.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Divider {
     /**

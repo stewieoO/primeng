@@ -16,7 +16,8 @@ import { VerticalDoc } from '@doc/inputnumber/verticaldoc';
 
 @Component({
     templateUrl: './inputnumberdemo.html',
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class InputNumberDemo {
     docs = [

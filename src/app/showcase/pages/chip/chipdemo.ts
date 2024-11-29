@@ -9,7 +9,8 @@ import { TemplateDoc } from '@doc/chip/templatedoc';
 
 @Component({
     templateUrl: './chipdemo.html',
-    styleUrls: ['chipdemo.scss']
+    styleUrls: ['chipdemo.scss'],
+    standalone: false
 })
 export class ChipDemo {
     docs = [

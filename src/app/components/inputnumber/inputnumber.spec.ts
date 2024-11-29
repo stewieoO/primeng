@@ -6,7 +6,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { InputNumber } from './inputnumber';
 
 @Component({
-    template: `<p-inputNumber [(ngModel)]="val" [readonly]="readonly" [minFractionDigits]="minFractionDigits"></p-inputNumber>`
+    template: `<p-inputNumber [(ngModel)]="val" [readonly]="readonly" [minFractionDigits]="minFractionDigits"></p-inputNumber>`,
+    standalone: false
 })
 class TestInputNumberComponent {
     val: number;

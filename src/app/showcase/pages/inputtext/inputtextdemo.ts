@@ -12,7 +12,8 @@ import { InvalidDoc } from 'src/app/showcase/doc/inputtext/invaliddoc';
 
 @Component({
     templateUrl: './inputtextdemo.html',
-    styleUrls: ['./inputtextdemo.scss']
+    styleUrls: ['./inputtextdemo.scss'],
+    standalone: false
 })
 export class InputTextDemo {
     docs = [

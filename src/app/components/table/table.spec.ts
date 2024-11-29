@@ -324,7 +324,8 @@ import { EditableColumn, Table, TableModule } from './table';
                 </tr>
             </ng-template>
         </p-table>
-    `
+    `,
+    standalone: false
 })
 class TestBasicTableComponent {
     items = [

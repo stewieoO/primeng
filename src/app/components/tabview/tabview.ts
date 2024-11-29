@@ -62,7 +62,8 @@ import { TabViewChangeEvent, TabViewCloseEvent } from './tabview.interface';
     `,
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class TabPanel implements AfterContentInit, OnDestroy {
     /**
@@ -359,7 +360,8 @@ export class TabPanel implements AfterContentInit, OnDestroy {
     styleUrls: ['./tabview.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class TabView implements AfterContentInit, AfterViewChecked, OnDestroy, BlockableUI {
     /**

@@ -12,7 +12,8 @@ import { TemplateDoc } from '@doc/dialog/templatedoc';
 import { WithoutModalDoc } from '@doc/dialog/withoutmodaldoc';
 
 @Component({
-    templateUrl: './dialogdemo.html'
+    templateUrl: './dialogdemo.html',
+    standalone: false
 })
 export class DialogDemo {
     docs = [

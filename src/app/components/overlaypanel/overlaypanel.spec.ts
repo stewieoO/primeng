@@ -12,7 +12,8 @@ import { OverlayPanel } from './overlaypanel';
             <img src="https://primefaces.org/cdn/primeng/images/demo/galleria/galleria1.jpg" alt="Galleria 1" />
         </p-overlayPanel>
         <a (click)="outSideClick()" class="outside-anchor"></a>
-    `
+    `,
+    standalone: false
 })
 class TestOverlayPanelComponent {
     outSideClick() {}

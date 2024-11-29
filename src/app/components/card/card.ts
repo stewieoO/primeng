@@ -40,7 +40,8 @@ import { ObjectUtils } from 'primeng/utils';
     styleUrls: ['./card.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class Card implements AfterContentInit, BlockableUI {
     /**

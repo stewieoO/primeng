@@ -14,7 +14,8 @@ import { debounceTime, Subscription } from 'rxjs';
             <p-chart type="line" [data]="data" [options]="options" />
         </div>
         <app-code [code]="code" selector="chart-multi-axis-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class MultiAxisDoc implements OnInit {
     data: any;

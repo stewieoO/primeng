@@ -7,7 +7,8 @@ import { ImportDoc } from '@doc/dragdrop/importdoc';
 
 @Component({
     templateUrl: './dragdropdemo.html',
-    styleUrls: ['./dragdropdemo.scss']
+    styleUrls: ['./dragdropdemo.scss'],
+    standalone: false
 })
 export class DragDropDemo {
     docs = [

@@ -10,7 +10,8 @@ import { ReactiveFormsDoc } from '@doc/radiobutton/reactiveformsdoc';
 import { StyleDoc } from '@doc/radiobutton/styledoc';
 
 @Component({
-    templateUrl: './radiobuttondemo.html'
+    templateUrl: './radiobuttondemo.html',
+    standalone: false
 })
 export class RadioButtonDemo {
     docs = [

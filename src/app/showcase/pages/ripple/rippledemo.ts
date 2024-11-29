@@ -7,7 +7,8 @@ import { StyleDoc } from '@doc/ripple/styledoc';
 
 @Component({
     templateUrl: './rippledemo.html',
-    styleUrls: ['./rippledemo.scss']
+    styleUrls: ['./rippledemo.scss'],
+    standalone: false
 })
 export class RippleDemo {
     docs = [

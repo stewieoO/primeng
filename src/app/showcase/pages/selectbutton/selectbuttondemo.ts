@@ -9,7 +9,8 @@ import { ReactiveFormsDoc } from '@doc/selectbutton/reactiveformsdoc';
 import { TemplateDoc } from '@doc/selectbutton/templatedoc';
 
 @Component({
-    templateUrl: './selectbuttondemo.html'
+    templateUrl: './selectbuttondemo.html',
+    standalone: false
 })
 export class SelectButtonDemo {
     docs = [

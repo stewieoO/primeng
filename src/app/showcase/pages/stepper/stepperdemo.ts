@@ -7,7 +7,8 @@ import { TemplateDoc } from '@doc/stepper/templatedoc';
 import { VerticalDoc } from '@doc/stepper/verticaldoc';
 
 @Component({
-    templateUrl: './stepperdemo.html'
+    templateUrl: './stepperdemo.html',
+    standalone: false
 })
 export class StepperDemo {
     docs = [

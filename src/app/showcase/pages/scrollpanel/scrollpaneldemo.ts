@@ -8,7 +8,8 @@ import { StyleDoc } from '@doc/scrollpanel/styledoc';
 @Component({
     templateUrl: './scrollpaneldemo.html',
     styleUrls: ['./scrollpaneldemo.scss'],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class ScrollPanelDemo {
     docs = [

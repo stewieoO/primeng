@@ -13,7 +13,6 @@ import { TemplateDoc } from '@doc/accordion/templatedoc';
 @Component({
     template: `<app-doc docTitle="Angular Accordion Component" header="Accordion" description="Accordion groups a collection of contents in tabs." [docs]="docs" [apiDocs]="['Accordion', 'AccordionTab']"></app-doc>`,
     imports: [AccordionDocModule],
-    standalone: true,
     styles: `
         :host ::ng-deep .p-accordion p {
             line-height: 1.5;

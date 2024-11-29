@@ -32,7 +32,8 @@ import { MessageService } from 'primeng/api';
         </div>
         <app-code [code]="code" selector="toast-headless-demo"></app-code>
     `,
-    providers: [MessageService]
+    providers: [MessageService],
+    standalone: false
 })
 export class HeadlessDoc {
     visible: boolean = false;

@@ -8,7 +8,8 @@ import { StyleDoc } from '@doc/menubar/styledoc';
 import { TemplateDoc } from '@doc/menubar/templatedoc';
 
 @Component({
-    templateUrl: './menubardemo.html'
+    templateUrl: './menubardemo.html',
+    standalone: false
 })
 export class MenubarDemo {
     docs = [

@@ -18,7 +18,8 @@ import { DragDropModule, Draggable, Droppable } from './dragdrop';
                 </h4>
             </div>
         </div>
-    `
+    `,
+    standalone: false
 })
 class TestDragDropComponent {
     availableCars: any[] = [

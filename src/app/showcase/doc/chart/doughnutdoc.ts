@@ -14,7 +14,8 @@ import { debounceTime, Subscription } from 'rxjs';
             <p-chart type="doughnut" [data]="data" [options]="options" />
         </div>
         <app-code [code]="code" selector="chart-doughnut-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class DoughnutDoc implements OnInit {
     data: any;

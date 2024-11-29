@@ -7,7 +7,8 @@ import { TemplateDoc } from '@doc/iconfield/templatedoc';
 
 @Component({
     templateUrl: './iconfielddemo.html',
-    styleUrls: ['./iconfielddemo.scss']
+    styleUrls: ['./iconfielddemo.scss'],
+    standalone: false
 })
 export class IconFieldDemo {
     docs = [

@@ -9,7 +9,8 @@ import { SlideMenu, SlideMenuModule, SlideMenuSub } from './slidemenu';
 
 @Component({
     template: `<p-slideMenu #menu></p-slideMenu>
-        <button #btn type="button" pButton icon="pi pi-bars" label="Show" (click)="menu.toggle($event)"></button> `
+        <button #btn type="button" pButton icon="pi pi-bars" label="Show" (click)="menu.toggle($event)"></button> `,
+    standalone: false
 })
 class SlideMenuTestComponent {}
 

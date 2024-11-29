@@ -9,7 +9,8 @@ import { StyleDoc } from '@doc/skeleton/styledoc';
 
 @Component({
     templateUrl: './skeletondemo.html',
-    styleUrls: ['./skeletondemo.scss']
+    styleUrls: ['./skeletondemo.scss'],
+    standalone: false
 })
 export class SkeletonDemo {
     docs = [

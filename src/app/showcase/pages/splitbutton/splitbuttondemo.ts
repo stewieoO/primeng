@@ -15,7 +15,8 @@ import { TemplateDoc } from '@doc/splitbutton/templatedoc';
 import { TextDoc } from '@doc/splitbutton/textdoc';
 
 @Component({
-    templateUrl: './splitbuttondemo.html'
+    templateUrl: './splitbuttondemo.html',
+    standalone: false
 })
 export class SplitButtonDemo {
     docs = [

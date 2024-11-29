@@ -21,7 +21,8 @@ import { MessageService } from 'primeng/api';
         </div>
         <app-code [code]="code" selector="messages-service-demo"></app-code>
     `,
-    providers: [MessageService]
+    providers: [MessageService],
+    standalone: false
 })
 export class ServiceDoc {
     constructor(private messageService: MessageService) {}

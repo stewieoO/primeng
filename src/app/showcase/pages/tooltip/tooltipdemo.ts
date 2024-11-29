@@ -10,7 +10,8 @@ import { PositionDoc } from '@doc/tooltip/positiondoc';
 import { StyleDoc } from '@doc/tooltip/styledoc';
 
 @Component({
-    templateUrl: './tooltipdemo.html'
+    templateUrl: './tooltipdemo.html',
+    standalone: false
 })
 export class TooltipDemo {
     docs = [

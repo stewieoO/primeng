@@ -151,7 +151,8 @@ import { OrderListFilterEvent, OrderListFilterOptions, OrderListSelectionChangeE
     styleUrls: ['./orderlist.css'],
     host: {
         class: 'p-element'
-    }
+    },
+    standalone: false
 })
 export class OrderList implements AfterViewChecked, AfterContentInit {
     /**

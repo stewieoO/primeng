@@ -6,7 +6,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ColorPicker } from './colorpicker';
 
 @Component({
-    template: ` <p-colorPicker [(ngModel)]="color1"></p-colorPicker> `
+    template: ` <p-colorPicker [(ngModel)]="color1"></p-colorPicker> `,
+    standalone: false
 })
 class TestColorPickerComponent {
     color1: string = '#1976D2';

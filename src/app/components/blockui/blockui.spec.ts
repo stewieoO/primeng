@@ -10,7 +10,8 @@ import { BlockUI } from './blockui';
         <p-blockUI></p-blockUI>
         <p-blockUI [target]="pnl"> </p-blockUI>
         <p-panel #pnl header="Godfather I" [style]="{ 'margin-top': '20px' }"> </p-panel>
-    `
+    `,
+    standalone: false
 })
 class TestBlockUIComponent {}
 

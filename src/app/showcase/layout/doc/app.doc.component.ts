@@ -29,7 +29,8 @@ import { Doc } from '@domain/doc';
                 <app-docapisection [docs]="apiDocs" [header]="header" class="doc-tabpanel"></app-docapisection>
             </div>
         </div>
-    </div>`
+    </div>`,
+    standalone: false
 })
 export class AppDoc implements OnInit, OnChanges {
     @Input() docTitle!: string;

@@ -9,7 +9,8 @@ import { ReactiveFormsDoc } from '@doc/inputswitch/reactiveformsdoc';
 import { StyleDoc } from '@doc/inputswitch/styledoc';
 
 @Component({
-    templateUrl: './inputswitchdemo.html'
+    templateUrl: './inputswitchdemo.html',
+    standalone: false
 })
 export class InputSwitchDemo {
     docs = [

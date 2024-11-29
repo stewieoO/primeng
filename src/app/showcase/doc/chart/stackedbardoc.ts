@@ -14,7 +14,8 @@ import { debounceTime, Subscription } from 'rxjs';
             <p-chart type="bar" [data]="data" [options]="options" />
         </div>
         <app-code [code]="code" selector="chart-stacked-bar-demo"></app-code>
-    `
+    `,
+    standalone: false
 })
 export class StackedBarDoc implements OnInit {
     data: any;

@@ -15,7 +15,8 @@ import { Subscription } from 'rxjs';
         '[class.p-filled]': 'filled',
         '[class.p-inputtextarea-resizable]': 'autoResize',
         '[class.p-variant-filled]': 'variant === "filled" || config.inputStyle() === "filled"'
-    }
+    },
+    standalone: false
 })
 export class InputTextarea implements OnInit, AfterViewInit, OnDestroy {
     /**
