@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
-  angular18:
+  angular19:
     '@angular-devkit/build-angular':
       specifier: ^18
       version: 18.2.12
@@ -79,52 +79,52 @@ importers:
   .:
     devDependencies:
       '@angular-devkit/build-angular':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.12(d53rwhnxybz7tz42hzfnbjbbee)
       '@angular-eslint/eslint-plugin':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.4.2(@typescript-eslint/utils@8.16.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5))(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5)
       '@angular-eslint/eslint-plugin-template':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.4.2(@typescript-eslint/types@8.16.0)(@typescript-eslint/utils@8.16.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5))(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5)
       '@angular-eslint/schematics':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.4.2(@angular-devkit/core@18.2.12(chokidar@3.6.0))(@angular-devkit/schematics@18.2.12(chokidar@3.6.0))(@typescript-eslint/types@8.16.0)(@typescript-eslint/utils@8.16.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5))(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5)
       '@angular-eslint/template-parser':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.4.2(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5)
       '@angular/animations':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))
       '@angular/cli':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.12(chokidar@3.6.0)
       '@angular/common':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
       '@angular/compiler':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))
       '@angular/compiler-cli':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.4.5)
       '@angular/core':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(rxjs@7.8.1)(zone.js@0.14.10)
       '@angular/forms':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.13(@angular/animations@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
       '@angular/platform-browser':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/animations@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))
       '@angular/platform-browser-dynamic':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.13(@angular/animations@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))
       '@angular/platform-server':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/animations@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.13(@angular/animations@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))
       '@angular/router':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.13(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.13(@angular/animations@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.13.0
@@ -160,7 +160,7 @@ importers:
         specifier: ^12.0.0
         version: 12.5.0
       ng-packagr:
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.1(@angular/compiler-cli@18.2.13(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.4.5))(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.4.5)))(tslib@2.6.3)(typescript@5.4.5)
       pnpm:
         specifier: ^9.6.0
@@ -194,10 +194,10 @@ importers:
         specifier: ^4.19.1
         version: 4.24.0
       '@angular/cdk':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.14(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
       '@angular/ssr':
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 18.2.12(@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.13(rxjs@7.8.1)(zone.js@0.14.10))
       '@docsearch/css':
         specifier: ^3.3.4
@@ -287,7 +287,7 @@ importers:
         specifier: ^0.18.5
         version: 0.18.5
       zone.js:
-        specifier: catalog:angular18
+        specifier: catalog:angular19
         version: 0.14.10
 
   packages/primeng:
