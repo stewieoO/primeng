@@ -1,9 +1,8 @@
-import { DOCUMENT, isPlatformServer } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { ChangeDetectorRef, ContentChildren, Directive, ElementRef, inject, Injector, Input, PLATFORM_ID, QueryList, Renderer2, SimpleChanges } from '@angular/core';
-import { Theme, ThemeService } from '@primeuix/styled';
 import { getKeyValue, uuid } from '@primeuix/utils';
 import { PrimeTemplate } from '@stewie/primeng/api';
-import { Base, BaseStyle } from '@stewie/primeng/base';
+import { BaseStyle } from '@stewie/primeng/base';
 import { PrimeNG } from '@stewie/primeng/config';
 import { BaseComponentStyle } from './style/basecomponentstyle';
 
@@ -58,9 +57,9 @@ export class BaseComponent {
     }
 
     ngOnInit() {
-        if (this.document) {
-            this._loadStyles();
-        }
+        // if (this.document) {
+        //     this._loadStyles();
+        // }
     }
 
     ngAfterViewInit() {
@@ -90,97 +89,97 @@ export class BaseComponent {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        if (this.document && !isPlatformServer(this.platformId)) {
-            const { dt } = changes;
-            if (dt && dt.currentValue) {
-                this._loadScopedThemeStyles(dt.currentValue);
-                this._themeChangeListener(() => this._loadScopedThemeStyles(dt.currentValue));
-            }
-        }
+        // if (this.document && !isPlatformServer(this.platformId)) {
+        //     const { dt } = changes;
+        //     if (dt && dt.currentValue) {
+        //         this._loadScopedThemeStyles(dt.currentValue);
+        //         this._themeChangeListener(() => this._loadScopedThemeStyles(dt.currentValue));
+        //     }
+        // }
     }
 
     ngOnDestroy() {
-        this._unloadScopedThemeStyles();
+        // this._unloadScopedThemeStyles();
     }
 
     _loadStyles() {
-        const _load = () => {
-            if (!Base.isStyleNameLoaded('base')) {
-                this.baseStyle.loadCSS(this.styleOptions);
-                Base.setLoadedStyleName('base');
-            }
-
-            this._loadThemeStyles();
-            // @todo update config.theme()
-        };
-
-        _load();
-        this._themeChangeListener(() => _load());
+        // const _load = () => {
+        //     if (!Base.isStyleNameLoaded('base')) {
+        //         this.baseStyle.loadCSS(this.styleOptions);
+        //         Base.setLoadedStyleName('base');
+        //     }
+        //
+        //     this._loadThemeStyles();
+        //     // @todo update config.theme()
+        // };
+        //
+        // _load();
+        // this._themeChangeListener(() => _load());
     }
 
-    _loadCoreStyles() {
-        if (!Base.isStyleNameLoaded('base') && this._name) {
-            this.baseComponentStyle.loadCSS(this.styleOptions);
-            this.componentStyle && this.componentStyle?.loadCSS(this.styleOptions);
-            Base.setLoadedStyleName(this.componentStyle?.name);
-        }
-    }
+    // _loadCoreStyles() {
+    //     if (!Base.isStyleNameLoaded('base') && this._name) {
+    //         this.baseComponentStyle.loadCSS(this.styleOptions);
+    //         this.componentStyle && this.componentStyle?.loadCSS(this.styleOptions);
+    //         Base.setLoadedStyleName(this.componentStyle?.name);
+    //     }
+    // }
 
-    _loadThemeStyles() {
-        // common
-        if (!Theme.isStyleNameLoaded('common')) {
-            const { primitive, semantic, global, style } = this.componentStyle?.getCommonTheme?.() || {};
+    // _loadThemeStyles() {
+    //     // common
+    //     if (!Theme.isStyleNameLoaded('common')) {
+    //         const { primitive, semantic, global, style } = this.componentStyle?.getCommonTheme?.() || {};
+    //
+    //         this.baseStyle.load(primitive?.css, { name: 'primitive-variables', ...this.styleOptions });
+    //         this.baseStyle.load(semantic?.css, { name: 'semantic-variables', ...this.styleOptions });
+    //         this.baseStyle.load(global?.css, { name: 'global-variables', ...this.styleOptions });
+    //         this.baseStyle.loadTheme({ name: 'global-style', ...this.styleOptions }, style);
+    //
+    //         Theme.setLoadedStyleName('common');
+    //     }
+    //
+    //     // component
+    //     if (!Theme.isStyleNameLoaded(this.componentStyle?.name) && this.componentStyle?.name) {
+    //         const { css, style } = this.componentStyle?.getComponentTheme?.() || {};
+    //
+    //         this.componentStyle?.load(css, { name: `${this.componentStyle?.name}-variables`, ...this.styleOptions });
+    //         this.componentStyle?.loadTheme({ name: `${this.componentStyle?.name}-style`, ...this.styleOptions }, style);
+    //
+    //         Theme.setLoadedStyleName(this.componentStyle?.name);
+    //     }
+    //
+    //     // layer order
+    //     if (!Theme.isStyleNameLoaded('layer-order')) {
+    //         const layerOrder = this.componentStyle?.getLayerOrderThemeCSS?.();
+    //
+    //         this.baseStyle.load(layerOrder, { name: 'layer-order', first: true, ...this.styleOptions });
+    //         Theme.setLoadedStyleName('layer-order');
+    //     }
+    //
+    //     if (this.dt) {
+    //         this._loadScopedThemeStyles(this.dt);
+    //         this._themeChangeListener(() => this._loadScopedThemeStyles(this.dt));
+    //     }
+    // }
 
-            this.baseStyle.load(primitive?.css, { name: 'primitive-variables', ...this.styleOptions });
-            this.baseStyle.load(semantic?.css, { name: 'semantic-variables', ...this.styleOptions });
-            this.baseStyle.load(global?.css, { name: 'global-variables', ...this.styleOptions });
-            this.baseStyle.loadTheme({ name: 'global-style', ...this.styleOptions }, style);
+    // _loadScopedThemeStyles(preset) {
+    //     const { css } = this.componentStyle?.getPresetTheme?.(preset, `[${this.attrSelector}]`) || {};
+    //     const scopedStyle = this.componentStyle?.load(css, {
+    //         name: `${this.attrSelector}-${this.componentStyle?.name}`,
+    //         ...this.styleOptions
+    //     });
+    //
+    //     this.scopedStyleEl = scopedStyle?.el;
+    // }
 
-            Theme.setLoadedStyleName('common');
-        }
-
-        // component
-        if (!Theme.isStyleNameLoaded(this.componentStyle?.name) && this.componentStyle?.name) {
-            const { css, style } = this.componentStyle?.getComponentTheme?.() || {};
-
-            this.componentStyle?.load(css, { name: `${this.componentStyle?.name}-variables`, ...this.styleOptions });
-            this.componentStyle?.loadTheme({ name: `${this.componentStyle?.name}-style`, ...this.styleOptions }, style);
-
-            Theme.setLoadedStyleName(this.componentStyle?.name);
-        }
-
-        // layer order
-        if (!Theme.isStyleNameLoaded('layer-order')) {
-            const layerOrder = this.componentStyle?.getLayerOrderThemeCSS?.();
-
-            this.baseStyle.load(layerOrder, { name: 'layer-order', first: true, ...this.styleOptions });
-            Theme.setLoadedStyleName('layer-order');
-        }
-
-        if (this.dt) {
-            this._loadScopedThemeStyles(this.dt);
-            this._themeChangeListener(() => this._loadScopedThemeStyles(this.dt));
-        }
-    }
-
-    _loadScopedThemeStyles(preset) {
-        const { css } = this.componentStyle?.getPresetTheme?.(preset, `[${this.attrSelector}]`) || {};
-        const scopedStyle = this.componentStyle?.load(css, {
-            name: `${this.attrSelector}-${this.componentStyle?.name}`,
-            ...this.styleOptions
-        });
-
-        this.scopedStyleEl = scopedStyle?.el;
-    }
-
-    _unloadScopedThemeStyles() {
-        this.scopedStyleEl?.remove();
-    }
-
-    _themeChangeListener(callback = () => {}) {
-        Base.clearLoadedStyleNames();
-        ThemeService.on('theme:change', callback);
-    }
+    // _unloadScopedThemeStyles() {
+    //     this.scopedStyleEl?.remove();
+    // }
+    //
+    // _themeChangeListener(callback = () => {}) {
+    //     Base.clearLoadedStyleNames();
+    //     ThemeService.on('theme:change', callback);
+    // }
 
     cx(arg: string, rest?: string): string {
         const classes = this.parent ? this.parent.componentStyle?.classes?.[arg] : this.componentStyle?.classes?.[arg];

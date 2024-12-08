@@ -1,6 +1,6 @@
 {
     "name": "@primeng/monorepo",
-    "version": "18.0.0-rc.1",
+    "version": "19.0.0",
     "author": "PrimeTek Informatics",
     "homepage": "https://primeng.org/",
     "repository": {
@@ -72,6 +72,8 @@
     },
     "packageManager": "pnpm@9.6.0",
     "lint-staged": {
-        "**/*.{js,mjs,ts,mts,d.ts,html}": ["prettier --write"]
+        "**/*.{js,mjs,ts,mts,d.ts,html}": [
+            "prettier --write"
+        ]
     }
 }
