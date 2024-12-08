@@ -2,12 +2,12 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, EventEmitter, inject, Input, NgModule, Output, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { uuid } from '@primeuix/utils';
-import { BlockableUI, Footer, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonModule } from 'primeng/button';
-import { MinusIcon, PlusIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
+import { BlockableUI, Footer, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ButtonModule } from '@stewie/primeng/button';
+import { MinusIcon, PlusIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { PanelStyle } from './style/panelstyle';
 
 /**

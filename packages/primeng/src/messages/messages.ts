@@ -1,11 +1,11 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, EventEmitter, inject, Input, NgModule, OnDestroy, Optional, Output, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { MessageService, SharedModule, ToastMessageOptions } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonModule } from 'primeng/button';
-import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
+import { MessageService, SharedModule, ToastMessageOptions } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ButtonModule } from '@stewie/primeng/button';
+import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
 import { Subscription, timer } from 'rxjs';
 import { MessagesStyle } from './style/messagesstyle';
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { uuid } from '@primeuix/utils';
-import { BaseIcon } from 'primeng/icons/baseicon';
+import { BaseIcon } from '@stewie/primeng/icons/baseicon';
 
 @Component({
     selector: 'FilterIcon',

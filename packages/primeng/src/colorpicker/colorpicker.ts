@@ -3,12 +3,12 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, forwardRef, inject, Input, NgModule, numberAttribute, OnDestroy, Output, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { absolutePosition, appendChild, isTouchDevice, relativePosition } from '@primeuix/utils';
-import { OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler } from '@stewie/primeng/dom';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { ColorPickerChangeEvent } from './colorpicker.interface';
 import { ColorPickerStyle } from './style/colorpickerstyle';
 

@@ -21,10 +21,10 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { findSingle, getHeight, getWidth, isTouchDevice, isVisible } from '@primeuix/utils';
-import { PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { SpinnerIcon } from 'primeng/icons';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { PrimeTemplate, ScrollerOptions, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { SpinnerIcon } from '@stewie/primeng/icons';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
 import { ScrollerLazyLoadEvent, ScrollerScrollEvent, ScrollerScrollIndexChangeEvent, ScrollerToType } from './scroller.interface';
 import { ScrollerStyle } from './style/scrollerstyle';
 

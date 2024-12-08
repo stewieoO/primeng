@@ -2,11 +2,11 @@ import { animate, animation, AnimationEvent, style, transition, trigger, useAnim
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, inject, Input, NgModule, NgZone, OnDestroy, Output, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { addClass, focus, getTargetElement, isTouchDevice, removeClass } from '@primeuix/utils';
-import { OverlayModeType, OverlayOnBeforeHideEvent, OverlayOnBeforeShowEvent, OverlayOnHideEvent, OverlayOnShowEvent, OverlayOptions, OverlayService, ResponsiveOverlayOptions, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils, ZIndexUtils } from 'primeng/utils';
+import { OverlayModeType, OverlayOnBeforeHideEvent, OverlayOnBeforeShowEvent, OverlayOnHideEvent, OverlayOnShowEvent, OverlayOptions, OverlayService, ResponsiveOverlayOptions, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { VoidListener } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, ZIndexUtils } from '@stewie/primeng/utils';
 import { OverlayStyle } from './style/overlaystyle';
 
 const showOverlayContentAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{showTransitionParams}}')]);

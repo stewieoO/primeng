@@ -63,22 +63,22 @@ import {
     setAttribute,
     uuid
 } from '@primeuix/utils';
-import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonDirective } from 'primeng/button';
-import { Checkbox } from 'primeng/checkbox';
-import { DatePicker } from 'primeng/datepicker';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { ArrowDownIcon, ArrowUpIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, SortAltIcon, SortAmountDownIcon, SortAmountUpAltIcon, SpinnerIcon, TrashIcon } from 'primeng/icons';
-import { InputNumber } from 'primeng/inputnumber';
-import { InputText } from 'primeng/inputtext';
-import { Paginator } from 'primeng/paginator';
-import { RadioButton, RadioButtonClickEvent } from 'primeng/radiobutton';
-import { Scroller } from 'primeng/scroller';
-import { Select } from 'primeng/select';
-import { SelectButton } from 'primeng/selectbutton';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils, ZIndexUtils } from 'primeng/utils';
+import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Button, ButtonDirective } from '@stewie/primeng/button';
+import { Checkbox } from '@stewie/primeng/checkbox';
+import { DatePicker } from '@stewie/primeng/datepicker';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { ArrowDownIcon, ArrowUpIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, SortAltIcon, SortAmountDownIcon, SortAmountUpAltIcon, SpinnerIcon, TrashIcon } from '@stewie/primeng/icons';
+import { InputNumber } from '@stewie/primeng/inputnumber';
+import { InputText } from '@stewie/primeng/inputtext';
+import { Paginator } from '@stewie/primeng/paginator';
+import { RadioButton, RadioButtonClickEvent } from '@stewie/primeng/radiobutton';
+import { Scroller } from '@stewie/primeng/scroller';
+import { Select } from '@stewie/primeng/select';
+import { SelectButton } from '@stewie/primeng/selectbutton';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ObjectUtils, ZIndexUtils } from '@stewie/primeng/utils';
 import { Subject, Subscription } from 'rxjs';
 import { TableStyle } from './style/tablestyle';
 import {

@@ -40,16 +40,16 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Button } from '@stewie/primeng/button';
+import { ConnectedOverlayScrollHandler } from '@stewie/primeng/dom';
+import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from '@stewie/primeng/icons';
+import { InputText } from '@stewie/primeng/inputtext';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { DatePickerMonthChangeEvent, DatePickerResponsiveOptions, DatePickerTypeView, DatePickerYearChangeEvent, LocaleSettings, Month, NavigationState } from './datepicker.interface';
 import { DatePickerStyle } from './style/datepickerstyle';

@@ -24,13 +24,13 @@ import {
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
 import { getSelection } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { AngleDownIcon, AngleUpIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Nullable } from 'primeng/ts-helpers';
+import { SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Button } from '@stewie/primeng/button';
+import { AngleDownIcon, AngleUpIcon, TimesIcon } from '@stewie/primeng/icons';
+import { InputText } from '@stewie/primeng/inputtext';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { InputNumberInputEvent } from './inputnumber.interface';
 import { InputNumberStyle } from './style/inputnumberstyle';
 

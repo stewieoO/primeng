@@ -21,15 +21,15 @@ import {
     ViewRef
 } from '@angular/core';
 import { addClass, appendChild, blockBodyScroll, getOuterHeight, getOuterWidth, getViewport, hasClass, removeClass, setAttribute, unblockBodyScroll, uuid } from '@primeuix/utils';
-import { SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonProps } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { FocusTrap } from 'primeng/focustrap';
-import { TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Button, ButtonProps } from '@stewie/primeng/button';
+import { DomHandler } from '@stewie/primeng/dom';
+import { FocusTrap } from '@stewie/primeng/focustrap';
+import { TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { DialogStyle } from './style/dialogstyle';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);

@@ -2,13 +2,13 @@ import { animate, animation, style, transition, trigger, useAnimation } from '@a
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, inject, Input, NgModule, NgZone, numberAttribute, OnDestroy, OnInit, Output, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { findSingle, setAttribute, uuid } from '@primeuix/utils';
-import { Confirmation, ConfirmationService, ConfirmEventType, Footer, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { Dialog } from 'primeng/dialog';
-import { CheckIcon, TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
+import { Confirmation, ConfirmationService, ConfirmEventType, Footer, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Button } from '@stewie/primeng/button';
+import { Dialog } from '@stewie/primeng/dialog';
+import { CheckIcon, TimesIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { ConfirmDialogStyle } from './style/confirmdialogstyle';
 

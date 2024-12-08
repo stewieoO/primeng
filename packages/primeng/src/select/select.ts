@@ -47,18 +47,18 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { IconField } from 'primeng/iconfield';
-import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Tooltip } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { IconField } from '@stewie/primeng/iconfield';
+import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from '@stewie/primeng/icons';
+import { InputIcon } from '@stewie/primeng/inputicon';
+import { InputText } from '@stewie/primeng/inputtext';
+import { Overlay } from '@stewie/primeng/overlay';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Scroller } from '@stewie/primeng/scroller';
+import { Tooltip } from '@stewie/primeng/tooltip';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { SelectChangeEvent, SelectFilterEvent, SelectFilterOptions, SelectLazyLoadEvent } from './select.interface';
 import { SelectStyle } from './style/selectstyle';
 

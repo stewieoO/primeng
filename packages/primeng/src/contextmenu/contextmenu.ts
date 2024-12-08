@@ -44,14 +44,14 @@ import {
     resolve,
     uuid
 } from '@primeuix/utils';
-import { MenuItem, OverlayService, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { AngleRightIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { MenuItem, OverlayService, SharedModule } from '@stewie/primeng/api';
+import { BadgeModule } from '@stewie/primeng/badge';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { AngleRightIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { ContextMenuStyle } from './style/contextmenustyle';
 
 @Component({

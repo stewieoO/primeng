@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, inject, Input, NgModule, numberAttribute, Output, signal, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { uuid } from '@primeuix/utils';
-import { MenuItem, SharedModule, TooltipOptions } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonDirective } from 'primeng/button';
-import { ChevronDownIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TieredMenu } from 'primeng/tieredmenu';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, SharedModule, TooltipOptions } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ButtonDirective } from '@stewie/primeng/button';
+import { ChevronDownIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { TieredMenu } from '@stewie/primeng/tieredmenu';
+import { TooltipModule } from '@stewie/primeng/tooltip';
 import { ButtonProps, MenuButtonProps } from './splitbutton.interface';
 import { SplitButtonStyle } from './style/splitbuttonstyle';
 

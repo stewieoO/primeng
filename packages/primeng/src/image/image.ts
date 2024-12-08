@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, HostListener, inject, Input, NgModule, Output, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
 import { addClass, appendChild, blockBodyScroll, focus, unblockBodyScroll } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { FocusTrap } from 'primeng/focustrap';
-import { EyeIcon, RefreshIcon, SearchMinusIcon, SearchPlusIcon, TimesIcon, UndoIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { FocusTrap } from '@stewie/primeng/focustrap';
+import { EyeIcon, RefreshIcon, SearchMinusIcon, SearchPlusIcon, TimesIcon, UndoIcon } from '@stewie/primeng/icons';
+import { Nullable } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { ImageStyle } from './style/imagestyle';
 
 /**

@@ -23,13 +23,13 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { calculateScrollbarWidth, equals, findLastIndex, findSingle, focus, getHiddenElementOuterWidth, getOffset, getOuterWidth, getViewport, isEmpty, isNotEmpty, isPrintableCharacter, resolveFieldData, uuid } from '@primeuix/utils';
-import { OverlayOptions, OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { AngleRightIcon, ChevronDownIcon, TimesIcon } from 'primeng/icons';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { OverlayOptions, OverlayService, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { AngleRightIcon, ChevronDownIcon, TimesIcon } from '@stewie/primeng/icons';
+import { Overlay } from '@stewie/primeng/overlay';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
 import { CascadeSelectBeforeHideEvent, CascadeSelectBeforeShowEvent, CascadeSelectChangeEvent, CascadeSelectHideEvent, CascadeSelectShowEvent } from './cascadeselect.interface';
 import { CascadeSelectStyle } from './style/cascadeselectstyle';
 

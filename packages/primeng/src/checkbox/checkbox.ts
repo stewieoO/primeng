@@ -20,11 +20,11 @@ import {
 } from '@angular/core';
 import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
 import { contains, equals } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { CheckIcon, MinusIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
+import { SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { CheckIcon, MinusIcon } from '@stewie/primeng/icons';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { CheckboxChangeEvent } from './checkbox.interface';
 import { CheckboxStyle } from './style/checkboxstyle';
 

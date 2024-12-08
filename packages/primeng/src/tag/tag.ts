@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, inject, Input, NgModule, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
+import { SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
 import { TagStyle } from './style/tagstyle';
 
 /**

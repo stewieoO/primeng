@@ -24,10 +24,10 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { equals, findLast, findSingle, focus, getAttribute, isEmpty, isNotEmpty, isPrintableCharacter, resolve, uuid } from '@primeuix/utils';
-import { MenuItem, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon } from 'primeng/icons';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon } from '@stewie/primeng/icons';
+import { TooltipModule } from '@stewie/primeng/tooltip';
 import { PanelMenuStyle } from './style/panelmenustyle';
 
 @Component({

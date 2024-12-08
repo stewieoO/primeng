@@ -1,8 +1,8 @@
 import { isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Directive, effect, inject, NgModule, NgZone, OnDestroy } from '@angular/core';
 import { addClass, getHeight, getOffset, getOuterHeight, getOuterWidth, getWidth, removeClass, remove as utils_remove } from '@primeuix/utils';
-import { BaseComponent } from 'primeng/basecomponent';
-import { VoidListener } from 'primeng/ts-helpers';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { VoidListener } from '@stewie/primeng/ts-helpers';
 import { RippleStyle } from './style/ripplestyle';
 
 /**

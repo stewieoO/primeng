@@ -21,12 +21,12 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { find, findSingle, focus, hasClass, uuid } from '@primeuix/utils';
-import { MenuItem, SharedModule, TooltipOptions } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonDirective, ButtonIcon, ButtonProps } from 'primeng/button';
-import { PlusIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, SharedModule, TooltipOptions } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ButtonDirective, ButtonIcon, ButtonProps } from '@stewie/primeng/button';
+import { PlusIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { TooltipModule } from '@stewie/primeng/tooltip';
 import { asapScheduler } from 'rxjs';
 import { SpeedDialStyle } from './style/speeddialstyle';
 

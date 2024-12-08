@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, EventEmitter, forwardRef, inject, Input, NgModule, Output, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { InputText } from 'primeng/inputtext';
+import { SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { InputText } from '@stewie/primeng/inputtext';
 import { InputOtpStyle } from './style/inputotpstyle';
 
 export const INPUT_OTP_VALUE_ACCESSOR: any = {

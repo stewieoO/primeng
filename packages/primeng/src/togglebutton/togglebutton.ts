@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, EventEmitter, forwardRef, HostBinding, inject, Input, NgModule, numberAttribute, Output, TemplateRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
+import { SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { ToggleButtonStyle } from './style/togglebuttonstyle';
 import { ToggleButtonChangeEvent } from './togglebutton.interface';
 

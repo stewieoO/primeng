@@ -21,12 +21,12 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { addClass, findSingle, isEmpty } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { SpinnerIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
+import { SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BadgeModule } from '@stewie/primeng/badge';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { SpinnerIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
 import { ButtonProps } from './button.interface';
 import { ButtonStyle } from './style/buttonstyle';
 

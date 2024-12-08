@@ -2,9 +2,9 @@ import { DOCUMENT, isPlatformServer } from '@angular/common';
 import { ChangeDetectorRef, ContentChildren, Directive, ElementRef, inject, Injector, Input, PLATFORM_ID, QueryList, Renderer2, SimpleChanges } from '@angular/core';
 import { Theme, ThemeService } from '@primeuix/styled';
 import { getKeyValue, uuid } from '@primeuix/utils';
-import { PrimeTemplate } from 'primeng/api';
-import { Base, BaseStyle } from 'primeng/base';
-import { PrimeNG } from 'primeng/config';
+import { PrimeTemplate } from '@stewie/primeng/api';
+import { Base, BaseStyle } from '@stewie/primeng/base';
+import { PrimeNG } from '@stewie/primeng/config';
 import { BaseComponentStyle } from './style/basecomponentstyle';
 
 @Directive({ standalone: true, providers: [BaseComponentStyle, BaseStyle] })

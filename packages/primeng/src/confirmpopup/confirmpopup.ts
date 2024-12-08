@@ -21,12 +21,12 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { absolutePosition, addClass, findSingle, getOffset, isIOS, isTouchDevice } from '@primeuix/utils';
-import { Confirmation, ConfirmationService, OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { Confirmation, ConfirmationService, OverlayService, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ButtonModule } from '@stewie/primeng/button';
+import { ConnectedOverlayScrollHandler } from '@stewie/primeng/dom';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { ConfirmPopupStyle } from './style/confirmpopupstyle';
 

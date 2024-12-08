@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { BaseComponent } from 'primeng/basecomponent';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
 
 /**
  * TabPanels is a helper component for Tabs component.

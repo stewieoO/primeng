@@ -28,14 +28,14 @@ import {
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { absolutePosition, appendChild, find, findSingle, focus, isTouchDevice, relativePosition, uuid } from '@primeuix/utils';
-import { MenuItem, OverlayService, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { MenuItem, OverlayService, SharedModule } from '@stewie/primeng/api';
+import { BadgeModule } from '@stewie/primeng/badge';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler } from '@stewie/primeng/dom';
+import { Ripple } from '@stewie/primeng/ripple';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { MenuStyle } from './style/menustyle';
 
 @Pipe({

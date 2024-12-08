@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { effect, inject, Inject, Injectable, Optional, signal, untracked } from '@angular/core';
 import { Theme, ThemeService } from '@primeuix/styled';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@stewie/primeng/base';
 import { PRIME_NG_CONFIG, PrimeNGConfigType } from './provideprimeng';
 
 @Injectable({ providedIn: 'root' })

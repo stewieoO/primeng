@@ -21,12 +21,12 @@ import {
     numberAttribute
 } from '@angular/core';
 import { isEmpty, setAttribute, uuid } from '@primeuix/utils';
-import { MessageService, SharedModule, ToastMessageOptions } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { ZIndexUtils } from 'primeng/utils';
+import { MessageService, SharedModule, ToastMessageOptions } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Button } from '@stewie/primeng/button';
+import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { ToastStyle } from './style/toaststyle';
 import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast.interface';

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, inject, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
+import { SharedModule } from '@stewie/primeng/api';
+import { BadgeModule } from '@stewie/primeng/badge';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
 import { OverlayBadgeStyle } from './style/overlaybadgestyle';
 
 /**

@@ -2,13 +2,13 @@ import { animate, AnimationEvent, state, style, transition, trigger } from '@ang
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, HostListener, inject, Input, NgModule, NgZone, numberAttribute, OnDestroy, Output, TemplateRef, ViewEncapsulation, ViewRef } from '@angular/core';
 import { absolutePosition, addClass, appendChild, findSingle, getOffset, isIOS, isTouchDevice } from '@primeuix/utils';
-import { OverlayService, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler } from '@stewie/primeng/dom';
+import { TimesIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { PopoverStyle } from './style/popoverstyle';
 

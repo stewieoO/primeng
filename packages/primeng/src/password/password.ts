@@ -27,14 +27,14 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { absolutePosition, addClass, getOuterWidth, hasClass, isTouchDevice, relativePosition, removeClass } from '@primeuix/utils';
-import { OverlayService, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { EyeIcon, EyeSlashIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@stewie/primeng/dom';
+import { EyeIcon, EyeSlashIcon, TimesIcon } from '@stewie/primeng/icons';
+import { InputText } from '@stewie/primeng/inputtext';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { PasswordStyle } from './style/passwordstyle';
 

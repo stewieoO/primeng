@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, inject, Input, NgModule, numberAttribute, OnChanges, OnInit, Output, SimpleChanges, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Aria, SelectItem, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { DropdownChangeEvent } from 'primeng/dropdown';
-import { AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleLeftIcon, AngleRightIcon } from 'primeng/icons';
-import { InputNumber } from 'primeng/inputnumber';
-import { Ripple } from 'primeng/ripple';
-import { Select } from 'primeng/select';
-import { Nullable } from 'primeng/ts-helpers';
+import { Aria, SelectItem, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { DropdownChangeEvent } from '@stewie/primeng/dropdown';
+import { AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleLeftIcon, AngleRightIcon } from '@stewie/primeng/icons';
+import { InputNumber } from '@stewie/primeng/inputnumber';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Select } from '@stewie/primeng/select';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { PaginatorState } from './paginator.interface';
 import { PaginatorStyle } from './style/paginatorstyle';
 

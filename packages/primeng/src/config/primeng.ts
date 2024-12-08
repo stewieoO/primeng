@@ -1,5 +1,5 @@
 import { Inject, inject, Injectable, Optional, PLATFORM_ID, signal } from '@angular/core';
-import { FilterMatchMode, OverlayOptions, Translation } from 'primeng/api';
+import { FilterMatchMode, OverlayOptions, Translation } from '@stewie/primeng/api';
 import { Subject } from 'rxjs';
 import { PRIME_NG_CONFIG, PrimeNGConfigType } from './provideprimeng';
 import { ThemeProvider } from './themeprovider';

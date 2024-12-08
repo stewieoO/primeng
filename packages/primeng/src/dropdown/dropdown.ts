@@ -46,18 +46,18 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { IconField } from 'primeng/iconfield';
-import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocusModule } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { IconField } from '@stewie/primeng/iconfield';
+import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from '@stewie/primeng/icons';
+import { InputIcon } from '@stewie/primeng/inputicon';
+import { InputTextModule } from '@stewie/primeng/inputtext';
+import { Overlay, OverlayModule } from '@stewie/primeng/overlay';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Scroller } from '@stewie/primeng/scroller';
+import { TooltipModule } from '@stewie/primeng/tooltip';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { DropdownChangeEvent, DropdownFilterEvent, DropdownFilterOptions, DropdownLazyLoadEvent } from './dropdown.interface';
 import { DropdownStyle } from './style/dropdownstyle';
 import { useCustomJiti } from 'tailwindcss/src/lib/load-config';

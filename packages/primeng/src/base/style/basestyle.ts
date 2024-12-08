@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { dt, Theme } from '@primeuix/styled';
 import { minifyCSS, resolve } from '@primeuix/utils';
-import { UseStyle } from 'primeng/usestyle';
+import { UseStyle } from '@stewie/primeng/usestyle';
 
 const theme = ({ dt }) => `
 *,

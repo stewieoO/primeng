@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ContentChild, inject, Input, NgModule, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
+import { BlockableUI, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
 import { ToolbarStyle } from './style/toolbarstyle';
 
 /**

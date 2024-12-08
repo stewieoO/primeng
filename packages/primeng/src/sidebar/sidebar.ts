@@ -20,13 +20,13 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { appendChild, blockBodyScroll } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonModule, ButtonProps } from 'primeng/button';
-import { TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ButtonModule, ButtonProps } from '@stewie/primeng/button';
+import { TimesIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
+import { ZIndexUtils } from '@stewie/primeng/utils';
 import { DrawerStyle } from './style/drawerstyle';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);

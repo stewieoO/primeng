@@ -27,11 +27,11 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { findSingle, focus, getAttribute, uuid } from '@primeuix/utils';
-import { BlockableUI, Header, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ChevronDownIcon, ChevronUpIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { transformToBoolean } from 'primeng/utils';
+import { BlockableUI, Header, SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { ChevronDownIcon, ChevronUpIcon } from '@stewie/primeng/icons';
+import { Ripple } from '@stewie/primeng/ripple';
+import { transformToBoolean } from '@stewie/primeng/utils';
 import { Subscription } from 'rxjs';
 import { AccordionStyle } from './style/accordionstyle';
 

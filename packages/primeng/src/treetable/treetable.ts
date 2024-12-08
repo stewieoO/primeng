@@ -52,15 +52,15 @@ import {
     reorderArray,
     resolveFieldData
 } from '@primeuix/utils';
-import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Checkbox } from 'primeng/checkbox';
-import { DomHandler } from 'primeng/dom';
-import { ArrowDownIcon, ArrowUpIcon, CheckIcon, ChevronDownIcon, ChevronRightIcon, MinusIcon, SortAltIcon, SortAmountDownIcon, SortAmountUpAltIcon, SpinnerIcon } from 'primeng/icons';
-import { PaginatorModule } from 'primeng/paginator';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Checkbox } from '@stewie/primeng/checkbox';
+import { DomHandler } from '@stewie/primeng/dom';
+import { ArrowDownIcon, ArrowUpIcon, CheckIcon, ChevronDownIcon, ChevronRightIcon, MinusIcon, SortAltIcon, SortAmountDownIcon, SortAmountUpAltIcon, SpinnerIcon } from '@stewie/primeng/icons';
+import { PaginatorModule } from '@stewie/primeng/paginator';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Scroller } from '@stewie/primeng/scroller';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
 import { Subject, Subscription } from 'rxjs';
 import { TreeTableStyle } from './style/treetablestyle';
 import {

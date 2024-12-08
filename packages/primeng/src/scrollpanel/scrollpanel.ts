@@ -1,9 +1,9 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, ChangeDetectionStrategy, Component, ContentChild, ElementRef, inject, Input, NgModule, NgZone, numberAttribute, OnDestroy, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { addClass, getHeight, removeClass, uuid } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Nullable } from 'primeng/ts-helpers';
+import { SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { ScrollPanelStyle } from './style/scrollpanelstyle';
 
 /**

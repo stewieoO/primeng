@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@stewie/primeng/base';
 
 const theme = ({ dt }) => `
 .p-breadcrumb {

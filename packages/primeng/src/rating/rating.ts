@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, EventEmitter, forwardRef, inject, Input, NgModule, numberAttribute, OnInit, Output, signal, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { focus, getFirstFocusableElement, uuid } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { BanIcon, StarFillIcon, StarIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
+import { SharedModule } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { BanIcon, StarFillIcon, StarIcon } from '@stewie/primeng/icons';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { RatingRateEvent } from './rating.interface';
 import { RatingStyle } from './style/ratingstyle';
 

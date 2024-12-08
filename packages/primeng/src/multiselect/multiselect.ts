@@ -48,21 +48,21 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Checkbox, CheckboxModule } from 'primeng/checkbox';
-import { Chip } from 'primeng/chip';
-import { DomHandler } from 'primeng/dom';
-import { IconField } from 'primeng/iconfield';
-import { CheckIcon, ChevronDownIcon, MinusIcon, SearchIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Tooltip } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@stewie/primeng/api';
+import { AutoFocus } from '@stewie/primeng/autofocus';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Checkbox, CheckboxModule } from '@stewie/primeng/checkbox';
+import { Chip } from '@stewie/primeng/chip';
+import { DomHandler } from '@stewie/primeng/dom';
+import { IconField } from '@stewie/primeng/iconfield';
+import { CheckIcon, ChevronDownIcon, MinusIcon, SearchIcon, TimesCircleIcon, TimesIcon } from '@stewie/primeng/icons';
+import { InputIcon } from '@stewie/primeng/inputicon';
+import { InputText } from '@stewie/primeng/inputtext';
+import { Overlay } from '@stewie/primeng/overlay';
+import { Ripple } from '@stewie/primeng/ripple';
+import { Scroller } from '@stewie/primeng/scroller';
+import { Tooltip } from '@stewie/primeng/tooltip';
+import { Nullable } from '@stewie/primeng/ts-helpers';
 import { MultiSelectBlurEvent, MultiSelectChangeEvent, MultiSelectFilterEvent, MultiSelectFilterOptions, MultiSelectFocusEvent, MultiSelectLazyLoadEvent, MultiSelectRemoveEvent, MultiSelectSelectAllChangeEvent } from './multiselect.interface';
 import { MultiSelectStyle } from './style/multiselectstyle';
 

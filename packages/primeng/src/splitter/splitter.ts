@@ -1,9 +1,9 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ContentChildren, ElementRef, EventEmitter, inject, Input, NgModule, numberAttribute, Output, QueryList, ViewChild, ViewEncapsulation } from '@angular/core';
 import { addClass, getHeight, getOuterHeight, getOuterWidth, getWidth, hasClass, isRTL, removeClass } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { SharedModule } from '@stewie/primeng/api';
+import { BaseComponent } from '@stewie/primeng/basecomponent';
+import { Nullable, VoidListener } from '@stewie/primeng/ts-helpers';
 import { SplitterResizeEndEvent, SplitterResizeStartEvent } from './splitter.interface';
 import { SplitterStyle } from './style/splitterstyle';
 
