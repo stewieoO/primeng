@@ -49,7 +49,6 @@ import { PickListStyle } from './style/pickliststyle';
  */
 @Component({
     selector: 'p-pickList, p-picklist, p-pick-list',
-    standalone: true,
     imports: [
         CommonModule,
         ButtonDirective,

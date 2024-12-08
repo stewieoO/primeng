@@ -12,7 +12,6 @@ import { ScrollPanelStyle } from './style/scrollpanelstyle';
  */
 @Component({
     selector: 'p-scroll-panel, p-scrollPanel, p-scrollpanel',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div #container [ngClass]="'p-scrollpanel p-component'" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'scrollpanel'">

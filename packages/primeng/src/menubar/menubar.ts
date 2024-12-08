@@ -54,7 +54,6 @@ export class MenubarService {
 
 @Component({
     selector: 'p-menubarSub, p-menubarsub',
-    standalone: true,
     imports: [CommonModule, RouterModule, Ripple, TooltipModule, BarsIcon, AngleDownIcon, AngleRightIcon, BadgeModule, SharedModule],
     template: `
         <ul
@@ -354,7 +353,6 @@ export class MenubarSub extends BaseComponent implements OnInit, OnDestroy {
  */
 @Component({
     selector: 'p-menubar',
-    standalone: true,
     imports: [CommonModule, RouterModule, MenubarSub, Ripple, TooltipModule, BarsIcon, AngleDownIcon, AngleRightIcon, BadgeModule, SharedModule],
     template: `
         <div [ngClass]="{ 'p-menubar p-component': true, 'p-menubar-mobile': queryMatches, 'p-menubar-mobile-active': mobileActive }" [class]="styleClass" [ngStyle]="style" [attr.data-pc-section]="'root'" [attr.data-pc-name]="'menubar'">

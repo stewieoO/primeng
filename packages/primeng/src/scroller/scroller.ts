@@ -35,7 +35,6 @@ import { ScrollerStyle } from './style/scrollerstyle';
 @Component({
     selector: 'p-scroller, p-virtualscroller, p-virtual-scroller, p-virtualScroller',
     imports: [CommonModule, SpinnerIcon, SharedModule],
-    standalone: true,
     template: `
         <ng-container *ngIf="!_disabled; else disabledContainer">
             <div

@@ -15,7 +15,6 @@ import { ScrollTopStyle } from './style/scrolltopstyle';
  */
 @Component({
     selector: 'p-scrollTop, p-scrolltop, p-scroll-top',
-    standalone: true,
     imports: [CommonModule, ChevronUpIcon, Button, SharedModule],
     template: `
         <p-button
@@ -62,7 +61,6 @@ import { ScrollTopStyle } from './style/scrolltopstyle';
             transition('open => void', animate('{{hideTransitionParams}}'))
         ])
     ],
-
     providers: [ScrollTopStyle]
 })
 export class ScrollTop extends BaseComponent implements OnInit, OnDestroy {

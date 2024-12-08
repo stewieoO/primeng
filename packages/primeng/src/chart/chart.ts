@@ -9,7 +9,6 @@ import { SharedModule } from 'primeng/api';
  */
 @Component({
     selector: 'p-chart',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div style="position:relative" [style.width]="responsive && !width ? null : width" [style.height]="responsive && !height ? null : height">

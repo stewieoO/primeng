@@ -15,7 +15,6 @@ import { TabPanels } from './tabpanels';
  */
 @Component({
     selector: 'p-tabs',
-    standalone: true,
     imports: [CommonModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,

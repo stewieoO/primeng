@@ -34,7 +34,6 @@ import { DataViewStyle } from './style/dataviewstyle';
  */
 @Component({
     selector: 'p-dataView, p-dataview, p-data-view',
-    standalone: true,
     imports: [CommonModule, PaginatorModule, SpinnerIcon, SharedModule],
     template: `
         <div [ngClass]="{ 'p-dataview p-component': true, 'p-dataview-list': layout === 'list', 'p-dataview-grid': layout === 'grid' }" [ngStyle]="style" [class]="styleClass">

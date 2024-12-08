@@ -21,7 +21,6 @@ const hideAnimation = animation([animate('{{transition}}', style({ transform: '{
 
 @Component({
     selector: 'p-dynamicDialog, p-dynamicdialog, p-dynamic-dialog',
-    standalone: true,
     imports: [CommonModule, SharedModule, DynamicDialogContent, WindowMaximizeIcon, WindowMinimizeIcon, TimesIcon, Button, FocusTrap],
     template: `
         <div

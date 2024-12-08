@@ -17,7 +17,6 @@ import { FieldsetStyle } from './style/fieldsetstyle';
  */
 @Component({
     selector: 'p-fieldset',
-    standalone: true,
     imports: [CommonModule, ButtonModule, MinusIcon, PlusIcon, SharedModule],
     template: `
         <fieldset

@@ -20,7 +20,6 @@ export const SLIDER_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-slider',
-    standalone: true,
     imports: [CommonModule, AutoFocus, SharedModule],
     template: `
         <div

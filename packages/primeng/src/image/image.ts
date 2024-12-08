@@ -17,7 +17,6 @@ import { ImageStyle } from './style/imagestyle';
  */
 @Component({
     selector: 'p-image',
-    standalone: true,
     imports: [CommonModule, RefreshIcon, EyeIcon, UndoIcon, SearchMinusIcon, SearchPlusIcon, TimesIcon, FocusTrap, SharedModule],
     template: `
         <span [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">

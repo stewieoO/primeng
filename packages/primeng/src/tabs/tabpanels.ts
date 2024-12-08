@@ -8,7 +8,6 @@ import { BaseComponent } from 'primeng/basecomponent';
  */
 @Component({
     selector: 'p-tabpanels',
-    standalone: true,
     imports: [CommonModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,

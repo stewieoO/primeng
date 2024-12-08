@@ -38,7 +38,6 @@ const hideAnimation = animation([animate('{{transition}}', style({ transform: '{
  */
 @Component({
     selector: 'p-sidebar',
-    standalone: true,
     imports: [CommonModule, Ripple, SharedModule, TimesIcon, ButtonModule],
     template: `
         <div

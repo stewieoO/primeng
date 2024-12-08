@@ -10,7 +10,6 @@ import { AvatarStyle } from './style/avatarstyle';
  */
 @Component({
     selector: 'p-avatar',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <ng-content></ng-content>

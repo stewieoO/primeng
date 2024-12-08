@@ -10,7 +10,6 @@ import { DividerStyle } from './style/dividerstyle';
  */
 @Component({
     selector: 'p-divider',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div class="p-divider-content">

@@ -19,7 +19,6 @@ const hideAnimation = animation([animate('{{transition}}', style({ transform: '{
  */
 @Component({
     selector: 'p-drawer',
-    standalone: true,
     imports: [CommonModule, Button, TimesIcon, SharedModule],
     template: `
         <div

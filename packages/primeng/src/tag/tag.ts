@@ -10,7 +10,6 @@ import { TagStyle } from './style/tagstyle';
  */
 @Component({
     selector: 'p-tag',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <span [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style">

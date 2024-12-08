@@ -427,7 +427,6 @@ export class ButtonDirective extends BaseComponent implements AfterViewInit, OnD
  */
 @Component({
     selector: 'p-button',
-    standalone: true,
     imports: [CommonModule, Ripple, AutoFocus, SpinnerIcon, BadgeModule, SharedModule],
     template: `
         <button

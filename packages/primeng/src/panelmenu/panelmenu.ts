@@ -33,7 +33,6 @@ import { PanelMenuStyle } from './style/panelmenustyle';
 @Component({
     selector: 'p-panelMenuSub, p-panelmenu-sub',
     imports: [CommonModule, RouterModule, TooltipModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon, SharedModule],
-    standalone: true,
     template: `
         <ul
             #list
@@ -273,7 +272,6 @@ export class PanelMenuSub extends BaseComponent {
 @Component({
     selector: 'p-panelMenuList, p-panel-menu-list',
     imports: [CommonModule, PanelMenuSub, RouterModule, TooltipModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon, SharedModule],
-    standalone: true,
     template: `
         <p-panelmenu-sub
             #submenu
@@ -721,7 +719,6 @@ export class PanelMenuList extends BaseComponent implements OnChanges {
 @Component({
     selector: 'p-panelMenu, p-panelmenu, p-panel-menu',
     imports: [CommonModule, PanelMenuList, RouterModule, TooltipModule, AngleDownIcon, AngleRightIcon, ChevronDownIcon, ChevronRightIcon, SharedModule],
-    standalone: true,
     template: `
         <div [class]="styleClass" [ngStyle]="style" [ngClass]="'p-panelmenu p-component'" #container>
             <ng-container *ngFor="let item of model; let f = first; let l = last; let i = index">

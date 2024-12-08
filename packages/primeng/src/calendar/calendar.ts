@@ -65,7 +65,6 @@ export const CALENDAR_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-calendar',
-    standalone: true,
     imports: [CommonModule, Button, Ripple, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, ChevronDownIcon, TimesIcon, CalendarIcon, AutoFocus, InputText, SharedModule],
     template: `
         <span #container [ngClass]="rootClass" [ngStyle]="style" [class]="styleClass">

@@ -56,7 +56,6 @@ import { ContextMenuStyle } from './style/contextmenustyle';
 
 @Component({
     selector: 'p-contextMenuSub, p-contextmenu-sub',
-    standalone: true,
     imports: [CommonModule, RouterModule, Ripple, TooltipModule, AngleRightIcon, BadgeModule, SharedModule],
     template: `
         <ul
@@ -356,7 +355,6 @@ export class ContextMenuSub extends BaseComponent {
  */
 @Component({
     selector: 'p-contextMenu, p-contextmenu, p-context-menu',
-    standalone: true,
     imports: [CommonModule, ContextMenuSub, RouterModule, Ripple, TooltipModule, AngleRightIcon, BadgeModule, SharedModule],
     template: `
         <div

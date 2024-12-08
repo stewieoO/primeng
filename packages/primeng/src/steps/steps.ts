@@ -15,7 +15,6 @@ import { StepsStyle } from './style/stepsstyle';
  */
 @Component({
     selector: 'p-steps',
-    standalone: true,
     imports: [CommonModule, RouterModule, TooltipModule, SharedModule],
     template: `
         <nav [ngClass]="{ 'p-steps p-component': true, 'p-readonly': readonly }" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'steps'">

@@ -322,7 +322,6 @@ export class SortableColumn implements OnInit, OnDestroy {
 
 @Component({
     selector: 'p-sortIcon',
-    standalone: true,
     imports: [CommonModule, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon],
     template: `
         <ng-container *ngIf="!dt.sortIconTemplate">
@@ -1467,7 +1466,6 @@ export class CancelEditableRow {
 
 @Component({
     selector: 'p-cellEditor',
-    standalone: true,
     imports: [CommonModule],
     template: `
         <ng-container *ngIf="editing">
@@ -1498,7 +1496,6 @@ export class CellEditor extends BaseComponent {
 
 @Component({
     selector: 'p-tableRadioButton',
-    standalone: true,
     imports: [CommonModule, FormsModule, RadioButton],
     template: ` <p-radiobutton #rb [(ngModel)]="checked" [disabled]="disabled" [inputId]="inputId" [name]="name" [ariaLabel]="ariaLabel" [binary]="true" [value]="value" (onClick)="onClick($event)"></p-radiobutton> `,
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -1566,7 +1563,6 @@ export class TableRadioButton {
 @Component({
     selector: 'p-tableCheckbox',
     imports: [CommonModule, FormsModule, Checkbox],
-    standalone: true,
     template: `
         <p-checkbox [(ngModel)]="checked" [binary]="true" (onChange)="onClick($event)" [disabled]="disabled" [ariaLabel]="ariaLabel">
             <ng-container *ngIf="dt.checkboxIconTemplate">
@@ -1646,7 +1642,6 @@ export class TableCheckbox {
 
 @Component({
     selector: 'p-tableHeaderCheckbox',
-    standalone: true,
     imports: [CommonModule, FormsModule, Checkbox],
     template: `
         <p-checkbox [(ngModel)]="checked" (onChange)="onClick($event)" [binary]="true" [disabled]="isDisabled()" [ariaLabel]="ariaLabel">
@@ -1890,7 +1885,6 @@ export class ReorderableRow implements AfterViewInit {
 
 @Component({
     selector: 'p-columnFilterFormElement',
-    standalone: true,
     imports: [CommonModule, FormsModule, InputText, InputNumber, DatePicker, Checkbox],
     template: `
         <ng-container *ngIf="filterTemplate; else builtInElement">
@@ -2033,7 +2027,6 @@ export class ColumnFilterFormElement implements OnInit {
 
 @Component({
     selector: 'p-columnFilter',
-    standalone: true,
     imports: [CommonModule, ColumnFilterFormElement, Button, FilterIcon, FilterSlashIcon, PlusIcon, Select],
     template: `
         <div [ngClass]="cx('filter')">
@@ -2913,7 +2906,6 @@ export class ColumnFilter extends BaseComponent implements AfterContentInit {
 
 @Component({
     selector: '[pTableBody]',
-    standalone: true,
     imports: [CommonModule],
     template: `
         <ng-container *ngIf="!dt.expandedRowTemplate">
@@ -3219,7 +3211,6 @@ export class TableBody implements AfterViewInit, OnDestroy {
  */
 @Component({
     selector: 'p-table',
-    standalone: true,
     imports: [
         CommonModule,
         Paginator,

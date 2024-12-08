@@ -10,7 +10,6 @@ import { Tabs } from './tabs';
  */
 @Component({
     selector: 'p-tabpanel',
-    standalone: true,
     imports: [CommonModule],
     template: `@if (active()) {
         <ng-content></ng-content>

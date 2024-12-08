@@ -11,7 +11,6 @@ import { OverlayBadgeStyle } from './style/overlaybadgestyle';
  */
 @Component({
     selector: 'p-overlayBadge, p-overlay-badge, p-overlaybadge',
-    standalone: true,
     imports: [CommonModule, BadgeModule, SharedModule],
     template: `
         <div class="p-overlaybadge">

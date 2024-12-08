@@ -27,7 +27,6 @@ export const TREESELECT_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-treeSelect, p-treeselect, p-tree-select',
-    standalone: true,
     imports: [CommonModule, Overlay, SharedModule, Ripple, InputText, Tree, AutoFocus, SearchIcon, TimesIcon, ChevronDownIcon, Chip],
     template: `
         <div #container [ngClass]="containerClass" [class]="containerStyleClass" [ngStyle]="containerStyle" (click)="onClick($event)">

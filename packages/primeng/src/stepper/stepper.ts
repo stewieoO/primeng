@@ -56,7 +56,6 @@ export interface StepPanelContentTemplateContext {
 
 @Component({
     selector: 'p-step-list',
-    standalone: true,
     imports: [CommonModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -70,7 +69,6 @@ export class StepList extends BaseComponent {}
 
 @Component({
     selector: 'p-stepper-separator',
-    standalone: true,
     imports: [CommonModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -88,7 +86,6 @@ export class StepperSeparator extends BaseComponent {}
  */
 @Component({
     selector: 'p-step-item',
-    standalone: true,
     imports: [CommonModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -139,7 +136,6 @@ export class StepItem extends BaseComponent {
  */
 @Component({
     selector: 'p-step',
-    standalone: true,
     imports: [CommonModule, StepperSeparator, SharedModule],
     template: `
         @if (!content) {
@@ -235,7 +231,6 @@ export class Step extends BaseComponent implements AfterContentInit {
  */
 @Component({
     selector: 'p-step-panel',
-    standalone: true,
     imports: [CommonModule, StepperSeparator, SharedModule],
     template: `
         @if (isSeparatorVisible()) {
@@ -334,7 +329,6 @@ export class StepPanel extends BaseComponent implements AfterContentInit {
 
 @Component({
     selector: 'p-step-panels',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -352,7 +346,6 @@ export class StepPanels extends BaseComponent {}
  */
 @Component({
     selector: 'p-stepper',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,

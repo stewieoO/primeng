@@ -8,7 +8,6 @@ import { InplaceStyle } from './style/inplacestyle';
 
 @Component({
     selector: 'p-inplacedisplay, p-inplaceDisplay',
-    standalone: true,
     imports: [CommonModule],
     template: '<ng-content></ng-content>'
 })
@@ -16,7 +15,6 @@ export class InplaceDisplay {}
 
 @Component({
     selector: 'p-inplacecontent, p-inplaceContent',
-    standalone: true,
     imports: [CommonModule],
     template: '<ng-content></ng-content>'
 })
@@ -27,7 +25,6 @@ export class InplaceContent {}
  */
 @Component({
     selector: 'p-inplace',
-    standalone: true,
     imports: [CommonModule, ButtonModule, TimesIcon, SharedModule],
     template: `
         <div [ngClass]="{ 'p-inplace p-component': true, 'p-inplace-closable': closable }" [ngStyle]="style" [class]="styleClass" [attr.aria-live]="'polite'">

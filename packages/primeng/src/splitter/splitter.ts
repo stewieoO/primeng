@@ -13,7 +13,6 @@ import { SplitterStyle } from './style/splitterstyle';
  */
 @Component({
     selector: 'p-splitter',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div #container [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="'splitter'" [attr.data-p-gutter-resizing]="false" [attr.data-pc-section]="'root'">

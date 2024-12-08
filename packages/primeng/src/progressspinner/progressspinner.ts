@@ -10,7 +10,6 @@ import { ProgressSpinnerStyle } from './style/progressspinnerstyle';
  */
 @Component({
     selector: 'p-progressSpinner, p-progress-spinner, p-progressspinner',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div class="p-progressspinner" [ngStyle]="style" [ngClass]="styleClass" role="progressbar" [attr.aria-label]="ariaLabel" [attr.aria-busy]="true" [attr.data-pc-name]="'progressspinner'" [attr.data-pc-section]="'root'">

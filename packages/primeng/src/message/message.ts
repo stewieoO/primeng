@@ -13,7 +13,6 @@ import { MessageStyle } from './style/messagestyle';
  */
 @Component({
     selector: 'p-message',
-    standalone: true,
     imports: [CommonModule, TimesIcon, Ripple, SharedModule],
     template: `
         @if (visible()) {

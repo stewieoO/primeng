@@ -18,7 +18,6 @@ export const KNOB_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-knob',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div [ngClass]="containerClass" [class]="styleClass" [ngStyle]="style" [attr.data-pc-name]="'knob'" [attr.data-pc-section]="'root'">

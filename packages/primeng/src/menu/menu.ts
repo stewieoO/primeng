@@ -59,7 +59,6 @@ export class SafeHtmlPipe implements PipeTransform {
 
 @Component({
     selector: '[pMenuItemContent]',
-    standalone: true,
     imports: [CommonModule, RouterModule, Ripple, TooltipModule, BadgeModule, SharedModule, SafeHtmlPipe],
     template: `
         <div [attr.data-pc-section]="'content'" class="p-menu-item-content" (click)="onItemClick($event, item)">
@@ -140,7 +139,6 @@ export class MenuItemContent {
  */
 @Component({
     selector: 'p-menu',
-    standalone: true,
     imports: [CommonModule, RouterModule, MenuItemContent, Ripple, TooltipModule, BadgeModule, SharedModule, SafeHtmlPipe],
     template: `
         <div

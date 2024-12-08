@@ -18,7 +18,6 @@ const hideOverlayContentAnimation = animation([animate('{{hideTransitionParams}}
  */
 @Component({
     selector: 'p-overlay',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div

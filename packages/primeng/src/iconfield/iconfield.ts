@@ -9,7 +9,6 @@ import { IconFieldStyle } from './style/iconfieldstyle';
  */
 @Component({
     selector: 'p-iconfield, p-iconField, p-icon-field',
-    standalone: true,
     imports: [CommonModule],
     template: ` <ng-content></ng-content>`,
     providers: [IconFieldStyle],

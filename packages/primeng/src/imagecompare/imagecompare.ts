@@ -10,7 +10,6 @@ import { ImageCompareStyle } from './style/imagecomparestyle';
  */
 @Component({
     selector: 'p-imageCompare, p-imagecompare, p-image-compare',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <ng-template *ngTemplateOutlet="leftTemplate"></ng-template>

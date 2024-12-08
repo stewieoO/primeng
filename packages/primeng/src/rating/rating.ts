@@ -22,7 +22,6 @@ export const RATING_VALUE_ACCESSOR: any = {
 @Component({
     selector: 'p-rating',
     imports: [CommonModule, AutoFocus, StarFillIcon, StarIcon, BanIcon, SharedModule],
-    standalone: true,
     template: `
         <ng-container *ngIf="!isCustomIcon; else customTemplate">
             <ng-template ngFor [ngForOf]="starsArray" let-star let-i="index">

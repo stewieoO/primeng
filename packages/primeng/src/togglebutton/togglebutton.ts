@@ -20,7 +20,6 @@ export const TOGGLEBUTTON_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-toggleButton, p-togglebutton, p-toggle-button',
-    standalone: true,
     imports: [Ripple, AutoFocus, CommonModule, SharedModule],
     template: `
         <button

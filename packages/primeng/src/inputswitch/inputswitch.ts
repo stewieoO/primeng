@@ -18,7 +18,6 @@ export const INPUTSWITCH_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-inputSwitch, p-inputswitch',
-    standalone: true,
     imports: [CommonModule, AutoFocusModule, SharedModule],
     template: `
         <div [ngClass]="cx('root')" [ngStyle]="sx('root')" [ngStyle]="style" [class]="styleClass" (click)="onClick($event)" [attr.data-pc-name]="'inputswitch'" [attr.data-pc-section]="'root'">

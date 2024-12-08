@@ -19,7 +19,6 @@ type SplitButtonIconPosition = 'left' | 'right';
  */
 @Component({
     selector: 'p-splitbutton, p-splitButton, p-split-button',
-    standalone: true,
     imports: [CommonModule, ButtonDirective, TieredMenu, AutoFocus, ChevronDownIcon, Ripple, TooltipModule, SharedModule],
     template: `
         <div #container [ngClass]="containerClass" [class]="styleClass" [ngStyle]="style">

@@ -38,7 +38,6 @@ import { TabMenuStyle } from './style/tabmenustyle';
  */
 @Component({
     selector: 'p-tabMenu, p-tabmenu',
-    standalone: true,
     imports: [CommonModule, RouterModule, Ripple, TooltipModule, ChevronLeftIcon, ChevronRightIcon, BadgeModule, SharedModule],
     template: `
         <div [ngClass]="{ 'p-tabmenu p-component': true, 'p-tabmenu-scrollable': scrollable }" [ngStyle]="style" [class]="styleClass">

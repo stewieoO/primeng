@@ -12,7 +12,6 @@ import { ChipStyle } from './style/chipstyle';
  */
 @Component({
     selector: 'p-chip',
-    standalone: true,
     imports: [CommonModule, TimesCircleIcon, SharedModule],
     template: `
         <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="style" *ngIf="visible" [attr.data-pc-name]="'chip'" [attr.aria-label]="label" [attr.data-pc-section]="'root'">

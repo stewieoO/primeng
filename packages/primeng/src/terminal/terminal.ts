@@ -14,7 +14,6 @@ import { TerminalService } from './terminalservice';
  */
 @Component({
     selector: 'p-terminal',
-    standalone: true,
     imports: [CommonModule, FormsModule, SharedModule],
     template: `
         <div [ngClass]="'p-terminal p-component'" [ngStyle]="style" [class]="styleClass" (click)="focus(in)">

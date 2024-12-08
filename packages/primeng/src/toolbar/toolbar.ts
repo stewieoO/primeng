@@ -10,7 +10,6 @@ import { ToolbarStyle } from './style/toolbarstyle';
  */
 @Component({
     selector: 'p-toolbar',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div [ngClass]="'p-toolbar p-component'" [attr.aria-labelledby]="ariaLabelledBy" [ngStyle]="style" [class]="styleClass" role="toolbar" [attr.data-pc-name]="'toolbar'">

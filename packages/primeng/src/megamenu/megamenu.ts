@@ -34,7 +34,6 @@ import { MegaMenuStyle } from './style/megamenustyle';
 
 @Component({
     selector: 'p-megaMenuSub, p-megamenu-sub',
-    standalone: true,
     imports: [CommonModule, RouterModule, Ripple, TooltipModule, AngleDownIcon, AngleRightIcon, BadgeModule, SharedModule],
     template: `
         <ul
@@ -372,7 +371,6 @@ export class MegaMenuSub extends BaseComponent {
  */
 @Component({
     selector: 'p-megaMenu, p-megamenu, p-mega-menu',
-    standalone: true,
     imports: [CommonModule, RouterModule, MegaMenuSub, Ripple, TooltipModule, AngleDownIcon, AngleRightIcon, BarsIcon, BadgeModule, SharedModule],
     template: `
         <div

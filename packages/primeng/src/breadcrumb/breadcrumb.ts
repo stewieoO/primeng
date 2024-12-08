@@ -14,7 +14,6 @@ import { BreadCrumbStyle } from './style/breadcrumbstyle';
  */
 @Component({
     selector: 'p-breadcrumb',
-    standalone: true,
     imports: [CommonModule, RouterModule, TooltipModule, ChevronRightIcon, HomeIcon, SharedModule],
     template: `
         <nav [class]="styleClass" [ngStyle]="style" [ngClass]="'p-breadcrumb p-component'" [attr.data-pc-name]="'breadcrumb'" [attr.data-pc-section]="'root'">

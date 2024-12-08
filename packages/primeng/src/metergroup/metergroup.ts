@@ -8,7 +8,6 @@ import { MeterGroupStyle } from './style/metergroupstyle';
 
 @Component({
     selector: 'p-meterGroupLabel, p-metergrouplabel',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <ol [ngClass]="labelClass">
@@ -52,7 +51,6 @@ export class MeterGroupLabel {
  */
 @Component({
     selector: 'p-meterGroup, p-metergroup, p-meter-group',
-    standalone: true,
     imports: [CommonModule, MeterGroupLabel, SharedModule],
     template: `
         <div #container [ngClass]="containerClass" [attr.role]="'meter'" [attr.aria-valuemin]="min" [attr.aria-valuemax]="max" [attr.aria-valuenow]="totalPercent()" [ngStyle]="style" [class]="styleClass">

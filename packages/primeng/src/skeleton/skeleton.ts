@@ -10,7 +10,6 @@ import { SkeletonStyle } from './style/skeletonstyle';
  */
 @Component({
     selector: 'p-skeleton',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: ` <div [ngClass]="containerClass()" [class]="styleClass" [ngStyle]="containerStyle" [attr.data-pc-name]="'skeleton'" [attr.aria-hidden]="true" [attr.data-pc-section]="'root'"></div> `,
     changeDetection: ChangeDetectionStrategy.OnPush,

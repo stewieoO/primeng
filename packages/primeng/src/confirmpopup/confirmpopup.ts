@@ -36,7 +36,6 @@ import { ConfirmPopupStyle } from './style/confirmpopupstyle';
  */
 @Component({
     selector: 'p-confirmPopup, p-confirmpopup, p-confirm-popup',
-    standalone: true,
     imports: [CommonModule, SharedModule, ButtonModule],
     template: `
         <div

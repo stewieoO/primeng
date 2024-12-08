@@ -19,7 +19,6 @@ export const EDITOR_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-editor',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div [ngClass]="'p-editor-container'" [class]="styleClass">

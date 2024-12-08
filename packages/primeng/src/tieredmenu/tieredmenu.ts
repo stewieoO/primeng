@@ -39,7 +39,6 @@ import { TieredMenuStyle } from './style/tieredmenustyle';
 
 @Component({
     selector: 'p-tieredMenuSub, p-tieredmenusub',
-    standalone: true,
     imports: [CommonModule, RouterModule, Ripple, TooltipModule, AngleRightIcon, SharedModule],
     template: `
         <ul
@@ -345,7 +344,6 @@ export class TieredMenuSub extends BaseComponent {
  */
 @Component({
     selector: 'p-tieredMenu, p-tieredmenu, p-tiered-menu',
-    standalone: true,
     imports: [CommonModule, TieredMenuSub, RouterModule, Ripple, TooltipModule, AngleRightIcon, SharedModule],
     template: `
         <div

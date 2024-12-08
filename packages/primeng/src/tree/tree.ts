@@ -50,7 +50,6 @@ import {
 
 @Component({
     selector: 'p-treeNode',
-    standalone: true,
     imports: [CommonModule, Ripple, Checkbox, FormsModule, ChevronRightIcon, ChevronDownIcon, SpinnerIcon, SharedModule],
     template: `
         @if (node) {
@@ -697,7 +696,6 @@ export class UITreeNode extends BaseComponent implements OnInit {
  */
 @Component({
     selector: 'p-tree',
-    standalone: true,
     imports: [CommonModule, Ripple, Scroller, SharedModule, CheckIcon, ChevronDownIcon, ChevronRightIcon, MinusIcon, SearchIcon, SpinnerIcon, PlusIcon, InputText, IconField, InputIcon, Checkbox, FormsModule, UITreeNode],
     template: `
         <div [ngClass]="containerClass" [ngStyle]="style" [class]="styleClass" (drop)="onDrop($event)" (dragover)="onDragOver($event)" (dragenter)="onDragEnter()" (dragleave)="onDragLeave($event)">

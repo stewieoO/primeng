@@ -363,7 +363,6 @@ export const Password_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-password',
-    standalone: true,
     imports: [CommonModule, InputText, AutoFocus, TimesIcon, EyeSlashIcon, EyeIcon, MapperPipe, SharedModule],
     template: `
         <div [ngClass]="rootClass" [ngStyle]="style" [class]="styleClass" [attr.data-pc-name]="'password'" [attr.data-pc-section]="'root'">

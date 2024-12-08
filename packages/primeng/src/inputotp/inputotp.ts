@@ -60,7 +60,6 @@ export interface InputOtpInputTemplateContext {
  */
 @Component({
     selector: 'p-inputOtp, p-inputotp, p-input-otp',
-    standalone: true,
     imports: [CommonModule, InputText, AutoFocus, SharedModule],
     template: `
         <ng-container *ngFor="let i of getRange(length); trackBy: trackByFn">

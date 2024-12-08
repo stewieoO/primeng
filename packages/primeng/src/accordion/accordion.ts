@@ -77,7 +77,6 @@ export interface AccordionToggleIconTemplateContext {
 @Component({
     selector: 'p-accordion-panel, p-accordionpanel',
     imports: [CommonModule],
-    standalone: true,
     template: `<ng-content />`,
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
@@ -121,7 +120,6 @@ export class AccordionPanel extends BaseComponent {
 @Component({
     selector: 'p-accordion-header, p-accordionheader',
     imports: [CommonModule, ChevronDownIcon, ChevronUpIcon, Ripple],
-    standalone: true,
     template: `
         <ng-content />
         @if (toggleicon) {
@@ -281,7 +279,6 @@ export class AccordionHeader extends BaseComponent {
 @Component({
     selector: 'p-accordion-content, p-accordioncontent',
     imports: [CommonModule],
-    standalone: true,
     template: ` <div class="p-accordioncontent-content">
         <ng-content />
     </div>`,
@@ -338,7 +335,6 @@ export class AccordionContent extends BaseComponent {
  */
 @Component({
     selector: 'p-accordionTab, p-accordion-tab, p-accordiontab',
-    standalone: true,
     imports: [CommonModule, ChevronDownIcon, ChevronUpIcon],
     template: `
         <button
@@ -644,7 +640,6 @@ export class AccordionTab extends BaseComponent implements AfterContentInit, OnD
  */
 @Component({
     selector: 'p-accordion',
-    standalone: true,
     imports: [CommonModule, AccordionTab, SharedModule],
     template: ` <ng-content /> `,
     host: {

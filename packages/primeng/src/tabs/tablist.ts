@@ -13,7 +13,6 @@ import { Tabs } from './tabs';
  */
 @Component({
     selector: 'p-tablist',
-    standalone: true,
     imports: [CommonModule, ChevronLeftIcon, ChevronRightIcon, RippleModule, SharedModule],
     template: `
         @if (showNavigators() && isPrevButtonEnabled()) {

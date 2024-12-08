@@ -13,7 +13,6 @@ import { Tabs } from './tabs';
  */
 @Component({
     selector: 'p-tab',
-    standalone: true,
     imports: [CommonModule, Ripple, SharedModule],
     template: ` <ng-content></ng-content>`,
     changeDetection: ChangeDetectionStrategy.OnPush,

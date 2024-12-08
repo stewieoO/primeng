@@ -10,7 +10,6 @@ import { InputIconStyle } from './style/inputiconstyle';
  */
 @Component({
     selector: 'p-inputicon, p-inputIcon',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `<ng-content></ng-content>`,
     encapsulation: ViewEncapsulation.None,

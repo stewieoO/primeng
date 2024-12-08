@@ -39,7 +39,6 @@ import { TabViewChangeEvent, TabViewCloseEvent } from './tabview.interface';
  */
 @Component({
     selector: 'p-tabPanel, p-tabpanel',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div
@@ -58,7 +57,6 @@ import { TabViewChangeEvent, TabViewCloseEvent } from './tabview.interface';
             </ng-container>
         </div>
     `,
-
     providers: [TabsStyle]
 })
 export class TabPanel extends BaseComponent implements AfterContentInit, OnDestroy {
@@ -228,7 +226,6 @@ export class TabPanel extends BaseComponent implements AfterContentInit, OnDestr
  */
 @Component({
     selector: 'p-tabView, p-tabview',
-    standalone: true,
     imports: [CommonModule, TabPanel, SharedModule, TooltipModule, Ripple, TimesIcon, ChevronLeftIcon, ChevronRightIcon],
     template: `
         <div #elementToObserve class="p-tablist">

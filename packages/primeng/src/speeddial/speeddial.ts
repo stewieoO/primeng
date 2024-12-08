@@ -36,7 +36,6 @@ import { SpeedDialStyle } from './style/speeddialstyle';
  */
 @Component({
     selector: 'p-speeddial, p-speedDial, p-speed-dial',
-    standalone: true,
     imports: [CommonModule, ButtonDirective, Ripple, TooltipModule, RouterModule, PlusIcon, ButtonIcon, SharedModule],
     template: `
         <div #container [ngClass]="containerClass()" [class]="className" [style]="style" [ngStyle]="rootStyles" [attr.data-pc-name]="'speeddial'" [attr.data-pc-section]="'root'">

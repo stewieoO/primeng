@@ -70,7 +70,6 @@ export const SELECT_VALUE_ACCESSOR: any = {
 
 @Component({
     selector: 'p-selectItem',
-    standalone: true,
     imports: [CommonModule, SharedModule, Ripple, CheckIcon, BlankIcon],
     template: `
         <li
@@ -147,7 +146,6 @@ export class SelectItem extends BaseComponent {
  */
 @Component({
     selector: 'p-select',
-    standalone: true,
     imports: [CommonModule, SelectItem, Overlay, Tooltip, Ripple, AutoFocus, TimesIcon, ChevronDownIcon, SearchIcon, BlankIcon, CheckIcon, InputText, IconField, InputIcon, Scroller, SharedModule],
     template: `
         <span

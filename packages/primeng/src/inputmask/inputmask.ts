@@ -49,7 +49,6 @@ export const INPUTMASK_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-inputmask, p-inputMask, p-input-mask',
-    standalone: true,
     imports: [CommonModule, InputText, AutoFocus, TimesIcon, SharedModule],
     template: `
         <input

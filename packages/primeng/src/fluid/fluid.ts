@@ -10,7 +10,6 @@ import { FluidStyle } from './style/fluidstyle';
 @Component({
     selector: 'p-fluid',
     template: ` <ng-content></ng-content> `,
-    standalone: true,
     imports: [CommonModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,

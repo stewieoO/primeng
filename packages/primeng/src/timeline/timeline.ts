@@ -11,7 +11,6 @@ import { TimelineStyle } from './style/timelinestyle';
  */
 @Component({
     selector: 'p-timeline',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div *ngFor="let event of value; let last = last" class="p-timeline-event" [attr.data-pc-section]="'event'">

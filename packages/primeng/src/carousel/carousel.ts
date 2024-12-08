@@ -34,7 +34,6 @@ import { CarouselStyle } from './style/carouselstyle';
  */
 @Component({
     selector: 'p-carousel',
-    standalone: true,
     imports: [CommonModule, Ripple, ChevronRightIcon, ChevronLeftIcon, ChevronDownIcon, ChevronUpIcon, Button, SharedModule],
     template: `
         <div [attr.id]="id" [ngClass]="{ 'p-carousel p-component': true, 'p-carousel-vertical': isVertical(), 'p-carousel-horizontal': !isVertical() }" [ngStyle]="style" [class]="styleClass" role="region">

@@ -27,7 +27,6 @@ export const TOGGLESWITCH_VALUE_ACCESSOR: any = {
  */
 @Component({
     selector: 'p-toggleswitch, p-toggleSwitch, p-toggle-switch',
-    standalone: true,
     imports: [CommonModule, AutoFocus, SharedModule],
     template: `
         <div [ngClass]="cx('root')" [style]="sx('root')" [ngStyle]="style" [class]="styleClass" (click)="onClick($event)" [attr.data-pc-name]="'toggleswitch'" [attr.data-pc-section]="'root'">

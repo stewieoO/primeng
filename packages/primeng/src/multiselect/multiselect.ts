@@ -74,7 +74,6 @@ export const MULTISELECT_VALUE_ACCESSOR: any = {
 
 @Component({
     selector: 'p-multiSelectItem, p-multiselect-item',
-    standalone: true,
     imports: [CommonModule, Checkbox, FormsModule, Ripple, SharedModule],
     template: `
         <li
@@ -167,7 +166,6 @@ export class MultiSelectItem extends BaseComponent {
  */
 @Component({
     selector: 'p-multiSelect, p-multiselect, p-multi-select',
-    standalone: true,
     imports: [CommonModule, MultiSelectItem, Overlay, SharedModule, Tooltip, Ripple, Scroller, AutoFocus, CheckIcon, SearchIcon, TimesCircleIcon, TimesIcon, ChevronDownIcon, MinusIcon, IconField, InputIcon, InputText, Chip, Checkbox, FormsModule],
     template: `
         <div class="p-hidden-accessible" [attr.data-p-hidden-accessible]="true">

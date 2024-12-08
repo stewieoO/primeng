@@ -11,7 +11,6 @@ import { InputGroupAddonStyle } from './style/inputgroupaddonstyle';
 @Component({
     selector: 'p-inputgroup-addon, p-inputGroupAddon',
     template: ` <ng-content></ng-content> `,
-    standalone: true,
     imports: [CommonModule],
     host: {
         '[class]': 'styleClass',

@@ -245,7 +245,6 @@ export class BadgeDirective extends BaseComponent implements OnChanges, AfterVie
             <span [ngClass]="containerClass()" [class]="styleClass()" [ngStyle]="style()">{{ value() }}</span>
         }
     `,
-    standalone: true,
     imports: [CommonModule, SharedModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,

@@ -10,7 +10,6 @@ import { ProgressBarStyle } from './style/progressbarstyle';
  */
 @Component({
     selector: 'p-progressBar, p-progressbar, p-progress-bar',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div

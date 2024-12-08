@@ -11,7 +11,6 @@ import { CardStyle } from './style/cardstyle';
  */
 @Component({
     selector: 'p-card',
-    standalone: true,
     imports: [CommonModule, SharedModule],
     template: `
         <div [ngClass]="'p-card p-component'" [ngStyle]="_style()" [class]="styleClass" [attr.data-pc-name]="'card'">
