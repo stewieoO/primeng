@@ -19,6 +19,7 @@ export class DialogService {
         private injector: Injector,
         @Inject(DOCUMENT) private document: Document
     ) {}
+
     /**
      * Displays the dialog using the dynamic dialog object options.
      * @param {*} componentType - Dynamic component for content template.
@@ -37,6 +38,7 @@ export class DialogService {
 
         return dialogRef;
     }
+
     /**
      * Returns the dynamic dialog component instance.
      * @param {ref} DynamicDialogRef - DynamicDialog instance.
@@ -63,7 +65,10 @@ export class DialogService {
             sub.unsubscribe();
         });
 
-        const componentRef = createComponent(DynamicDialogComponent, { environmentInjector: this.appRef.injector, elementInjector: new DynamicDialogInjector(this.injector, map) });
+        const componentRef = createComponent(DynamicDialogComponent, {
+            environmentInjector: this.appRef.injector,
+            elementInjector: new DynamicDialogInjector(this.injector, map)
+        });
 
         this.appRef.attachView(componentRef.hostView);
 
@@ -85,6 +90,8 @@ export class DialogService {
         }
 
         const dialogComponentRef = this.dialogComponentRefMap.get(dialogRef);
+        const domElem = (dialogComponentRef.hostView as EmbeddedViewRef<any>).rootNodes[0] as HTMLElement;
+        domElem.remove();
         this.appRef.detachView(dialogComponentRef.hostView);
         dialogComponentRef.destroy();
         this.dialogComponentRefMap.delete(dialogRef);

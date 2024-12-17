@@ -1,6 +1,6 @@
 {
     "name": "@stewie/primeng",
-    "version": "17.19.0",
+    "version": "17.19.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/primefaces/primeng"
